@@ -1,77 +1,82 @@
-# 2024 HW1：靜態 CMOS 與資料選擇電路
+# 2024 HW1: Static CMOS and Data Selection
 
-本資料夾是 EE3032 Introduction to VLSI Design（李進福，Fall 2024）HW1 的完整推導解答。這份作業是手寫／推導題；本解答使用 LaTeX 整理，附電晶體圖、真值表及可重現的理想開關連通性驗證。
+Complete solutions to HW1 in EE3032 Introduction to VLSI Design (Jin-Fu Li, Fall 2024). This is a written derivation assignment. The LaTeX solution includes transistor diagrams, truth tables, and reproducible ideal-switch connectivity checks.
 
-## 作業要求與解答概要
+## Assignment requirements and solution overview
 
-| 題號 | 題目要求 | 採用的解法 |
+| Problem | Requirement | Selected implementation |
 | --- | --- | --- |
-| 1(a) | 用 static CMOS 實現 `f = NOT(x + y + wyz)`；只提供正相輸入，須畫電晶體圖。 | 由吸收律 `y + wyz = y`，得到二輸入 NOR。pMOS 串聯、nMOS 並聯，共 4T；`w`、`z` 不影響輸出。 |
-| 1(b) | 用 static CMOS 實現 `f = x'y' + x'z' + y'z'`；只提供正相輸入。 | `f = NOT[xy + z(x+y)]`。PDN/PUN 各 5T，共 10T，無須輸入反相器。 |
-| 2 | 4 個資料輸入、4 個控制輸入、4 個輸出，實現原題表格的四種循環選擇。 | 16 個 CMOS transmission gate，加上 4 個共用控制反相器，共 40T。完整接線圖逐一標示資料來源及 `c_j`／`c_j'`。原題控制是 one-hot。 |
-| 3(a) | 分析原圖 pass-transistor 電路的邏輯函數。 | `F = AB + A'B'`，即 XNOR。 |
-| 3(b) | 用 CMOS 實現同樣函數。 | 主要解答為 8T static CMOS 核心；若沒有互補輸入，加 2 個 inverter，共 12T。另附完整互補控制的 8T TG 版本（包含輸入反相器）。 |
+| 1(a) | Implement `f = NOT(x + y + wyz)` in static CMOS using only true input literals; show the transistor diagram. | Absorption gives `y + wyz = y`, so `f = NOT(x+y)`. Two series pMOS and two parallel nMOS form a 4T NOR. Inputs `w,z` do not affect the output. |
+| 1(b) | Implement `f = x'y' + x'z' + y'z'` in static CMOS using only true input literals. | Factor as `f = NOT[xy + z(x+y)]`. The dual PDN/PUN each use 5T, for 10T total, without input inverters. |
+| 2 | Use four data inputs, four controls, and four outputs to implement the four cyclic selections in the assignment table. | Sixteen CMOS transmission gates and four shared control inverters use 40T total. The diagrams specify every data connection and both control polarities. The assigned controls are one-hot. |
+| 3(a) | Determine the logic function of the given pass-transistor circuit. | `F = AB + A'B'`, the XNOR function. |
+| 3(b) | Implement the same function in CMOS. | Primary answer: an 8T static CMOS core, or 12T including two input inverters. An optional TG implementation uses 8T including its input inverters. |
 
-`'` 表示反相，`+` 表示 OR，相乘表示 AND。第 1(a) 題原始 PDF 的長橫線涵蓋整個 `x + y + wyz`，不能遺漏。
+Here `'` means NOT, `+` means OR, and juxtaposition means AND. In Problem 1(a), the original PDF's overbar covers the entire expression `x + y + wyz`.
 
-題 2 的四列以 `(z3,z2,z1,z0)` 表示：
+Problem 2 uses the following output ordering:
 
-| 有效控制 | 輸出 |
+| Active control | `(z3,z2,z1,z0)` |
 | --- | --- |
 | `c3=1` | `(a3,a2,a1,a0)` |
 | `c2=1` | `(a2,a1,a0,a3)` |
 | `c1=1` | `(a1,a0,a3,a2)` |
 | `c0=1` | `(a0,a3,a2,a1)` |
 
-其餘控制均為 0。原題沒有指定非 one-hot 控制；TG 結構在全部為 0 時浮接、同時選擇多個資料時可能短接資料。正文另說明若要求所有控制碼都有定義，可改用完整 static CMOS AND-OR 網路。
+All other controls are zero. The assignment does not specify non-one-hot operation. With no active control, the TG selector leaves the outputs floating; with multiple active controls, different data sources may be connected together. The solution also describes a complete static CMOS AND-OR implementation if defined behavior for every control word is required.
 
-## 檔案用途
+## Files
 
-| 檔案 | 用途 |
+| File | Purpose |
 | --- | --- |
-| [solutions.tex](solutions.tex) | 可獨立編譯的繁體中文解答。內含 TikZ 電晶體圖，不依賴外部圖片。 |
-| [solutions.pdf](solutions.pdf) | 供直接閱讀與檢視品質的編譯版本。 |
-| [verify_logic.py](verify_logic.py) | 僅使用 Python 標準函式庫的逐輸入驗證，依實際 MOS 端點建立導通圖。 |
-| [truth_tables.csv](truth_tables.csv) | 96 列主電路逐輸入結果，包含預期值、實際值與 PASS。 |
-| [verification.json](verification.json) | 完整測試計數、電晶體數及解答原稿 SHA-256。 |
+| [solutions.tex](solutions.tex) | Standalone English LaTeX solution with embedded TikZ transistor diagrams; no external figures are needed. |
+| [solutions.pdf](solutions.pdf) | Compiled reading copy. |
+| [verify_logic.py](verify_logic.py) | Python standard-library checker that builds conducting graphs from the actual MOS terminal lists in the diagrams. |
+| [truth_tables.csv](truth_tables.csv) | All 96 main-circuit input cases, with expected outputs, observed outputs, and PASS status. |
+| [verification.json](verification.json) | Test counts, device counts, and the LaTeX source SHA-256. |
 
-原題另存於 repository 的 [2024/assignments/homework1.pdf](../assignments/homework1.pdf)。兩份原有手寫參考答案由使用者本機提供，來源與差異詳列於解答最後一頁；未將其內容偽裝成新作的原創，也未因作者／授權未標示而額外公開手寫檔案。
+The unchanged instructor assignment is [2024/assignments/homework1.pdf](../assignments/homework1.pdf). Two pre-existing handwritten references were supplied locally by the user. Their provenance and comparison are acknowledged in the solution and the repository's source inventory. Their content is not presented as newly authored work.
 
-## 驗證方式與結果
+## Verification and results
 
-在此資料夾執行：
+Run in this directory:
 
 ```powershell
 python .\verify_logic.py
 ```
 
-結果：**PASS，100 組案例**。
+Result: **PASS, 100 cases**.
 
-| 測試 | 案例數 |
+| Check | Cases |
 | --- | ---: |
-| 1(a)：全部 `w,x,y,z`，含原式與化簡式一致、PUN/PDN 互補及無浮接／電源直通 | 16 |
-| 1(b)：全部 `x,y,z`，含 SOP/POS/因式分解式與 10T 導通圖 | 8 |
-| 2：四種 one-hot 選擇乘以 16 組資料，檢查展開 MOS 後的完整資料連通性 | 64 |
-| 3：static CMOS 的全部 `A,B` | 4 |
-| 3：修正 TG 版本的全部 `A,B` | 4 |
-| 共用反相器的 0／1 | 2 |
-| 題 2 非規格控制示例：零選擇浮接、多選擇資料相接 | 2 |
+| 1(a): all `w,x,y,z`; original/simplified expression equivalence, complementary PUN/PDN operation, and no floating output or rail short | 16 |
+| 1(b): all `x,y,z`; SOP/POS/factored equivalence and 10T conducting graphs | 8 |
+| 2: four one-hot choices times all 16 data words; complete expanded-MOS data connectivity | 64 |
+| 3: all `A,B` for the static CMOS implementation | 4 |
+| 3: all `A,B` for the TG implementation | 4 |
+| Shared inverter at both input levels | 2 |
+| Unspecified-control examples in Problem 2: zero selection and multiple selection | 2 |
 
-這是理想二進位 MOS 開關驗證，沒有使用 HSPICE，也不宣稱驗證製程、電晶體尺寸、延遲、類比電壓擺幅或切換暫態。本作業 HW1 未要求這些模擬；圖中的 body 接法及原 NMOS-only 電路的高電位損失另有說明。
+These are ideal binary MOS-switch checks, not HSPICE simulations. They do not establish process behavior, transistor sizing, delay, analog voltage swing, or switching-transient performance. HW1 does not request those simulations. The solution explains body connections and the original nMOS-only circuit's possible high-level threshold loss.
 
-## 參考答案比對與修正
+## Reference review and selection rationale
 
-已逐頁閱讀原題 1 頁、`VLSI HW1 第三題(2)電路畫錯.pdf` 4 頁（含封面）與 `VLSI HW1.pdf` 3 頁。
+All pages of the one-page original assignment and both references were reviewed:
 
-- **1(a)：** 兩份參考的 10T 結構保留了可吸收的 `wyz` 支路。本解答採更精簡、只用正相輸入的 4T NOR。第一份參考把冗餘支路標成 `z'`，不合正相輸入條件；由於支路冗餘，這個標示不影響其輸出真值。
-- **1(b)：** 兩份參考的 12T minority 結構有效。本解答獨立因式分解，改成 10T，並檢查所有真值及電源連通性。
-- **2：** 參考的循環資料接線有效，保留這種 TG 架構，補齊共享反相控制、40T 計數及 one-hot 假設。
-- **3：** 兩份參考均正確辨識 XNOR。放大第一份參考可辨認互補控制的橫線；上支 MOS 類型的符號不清，不能據此斷言是同極性控制或接線錯誤。本解答重新畫出明確標示 nMOS／pMOS gate 的完整 TG 替代版。第二份的 static CMOS 結構有效，與本解答獨立推導一致。
+- **Reference A:** a user-supplied four-page HW1 correction/reference, including a cover.
+- **Reference B:** a three-page student HW1 solution.
 
-## 編譯
+The original local-file provenance is recorded in the repository's source inventory.
+
+- **1(a):** Both references retain a redundant branch in their 10T networks. The selected 4T NOR uses only true input literals. Reference A labels the redundant branch with `z'`, which does not satisfy the true-literal restriction; absorption means that this branch does not change the output logic.
+- **1(b):** Both reference 12T minority networks are valid. Independent factoring gives the selected 10T implementation; all truth values and supply connectivity are checked.
+- **2:** The reference cyclic data wiring is valid. The TG architecture is retained, with explicit shared complementary controls, the 40T device count, and the one-hot assumption.
+- **3:** Both references correctly identify XNOR. Enlarging Reference A reveals its complementary control bars; its upper MOS-type symbol is unclear. That ambiguity does not establish same-polarity control or an incorrect connection. The TG alternative is redrawn with explicit nMOS/pMOS gate labels. Reference B's static CMOS network is valid and agrees with the independent derivation.
+
+## Compile
 
 ```powershell
-xelatex -interaction=nonstopmode -halt-on-error .\solutions.tex
+pdflatex -interaction=nonstopmode -halt-on-error .\solutions.tex
 ```
 
-需要 XeLaTeX、`xeCJK`、`fontspec`、`tikz` 與標準 LaTeX 數學套件。字型依序偵測 Windows 的 Times New Roman／Microsoft JhengHei，或使用 Latin Modern Roman／Noto Serif CJK TC／FandolSong-Regular 備援。已通過 Codex 內建 LaTeX 編譯器，並另導出 PDF 逐頁目視檢查。
+The source uses pdfLaTeX, Latin Modern fonts, TikZ, and standard mathematical typesetting packages. It requires no CJK package or system-specific font. The final source was checked with the built-in LaTeX compiler, exported to PDF locally, and reviewed visually on every page.

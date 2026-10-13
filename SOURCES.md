@@ -1,32 +1,34 @@
 # Source review and decisions
 
-檢索/閱讀日期：2026-10-13。以使用者提供的 **Fall 2024** PDF 與教師補充說明為規格；不同年度的程式只能作為架構參考。
+Review date: 2026-10-13. The supplied **Fall 2024** PDFs and instructor clarifications define the requirements. Code from other years is used only as an architectural reference. All authored reports and explanations are in English; original instructor attachments retain their original language and have labeled English translations.
 
-## 原題
+## Original assignments
 
-- `2024/assignments/homework1.pdf` 到 `homework4.pdf`：原始檔逐位元複製，未改寫題目。
-- `hw3_instructor_testbench.sp`：保留原始 PWL、輸入/輸出名稱、9 ns 時間與 CIN=0。
-- `hw3_clarifications.txt`：最小 W=0.47 um、1.8 V swing、energy=Pavg x 9 ns、使用指定 pattern。
-- `hw4_clarifications.txt`：原完整作業需要 layout/DRC/LVS/PEX；本輪依使用者要求交到前佈局 `.sp`，未宣稱完成這些項目。
+- `2024/assignments/homework1.pdf` through `homework4.pdf`: copied byte for byte, without rewriting the assignments.
+- `hw3_instructor_testbench.sp`: original PWL sources, I/O names, 9 ns duration, CIN=0.
+- `hw3_clarifications.txt`: original instructor attachment specifying W>=0.47 um, 1.8 V swing, energy=Pavg times 9 ns, and required patterns. See the [English translation](2024/assignments/hw3_clarifications.en.md).
+- `hw4_clarifications.txt`: original full layout/DRC/LVS/PEX requirements. See the [English translation](2024/assignments/hw4_clarifications.en.md). This delivery follows the user's narrower request for pre-layout `.sp` files.
 
-## 本機既有解答
+## Existing local answers
 
-| 資料 | 已閱讀的內容 | 採用/修正方式 |
+| Material | Content reviewed | Adoption or correction |
 | --- | --- | --- |
-| HW1 的 `VLSI HW1.pdf` 與第三題更正版 | 所有手寫頁面與電晶體連接，另放大檢查控制反相橫線 | 獨立做布林化簡與連通性驗證、移除可吸收的冗餘支路；重新畫明確的 complementary TG。參考圖中央可辨互補標示，但上支 MOS 符號不清，不斷言原稿接成同極性控制 |
-| HW2 的 `VLSI_HW2.pdf` | 儲存電壓、漏電保持時間、pseudo-NMOS NOR 尺寸 | 核心推導交叉核對；補上保持條件、不等式與 BL 讀取限制 |
-| HW3 的學生 `.tar.gz` | 報告及 88T 的 XNOR/TG/mux 程式 | 以相同測試條件重跑，與獨立整理的設計比較；量測結果見 HW3 |
-| HW4 的學生 `.7z` | 3 頁 PDF、64T 前佈局程式、實際 PEX 檔與測試程式 | 參考 XNOR/mux 架構和交付方式；報告將 pre/post 名稱寫反，且測試程式同時放置兩個 DUT，總 `power` 不能直接當單一設計數值。其 layout 面積與 PEX 不屬於本輪設計，不沿用其數字 |
+| HW1 Reference A: supplied four-page correction/reference; Reference B: three-page `VLSI HW1.pdf` | All handwritten solutions and transistor connections; enlarged control complement bar | Independently simplify and verify connectivity, remove absorbed branches, and redraw complementary TG controls. A's central complement mark is visible, but its upper MOS symbol is unclear; no same-polarity-control fault is attributed to it. |
+| HW2 `VLSI_HW2.pdf` | Stored voltage, leakage retention, pseudo-NMOS NOR sizing | Cross-check derivations; add retention conditions, sizing inequalities, and the BL readout qualification. |
+| Supplied 2024 HW3 student archive, student ID 111501026 | Report and 88T XNOR/TG/mux code | Rerun an equivalent circuit under identical conditions and compare with reconstructed candidates; see HW3 measurements. |
+| Supplied 2024 HW4 student archive, student ID 111501026 | Three-page report, 64T schematic, actual PEX files, testbench | Use the architecture as a candidate. The report reverses pre/post labels and its testbench combines two DUTs, so total power is not a single-design measurement. Its layout area and PEX are not results of this work. |
 
-## 公開搜尋
+Original local filenames remain in the user's source folder. Reference labels and student IDs identify those files without requiring non-English filenames in authored reports. Existing student documents are not republished as new solutions.
 
-已搜尋 `Jin-Fu Li 2024 homework VLSI github`、`EE3032 Homework github`、`NCU VLSI 2024`、`four_bit_multbased_adder`、`NCU VLSI` 等查詢。搜尋可見性有限；沒有據此宣稱網路上不存在其他 2024 解答。
+## Public search
 
-- [dOwOb1212/NCU_VLSI_Design_2023_HW](https://github.com/dOwOb1212/NCU_VLSI_Design_2023_HW)：已讀取 [`hw1/CLA_cmos.sp`](https://github.com/dOwOb1212/NCU_VLSI_Design_2023_HW/blob/main/hw1/CLA_cmos.sp)，Git blob SHA `9bee2ead3081e2abb2e5e19fee6f47c9414c267c`。其 unit 也使用兩個 XNOR 和 carry mux，可核對 carry 方程；實際為逐位 carry 傳遞，檔名中的 CLA 不等於 lookahead。此檔是 **8-bit**，W=0.25/0.45 um、不同測試向量，不符合 2024 W>=0.47 um 的規格。未把整個程式直接放入本 repo。
-- [Yeimaoz/NCU_VLSI](https://github.com/Yeimaoz/NCU_VLSI)：GitHub 搜尋有命中，但 API 回應 `409 Git Repository is empty`，沒有可讀的解答可採用。
+Queries included `Jin-Fu Li 2024 homework VLSI github`, `EE3032 Homework github`, `NCU VLSI 2024`, `four_bit_multbased_adder`, and `NCU VLSI`. Search visibility is limited; no claim is made that other 2024 solutions do not exist.
 
-每份新解答保留獨立推導、出處與檢驗條件。既有答案中沒有驗證過的數值不當作本次量測。
+- [dOwOb1212/NCU_VLSI_Design_2023_HW](https://github.com/dOwOb1212/NCU_VLSI_Design_2023_HW): reviewed [`hw1/CLA_cmos.sp`](https://github.com/dOwOb1212/NCU_VLSI_Design_2023_HW/blob/main/hw1/CLA_cmos.sp), Git blob SHA `9bee2ead3081e2abb2e5e19fee6f47c9414c267c`. Its two-XNOR/carry-mux unit checks the carry equation, but carry still propagates bit by bit despite the CLA filename. This is an **8-bit** implementation with W=0.25/0.45 um and different vectors, below the 2024 minimum W=0.47 um. The full program was not copied into this repository.
+- [Yeimaoz/NCU_VLSI](https://github.com/Yeimaoz/NCU_VLSI): found in search, but the API returned `409 Git Repository is empty`; no solution was available to read.
 
-## HSPICE 量測定義
+Each report records its derivation, sources, and verification conditions. Unverified values from existing answers are not presented as new measurements.
 
-已核對安裝版本隨附的官方 PrimeSim HSPICE 文件 `docs_help/hspice_6/selecting_simulation_output_parameters.htm`，章節 **Power Output**。`POWER` 計入耗散與儲能變化，按符號慣例等於所有獨立來源吸收功率之負和，因此也包含 PWL 輸入的能量；不等於只算 VDD 的供電功率。本 repo 分列 total POWER 與 VDD-only power，並以教師指定的 total POWER 計算 9 ns energy。
+## HSPICE measurement definitions
+
+The installed official PrimeSim HSPICE documentation was checked: `docs_help/hspice_6/selecting_simulation_output_parameters.htm`, **Power Output**. `POWER` includes dissipation and changes in stored energy. Its sign convention gives the negative sum of power absorbed by all independent sources, including PWL input drivers. It differs from VDD-only supply power. Both are reported, and the instructor's total `POWER` definition is used for 9 ns energy.

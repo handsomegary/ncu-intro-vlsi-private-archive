@@ -1,14 +1,9 @@
-% !TeX program = xelatex
-% Standalone source. Compile with XeLaTeX; no external figures are required.
+% !TeX program = pdflatex
+% Standalone source. Compile with pdfLaTeX; no external figures are required.
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=20mm]{geometry}
-\usepackage{fontspec}
-\usepackage{xeCJK}
-\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{Latin Modern Roman}}
-\IfFontExistsTF{Microsoft JhengHei}{\setCJKmainfont{Microsoft JhengHei}}{
-  \IfFontExistsTF{Noto Serif CJK TC}{\setCJKmainfont{Noto Serif CJK TC}}{\setCJKmainfont{FandolSong-Regular}}}
-\IfFontExistsTF{Microsoft JhengHei}{\setCJKmonofont{Microsoft JhengHei}}{
-  \IfFontExistsTF{Noto Serif CJK TC}{\setCJKmonofont{Noto Serif CJK TC}}{\setCJKmonofont{FandolSong-Regular}}}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb,booktabs,array,xcolor,tikz,fancyhdr,hyperref}
 \usetikzlibrary{calc,arrows.meta}
 \hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black}
@@ -53,22 +48,26 @@
 \begin{document}
 \begin{center}
 {\LARGE\bfseries 2024 Homework 1}\\[4pt]
-{\large Static CMOS、資料選擇電路與 XNOR}\\[4pt]
+{\large Static CMOS, Data Selection, and XNOR}\\[4pt]
 {\small Introduction to VLSI Design / Jin-Fu Li / EE3032}
 \end{center}
-\textbf{解題與符號。}本解答先依原題推導，再比對資料夾中的兩份手寫答案。
-式中的 $+$ 為 OR、相乘為 AND、上橫線為 NOT。所有電晶體圖省略 body：
-pMOS body 接 $\VDD$，nMOS body 接 $\VSS=0$。pMOS gate 的小圓圈表示低電位導通。
-題 1 只提供正相輸入；本解答的題 1 不需要額外反相器。
+\textbf{Method and notation.} The solutions are derived from the original assignment,
+then compared with two user-supplied handwritten references. Here $+$ means OR,
+juxtaposition means AND, and an overbar means NOT. Body terminals are omitted:
+pMOS bodies connect to $\VDD$ and nMOS bodies to $\VSS=0$. A gate bubble denotes
+a pMOS, which turns on for a low gate voltage. Problem 1 provides only true input
+literals; neither solution in Problem 1 requires an input inverter.
 
-\section*{1(a) 吸收律後為二輸入 NOR}
-\textbf{原題讀式：}反相橫線涵蓋整個 $x+y+w y z$，因此
+\section*{1(a) Absorption reduces the function to a NOR gate}
+\textbf{Reading the original expression.} The overbar covers the entire expression
+$x+y+w y z$. Therefore,
 \begin{align*}
  f(w,x,y,z)&=\overline{x+y+w y z}\\
  &=\overline{x+y(1+wz)}=\boxed{\overline{x+y}}.
 \end{align*}
-因為 $y+w y z=y$，輸出與 $w,z$ 無關。下拉網路（PDN）用 $x,y$ 兩顆 nMOS
-並聯；上拉網路（PUN）是其對偶，兩顆 pMOS 串聯。
+Since $y+w y z=y$, the output is independent of $w,z$. The pull-down network
+(PDN) contains two parallel nMOS devices controlled by $x,y$. Its dual pull-up
+network (PUN) contains two pMOS devices in series.
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=.68cm,line width=.8pt,font=\small]
  \MOS{P1}{0}{6.7}{x}{p}\MOS{P2}{0}{5.2}{y}{p}
@@ -80,31 +79,33 @@ pMOS body 接 $\VDD$，nMOS body 接 $\VSS=0$。pMOS gate 的小圓圈表示低�
  \draw (N1b)--(-1,.8)--(1.6,.8)--(N2b);
  \node[below] at (.3,.8) {$\VSS$};
  \fill (0,3.6) circle (1.7pt) (1.6,3.6) circle (1.7pt);
- \node[anchor=west,text=pcol] at (3,6) {PUN：$\bar x\bar y$};
- \node[anchor=west,text=ncol] at (3,2.1) {PDN：$x+y$};
+ \node[anchor=west,text=pcol] at (3,6) {PUN: $\bar x\bar y$};
+ \node[anchor=west,text=ncol] at (3,2.1) {PDN: $x+y$};
 \end{tikzpicture}
 \end{center}
 \begin{center}
 \begin{tabular}{ccccc}\toprule
-$x$&$y$&$w,z$&PDN 導通&$f$\\\midrule
-0&0&任意&0&1\\0&1&任意&1&0\\1&0&任意&1&0\\1&1&任意&1&0\\\bottomrule
+$x$&$y$&$w,z$&PDN on&$f$\\\midrule
+0&0&any&0&1\\0&1&any&1&0\\1&0&any&1&0\\1&1&any&1&0\\\bottomrule
 \end{tabular}
 \end{center}
-\answer{\textbf{採用 4T NOR。}直接照未化簡式畫圖需 5 顆 nMOS 與 5 顆 pMOS，
-但其中 $wyz$ 支路不改變邏輯。保留它可實現原式；刪除後可省 6 顆電晶體。}
+\answer{\textbf{Selected implementation: a 4T NOR.} Direct implementation of the
+unsimplified expression uses five nMOS and five pMOS devices. The $wyz$ branch
+is redundant; eliminating it preserves the function and saves six transistors.}
 
 \newpage
-\section*{1(b) 三輸入 minority function：10T static CMOS}
-原題為 $f=\bar x\bar y+\bar x\bar z+\bar y\bar z$。
-先把輸出反相，便能以正相輸入實作 nMOS PDN：
+\section*{1(b) Three-input minority function: 10T static CMOS}
+The specified function is $f=\bar x\bar y+\bar x\bar z+\bar y\bar z$.
+Complementing the function gives a PDN expression using only true input literals:
 \begin{align*}
  \bar f&=(x+y)(x+z)(y+z)=xy+xz+yz\\
  &=xy+z(x+y),\\
  f&=\overline{xy+z(x+y)}
    =(\bar x+\bar y)(\bar z+\bar x\bar y).
 \end{align*}
-PDN 左支路為 $x$ 串 $y$，右支路為 $z$ 串 $(x\parallel y)$。
-PUN 為 $(x\parallel y)$ 串 $[z\parallel(x\text{ 串 }y)]$，gate 均接正相輸入。
+The left PDN branch has $x$ in series with $y$; the right branch has $z$ in series
+with $(x\parallel y)$. The dual PUN has $(x\parallel y)$ in series with
+$[z\parallel(x\text{ in series with }y)]$. All gates use true input literals.
 \begin{center}
 \begin{tikzpicture}[x=.83cm,y=.52cm,line width=.8pt,font=\small]
  \MOS{P1}{0}{10.7}{x}{p}\MOS{P2}{3.2}{10.7}{y}{p}
@@ -124,34 +125,37 @@ PUN 為 $(x\parallel y)$ 串 $[z\parallel(x\text{ 串 }y)]$，gate 均接正相�
  \node[below] at (2,.3) {$\VSS$};
  \foreach \x/\y in {0/9.4,3.2/9.4,0/5.1,3.2/5.1,3.2/2.6,2/.3}
    \fill (\x,\y) circle (1.6pt);
- \node[anchor=west,text=pcol] at (6,9) {PUN：5 顆 pMOS};
- \node[anchor=west,text=ncol] at (6,2.6) {PDN：5 顆 nMOS};
+ \node[anchor=west,text=pcol] at (6,9) {PUN: 5 pMOS};
+ \node[anchor=west,text=ncol] at (6,2.6) {PDN: 5 nMOS};
 \end{tikzpicture}
 \end{center}
 \begin{center}
 \begin{tabular}{cccccc}\toprule
-$x$&$y$&$z$&$xy+z(x+y)$&$f$&PUN 導通\\\midrule
+$x$&$y$&$z$&$xy+z(x+y)$&$f$&PUN on\\\midrule
 0&0&0&0&1&1\\0&0&1&0&1&1\\0&1&0&0&1&1\\0&1&1&1&0&0\\
 1&0&0&0&1&1\\1&0&1&1&0&0\\1&1&0&1&0&0\\1&1&1&1&0&0\\\bottomrule
 \end{tabular}
 \end{center}
-\answer{\textbf{共 10T，無輸入反相器。}恰有至多一個輸入為 1 時輸出為 1。
-兩份手寫答案的 12T 結構也正確；此處用因式分解省下 2T。}
+\answer{\textbf{Total: 10T, with no input inverters.} The output is 1 exactly when
+at most one input is 1. Both references use valid 12T networks; factoring the
+function saves two transistors.}
 
 \newpage
-\section*{2. 四路循環資料選擇：CMOS transmission gates}
-表中每列恰有一個 $c_j=1$，以下以此 \textbf{one-hot} 條件設計。
-每個輸出用四個 transmission gate（TG）選一個資料輸入：
+\section*{2. Four-way cyclic data selection using CMOS TGs}
+Each specified control word has exactly one $c_j=1$. The design therefore assumes
+\textbf{one-hot control}. Four transmission gates (TGs) select one data input for
+each output:
 \begin{align*}
 z_3&=c_3a_3+c_2a_2+c_1a_1+c_0a_0,\\
 z_2&=c_3a_2+c_2a_1+c_1a_0+c_0a_3,\\
 z_1&=c_3a_1+c_2a_0+c_1a_3+c_0a_2,\\
 z_0&=c_3a_0+c_2a_3+c_1a_2+c_0a_1.
 \end{align*}
-等價的接線索引為 $z_i\leftarrow a_{(i+j-3)\bmod4}$，其中 $c_j=1$。
-下頁完整列出 16 個 TG 的資料接線，並共用四組 $c_j,\bar c_j$。
+Equivalently, $z_i\leftarrow a_{(i+j-3)\bmod4}$ when $c_j=1$.
+The next page shows all 16 TG data connections. The four complementary control
+pairs $c_j,\bar c_j$ are shared across the circuit.
 
-\subsection*{TG 的電晶體展開與互補控制}
+\subsection*{Transistor-level TG and complementary control}
 \begin{center}
 \begin{tikzpicture}[x=.85cm,y=.65cm,line width=.8pt,font=\small]
  \MOS{Nj}{0}{2.5}{c_j}{n}\MOS{Pj}{3.6}{2.5}{\bar c_j}{p}
@@ -159,15 +163,17 @@ z_0&=c_3a_0+c_2a_3+c_1a_2+c_0a_1.
  \draw (Njb)--(0,1)--(3.6,1)--(Pjb);
  \draw (0,4)--(-1.7,4) node[left] {$d$};
  \draw (3.6,1)--(5.1,1) node[right] {$q$};
- \node[anchor=west] at (5.7,3) {$c_j=1$: nMOS、pMOS 都導通};
- \node[anchor=west] at (5.7,2) {$c_j=0$: nMOS、pMOS 都截止};
+ \node[anchor=west] at (5.7,3) {$c_j=1$: both MOS devices on};
+ \node[anchor=west] at (5.7,2) {$c_j=0$: both MOS devices off};
 \end{tikzpicture}
 \end{center}
-圖中兩顆 MOS \textbf{並聯於相同的資料端點}。與 NMOS-only pass gate 相比，
-TG 能傳遞完整的高、低邏輯電位。因為資料可雙向通過，圖中的上下端點是資料端，
-並非接電源；body 仍分別接 $\VSS$ 與 $\VDD$。
+The two MOS devices are \textbf{in parallel between the same data terminals}.
+Unlike an nMOS-only pass gate, a CMOS TG passes both high and low logic levels
+without a threshold-drop limitation. Its data path is bidirectional: the upper
+and lower terminals in this drawing are data nodes, not supply rails. The bodies
+still connect to $\VSS$ and $\VDD$, respectively.
 
-\subsection*{共用反相器（四份，$j=0,1,2,3$）}
+\subsection*{Shared control inverters (four instances, $j=0,1,2,3$)}
 \begin{center}
 \begin{tikzpicture}[x=.9cm,y=.6cm,line width=.8pt,font=\small]
  \MOS{PI}{0}{4.7}{c_j}{p}\MOS{NI}{0}{2.2}{c_j}{n}
@@ -178,14 +184,18 @@ TG 能傳遞完整的高、低邏輯電位。因為資料可雙向通過，圖�
  \fill (0,3.5) circle (1.7pt);
 \end{tikzpicture}
 \end{center}
-\answer{\textbf{電晶體數：}$16\text{ TG}\times2+4\text{ inverter}\times2=40\text{T}$。
-不含非題目要求的輸出 buffer。只有 one-hot 的四列被指定；零選擇時輸出浮接，
-多個選擇時可能把不同資料短接，因此控制器必須維持 one-hot 並避免重疊切換。}
+\answer{\textbf{Device count:} $16\text{ TGs}\times2+4\text{ inverters}\times2=40\text{T}$.
+No output buffers are included. Only the four one-hot words are specified.
+Zero selection leaves outputs floating; multiple selections can connect different
+data sources together. The controller must maintain one-hot control and avoid
+overlap during switching.}
 
 \newpage
-\section*{2. 完整 TG 接線圖與表格驗證（續）}
-每個 $\mathrm{TG}_j$ 是上頁的兩顆 MOS，nMOS gate 接 $c_j$，pMOS gate 接 $\bar c_j$。
-四個圖中的同名控制線由同一組反相器供應；不同輸出之間沒有資料接點。
+\section*{2. Complete TG connections and verification (continued)}
+Each $\mathrm{TG}_j$ expands to the two MOS devices on the preceding page:
+its nMOS gate connects to $c_j$ and its pMOS gate to $\bar c_j$.
+All instances with the same control index share one inverter. Different output
+buses are not connected to each other.
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm,line width=.8pt,font=\small]
  \foreach \col/\zi in {0/3,1/2,2/1,3/0}{
@@ -207,52 +217,56 @@ TG 能傳遞完整的高、低邏輯電位。因為資料可雙向通過，圖�
 \vspace{8pt}
 \begin{center}
 \begin{tabular}{ccccccccc}\toprule
-$c_3$&$c_2$&$c_1$&$c_0$&導通 TG&$z_3$&$z_2$&$z_1$&$z_0$\\\midrule
-1&0&0&0&所有 $\mathrm{TG}_3$&$a_3$&$a_2$&$a_1$&$a_0$\\
-0&1&0&0&所有 $\mathrm{TG}_2$&$a_2$&$a_1$&$a_0$&$a_3$\\
-0&0&1&0&所有 $\mathrm{TG}_1$&$a_1$&$a_0$&$a_3$&$a_2$\\
-0&0&0&1&所有 $\mathrm{TG}_0$&$a_0$&$a_3$&$a_2$&$a_1$\\\bottomrule
+$c_3$&$c_2$&$c_1$&$c_0$&Enabled TGs&$z_3$&$z_2$&$z_1$&$z_0$\\\midrule
+1&0&0&0&All $\mathrm{TG}_3$&$a_3$&$a_2$&$a_1$&$a_0$\\
+0&1&0&0&All $\mathrm{TG}_2$&$a_2$&$a_1$&$a_0$&$a_3$\\
+0&0&1&0&All $\mathrm{TG}_1$&$a_1$&$a_0$&$a_3$&$a_2$\\
+0&0&0&1&All $\mathrm{TG}_0$&$a_0$&$a_3$&$a_2$&$a_1$\\\bottomrule
 \end{tabular}
 \end{center}
-\textbf{一列的檢查範例。}令 $c_2=1$，其餘為 0。則每個輸出只有
-$\mathrm{TG}_2$ 導通，沿接線可直接得到
+\textbf{Example control word.} Set $c_2=1$ and all other controls to 0.
+Only $\mathrm{TG}_2$ is enabled at each output. Tracing the connections gives
 \[
  (z_3,z_2,z_1,z_0)=(a_2,a_1,a_0,a_3).
 \]
-其餘三列同理。附帶的 Python 驗證對四個 one-hot 選擇與全部 16 組資料逐一檢查，
-共 $4\times16=64$ 組；除了方程式，亦檢查展開為 nMOS/pMOS 後的連通性。
+The other three control words follow identically. The supplied Python checker
+enumerates all four one-hot choices and all 16 data words, for $4\times16=64$
+cases. It checks the expanded nMOS/pMOS connectivity as well as the equations.
 
-\subsection*{若需要所有控制碼都有定義}
-原表未指定的 12 組控制碼不應自行視為 one-hot TG 的有效操作。
-若規格改為任意 $c_0,\ldots,c_3$ 都必須實現上述 AND-OR 方程式，可對每個
-$z_i$ 用四個 NAND2 產生 $\overline{c_j a_k}$，再用 NAND4 合併；每輸出
-$4\times4+8=24$T，共 96T。此方案在非 one-hot 時實現明確的 OR 行為，
-但不是本題四列選擇器所需的最低複雜度方案。
+\subsection*{If all control words must have defined outputs}
+The 12 unspecified control words are outside this one-hot TG design's operating
+condition. If the specification instead requires the AND-OR equations to hold for
+arbitrary $c_0,\ldots,c_3$, use four NAND2 gates producing $\overline{c_j a_k}$
+and one NAND4 per output. This requires $4\times4+8=24$T per output, or 96T in
+total. It defines OR behavior for non-one-hot controls, at higher device cost
+than the selector needed for the original four specified words.
 
 \newpage
-\section*{3(a) 原 pass-transistor 電路的邏輯函數}
-原圖上支 nMOS 由 $A$ 控制、傳遞 $B$；下支由 $\bar A$ 控制、傳遞 $\bar B$。
-因此 $A=1$ 時 $F=B$，$A=0$ 時 $F=\bar B$，即
+\section*{3(a) Logic function of the original pass-transistor circuit}
+The upper nMOS is controlled by $A$ and passes $B$; the lower nMOS is controlled
+by $\bar A$ and passes $\bar B$. Hence $F=B$ for $A=1$, and $F=\bar B$ for $A=0$:
 \[
- \boxed{F(A,B)=AB+\bar A\bar B=\overline{A\oplus B}}\qquad\text{（XNOR）}.
+ \boxed{F(A,B)=AB+\bar A\bar B=\overline{A\oplus B}}\qquad\text{(XNOR)}.
 \]
 \begin{center}
 \begin{tabular}{cccccc}\toprule
-$A$&$B$&導通的原圖支路&傳入值&$F$&$\bar F$\\\midrule
-0&0&下支&$\bar B=1$&1&0\\0&1&下支&$\bar B=0$&0&1\\
-1&0&上支&$B=0$&0&1\\1&1&上支&$B=1$&1&0\\\bottomrule
+$A$&$B$&Enabled branch&Passed value&$F$&$\bar F$\\\midrule
+0&0&Lower&$\bar B=1$&1&0\\0&1&Lower&$\bar B=0$&0&1\\
+1&0&Upper&$B=0$&0&1\\1&1&Upper&$B=1$&1&0\\\bottomrule
 \end{tabular}
 \end{center}
-原圖邏輯值按理想開關分析；NMOS-only 結構傳遞高電位時可能有臨界電壓損失，
-不應把它誤當成完整擺幅的 static CMOS 輸出。
+This logic analysis treats the original devices as ideal switches. An nMOS-only
+path can lose a threshold voltage when passing a high level; the original circuit
+should not be described as a full-swing static CMOS output stage.
 
-\section*{3(b) 互補式 static CMOS XNOR}
-選用 static CMOS，先令
+\section*{3(b) Complementary static CMOS XNOR}
+For a static CMOS implementation, first write
 \[
  \bar F=A\bar B+\bar A B=(A+B)(\bar A+\bar B).
 \]
-PDN 是 $(A\parallel B)$ 串 $(\bar A\parallel\bar B)$；PUN 為其對偶，
-$(A\text{ 串 }B)$ 與 $(\bar A\text{ 串 }\bar B)$ 兩支並聯。
+The PDN is $(A\parallel B)$ in series with $(\bar A\parallel\bar B)$.
+Its dual PUN has two parallel branches: $A$ in series with $B$, and
+$\bar A$ in series with $\bar B$.
 \begin{center}
 \begin{tikzpicture}[x=.9cm,y=.6cm,line width=.8pt,font=\small]
  \MOS{P1}{0}{7.3}{A}{p}\MOS{P2}{0}{5.7}{B}{p}
@@ -269,17 +283,18 @@ $(A\text{ 串 }B)$ 與 $(\bar A\text{ 串 }\bar B)$ 兩支並聯。
  \draw (N3b)--(0,.1)--(3.5,.1)--(N4b);
  \node[below] at (1.75,.1) {$\VSS$};
  \foreach \x/\y in {0/4.5,3.5/4.5,0/2.25,3.5/2.25}\fill (\x,\y) circle (1.7pt);
- \node[anchor=west] at (6,6.5) {PUN：$AB+\bar A\bar B$};
- \node[anchor=west] at (6,2.8) {PDN：$(A+B)(\bar A+\bar B)$};
+ \node[anchor=west] at (6,6.5) {PUN: $AB+\bar A\bar B$};
+ \node[anchor=west] at (6,2.8) {PDN: $(A+B)(\bar A+\bar B)$};
 \end{tikzpicture}
 \end{center}
-\answer{\textbf{8T 核心，或含互補輸入產生器共 12T。}
-若 $\bar A,\bar B$ 尚未提供，各加一個與第 3 頁相同的 2T inverter，
-分別以 $A,B$ 為輸入。每個二進位輸入下 PUN、PDN 恰有一個導通。}
+\answer{\textbf{8T core, or 12T including complementary-input generation.}
+If $\bar A,\bar B$ are unavailable, add two 2T inverters of the form shown in
+Problem 2, with inputs $A,B$, respectively. For every binary input word,
+exactly one of the PUN and PDN conducts.}
 
 \newpage
-\section*{3(b) 可選的 8T TG 版本}
-若採用 CMOS transmission gate，也可用二選一選擇器實現同樣函數：
+\section*{3(b) Optional 8T transmission-gate implementation}
+A two-to-one CMOS TG selector implements the same function:
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm,line width=.8pt,font=\small]
  \node[draw,minimum width=28mm,minimum height=10mm,fill=accent!5] (t1) at (0,0) {TG: n=$A$, p=$\bar A$};
@@ -291,39 +306,52 @@ $(A\text{ 串 }B)$ 與 $(\bar A\text{ 串 }\bar B)$ 兩支並聯。
  \fill (2.6,-1) circle (1.7pt);
 \end{tikzpicture}
 \end{center}
-每個 TG 仍是第 3 頁所畫的兩顆並聯 MOS。兩個 TG 共 4T，加上產生
-$\bar A,\bar B$ 的兩個 inverter 共 4T，合計 8T。$A=1$ 時只有上支導通，
-$A=0$ 時只有下支導通，互斥選擇使 $B$ 與 $\bar B$ 不會直接短接。
-主要答案仍採前頁 static CMOS，因為它明確展現 PUN/PDN 的互補結構。
+Each TG contains the two parallel MOS devices shown in Problem 2. Two TGs use
+4T, and the two inverters generating $\bar A,\bar B$ use another 4T, for 8T total.
+Only the upper path conducts for $A=1$; only the lower path conducts for $A=0$.
+This mutually exclusive selection prevents $B$ and $\bar B$ from being connected
+together. The primary answer remains the preceding static CMOS circuit because
+it explicitly demonstrates complementary PUN/PDN construction.
 
-\section*{參考答案比對、採用理由與來源}
-原始題目：\texttt{homework1.pdf}，EE3032 Introduction to VLSI Design,
-Jin-Fu Li, Fall 2024，共 1 頁。以下參考是使用者原始資料夾中的既有手寫檔案，
-作者與授權均未標示；本解答沒有將其手寫內容當成自己的原創。
+\section*{Sources and method of comparison}
+Original assignment: \texttt{homework1.pdf}, EE3032 Introduction to VLSI Design,
+Jin-Fu Li, Fall 2024, one page. The following pre-existing handwritten documents
+were supplied by the user. No author or license was identified. Their handwritten
+content is not presented as newly authored work here.
 \begin{itemize}
- \item \textbf{參考 A：}\texttt{VLSI HW1 第三題(2)電路畫錯.pdf}，4 頁，
- 第 1 頁是封面。已讀第 2--4 頁的所有解題內容。
- \item \textbf{參考 B：}\texttt{VLSI HW1.pdf}，3 頁。已讀全部解題內容。
+ \item \textbf{Reference A:} a user-supplied four-page HW1 correction/reference,
+ including a cover. All solution content on pages 2--4 was reviewed.
+ \item \textbf{Reference B:} a three-page student HW1 solution. All pages were reviewed.
 \end{itemize}
-\begin{tabular}{p{.10\linewidth}p{.38\linewidth}p{.44\linewidth}}\toprule
-題目&比對結果&本解答採用方式\\\midrule
-1(a)&兩份均保留未化簡的 10T 網路。A 的冗餘支路標成 $\bar z$，
-不符合正相輸入限制；但因吸收律，該支路不影響輸出。&
-依原題正確讀式，先吸收為 $\overline{x+y}$，採 4T NOR。\\
-1(b)&兩份均畫出 12T 網路：PDN 為 $(x+y)(x+z)(y+z)$，邏輯正確。&
-保留 minority 函數與互補原理，因式分解 PDN 為 $xy+z(x+y)$，改成 10T。\\
-2&兩份的循環選擇接線符合原表；B 明畫反相控制，A 較簡略。&
-保留有效接線，明畫 TG 的 n/p gate 與共用反相器，補齊 one-hot 條件與 40T 計數。\\
-3&兩份均判為 XNOR。A 的 TG 互補控制橫線可辨，但上支 MOS 類型的符號不清；
-B 的 static CMOS 結構正確。&
-採獨立推導且與 B 一致的 static CMOS；另重畫明確標示 n/p gate 的完整 TG 版，
-不以 A 的模糊符號斷言其接線錯誤。\\\bottomrule
+The repository's source inventory records the original local-file provenance.
+
+\newpage
+\section*{Reference review and selection rationale}
+\begin{tabular}{p{.09\linewidth}p{.39\linewidth}p{.43\linewidth}}\toprule
+Problem&Reference review&Selected solution\\\midrule
+1(a)&Both retain the unsimplified 10T network. A labels the redundant branch
+with $\bar z$, contrary to the true-literal restriction; absorption makes this
+branch irrelevant to the output.&
+Read the original overbar correctly and simplify to $\overline{x+y}$: a 4T NOR.\\
+1(b)&Both use valid 12T networks with PDN $(x+y)(x+z)(y+z)$.&
+Preserve the minority function, factor the PDN as $xy+z(x+y)$, and use 10T.\\
+2&Both have the correct cyclic selection wiring. B explicitly shows inverted
+controls; A uses more abbreviated notation.&
+Retain the valid wiring; expand the TG gate controls and shared inverters.
+State the one-hot condition and the 40T count.\\
+3&Both identify XNOR. A's complementary control bars can be distinguished, but
+the upper MOS-type symbol is unclear. B's static CMOS structure is valid.&
+Use the independently derived static CMOS circuit, consistent with B. Redraw
+the complete TG alternative with explicit n/p controls; do not infer a wiring
+error from A's ambiguous symbol.\\\bottomrule
 \end{tabular}
 
-\section*{可重現驗證}
-\texttt{verify\_logic.py} 枚舉真值，同時依圖中的 MOS 端點建立導通圖：
-題 1(a) 16 組、題 1(b) 8 組、題 2 有效規格 64 組、題 3 各版本 4 組。
-它檢查 static CMOS 無浮接或電源直通，TG 輸出恰連到指定資料；
-加上反相器與未指定控制碼的檢查，共 100 組案例。
-這是理想二進位開關驗證，不是製程、延遲、動態切換或類比電壓的 HSPICE 模擬。
+\section*{Reproducible verification}
+\texttt{verify\_logic.py} enumerates the input words and builds conducting graphs
+from the MOS terminals in the diagrams: 16 cases for 1(a), 8 for 1(b), 64 specified
+cases for 2, and 4 for each implementation of 3. It checks that static CMOS has
+neither floating outputs nor rail shorts, and that each TG output reaches exactly
+the selected data source. Inverter checks and unspecified-control examples bring
+the total to 100 cases. These are ideal binary-switch checks, not HSPICE process,
+delay, switching-transient, or analog-voltage simulations.
 \end{document}

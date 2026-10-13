@@ -20,7 +20,7 @@
     "3_static_with_input_inverters": 12,
     "3_TG_with_input_inverters": 8
   },
-  "solutions_tex_sha256": "0693b0cfa0aae7426056a70747911ae65cfd3e0b53cdef83461875fd20768049",
+  "solutions_tex_sha256": "a4f413cc6cd4f118debeb791e795016523245f08f8795689070467eb1eae0783",
   "limitations": [
     "No transistor sizing or process-model evaluation",
     "No analog swing, delay, capacitance or switching-transient validation",
