@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-13",
+  "assignment_year": 2024,
+  "artifact_hash_policy": "SHA256; text files canonicalized to LF, binaries unchanged",
+  "original_assignments": [
+    {
+      "path": "2024/assignments/homework1.pdf",
+      "sha256": "46ca699fd7660b0a9da924ee9f12d771425198bc6e0c9eabe992900ccc6577b3",
+      "unchanged_from_original": true
+    },
+    {
+      "path": "2024/assignments/homework2.pdf",
+      "sha256": "537d0e739dd3f94bb076a65f78b2bc80a26716d4efeff517ee12774bc9c2d16d",
+      "unchanged_from_original": true
+    },
+    {
+      "path": "2024/assignments/homework3.pdf",
+      "sha256": "7990d0b7a895468af2392c27b8215b9476e7c63951ab8fbf6a5c87568f94ee84",
+      "unchanged_from_original": true
+    },
+    {
+      "path": "2024/assignments/homework4.pdf",
+      "sha256": "84b51b2b635ef4ea8be605189913eaf65a59a71e2146cb1de8bf58947995e59c",
+      "unchanged_from_original": true
+    }
+  ],
+  "process_model": {
+    "external_path_default": "D:/cic018.l",
+    "sha256": "f0e41de8109a0f0152891268b9b46ff4fb386a5d0807f410b075e1a051cf86fd",
+    "included_in_repository": false
+  },
+  "requested_scope": {
+    "HW1": "analytical CMOS and switch-connectivity verification",
+    "HW2": "analytical answers and supplementary HSPICE verification",
+    "HW3": "transistor SPICE and statistics",
+    "HW4": "pre-layout SPICE only"
+  },
+  "artifact_sha256": {
+    ".gitattributes": "8df22cc43d34bc5cf0e2ae4d1cd11a28ad8073b0e53f3ad51d1d693516d12b32",
+    ".gitignore": "429559f8b323fa05f1d244be0f60a1c9c1d102278fdff142cf1e3a17199adab3",
+    "2024/HW1/README.md": "d0f08dd56b51de0e3bee1ee49198097d4d628adb3e8300cfd3063258cd12f1f8",
+    "2024/HW1/solutions.pdf": "10790a0f968b84646c3a3e98ab33530e7ecf4aa728e0527910091e78a0a7737f",
+    "2024/HW1/solutions.tex": "0693b0cfa0aae7426056a70747911ae65cfd3e0b53cdef83461875fd20768049",
+    "2024/HW1/truth_tables.csv": "72d88ccdc6719ed465311c6a00dcdc32038a224debfe25c0211eaa74753b622f",
+    "2024/HW1/verification.json": "01a5b792fc54edce34cc6dc4d3473de8bee57858a451c865dc1bcd62e6ee3062",
+    "2024/HW1/verify_logic.py": "667f4641678e3237bcae3177a01b4971d195092108cd70177b1cd5fea76e9d1a",
+    "2024/HW2/README.md": "aacabec9a7e40c915b09984b2dfde7da7ec22d53c29520968256a57fdd18ec30",
+    "2024/HW2/analytic_expected.csv": "4e0a7a90cc293814756050a8b93d741ebf3fa1de72c3d4b8f2b0dcad2f7dca42",
+    "2024/HW2/q1_constant_leakage.sp": "cb12777f81976d987174d00794d39e240e3a711fcd26b0fea6f04fc467288b48",
+    "2024/HW2/q1_constant_leakage_measurements.csv": "86e8e3edb541aca749ced0723b09c9c28d695f2fca03607336e257efc5ad08a9",
+    "2024/HW2/q2_cic018_tt.sp": "446ccca4500ee55fc508e7dcf5d5b1b35d984607815e0663d49220d2f38e6527",
+    "2024/HW2/q2_cic018_tt_measurements.csv": "9cbb5c21ec5922233d380d951c560958b8ee329f60044241db607c078538888c",
+    "2024/HW2/q2_constant_resistance.sp": "e08450b0fd19a5037b150bd774902039c017c640c836d3f8c802759d022f0f0a",
+    "2024/HW2/q2_constant_resistance_measurements.csv": "b2013af856b72a6ca7a7090a45cc31606f8c6c41ea18fbaf51b07c557ee44bad",
+    "2024/HW2/reproduce.py": "1c60b3a807b9f3e60ec0490a5117d5680d102561ab7c6421217d940fec72fbf0",
+    "2024/HW2/simulation_status.csv": "1e02321e18ad90b5fef630e3a46dbde22a113e0e6675bceeb84a9c3e72c9c765",
+    "2024/HW2/solution.pdf": "b30621e326d3ff0ae414e704e0b8deac1233fd29f4e45c581b20eb5d042cfb13",
+    "2024/HW2/solution.tex": "60771c4a73705ebd63397f769e3e2e80d68607496b684b5798b29b5f24df93ab",
+    "2024/HW2/validate_results.py": "dbe74d42f815ade9f2663284d04fd18d7fa9a6851ef0f9524722dab80b1f74be",
+    "2024/HW2/validation_checks.csv": "e493c08d914df1680e93a4a3140da62ea8756fd79ec787f963646d74c50b0d9d",
+    "2024/HW2/validation_summary.json": "7c476a001ee424c200efc36d2dc149d6cfaa064ed01cf1a4c7206b1ddf0a603e",
+    "2024/HW3/README.md": "69d12814ea8bc640a8472984a054b2d2a85f7e68ba539b0f85b451f23ef176fe",
+    "2024/HW3/four_bit_multbased_adder.sp": "b128bd47dd6c608fa72bbf84987e1b04c831091f6aa180476f1162f84b037513",
+    "2024/HW3/results/candidates.csv": "f75679630ad63b1b17620c29b6190490af332ab5c97913f16591ef384d5aed3d",
+    "2024/HW3/results/delays.csv": "30363052a3d15b69a632798ac7da67258dd1656390aa8008a132a77247a1174b",
+    "2024/HW3/results/exhaustive_512.csv": "68a634f3b3c77b715ef053e64127d0a922cc92bf52d0e3ca3c63bd5a52adf6ae",
+    "2024/HW3/results/instructor_exact.json": "0a8c0209dd5e75a92d829737289b20b384559936b3eab776cbe89f74b257d224",
+    "2024/HW3/results/settling.csv": "84ab758d29b289898235f21f5dc3052f277a0ef28cb28bdb791b1b5ad7eb17cb",
+    "2024/HW3/results/summary.json": "31bd971e45910b4ccfd7088a3ac68bc3905d62e4623b3739117cf4d87503b40f",
+    "2024/HW3/results/vectors.csv": "dce23dd154396e1b502f4725cfb3f183cbba4ed2eed089490270db555b4536f3",
+    "2024/HW3/results/waveform.csv": "1b04c0448b07fd7c18e490b264fb87c8befb555e8eaae322d16462a4a2e0427b",
+    "2024/HW3/simulate.py": "846c7780a1f7231045b8db70b2d9b037645010994de57c255bfe3a40cb8d35e7",
+    "2024/HW3/solution.pdf": "f2c7edd7116c2116c3a9d6b1d3d4d7dd2bacc81339d88a3055befd56154b7b6e",
+    "2024/HW3/solution.tex": "182394b027df5ff46341f4b808ab4c6222c9fc34b8f14aa6c884468a9c7875e4",
+    "2024/HW3/testbench.sp": "46928b2f092550e0805282f694121cd41072c21802420cac9f3335e1e6357934",
+    "2024/HW4/README.md": "ec52e63bd122d08e5c0720c4ae2f0bfd840cc211bec8aea66bade57aacf71f4f",
+    "2024/HW4/four_bit_multbased_adder.sp": "b128bd47dd6c608fa72bbf84987e1b04c831091f6aa180476f1162f84b037513",
+    "2024/HW4/reproduce.py": "5ea35ad6d770580612c15c9234802eea85c5becc265518b162dfbc435237a18d",
+    "2024/HW4/solution.pdf": "fb9f941b78251a8ed1d637d99992658d9d5048c2792a5c6006b5c0bf9255c70d",
+    "2024/HW4/solution.tex": "96383e76dabd6d610691f3a4e489ab759d0be07cb78c2f969a3e1a46a87d8a2d",
+    "2024/HW4/statistics.json": "c3b97e8f0ba5e03172b9460a658fc3170f65d75a2e2475ef0a767e531c3eea7f",
+    "2024/HW4/testbench.sp": "888413e2e00d0c27b192a21f9278b8ff1e445420b3f694c833167f5d5956ab1b",
+    "2024/HW4/vectors.csv": "c83cebb7aa7fa4e5f8bd9ba6e39485be92e8a56361a52049495c0f7e30620682",
+    "2024/assignments/README.md": "9a4eaa0c93d191838c9302c97faab0e3a6f51299ec52a9f25f18581f61727efc",
+    "2024/assignments/homework1.pdf": "46ca699fd7660b0a9da924ee9f12d771425198bc6e0c9eabe992900ccc6577b3",
+    "2024/assignments/homework2.pdf": "537d0e739dd3f94bb076a65f78b2bc80a26716d4efeff517ee12774bc9c2d16d",
+    "2024/assignments/homework3.pdf": "7990d0b7a895468af2392c27b8215b9476e7c63951ab8fbf6a5c87568f94ee84",
+    "2024/assignments/homework4.pdf": "84b51b2b635ef4ea8be605189913eaf65a59a71e2146cb1de8bf58947995e59c",
+    "2024/assignments/hw3_clarifications.txt": "ff882e36a372518d0caab1422a52da6d5930263cc0794f1f645fb2d0ada0acdb",
+    "2024/assignments/hw3_instructor_testbench.sp": "17b510dd5d3042695e0f65eceb5ebbad0fb4052c04620e061969f4d9505da01a",
+    "2024/assignments/hw4_clarifications.txt": "be935dbf7f94fbab553430e4242bdda05f41cfb0c7ac42e2787f2072d8312ef1",
+    "README.md": "bb8783f3e8e550b2d84211910e35eb0217ef2fe51408cbe6038cc659cba12143",
+    "SOURCES.md": "087cb42e80dc090a66e358bfbf269e362ce4e637b2aa92615154f03b7ddce139",
+    "verify_package.py": "2fa92b09e54c7059529f7f999773edf5bd53406e4bd44d75423e855c6885cb53"
+  }
+}
