@@ -1,6 +1,6 @@
 # HW3 instructor clarifications - English translation
 
-Translation of the [original instructor attachment](hw3_clarifications.txt). The requirements and dated notices are retained, including differing deadline updates; they are not silently reconciled.
+English translation of the instructor attachment supplied in the local course archive. A [plain-text English version](hw3_clarifications.txt) is also provided. The requirements and dated notices are retained, including differing deadline updates; they are not silently reconciled.
 
 ## November 30 clarification
 

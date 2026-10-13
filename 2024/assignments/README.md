@@ -15,8 +15,8 @@ The original PDFs define the assignments. This table describes the requirements 
 - Apply `(X,Y)=(1,5),(15,13),(11,9),(4,8),(3,7),(12,14),(2,15),(6,10)` in order.
 - Supply is 1.8 V, output levels should approach 0 V/1.8 V, minimum W=0.47 um.
 - `energy = average power x 9 ns`; HW3 area is `sum(W_i L_i)` for all transistors.
-- Read the [English clarification translation](hw3_clarifications.en.md); the [original attachment](hw3_clarifications.txt) is retained for provenance. At the user's request, numerical statistics and reproducible checks replace GUI waveform screenshots in this delivery.
+- Read the [English clarification translation](hw3_clarifications.en.md); a [plain-text English version](hw3_clarifications.txt) is also provided. At the user's request, numerical statistics and reproducible checks replace GUI waveform screenshots in this delivery.
 
 ## HW4 area and scope
 
-The [English clarification translation](hw4_clarifications.en.md) specifies a layout rectangle covering all materials, **not** HW3's `sum(W_i L_i)`. The [original attachment](hw4_clarifications.txt) is retained unchanged. No physical layout area or post-layout results are claimed, and previous students' layout values are not reused.
+The [English clarification translation](hw4_clarifications.en.md) specifies a layout rectangle covering all materials, **not** HW3's `sum(W_i L_i)`. A [plain-text English version](hw4_clarifications.txt) is also provided. No physical layout area or post-layout results are claimed, and previous students' layout values are not reused.

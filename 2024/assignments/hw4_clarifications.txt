@@ -1,20 +1,33 @@
-12/17:
-    area 算法為長*寬
-12/22:
-    作業繳交資料:
-        1. PDF(含layout、DRC、LVS、pre-sim&pos-sim wave截圖)
-        2. PEX後的sp檔
-        3. 填寫Excel表(area(um^2)、energy(p))
-    給分標準:
-        1. 繳交資料皆有，且沒有被扣分，保底 10 分。
-        2. 沒layout、DRC、LVS、pre-sim&pos-sim wave截圖、文字說明、計算過程者0分。
-        3. 邏輯 1 在1.6~1.8V，邏輯 0 在0~0.2 V，違反者，一個訊號扣一分，最多扣5分。
-            註:glitch不會扣分，即輸出結果最後由達到邏輯 1或邏輯 0即可。
-        4. 在layout上用尺量長寬並截圖，感恩
-        5. 只要評比area以及energy，不用delay
-        6. 在排名結束後才會扣分。
-12/23:
-        電路的架構與尺寸可以更改，但SP要更改，pre-sim&pos-sim wave截圖
-12/25:
-        請注意算area時，計算面積的長方形需要涵蓋"所有使用的材料"，如NW、NIMP、POLY與MATAL等。
-        HW4繳交基本分為15分，剩下5分為排名分數。
+HW4 Instructor Clarifications - English Translation
+
+Translated from the instructor attachment supplied in the local course archive.
+Dated updates are preserved, including the later change in base credit.
+
+December 17
+Area is length times width.
+
+December 22
+Required submission:
+1. PDF containing layout, DRC, LVS, and pre/post-simulation waveform screenshots.
+2. SPICE file after PEX.
+3. Excel table with area in um^2 and energy in p-units, as labeled in the source.
+
+Grading rules:
+1. Complete deliverables with no deductions receive 10 base points.
+2. Missing layout, DRC, LVS, pre/post-simulation waveform screenshots, written
+   explanation, or calculations results in zero points.
+3. Logic 1 must be within 1.6-1.8 V; logic 0 within 0-0.2 V. Each violating
+   signal loses one point, up to five points. Glitches do not incur deductions
+   if the output eventually reaches a valid logic level.
+4. Measure layout length and width with a ruler and include a screenshot.
+5. Only area and energy are ranked, not delay.
+6. Deductions are applied after ranking.
+
+December 23
+Architecture and dimensions may change, but update the SPICE file accordingly.
+Include pre/post-simulation waveform screenshots.
+
+December 25
+The area rectangle must cover ALL used materials, including NW, NIMP, POLY,
+and metal (spelled MATAL in the source).
+HW4 base credit is 15 points; the remaining 5 points come from ranking.

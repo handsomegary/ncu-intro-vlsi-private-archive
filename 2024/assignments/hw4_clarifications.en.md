@@ -1,6 +1,6 @@
 # HW4 instructor clarifications - English translation
 
-Translation of the [original instructor attachment](hw4_clarifications.txt). Dated updates and grading rules are retained, including the later change in base credit.
+English translation of the instructor attachment supplied in the local course archive. A [plain-text English version](hw4_clarifications.txt) is also provided. Dated updates and grading rules are retained, including the later change in base credit.
 
 ## December 17
 

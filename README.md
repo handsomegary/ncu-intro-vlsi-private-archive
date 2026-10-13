@@ -24,7 +24,7 @@ Each homework README explains the requirements, design choices, file purposes, r
 
 Existing supplied answers were reviewed, then checked against independent derivations, truth tables, and simulations. Adoption and correction decisions appear in the reports and [SOURCES.md](SOURCES.md). Original assignment PDFs remain unchanged. Previous students' layouts and PEX are not presented as results of this design.
 
-Original instructor clarification attachments are retained for provenance. English translations are linked from the assignment [README](2024/assignments/README.md).
+Instructor clarifications are provided in English in both Markdown and plain-text formats, linked from the assignment [README](2024/assignments/README.md). Their source originals remain in the local course archive.
 
 ## Verification results
 

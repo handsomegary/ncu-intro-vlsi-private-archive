@@ -1,31 +1,33 @@
-#1使用我們給的Testbench
-    *輸入輸出訊號要使用我們給的名稱，ex Testbench上的輸入輸出需與你的設計電路的輸入輸出名稱一致，其餘內部訊號可以不用一樣，下面有我們提供的SP檔
-#2邏輯1要1.8V，邏輯0要0V
-#3 W最小為0.47um
-#4評分方式: 比較area and energy(energy=power x T, T是9n)
-#5作業形式(將以下內容壓縮，名稱:VLSI_HW3_學號_名字): 
-    a)PDF(波型、文字說明 和 架構，可提供單一cell,transistor-level，以及circuit-level)
-    b)Source Code
-#6繳交期限: 12/4 (星期三)   23:59
+HW3 Instructor Clarifications - English Translation
 
-附件:
-1.
-HW3_testbench_User Guide.pptx (350.2 KB)
-2.
-testbench.sp (950 bytes)
+Translated from the instructor attachment supplied in the local course archive.
+Differing deadline notices are preserved, not silently reconciled.
 
-Homework 3 繳交說明
+November 30 clarification
+1. Use the supplied testbench. Circuit input/output names must match the
+   testbench. Internal names may differ.
+2. Logic 1 must be 1.8 V; logic 0 must be 0 V.
+3. Minimum transistor width W is 0.47 um.
+4. Grading compares area and energy: energy = power x T, T = 9 ns.
+5. Compress the following into an archive named VLSI_HW3_studentID_name:
+   a. A PDF with waveforms, written explanation, and architecture. Individual
+      cells, transistor-level and circuit-level diagrams may be included.
+   b. Source code.
+6. Deadline: Wednesday, December 4, 23:59.
 
-1. Due day 改為12/1
-2. Supply voltage =1.8V
-3. Output signal swing should be 1.8V
+Attachments:
+1. HW3_testbench_User Guide.pptx (350.2 KB).
+2. testbench.sp (950 bytes).
 
-Homework 3 補充說明
+Homework 3 submission notice
+1. Due date changed to December 1.
+2. Supply voltage is 1.8 V.
+3. Output signal swing should be 1.8 V.
 
-量worst-case delay及平均功率時請依照作業給的輸入順序給輸入pattern
+Homework 3 additional clarification
+Use the input-pattern order in the assignment when measuring worst-case delay
+and average power.
 
-Homework 3 說明
-
-1. 要量平均功率
-2.要附上Hspice source code及驗證波形圖
-
+Homework 3 instructions
+1. Measure average power.
+2. Include HSPICE source code and verification waveforms.

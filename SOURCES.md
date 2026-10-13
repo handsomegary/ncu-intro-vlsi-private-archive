@@ -1,13 +1,13 @@
 # Source review and decisions
 
-Review date: 2026-10-13. The supplied **Fall 2024** PDFs and instructor clarifications define the requirements. Code from other years is used only as an architectural reference. All authored reports and explanations are in English; original instructor attachments retain their original language and have labeled English translations.
+Review date: 2026-10-13. The supplied **Fall 2024** PDFs and instructor clarifications define the requirements. Code from other years is used only as an architectural reference. All repository content is in English, including the translated instructor clarifications. The four original assignment PDFs are already in English and remain unchanged.
 
 ## Original assignments
 
 - `2024/assignments/homework1.pdf` through `homework4.pdf`: copied byte for byte, without rewriting the assignments.
 - `hw3_instructor_testbench.sp`: original PWL sources, I/O names, 9 ns duration, CIN=0.
-- `hw3_clarifications.txt`: original instructor attachment specifying W>=0.47 um, 1.8 V swing, energy=Pavg times 9 ns, and required patterns. See the [English translation](2024/assignments/hw3_clarifications.en.md).
-- `hw4_clarifications.txt`: original full layout/DRC/LVS/PEX requirements. See the [English translation](2024/assignments/hw4_clarifications.en.md). This delivery follows the user's narrower request for pre-layout `.sp` files.
+- `hw3_clarifications.txt`: English translation of the instructor attachment specifying W>=0.47 um, 1.8 V swing, energy=Pavg times 9 ns, and required patterns. See the [English translation](2024/assignments/hw3_clarifications.en.md).
+- `hw4_clarifications.txt`: English translation of the full instructor layout/DRC/LVS/PEX requirements. See the [English translation](2024/assignments/hw4_clarifications.en.md). This delivery follows the user's narrower request for pre-layout `.sp` files.
 
 ## Existing local answers
 
