@@ -1,0 +1,74 @@
+{
+  "exam": "2021 final",
+  "year_basis": "archive folder, no printed date",
+  "original_container_pages": 3,
+  "printed_whole_question_points": [
+    15,
+    10,
+    10,
+    10,
+    20,
+    15,
+    25
+  ],
+  "printed_total": 105,
+  "answerable_original": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q7a",
+    "Q7b",
+    "Q7c"
+  ],
+  "missing_and_skipped": [
+    "Q6 numerical premises",
+    "Q6a",
+    "Q6b",
+    "Q6c numerical redesign",
+    "original Q7d-Q7f"
+  ],
+  "secondary_unverified_supplement": [
+    "Q7d",
+    "Q7e",
+    "Q7f"
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考考題.pdf",
+      "sha256": "64ee54848424de59260ae7fb30a90b76fe119ac725bf398f29c86af053395ba0",
+      "role": "original photographed fragments + secondary typed supplement"
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考考題.docx",
+      "sha256": "cfa8419d79fd6378b40fe7eccd15b9eb95a1df029e73190ab266087421506ed0",
+      "role": "original photographed fragments + secondary typed supplement"
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末 參考答案.pdf",
+      "sha256": "2514bbce4f89aca8c56d9c175b3666f5d0bca5e22ab077d8af83a6dfef834452",
+      "role": "corrected student answers + later commentary"
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末 參考答案.docx",
+      "sha256": "a4aa0034065e8ee400d36c82b572e19de8f8eae84f5f5262e85d6cda6eb1449c",
+      "role": "corrected student answers + later commentary"
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考答案卷-1.jpg",
+      "sha256": "0869d7f34b4e80ecf9a1985a02e090f2282ccd55495e4a61507e3a20af254bed",
+      "role": "corrected student answers + later commentary"
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考答案卷-2.jpg",
+      "sha256": "f56674ce39b3f5668a733cae555430ae920a5818f3176f4e97e5c606696c9b40",
+      "role": "corrected student answers + later commentary"
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考答案卷-3.jpg",
+      "sha256": "1eb7d093a18710b0ccb1f8adbe0cf7a5c30971f7bf3b87b0ed923a7414d25603",
+      "role": "corrected student answers + later commentary"
+    }
+  ]
+}
