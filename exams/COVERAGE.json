@@ -49,6 +49,19 @@
       "missing": "Q1-Q3 and Q4 opening; Q4 tail preserved without inferred answer"
     },
     {
+      "year": 2022,
+      "exam": "midterm",
+      "questions": 6,
+      "points": 100,
+      "original_prompt_pages": 2,
+      "original": "2022/midterm/original-exam.pdf",
+      "exam_tex": "2022/midterm/exam.tex",
+      "exam_pdf": "2022/midterm/exam.pdf",
+      "solution_tex": "2022/midterm/solution.tex",
+      "solution_pdf": "2022/midterm/solution.pdf",
+      "status": "complete"
+    },
+    {
       "year": 2021,
       "exam": "midterm",
       "questions": 6,
