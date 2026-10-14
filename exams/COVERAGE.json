@@ -374,6 +374,19 @@
     },
     {
       "year": 2009,
+      "exam": "midterm",
+      "questions": 6,
+      "points": 105,
+      "original_prompt_pages": 3,
+      "status": "complete",
+      "original": "2009/midterm/original-exam.pdf",
+      "exam_tex": "2009/midterm/exam.tex",
+      "exam_pdf": "2009/midterm/exam.pdf",
+      "solution_tex": "2009/midterm/solution.tex",
+      "solution_pdf": "2009/midterm/solution.pdf"
+    },
+    {
+      "year": 2009,
       "exam": "final",
       "questions": [
         1,
