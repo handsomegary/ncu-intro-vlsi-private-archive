@@ -333,6 +333,19 @@
       "solution_pdf": "2012/final/solution.pdf"
     },
     {
+      "year": 2010,
+      "exam": "final",
+      "questions": 8,
+      "points": 130,
+      "original_prompt_pages": 3,
+      "status": "complete",
+      "original": "2010/final/original-exam.pdf",
+      "exam_tex": "2010/final/exam.tex",
+      "exam_pdf": "2010/final/exam.pdf",
+      "solution_tex": "2010/final/solution.tex",
+      "solution_pdf": "2010/final/solution.pdf"
+    },
+    {
       "year": 2007,
       "exam": "midterm",
       "questions": 7,
