@@ -1,0 +1,19 @@
+{
+  "source_images": [
+    "final (1).jpg",
+    "final (2).jpg",
+    "final (3).jpg"
+  ],
+  "source_sha256": [
+    "91cffec4caf7de44d1cfcf73c8d27565a9a2890d7dfe7d8d937498e65896419b",
+    "28afc6e3c401b608ecb5119c8f0e63c2ed5defaa4fa7deab6489bfbbfab8eb8e",
+    "c67f77a857e9ca25499898e54112b3822d33792f8ff2f83f3649576d7fd33d57"
+  ],
+  "embedded_DCT_stream_sha256": [
+    "91cffec4caf7de44d1cfcf73c8d27565a9a2890d7dfe7d8d937498e65896419b",
+    "28afc6e3c401b608ecb5119c8f0e63c2ed5defaa4fa7deab6489bfbbfab8eb8e",
+    "c67f77a857e9ca25499898e54112b3822d33792f8ff2f83f3649576d7fd33d57"
+  ],
+  "image_bytes_preserved": true,
+  "note": "Hashes use native decodedDCT streams; pypdf page.images convenienceexport reencodesJPEG headers."
+}
