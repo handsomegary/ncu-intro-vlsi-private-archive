@@ -52,7 +52,8 @@ def left_pdn(a: int, b: int, c: int, phi: int = 1) -> list[tuple[str, str]]:
 def q3() -> dict:
     cd, cg = F(1, 10), F(1)
     # Polarity-preserving repair: remove the middle footer, making an
-    # ordinary static inverter. Its n/p gates remain on z; right P gate too.
+    # ordinary static inverter. Rewire its pMOS gate from bar(phi) to z;
+    # both n/p gates then use z, as does the right P input gate.
     z_drain_count, z_gate_count = 3, 3
     cz = z_drain_count*cd + z_gate_count*cg
     # These are the explicit NODE parasitic capacitances in Q3(b).
@@ -91,46 +92,58 @@ def q3() -> dict:
     assert student_case['ground_path']
     save_csv('q3_pdn_charge_sharing.csv', rows)
 
-    # A possible ordering, not a numerical waveform: the middle footer/input
-    # pull-down can act before the first complex PDN has discharged z.
-    # Repeat a previous F=1 result with F=1 again in the next evaluation.
-    trace = [
-        {'event': 'previous_evaluation_settled_F1', 'phi': 1, 'z': 0,
-         'original_middle_Y': 1, 'static_repair_Y': 1, 'right_X': 1,
-         'original_middle_condition': 'pMOS on; Y high'},
-        {'event': 'next_precharge', 'phi': 0, 'z': 1,
-         'original_middle_Y': 1, 'static_repair_Y': 0, 'right_X': 0,
-         'original_middle_condition': 'pMOS off and footer off; Y floats holding prior high'},
-        {'event': 'evaluation_footer_on_before_z_falls', 'phi': 1, 'z': 1,
-         'original_middle_Y': 0, 'static_repair_Y': 0, 'right_X': 0,
-         'original_middle_condition': 'z-gated nMOS and phi footer discharge Y'},
-        {'event': 'new_evaluation_settled_F1', 'phi': 1, 'z': 0,
-         'original_middle_Y': 1, 'static_repair_Y': 1, 'right_X': 1,
-         'original_middle_condition': 'z falls; middle pMOS recharges Y'},
-    ]
-    assert [r['original_middle_Y'] for r in trace] == [1, 1, 0, 1]
-    assert [r['static_repair_Y'] for r in trace[1:]] == [0, 0, 1]
+    # Original middle gate: clocked precharge/footer bar(phi), data z.
+    # Exhaustively check its opposite phase, then the static repair.
+    trace=[]
+    for a,b,c in itertools.product([0,1],repeat=3):
+        majority=int(a*b or a*c or b*c)
+        for phi in [0,1]:
+            z=1 if phi==0 else 1-majority
+            p_on=(1-phi)==0
+            n_ground=(1-phi)==1 and z==1
+            assert p_on != n_ground
+            original=int(p_on)
+            repaired=1-z
+            assert original==phi and repaired==(majority if phi else 0)
+            trace.append({'clock_reading':'bar(phi)','ABC':f'{a}{b}{c}','event':'precharge' if phi==0 else 'evaluation',
+                'phi':phi,'bar_phi':1-phi,'z':z,'original_middle_Ybar':original,
+                'static_repair_Ybar':repaired,'right_X':majority if phi else 0,
+                'original_middle_condition':'bar_phi precharges high' if phi else 'z and bar_phi pull down'})
+    # Touching clock wire obscures the original overbar. Under an unbarred
+    # reading, early middle discharge can occur before the complex PDN falls.
+    for a,b,c in itertools.product([0,1],repeat=3):
+        majority=int(a*b or a*c or b*c)
+        for phi in [0,1]:
+            z=1 if phi==0 else 1-majority
+            original=1-phi  # precharged high, then early irreversible discharge
+            repaired=1-z
+            trace.append({'clock_reading':'phi (possible early-discharge order)','ABC':f'{a}{b}{c}',
+                'event':'precharge' if phi==0 else 'evaluation','phi':phi,'bar_phi':1-phi,'z':z,
+                'original_middle_Ybar':original,'static_repair_Ybar':repaired,
+                'right_X':majority if phi else 0,'original_middle_condition':
+                'precharge pMOS on' if phi==0 else 'initial z=1 discharges Ybar; pMOS remains off'})
     save_csv('q3_repeat_cycle_trace.csv', trace)
     # Weak keepers change capacitance after part (b); do not reuse CZ=3.3fF
     # for a numerical post-keeper calculation without new device sizes.
     keepers = {
         'z_high_keeper': {'device': 'weak pMOS', 'drain': 'z', 'source_body': 'VDD',
-                          'gate': 'Y', 'feedback': 'Y=not(z) from repaired middle static inverter'},
+                          'gate': 'Ybar', 'feedback': 'Ybar=not(z) from repaired middle static inverter'},
         'X_low_keeper': {'device': 'weak nMOS', 'drain': 'X', 'source_body': 'GND',
                          'gate': 'XB', 'feedback': 'XB=not(X) from an added static inverter'},
-        'Y': 'No keeper needed after removing the middle footer; Y is statically driven',
+        'Ybar': 'No keeper needed after both pMOS gate rewiring and footer removal; output statically driven',
     }
     return {
         'source_pages': {'printed': 1, 'student_Q3': 5},
-        'source_clocks': {'left_N_dynamic': 'phi', 'middle_nMOS_footer': 'phi',
+        'source_clocks': {'left_N_dynamic': 'phi', 'middle_pMOS_and_footer': 'bar(phi)',
                           'right_P_dynamic_precharge_evaluation': 'bar(phi)'},
+        'middle_clock_scan_limit': 'The possible overbar touches the footer gate wire; bar(phi) is the selected transcription. An unbarred phi reading is also analyzed. The static repair is valid for both.',
         'left_PDN_function': 'F=AB+C(A+B)=AB+AC+BC (three-input majority)',
         'left_dynamic_node': 'z=not(F) after evaluation, precharged high',
-        'original_outputs_at_settled_evaluation': 'X=Y=F; original middle may glitch on a repeated cycle',
-        'part_a_repair': 'Remove/tie-ON the middle footer; keep both middle inverter gates on raw z',
+        'original_outputs_at_settled_evaluation': 'X=F; original middle Ybar is forced high while phi=1, independent of F',
+        'part_a_repair': 'Rewire middle pMOS gate from bar(phi) to z AND remove/tie-ON footer; both inverter gates use z',
         'right_branch': 'Keep its pMOS input on raw z; falling input is the correct P-dynamic monotonicity',
-        'repaired_outputs': 'X=Y=F; both are reset low and can only rise during evaluation',
-        'student_part_a': 'Inserting an inverter before a middle N-domino gate reverses its settled output to Y=not(F); that is not the polarity-preserving repair',
+        'repaired_outputs': 'X=Ybar=F; both reset low and can only rise during evaluation',
+        'student_part_a': 'Student input inverter plus changing middle clock to phi is a valid alternate N-domino repair giving Ybar=not(F); its polarity differs from the selected static repair',
         'CZ_count_before_part_c': {'drains': ['left precharge pMOS', 'top nMOS A', 'top nMOS C'],
                                  'gates': ['middle static-inverter nMOS', 'middle static-inverter pMOS', 'right input pMOS'],
                                  'Cd_per_device_fF': float(cd), 'Cg_per_device_fF': float(cg), 'CZ_fF': float(cz)},
@@ -301,7 +314,7 @@ def main() -> None:
     (OUT/'q3_q4_verification.json').write_text(
         json.dumps(result, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
     print('Q3 graph: all 8 inputs match majority; sharing-only ABC=001 or100, both safe')
-    print('Q3 repeat-cycle original middle glitch reproduced as a possible logical ordering')
+    print('Q3 original middle opposite-clock phase checked on all8 inputs; static repair verified')
     print('Q4 classroom widths: thresholds1.0/.5V and resistance-only delay3RC')
     print('Q4 literal gate load24/7 C: delay72/7 RC; any sizing has joint lower bound24/7 RC>3RC')
     print('Q4 equal added feedback illustration: hysteresis increases .5V to227/230V')

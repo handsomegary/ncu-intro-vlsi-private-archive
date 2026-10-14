@@ -8,7 +8,7 @@ Independent derivation precedes comparison with student work. Clear errors are r
 |---|---|
 | Q1 | Correct physical mechanisms; DPL full-expression complement verified for all8 words. Complementary inputs are explicit. |
 | Q2 | Multioutput domino uses three separate dynamic nodes sharing an evaluation footer, with earlier carries driving gates.128 arbitrary inputs pass without an unstated propagate/generate exclusion. |
-| Q3 | Original middle clocked inverter can fall then rise on a repeated cycle; static replacement preserves Y=F. Student inserted inverter reverses polarity. ABC=101 is a legitimate discharge, not sharing-only. |
+| Q3 | Original middle pMOS is a clocked precharge device and shares the barred clock with its footer; Y-bar is forced high during left-gate evaluation. The static repair rewires its pMOS gate and removes its footer. The student's clock-change/input-inverter repair is valid with the explicitly complemented output. ABC=101 is a legitimate discharge, not sharing-only. |
 | Q4 | Original C is N1 gate capacitance. Fixed external-C answer is identified as a classroom convention; literal feedback gate load makes3RC infeasible. Auxiliary series current uses a sum of resistances. |
 | Q5 | Four rail-tied isolation devices omitted by the student are part of the physical extraction. Uncontacted metal/poly crossings remain insulated. |
 | Q6 | Original NAND/NAND/NOR path yields constant Y1, XOR/XOR path yields parity. Clock skew has two approved readings. Original physical paths remain in settling analysis; optimized NP circuit is separately verified. |

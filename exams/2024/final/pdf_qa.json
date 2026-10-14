@@ -9,10 +9,10 @@
   "typeset_raster_image_count": 0,
   "original_page_content_and_images_verified_unchanged": true,
   "artifact_sha256": {
-    "exam.tex": "36e269db692d27ab92762164d1f970e846db0fce6313a779fca866b98efdcb90",
-    "exam.pdf": "7c793a3e05b735ca631f1a46c013a783e95e5f9050ae2af14091c819f56921ad",
-    "solution.tex": "f867e51de05867e5c18c75e2024d361820c28e0c030d51928b9890122b189fc3",
-    "solution.pdf": "7aac4a8c3505c0ffd635fdd338b54f369c5a5b8e60f5bf203bec2b97a4d8d2c2",
+    "exam.tex": "3d2e5a36dcb111c2f70c4ec1d2a24d05fc564592407e4bd894a9ac26d179ff71",
+    "exam.pdf": "9faf08350fb9437bb7ebcf7e12151985f5c58853328de35048d14aa5d351e4b8",
+    "solution.tex": "83018ec5a0197d9c80f2bcd38182753d83304ffc2eb71f47bc69918cf24e9b11",
+    "solution.pdf": "cd2c06eeed9f435d1f4e9beea71f6b49709f71f31af0b493e3446c9ea4deb54c",
     "original-exam.pdf": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170"
   }
 }

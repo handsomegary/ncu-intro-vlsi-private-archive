@@ -211,26 +211,24 @@ Each dynamic node $d_i$ is precharged high and drives an output inverter $c_i=\b
 The student's three separately footed domino stages implement the recurrence, but a shared footer makes the requested multioutput structure explicit. Do not connect raw dynamic drain nodes by bidirectional propagate pass devices without additional constraints: independent p/g words can back-discharge a previously false carry. All 128 independent p/g/c0 combinations are checked; no unprinted p/g exclusivity constraint is used.
 
 \newpage\section*{3. Dynamic gates, sharing and retention (15 points)}
-\subsection*{(a) Preserve the source's output polarity}
+\subsection*{(a) Read the middle clock and output bar}
 The left n-type dynamic gate has pull-down function
 \[F=AB+C(A+B),\qquad Z=\bar F\ \text{during evaluation}.\]
-Both the middle clocked inverter and the right p-type dynamic branch nominally produce $Y=X=\bar Z=F$. The right branch correctly accepts a falling 1-to-0 dynamic input; its clock is $\bar\phi$, while the middle footer is $\phi$.
+The middle output is printed $\bar Y$; call that physical node $Y_b$ to distinguish the label from its Boolean value. Its upper pMOS and lower footer use $\bar\phi$, not Z. For $\phi=0$, the left gate precharges Z high while the middle stage evaluates low. For $\phi=1$, the middle pMOS precharges $Y_b$ high and its footer is off, independent of F. Thus it does not evaluate the first gate's data in the intended evaluation phase. The right p-type branch correctly accepts falling Z and gives X=F. The middle clock overbar touches its gate wire in this photograph; a barred clock is the selected transcription, but the touching stroke cannot establish that glyph definitively. If that touching stroke instead denotes only the wire and the label is unbarred, the middle becomes a same-phase n-dynamic cascade: an initially high Z can discharge it before Z falls, and it cannot recharge during evaluation. It is still invalid, and the static repair below works for either clock reading.
 
-The middle stage can glitch across repeated cycles. If the previous evaluated F=1 left Y high, the next precharge makes Z high but switches off the middle pMOS and footer, leaving Y floating. At the next evaluation, initially high Z enables its pull-down before Z may fall, so Y can fall and then rise again. ``Dynamic gates can never cascade'' is too broad; the polarity and precharge state decide this failure.
-
-A simple polarity-preserving repair is to remove the middle footer (or tie it permanently on), making an ordinary static inverter driven by Z. It actively resets Y low whenever Z is precharged high and produces a monotonic rise if F becomes true. Keep the right p-type dynamic branch driven by raw Z.
+One valid repair makes the middle stage a static inverter: \textbf{rewire the upper pMOS gate from the clock to Z, and remove the footer} (or tie it permanently on). Both inverter gates then use Z. It resets $Y_b=0$ while Z is precharged high and gives $Y_b=F$ in evaluation. Keep the right p-type branch on raw Z. The prompt does not impose another Boolean output specification; this repair chooses $Y_b=X=F$.
 \begin{center}\begin{tikzpicture}[scale=.82,font=\small]
 \mos{2}{4}{\phi}{1}\rail{2.25}{4.5}{V_{DD}}
 \draw(.25,3.5)--(3.25,3.5);\fill(2.25,3.5)circle(1.5pt);\node[above]at(1.3,3.5){$Z$};
 \mos{0}{3}{A}{0}\mos{0}{2}{B}{0}\mos{3}{3}{C}{0}\mos{2}{2}{A}{0}\mos{4}{2}{B}{0}
 \draw(2.25,2.5)--(4.25,2.5);\fill(3.25,2.5)circle(1.5pt);\node[above]at(3.7,2.5){$y$};\node[right]at(.25,2.5){$x$};
 \draw(.25,1.5)--(4.25,1.5);\mos{2}{1}{\phi}{0}\ground{2.25}{.5}
-\mos{7}{3.8}{Z}{1}\rail{7.25}{4.3}{V_{DD}}\mos{7}{2.5}{Z}{0}\draw(7.25,3)--(7.25,3.3);\draw(7.25,3.15)--(8.25,3.15)node[right]{$Y$};
+\mos{7}{3.8}{Z}{1}\rail{7.25}{4.3}{V_{DD}}\mos{7}{2.5}{Z}{0}\draw(7.25,3)--(7.25,3.3);\draw(7.25,3.15)--(8.25,3.15)node[pos=.55,above]{$\bar Y$};
 \ground{7.25}{2}
 \mos{10}{4}{\bar\phi}{1}\rail{10.25}{4.5}{V_{DD}}\mos{10}{3}{Z}{1}\mos{10}{1.8}{\bar\phi}{0}\draw(10.25,2.3)--(10.25,2.5)--(11.1,2.5)node[right]{$X$};\ground{10.25}{1.3}
 \draw(2.25,3.5)--(5.75,3.5);\draw(5.75,2.5)--(5.75,3.8)--(6.25,3.8);\draw(5.75,2.5)--(6.25,2.5);\fill(5.75,3.5)circle(1.5pt);\draw(5.75,3.5)--(9,3.5)--(9,3)--(9.25,3);
 \end{tikzpicture}\end{center}
-The student instead adds an input inverter and changes the middle pMOS into clocked precharge. That produces a valid n-type domino topology, but changes its output to $\bar F$ unless another inverter restores polarity. Its first schematic correction must therefore be checked against the intended original outputs, not accepted solely because it looks like domino.
+The student's alternate inserts an inverter between Z and the middle nMOS and changes the middle clock to $\phi$. That is also valid n-type domino: its rising F input discharges $Y_b$, giving $Y_b=\bar F$ after evaluation. Retain it as a valid alternate with this explicit polarity; add an output inverter only if the selected specification requires F. ``Dynamic gates cannot cascade'' is too broad: phase and input monotonicity determine validity.
 
 \subsection*{(b) Enumerate sharing-only states before adding capacitances}
 Z connects three drain capacitances (precharge pMOS and top A/C nMOS) and three driven gate capacitances (the static middle inverter's two gates and right input pMOS gate):
@@ -242,18 +240,18 @@ Treat the supplied internal-node parasitic capacitances as total nodal values. I
 Thus the stated half-supply switching criterion is not crossed by these sharing-only events. The student's ABC=101 case is a real C--A pull-down path; its F=1 voltage must discharge, so a combined $C_x+C_y$ charge-sharing ratio is not a valid argument for that word. If the source's nodal values were instead additional wire capacitances, adding the corresponding diffusion terms still leaves both sharing-only ratios above one half; the saved alternative is labeled, not silently substituted.
 
 \subsection*{(c) Longer clock intervals require retention}
-With precharge/evaluation clock held for a long time, a floating dynamic rail can leak across a logic threshold; purely capacitive storage does not provide indefinite retention. Add a weak pMOS feedback keeper from VDD to Z, controlled by static Y=~Z. Add a weak nMOS keeper from X to VSS, controlled by a static inverter's $\bar X$. These hold the otherwise floating high Z and low X states respectively. The evaluating network must overcome its weak keeper until the feedback disables it; arbitrary device strengths cannot be inferred from the prompt.
+With precharge/evaluation clock held for a long time, a floating dynamic rail can leak across a logic threshold; purely capacitive storage does not provide indefinite retention. Add a weak pMOS feedback keeper from VDD to Z, controlled by static $Y_b=\bar Z$. Add a weak nMOS keeper from X to VSS, controlled by a static inverter's $\bar X$. These hold the otherwise floating high Z and low X states respectively. The evaluating network must overcome its weak keeper until the feedback disables it; arbitrary device strengths cannot be inferred from the prompt.
 \begin{center}\begin{tikzpicture}[scale=.65,font=\small]
 \mos{2}{4}{\phi}{1}\rail{2.25}{4.5}{V_{DD}}
 \draw(.25,3.5)--(3.25,3.5);\fill(2.25,3.5)circle(1.5pt);\node[above]at(1.3,3.5){$Z$};
 \mos{0}{3}{A}{0}\mos{0}{2}{B}{0}\mos{3}{3}{C}{0}\mos{2}{2}{A}{0}\mos{4}{2}{B}{0}
 \draw(2.25,2.5)--(4.25,2.5);\fill(3.25,2.5)circle(1.5pt);\node[above]at(3.7,2.5){$y$};\node[right]at(.25,2.5){$x$};
 \draw(.25,1.5)--(4.25,1.5);\mos{2}{1}{\phi}{0}\ground{2.25}{.5}
-\mos{7}{3.8}{Z}{1}\rail{7.25}{4.3}{V_{DD}}\mos{7}{2.5}{Z}{0}\draw(7.25,3)--(7.25,3.3);\draw(7.25,3.15)--(8.25,3.15)node[right]{$Y$};
+\mos{7}{3.8}{Z}{1}\rail{7.25}{4.3}{V_{DD}}\mos{7}{2.5}{Z}{0}\draw(7.25,3)--(7.25,3.3);\draw(7.25,3.15)--(8.25,3.15)node[pos=.55,above]{$\bar Y$};
 \ground{7.25}{2}
 \mos{10}{4}{\bar\phi}{1}\rail{10.25}{4.5}{V_{DD}}\mos{10}{3}{Z}{1}\mos{10}{1.8}{\bar\phi}{0}\draw(10.25,2.3)--(10.25,2.5)--(11.1,2.5)node[right]{$X$};\ground{10.25}{1.3}
 \draw(2.25,3.5)--(5.75,3.5);\draw(5.75,2.5)--(5.75,3.8)--(6.25,3.8);\draw(5.75,2.5)--(6.25,2.5);\fill(5.75,3.5)circle(1.5pt);\draw(5.75,3.5)--(9,3.5)--(9,3)--(9.25,3);
-\mos{4.5}{4.75}{Y}{1}\rail{4.75}{5.25}{V_{DD}}\draw(4.75,4.25)--(4.75,3.5);\node[above,font=\scriptsize]at(4.3,5.65){weak keeper};
+\mos{4.5}{4.75}{\bar Y}{1}\rail{4.75}{5.25}{V_{DD}}\draw(4.75,4.25)--(4.75,3.5);\node[above,font=\scriptsize]at(4.3,5.65){weak keeper};
 \mos{10}{.3}{\bar X}{0}\draw(10.25,.8)--(11.9,.8)--(11.9,2.5)--(10.25,2.5);\ground{10.25}{-.2}\node[right]at(10.6,.3){weak keeper};
 \mos{13}{3}{X}{1}\mos{13}{1.6}{X}{0}\rail{13.25}{3.5}{V_{DD}}\draw(13.25,2.1)--(13.25,2.5)--(14.0,2.5)node[right]{$\bar X$};\ground{13.25}{1.1}
 \draw(11.1,2.5)--(12,2.5);\draw(12,1.6)--(12,3)--(12.25,3);\draw(12,1.6)--(12.25,1.6);
@@ -579,7 +577,7 @@ The classroom comparison favors R5 as more vulnerable to combinational logic fau
 Assuming equal register cells/exposure and comparable electrical/timing masking, that supports a higher combinational-error contribution at R5. The actual total soft-error rate also includes direct register strikes, pulse attenuation/capture windows, capacitance, layout and radiation conditions; none are specified, so an unconditional numerical SER ranking is not determined.
 
 \section*{Source comparison, checks and reproduction}
-Q1's useful mechanisms are retained with corrected physical explanations. Q2's recurrence is independently implemented with explicit shared multioutput structure. Q3 repairs the exact middle-stage precharge/polarity issue and enumerates valid sharing-only states. Q4 separates fixed-C grading convention from the literal capacitive-load inconsistency. Q5 includes all14 layout crossings. Q6 preserves the original NOR/XOR gates and both approved skew readings, corrects buffer placement, and gives a functional NP implementation.
+Q1's useful mechanisms are retained with corrected physical explanations. Q2's recurrence is independently implemented with explicit shared multioutput structure. Q3 repairs the exact middle-stage clock-phase/polarity issue and enumerates valid sharing-only states. Q4 separates fixed-C grading convention from the literal capacitive-load inconsistency. Q5 includes all14 layout crossings. Q6 preserves the original NOR/XOR gates and both approved skew readings, corrects buffer placement, and gives a functional NP implementation.
 
 Run \texttt{python verify\_dynamic\_schmitt.py} and \texttt{python verify\_logic\_timing.py}. Saved CSV/JSON files give ideal-graph, capacitance and timing evidence. No process model is needed. Both reports are standalone pdfLaTeX sources; every figure uses editable TikZ and no scan images. The retained question allocations sum to110points, as printed.
 

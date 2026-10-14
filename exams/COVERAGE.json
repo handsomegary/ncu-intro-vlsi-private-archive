@@ -47,6 +47,19 @@
       "solution_pdf": "2023/midterm/solution.pdf",
       "status": "available_questions_complete",
       "missing": "Q1-Q3 and Q4 opening; Q4 tail preserved without inferred answer"
+    },
+    {
+      "year": 2021,
+      "exam": "midterm",
+      "questions": 6,
+      "points": 100,
+      "original_prompt_pages": 2,
+      "original": "2021/midterm/original-exam.pdf",
+      "exam_tex": "2021/midterm/exam.tex",
+      "exam_pdf": "2021/midterm/exam.pdf",
+      "solution_tex": "2021/midterm/solution.tex",
+      "solution_pdf": "2021/midterm/solution.pdf",
+      "status": "complete"
     }
   ],
   "other_archive_exams": "pending individual selection and original/source checks"
