@@ -1,0 +1,2012 @@
+{
+  "access": "private, repository owner only",
+  "assets": [
+    {
+      "public_old_path": "2013/assignments/homework1.pdf",
+      "private_path": "homework/2013/assignments/homework1.pdf",
+      "sha256": "f10c5c107f247cd233de54855e0bc76f024301480bba97a1a4588094be80baac",
+      "bytes": 15688
+    },
+    {
+      "public_old_path": "2013/assignments/homework2.pdf",
+      "private_path": "homework/2013/assignments/homework2.pdf",
+      "sha256": "9cf70011bf1523685cfa989b216da691d817a3c6dd9621c53e98d01644fe30fc",
+      "bytes": 19678
+    },
+    {
+      "public_old_path": "2013/assignments/homework3.pdf",
+      "private_path": "homework/2013/assignments/homework3.pdf",
+      "sha256": "2c1b3d1be71fda40ecd3ffb830fa35707c2bb3f0028b71b8019ca15149163a82",
+      "bytes": 9098
+    },
+    {
+      "public_old_path": "2015/assignments/homework1.pdf",
+      "private_path": "homework/2015/assignments/homework1.pdf",
+      "sha256": "5f12fd2ce7f66b02adf4eb6aa2897c3bb1b9843c1359583ffe166ce6c5431f63",
+      "bytes": 15688
+    },
+    {
+      "public_old_path": "2015/assignments/homework2.pdf",
+      "private_path": "homework/2015/assignments/homework2.pdf",
+      "sha256": "50486dbce58ff01494e7e325ce140cf57545458d5416eb15aef1587b7cefb2cd",
+      "bytes": 19677
+    },
+    {
+      "public_old_path": "2015/assignments/homework3.pdf",
+      "private_path": "homework/2015/assignments/homework3.pdf",
+      "sha256": "2e839750e3f5c44dab208db4689b14cee99f8d9203064d53372c5c3459203ece",
+      "bytes": 8769
+    },
+    {
+      "public_old_path": "2015/assignments/homework4.pdf",
+      "private_path": "homework/2015/assignments/homework4.pdf",
+      "sha256": "cb83588d255dc52cf7d226f16bdc2436ac570e907fcb9b8f211376b5daed4f72",
+      "bytes": 16200
+    },
+    {
+      "public_old_path": "2016/assignments/homework3.pdf",
+      "private_path": "homework/2016/assignments/homework3.pdf",
+      "sha256": "6be83e172ba28cfe3bce6b97bcd101afd9c2480ba90714c27d70080bcdb2004a",
+      "bytes": 8768
+    },
+    {
+      "public_old_path": "2017/assignments/homework1.pdf",
+      "private_path": "homework/2017/assignments/homework1.pdf",
+      "sha256": "9d6dec85a4fd1a9de6c045c8447e61ce88d09a270cc89c39612a9b042b8b29be",
+      "bytes": 19891
+    },
+    {
+      "public_old_path": "2017/assignments/homework2.pdf",
+      "private_path": "homework/2017/assignments/homework2.pdf",
+      "sha256": "9cd5d02fda2b755a2f501d47867c29bd7f63a8a2527ebfdd7527b105d4cffe6e",
+      "bytes": 16286
+    },
+    {
+      "public_old_path": "2017/assignments/homework3.pdf",
+      "private_path": "homework/2017/assignments/homework3.pdf",
+      "sha256": "04d3cd0cdee1fc2a0ca0488e16a0ff9b8154c67587d9fc734b5967adeaed1602",
+      "bytes": 8497
+    },
+    {
+      "public_old_path": "2017/assignments/homework4.pdf",
+      "private_path": "homework/2017/assignments/homework4.pdf",
+      "sha256": "a8fe77fbc1c73087b71667d66801ab89703356e6b140d13a5dfd707ad432b84c",
+      "bytes": 14253
+    },
+    {
+      "public_old_path": "2018/assignments/homework1.pdf",
+      "private_path": "homework/2018/assignments/homework1.pdf",
+      "sha256": "a3b82c6a88e072396c8270edc137c507a3f53141cd92bb2aebc97fa8f29b6654",
+      "bytes": 19462
+    },
+    {
+      "public_old_path": "2018/assignments/homework2.pdf",
+      "private_path": "homework/2018/assignments/homework2.pdf",
+      "sha256": "f070cd4e3876fc5cf558f4afb8cc92237169745ca30081cff12c6a593d412c87",
+      "bytes": 16773
+    },
+    {
+      "public_old_path": "2019/assignments/homework2.pdf",
+      "private_path": "homework/2019/assignments/homework2.pdf",
+      "sha256": "fba75f1a9985fd6bf7a9ec7a28015be7805625701f14fb49b1bc6bb1ea5dcfa6",
+      "bytes": 16659
+    },
+    {
+      "public_old_path": "2020/assignments/homework1.pdf",
+      "private_path": "homework/2020/assignments/homework1.pdf",
+      "sha256": "20da1b86b10c0d6254af5deaecedaa53c2bcb526da554b9dc2f52ab5ce415d34",
+      "bytes": 15415
+    },
+    {
+      "public_old_path": "2020/assignments/homework2.pdf",
+      "private_path": "homework/2020/assignments/homework2.pdf",
+      "sha256": "dace54f8bb0e1f4af6f6470954720d8c5d3411e7806ba5ddbc54f3370cc63d19",
+      "bytes": 14507
+    },
+    {
+      "public_old_path": "2020/assignments/homework3.pdf",
+      "private_path": "homework/2020/assignments/homework3.pdf",
+      "sha256": "04dd7a61b676f76e5dd8523d6b959800582fdd0e7d8173cfe32493eeffffe860",
+      "bytes": 4739
+    },
+    {
+      "public_old_path": "2020/assignments/homework4.pdf",
+      "private_path": "homework/2020/assignments/homework4.pdf",
+      "sha256": "ebada170c815ff3ff478370ffae6329c5abef1e8eb5d69777532162687f1f3d5",
+      "bytes": 11775
+    },
+    {
+      "public_old_path": "2020/assignments/homework4_version2.pdf",
+      "private_path": "homework/2020/assignments/homework4_version2.pdf",
+      "sha256": "ebada170c815ff3ff478370ffae6329c5abef1e8eb5d69777532162687f1f3d5",
+      "bytes": 11775
+    },
+    {
+      "public_old_path": "2021/assignments/homework1.pdf",
+      "private_path": "homework/2021/assignments/homework1.pdf",
+      "sha256": "3de7e17b66b89624c86d8285d124e8185f0045d9f4b06bd51863d119c620f11d",
+      "bytes": 29459
+    },
+    {
+      "public_old_path": "2021/assignments/homework2.pdf",
+      "private_path": "homework/2021/assignments/homework2.pdf",
+      "sha256": "fc0bf6510726bd472dd5979de6781c646bcee3b26120a4fcc64bb19b18110034",
+      "bytes": 28106
+    },
+    {
+      "public_old_path": "2021/assignments/homework3.pdf",
+      "private_path": "homework/2021/assignments/homework3.pdf",
+      "sha256": "c8b17f2d1ad3de1ed0e322393e5b3a7d6fd0bf9871b35d7b22734f82e66d4efd",
+      "bytes": 11046
+    },
+    {
+      "public_old_path": "2021/assignments/homework4.pdf",
+      "private_path": "homework/2021/assignments/homework4.pdf",
+      "sha256": "cb8b2f35e268cae534c830cd62567327c2b20e43ca3dbfabf10e3a70cc53f797",
+      "bytes": 11797
+    },
+    {
+      "public_old_path": "2023/assignments/homework1.pdf",
+      "private_path": "homework/2023/assignments/homework1.pdf",
+      "sha256": "88c4579e080f5ddfd5ddf8dfac48650e312c4a9da4d96e2de5ae56cc8a7a0068",
+      "bytes": 21126
+    },
+    {
+      "public_old_path": "2023/assignments/homework2.pdf",
+      "private_path": "homework/2023/assignments/homework2.pdf",
+      "sha256": "eb05a15cf127f2dc8cdac21b13631b785ecc6a7b7868b85e26f417184da797f0",
+      "bytes": 28906
+    },
+    {
+      "public_old_path": "2023/assignments/homework3.pdf",
+      "private_path": "homework/2023/assignments/homework3.pdf",
+      "sha256": "c600c7c7174bc1629ec44a9a48bbcfcea005b38c324e1a042dd5a9bb45081ac0",
+      "bytes": 11663
+    },
+    {
+      "public_old_path": "2023/assignments/homework4.pdf",
+      "private_path": "homework/2023/assignments/homework4.pdf",
+      "sha256": "72d8409bf4fef4ecc4d5a467e873425c2d276971c78f9db62e15581af5a90fc5",
+      "bytes": 9869
+    },
+    {
+      "public_old_path": "2024/assignments/homework1.pdf",
+      "private_path": "homework/2024/assignments/homework1.pdf",
+      "sha256": "46ca699fd7660b0a9da924ee9f12d771425198bc6e0c9eabe992900ccc6577b3",
+      "bytes": 21093
+    },
+    {
+      "public_old_path": "2024/assignments/homework2.pdf",
+      "private_path": "homework/2024/assignments/homework2.pdf",
+      "sha256": "537d0e739dd3f94bb076a65f78b2bc80a26716d4efeff517ee12774bc9c2d16d",
+      "bytes": 21351
+    },
+    {
+      "public_old_path": "2024/assignments/homework3.pdf",
+      "private_path": "homework/2024/assignments/homework3.pdf",
+      "sha256": "7990d0b7a895468af2392c27b8215b9476e7c63951ab8fbf6a5c87568f94ee84",
+      "bytes": 24718
+    },
+    {
+      "public_old_path": "2024/assignments/homework4.pdf",
+      "private_path": "homework/2024/assignments/homework4.pdf",
+      "sha256": "84b51b2b635ef4ea8be605189913eaf65a59a71e2146cb1de8bf58947995e59c",
+      "bytes": 10218
+    },
+    {
+      "public_old_path": "2024/assignments/hw3_clarifications.txt",
+      "private_path": "homework/2024/assignments/hw3_clarifications.txt",
+      "sha256": "46f4111c311ffb1c2e68c9a3fe25bccb66340c32763d1d0738a182d6a60ec317",
+      "bytes": 1248
+    },
+    {
+      "public_old_path": "2024/assignments/hw3_instructor_testbench.sp",
+      "private_path": "homework/2024/assignments/hw3_instructor_testbench.sp",
+      "sha256": "17b510dd5d3042695e0f65eceb5ebbad0fb4052c04620e061969f4d9505da01a",
+      "bytes": 950
+    },
+    {
+      "public_old_path": "2024/assignments/hw4_clarifications.txt",
+      "private_path": "homework/2024/assignments/hw4_clarifications.txt",
+      "sha256": "2cc10ecb40acb5efbc702bca06aa353140d9c9a22407921b28558d4395a21b5b",
+      "bytes": 1406
+    },
+    {
+      "public_old_path": "exams/2007/final/original-exam.pdf",
+      "private_path": "exams/2007/final/original-exam.pdf",
+      "sha256": "53466dcc846963b6bbedf6906aec26502a0ed6b2c9b482d2533af01c3b21bcc8",
+      "bytes": 66876
+    },
+    {
+      "public_old_path": "exams/2007/midterm/original-exam.pdf",
+      "private_path": "exams/2007/midterm/original-exam.pdf",
+      "sha256": "a862db63343c6754fa87b0224ac68a9375c407681dab5af42535d7968016a263",
+      "bytes": 34944
+    },
+    {
+      "public_old_path": "exams/2008/final/original-exam.pdf",
+      "private_path": "exams/2008/final/original-exam.pdf",
+      "sha256": "2160c74b82a8203483b2913649bc5e9abdeb147d5bda60880480f670572aae39",
+      "bytes": 91973
+    },
+    {
+      "public_old_path": "exams/2008/midterm/original-exam.pdf",
+      "private_path": "exams/2008/midterm/original-exam.pdf",
+      "sha256": "10bca0b02b8e18257187eb633e95f48571f7e585878ae7fb609ba07b45de9a9a",
+      "bytes": 68623
+    },
+    {
+      "public_old_path": "exams/2009/final/original-exam.pdf",
+      "private_path": "exams/2009/final/original-exam.pdf",
+      "sha256": "8ad3ece107ccd8b61bfb11826fc669c6cbd3c9ba05c63400a130aff171d0ec14",
+      "bytes": 23667
+    },
+    {
+      "public_old_path": "exams/2009/midterm/original-exam.pdf",
+      "private_path": "exams/2009/midterm/original-exam.pdf",
+      "sha256": "394432f845fcd153d1a6b2357814543a0b6b4a35fff374fc67d51eea0130217f",
+      "bytes": 2096452
+    },
+    {
+      "public_old_path": "exams/2010/final/original-exam.pdf",
+      "private_path": "exams/2010/final/original-exam.pdf",
+      "sha256": "56b3561b04c10aab07d8e82392f238e336178bd20805fb53b836066216f42fe9",
+      "bytes": 103257
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-exam.pdf",
+      "private_path": "exams/2011/midterm/original-exam.pdf",
+      "sha256": "4f25fc1325df3e39f26ba7b45f85e70eb3a5183ae9116d354d12e2071c095ce3",
+      "bytes": 5403074
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-pages/panel-1.jpg",
+      "private_path": "exams/2011/midterm/original-pages/panel-1.jpg",
+      "sha256": "2098f8d5d8381f451715632933279cc9a7e2a5efc210265c22eb93e05813f50c",
+      "bytes": 541042
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-pages/panel-2.jpg",
+      "private_path": "exams/2011/midterm/original-pages/panel-2.jpg",
+      "sha256": "d2ce204196b3f35cd52eadacf90e3ab65325192068ba6a46c02f16441cb400e6",
+      "bytes": 968415
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-pages/panel-3.jpg",
+      "private_path": "exams/2011/midterm/original-pages/panel-3.jpg",
+      "sha256": "7c1d4bef3c3faf049dbc5112b356a57366d4c97ffb0e3186e3304978f8834860",
+      "bytes": 897621
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-pages/panel-4.jpg",
+      "private_path": "exams/2011/midterm/original-pages/panel-4.jpg",
+      "sha256": "6b9777ff1318137a0415a7f8a0a077ec39ec7924dbfc456d49cdb9a73678209a",
+      "bytes": 611629
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-pages/panel-5.jpg",
+      "private_path": "exams/2011/midterm/original-pages/panel-5.jpg",
+      "sha256": "553fc8511bbab36867f760b30cb8e27c277808c28b5cfefe1ff451fb452f515d",
+      "bytes": 855648
+    },
+    {
+      "public_old_path": "exams/2011/midterm/original-pages/panel-6.jpg",
+      "private_path": "exams/2011/midterm/original-pages/panel-6.jpg",
+      "sha256": "ab9cc477b08049d41000d7f3479def550979a95f3fd483d5562061c213656c97",
+      "bytes": 444071
+    },
+    {
+      "public_old_path": "exams/2012/final/original-exam.pdf",
+      "private_path": "exams/2012/final/original-exam.pdf",
+      "sha256": "878571215d0c1d077ddd8cf45e2e57f7f62170b81e2e3fb102c89dc9449276f1",
+      "bytes": 8291587
+    },
+    {
+      "public_old_path": "exams/2012/midterm/original-exam.pdf",
+      "private_path": "exams/2012/midterm/original-exam.pdf",
+      "sha256": "ab0b76432345215a9d6ec9ea9c572f312cfba63ec610c61841a587b6fd9d5b76",
+      "bytes": 3184958
+    },
+    {
+      "public_old_path": "exams/2013/final/original-exam.pdf",
+      "private_path": "exams/2013/final/original-exam.pdf",
+      "sha256": "fc4c1e3a273938976e9cae395cb398925fbae64b102b6f7a445e75e6f46b6d2f",
+      "bytes": 247965
+    },
+    {
+      "public_old_path": "exams/2013/final/original-pages/page-1.jpg",
+      "private_path": "exams/2013/final/original-pages/page-1.jpg",
+      "sha256": "a3921af6a09b390b67a79691fdd542040c44a23e11bf444e5527f7418f60f16b",
+      "bytes": 80665
+    },
+    {
+      "public_old_path": "exams/2013/final/original-pages/page-2.jpg",
+      "private_path": "exams/2013/final/original-pages/page-2.jpg",
+      "sha256": "0987c1e4a2b9c93dee474f3519f05c129103df27da8a00fe67630df2da79dbff",
+      "bytes": 57958
+    },
+    {
+      "public_old_path": "exams/2013/final/original-pages/page-3.jpg",
+      "private_path": "exams/2013/final/original-pages/page-3.jpg",
+      "sha256": "3efd43345200585975e89d1c6f69d957d313e0e09f2ea02651a94117912dcb01",
+      "bytes": 57841
+    },
+    {
+      "public_old_path": "exams/2016/final/original-exam.pdf",
+      "private_path": "exams/2016/final/original-exam.pdf",
+      "sha256": "c15769816ca3288bde8e47dfb49698eeb839db2755941d8fd3ec287b9026031f",
+      "bytes": 178882
+    },
+    {
+      "public_old_path": "exams/2018/final/original-exam.pdf",
+      "private_path": "exams/2018/final/original-exam.pdf",
+      "sha256": "6c8c6194e7e2d00cd74b98696e91832e7c4b535f08315b769225a5997600b81a",
+      "bytes": 5536426
+    },
+    {
+      "public_old_path": "exams/2021/final/original-exam.pdf",
+      "private_path": "exams/2021/final/original-exam.pdf",
+      "sha256": "64ee54848424de59260ae7fb30a90b76fe119ac725bf398f29c86af053395ba0",
+      "bytes": 1161566
+    },
+    {
+      "public_old_path": "exams/2021/midterm/original-exam.pdf",
+      "private_path": "exams/2021/midterm/original-exam.pdf",
+      "sha256": "eeaf156caba79acb77ddd685f59472b75972fe761d88ab2a1492b6bf09a219ce",
+      "bytes": 301923
+    },
+    {
+      "public_old_path": "exams/2022/midterm/original-exam.pdf",
+      "private_path": "exams/2022/midterm/original-exam.pdf",
+      "sha256": "d85b07949ed720b3837d5345ac7da59d038c89324d3ed0407d1bd0e91781bb50",
+      "bytes": 797252
+    },
+    {
+      "public_old_path": "exams/2023/final/original-exam.pdf",
+      "private_path": "exams/2023/final/original-exam.pdf",
+      "sha256": "0e367de4671f18321e4332d028b0c9c9e9a7a2aa6ef7741668e6bdaf34304971",
+      "bytes": 574368
+    },
+    {
+      "public_old_path": "exams/2023/midterm/original-exam.pdf",
+      "private_path": "exams/2023/midterm/original-exam.pdf",
+      "sha256": "f4f87411990863413a10caf6b744d3da887812bc8d7fd59847e8e30da6e1636e",
+      "bytes": 82244
+    },
+    {
+      "public_old_path": "exams/2024/final/original-exam.pdf",
+      "private_path": "exams/2024/final/original-exam.pdf",
+      "sha256": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170",
+      "bytes": 2338952
+    },
+    {
+      "public_old_path": "exams/2024/midterm/original-exam.pdf",
+      "private_path": "exams/2024/midterm/original-exam.pdf",
+      "sha256": "d891dedaa48694e323901d393bd4a8e50ae79595479bab72c2bea1bd81d5a9d5",
+      "bytes": 1796939
+    }
+  ],
+  "original_exam_provenance": {
+    "exams/2007/final": {
+      "year": 2007,
+      "exam": "final",
+      "printed_percentages": [
+        26,
+        10,
+        14,
+        20,
+        15,
+        10,
+        10
+      ],
+      "printed_total": 105,
+      "sources": [
+        {
+          "role": "authoritative_two_page_original",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2007\\final\\final.pdf",
+          "sha256": "53466dcc846963b6bbedf6906aec26502a0ed6b2c9b482d2533af01c3b21bcc8"
+        },
+        {
+          "role": "ungraded_student_three_pages",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2007\\final\\answer.pdf",
+          "sha256": "16ca8da408a39a681e4d11b285ef78559d19df7a0a4a89cfec693c31def23b37"
+        },
+        {
+          "role": "ungraded_student_separate_sheet",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2007\\final\\answer.jpg",
+          "sha256": "1eae3584cf83178fdace051f8c6568e294168298458acc6e0380706bca21a8e7"
+        }
+      ],
+      "notes": [
+        "Q4 duty cycle not supplied; evaluation-window bound and symbolic frequency are principal",
+        "Q5 full-expression complement requires explicit negative-output handling",
+        "Q7 separate minimum timing data absent",
+        "Source annotations are ungraded and do not override printed connections"
+      ],
+      "primary_references": [
+        {
+          "title": "NCU Introduction to VLSI Chapter 7: Sequential Circuits",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch07.pdf",
+          "slide": 9,
+          "role": "qualitative fixed-feedback latch write-strength condition; original layout remains authoritative"
+        }
+      ]
+    },
+    "exams/2007/midterm": {
+      "year": 2007,
+      "exam": "midterm",
+      "printed_term": "Fall 2007",
+      "original_source": "2007/midterm/midterm.pdf",
+      "original_sha256": "a862db63343c6754fa87b0224ac68a9375c407681dab5af42535d7968016a263",
+      "original_pages": 3,
+      "question_allocation": [
+        40,
+        10,
+        20,
+        10,
+        10,
+        10,
+        10
+      ],
+      "points_sum": 110,
+      "student_sources": [
+        "2007/midterm/answer.pdf",
+        "2007/midterm/answer (1).jpg",
+        "2007/midterm/answer (2).jpg",
+        "2007/midterm/answer (3).jpg"
+      ],
+      "student_sources_redistributed": false,
+      "preservation": "Original PDF byte copy, full3 pages; standalone source/solution vector figures, no raster embed.",
+      "student_source_sha256": {
+        "2007/midterm/answer.pdf": "881da14277306b10e6ff044aed54f38e5c2ae5411ae2a5c82895bfcc2412a3cf",
+        "2007/midterm/answer (1).jpg": "6065417b469a6a02698f6d5a2a2f99a1922a5e012fd33739db7e40a008361170",
+        "2007/midterm/answer (2).jpg": "a94b1f0429625ea6c4f240f567ccd88600bb107a03cda91c62c6394e4bca68f7",
+        "2007/midterm/answer (3).jpg": "b0b7beed7420c3c3c92ee20b790bf34cb92c31cd12ebf7b5eb2bfa199db1420c"
+      },
+      "reviewed_student_pages": 5,
+      "student_sets_distinct": true
+    },
+    "exams/2008/final": {
+      "year": 2008,
+      "exam": "final",
+      "canonical_source": "2008/final/final.pdf",
+      "sha256": "2160c74b82a8203483b2913649bc5e9abdeb147d5bda60880480f670572aae39",
+      "original_pdf_byte_identical": true,
+      "year_evidence": "Fall 2008 printed footer; handwritten 2009 annotation disregarded",
+      "answer_sets": [
+        {
+          "set": "single supplied set",
+          "paths": [
+            "answer.pdf",
+            "final-answer.pdf"
+          ],
+          "sha256": "71ee6167fcfdc5205889b851f54130c9190523226d75a556d6ea54eb40746437",
+          "exact_duplicate": true,
+          "photo_pairs": [
+            {
+              "paths": [
+                "answer (1).jpg",
+                "final-answer (1).jpg"
+              ],
+              "sha256": "4322c1a5b97587ac4b6ee71a0e8e5d482927c1f9f0a5c2484e17cfe40a0bfa74"
+            },
+            {
+              "paths": [
+                "answer (2).jpg",
+                "final-answer (2).jpg"
+              ],
+              "sha256": "14c809bbde0a2bb33f0faaefb90fd0eea1bf42703e3d1660e8b948c170c7bdf8"
+            }
+          ]
+        }
+      ],
+      "source_typos": [
+        "Q8(b) references Figure 6(c); the actual two mux latch drawings are in right panel (b).",
+        "Figure 6 caption repeats low-level although the upper latch is low-level and the lower is high-level."
+      ],
+      "unprovided_parameters": [
+        "Q4 evaluation duty",
+        "Q5 tccq",
+        "Q6 Vtn, |Vtp| and feedback channel lengths"
+      ],
+      "graph_evidence": "Q7(a): a native 190-white-pixel gap was independently confirmed by a second reader; no image alteration."
+    },
+    "exams/2008/midterm": {
+      "year": 2008,
+      "season": "Spring",
+      "exam": "midterm",
+      "course": "EE332 Introduction to VLSI",
+      "original": {
+        "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\2008期中考-1.pdf",
+        "sha256": "5d5956eb1495269b283091689552718ece538a19eb6d906735deedc9081a68ed",
+        "bytes": 1186418,
+        "total_pages": 36,
+        "used_original_pages": [
+          1,
+          2
+        ],
+        "published_only_actual_question_pages": true,
+        "excluded_pages": "3-6 are matching student answers; 7-36 contain unrelated years or notes."
+      },
+      "original_extract": {
+        "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-13\\c-users-user-downloads-introduction-to-2\\work\\exams\\2008-midterm-package\\original-exam.pdf",
+        "sha256": "10bca0b02b8e18257187eb633e95f48571f7e585878ae7fb609ba07b45de9a9a",
+        "bytes": 68623,
+        "pages": 2,
+        "extraction": "pypdf first-two-page extraction; PDF container rewritten; decoded original content and images preserved.",
+        "page_checks": [
+          {
+            "source_pdf_page": 1,
+            "extracted_page": 1,
+            "decoded_content_sha256": "92989685850878102ea9624fe0a5ecf9903aef19a9ea5120eddbed38c691bc89",
+            "image_count": 1,
+            "page_content_preserved": true
+          },
+          {
+            "source_pdf_page": 2,
+            "extracted_page": 2,
+            "decoded_content_sha256": "258d9ec93bc1b906251cd2dc74d606eb98bcbb432bda8d7d17f278322a65921a",
+            "image_count": 1,
+            "page_content_preserved": true
+          }
+        ]
+      },
+      "native_photo_crosschecks": [
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\midterm (1).jpg",
+          "sha256": "0aa3c11ad7ff8e066daa3a199f00b30e944058e3807f916abbd5ef870e6059ca",
+          "bytes": 227573,
+          "original_printed_page": 1,
+          "annotations": "Handwritten study ink is visible; reconstruction uses printed content only."
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\midterm (2).jpg",
+          "sha256": "a046352b9f06924d3ffc28daa541f21ac73cfa6e0121b48eba2d1c66ef55763a",
+          "bytes": 196864,
+          "original_printed_page": 2,
+          "annotations": "Handwritten study ink is visible; reconstruction uses printed content only."
+        }
+      ],
+      "graded_student_reference": {
+        "source": "2008期中考-1.pdf",
+        "pdf_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "booklet_page_order": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "cover_pdf_page": 6,
+        "overall_mark": 67,
+        "matching_basis": "Question numbers, circuit, taper chain, sizing and full-adder table match the two original pages.",
+        "scope": "Fallible comparison only; grades do not establish correctness; student identity pages remain local."
+      },
+      "ungraded_student_reference": {
+        "duplicate_image_pairs": [
+          {
+            "primary": {
+              "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\answer (1).jpg",
+              "sha256": "34f8510f03c3b401c9c607afd2ac2e8ffbb1fa01e066a9bab5f1451851b837c7",
+              "bytes": 158091
+            },
+            "duplicate": {
+              "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\mid-answer (1).jpg",
+              "sha256": "34f8510f03c3b401c9c607afd2ac2e8ffbb1fa01e066a9bab5f1451851b837c7",
+              "bytes": 158091
+            },
+            "byte_identical": true
+          },
+          {
+            "primary": {
+              "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\answer (2).jpg",
+              "sha256": "e665ba1012f05866e2304c0c28955605a4716fc065c722364d7c4b5b15f68999",
+              "bytes": 128562
+            },
+            "duplicate": {
+              "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\mid-answer (2).jpg",
+              "sha256": "e665ba1012f05866e2304c0c28955605a4716fc065c722364d7c4b5b15f68999",
+              "bytes": 128562
+            },
+            "byte_identical": true
+          }
+        ],
+        "duplicate_pdfs": [
+          {
+            "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\answer.pdf",
+            "sha256": "a30bf4a52888227b74fef76aa09588ad73d7a847897ff3aa24d8dd950000d514",
+            "bytes": 121564
+          },
+          {
+            "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\mid-answer.pdf",
+            "sha256": "a30bf4a52888227b74fef76aa09588ad73d7a847897ff3aa24d8dd950000d514",
+            "bytes": 121564
+          }
+        ],
+        "duplicate_pdf_bytes_identical": true,
+        "matching_basis": "Q1 function, Q2 circuit/fanout, Q3 taper metric, Q4 sizing and Q5 forward full-adder match.",
+        "corrections": "Preserve the correct fanout-aware delays and forward adder equations; qualify broad Q1 claims and supply full transistor expansion and integer-stage correction."
+      },
+      "primary_context": [
+        {
+          "title": "Jin-Fu Li, Fabrication of CMOS Integrated Circuits, Chapter 3",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch03.pdf",
+          "checked": "2026-10-14",
+          "slides": [
+            37,
+            41
+          ],
+          "use": "Antenna charging and qualitative threshold/leakage tradeoff only; no unprovided numerical process characterization."
+        }
+      ],
+      "source_decisions": [
+        "Printed footer establishes Spring 2008; the mixed-year compilation is never treated as one exam.",
+        "Q2 printed output gates are OR and AND with no output bubbles. O0 is steady constant 1; preserve the original physical network and distinguish physical path arc sums from sensitizable edges.",
+        "Q2 balanced numerical mean delays require Rp = Rn. General Rp/Rn formulas are included because Q2 does not state a mobility ratio. Dual-Vt selection is conditional on quantified slack and is not a unique global optimum.",
+        "Q3 uses the printed eta = (PT-PL)/PT, an intermediate-load overhead fraction. Integer N and recomputed beta preserve the actual load.",
+        "Q4 brackets the first two of three inverters. Alpha = 1 and 2 both meet T = 6RC; alpha = 1 minimizes the modeled switching power.",
+        "Q5 is a forward full adder. The printed final row is 111 -> s = 1, co = 1; the photo circle is annotation. The graded booklet instead solves an inverse relation and is corrected.",
+        "Q5 prints (10%), while the preceding questions total 90 points. Preserve the percentage mark and interpret it as the remaining ten points only for the coverage total."
+      ],
+      "publication": "Only the authentic two-page original, reconstructed exam, independent solutions and verification evidence are published; references remain local."
+    },
+    "exams/2009/final": {
+      "year": 2009,
+      "exam": "final",
+      "canonical_source": "2009/final/final.pdf",
+      "sha256": "8ad3ece107ccd8b61bfb11826fc669c6cbd3c9ba05c63400a130aff171d0ec14",
+      "original_pdf_byte_identical": true,
+      "duplicate_sources": [
+        "2009/2009/final/final.pdf",
+        "2009/2009期末考-1.pdf"
+      ],
+      "year_evidence": "Original Fall2009 footer",
+      "student_answer_status": "No corresponding student answer located in supplied2009 directory",
+      "question7_overbar": "Covers entireAB+C+DE, visually verified; bare OCR text is incorrect",
+      "reference_scope": "Original source controls all connectivity. No cross-year student answers used."
+    },
+    "exams/2009/midterm": {
+      "year": 2009,
+      "exam": "midterm",
+      "printed_term": "Fall 2009",
+      "originals": [
+        {
+          "archive_path": "2009/midterm/midterm (1).jpg",
+          "sha256": "72197bda99f21a651c6e5c7670060f3a3c48e73e6bf177168e49bbc0829dc634",
+          "dimensions": [
+            910,
+            1280
+          ]
+        },
+        {
+          "archive_path": "2009/midterm/midterm (2).jpg",
+          "sha256": "5b317f8c43f90bef3b5c5a3cea1cb28ac29440b080711e993841678bf86fb9bc",
+          "dimensions": [
+            910,
+            1280
+          ]
+        },
+        {
+          "archive_path": "2009/midterm/midterm (3).jpg",
+          "sha256": "97fed0e4c8c9d1f9c7ef067ea3d74b50c6bc54cb2dc87116a5151dbec943edc2",
+          "dimensions": [
+            910,
+            1280
+          ]
+        }
+      ],
+      "source_review": "All three printed pages and incidental notes read. Matching mixed compilation pages7-9 checked; only canonical photos redistributed.",
+      "student_comparison": "Incidental notes on originals; no separate matching graded answer found.",
+      "points": [
+        30,
+        10,
+        10,
+        30,
+        10,
+        15
+      ],
+      "total_points": 105,
+      "reference": "https://pubs.aip.org/avs/jva/article/38/3/031202/1023659/Tutorial-on-forming-through-silicon-vias"
+    },
+    "exams/2010/final": {
+      "year": 2010,
+      "exam": "final",
+      "printed_term": "Fall 2010",
+      "original_source": "2010/final/final.pdf",
+      "original_sha256": "56b3561b04c10aab07d8e82392f238e336178bd20805fb53b836066216f42fe9",
+      "original_pages": 3,
+      "points": [
+        30,
+        15,
+        15,
+        15,
+        15,
+        10,
+        15,
+        15
+      ],
+      "points_sum": 130,
+      "student_source": "2010/final/answer.pdf",
+      "reviewed_student_pdf_pages": 12,
+      "student_redistributed": false,
+      "comparison_limits": "Multiple graded booklets; independent original-first derivation.",
+      "layout_independent_contact_reviews": 2,
+      "student_source_sha256": "092fefb94c644b3acf44dba8b66b7a420b03e820c3586314f0bac3b12b0748ae",
+      "reviewed_student_booklets": 6,
+      "reviewed_student_cover_scores": [
+        113,
+        110,
+        77,
+        76,
+        30,
+        39
+      ],
+      "grader_scores_are_not_correctness_proof": true
+    },
+    "exams/2011/midterm": {
+      "year": 2011,
+      "exam": "midterm",
+      "printed_question_points": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        10
+      ],
+      "total_points": 110,
+      "source_physical_pages": 3,
+      "original_photo_panels": 6,
+      "student_solutions_found": false,
+      "sources": [
+        {
+          "role": "original_question_panel",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\midterm (1).jpg",
+          "package_file": "original-pages\\panel-1.jpg",
+          "sha256": "2098f8d5d8381f451715632933279cc9a7e2a5efc210265c22eb93e05813f50c",
+          "native_pixels": [
+            1858,
+            970
+          ]
+        },
+        {
+          "role": "original_question_panel",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\midterm (2).jpg",
+          "package_file": "original-pages\\panel-2.jpg",
+          "sha256": "d2ce204196b3f35cd52eadacf90e3ab65325192068ba6a46c02f16441cb400e6",
+          "native_pixels": [
+            1793,
+            1473
+          ]
+        },
+        {
+          "role": "original_question_panel",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\midterm (3).jpg",
+          "package_file": "original-pages\\panel-3.jpg",
+          "sha256": "7c1d4bef3c3faf049dbc5112b356a57366d4c97ffb0e3186e3304978f8834860",
+          "native_pixels": [
+            1864,
+            1444
+          ]
+        },
+        {
+          "role": "original_question_panel",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\midterm (4).jpg",
+          "package_file": "original-pages\\panel-4.jpg",
+          "sha256": "6b9777ff1318137a0415a7f8a0a077ec39ec7924dbfc456d49cdb9a73678209a",
+          "native_pixels": [
+            1800,
+            1144
+          ]
+        },
+        {
+          "role": "original_question_panel",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\midterm (5).jpg",
+          "package_file": "original-pages\\panel-5.jpg",
+          "sha256": "553fc8511bbab36867f760b30cb8e27c277808c28b5cfefe1ff451fb452f515d",
+          "native_pixels": [
+            1940,
+            1596
+          ]
+        },
+        {
+          "role": "original_question_panel",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\midterm (6).jpg",
+          "package_file": "original-pages\\panel-6.jpg",
+          "sha256": "ab9cc477b08049d41000d7f3479def550979a95f3fd483d5562061c213656c97",
+          "native_pixels": [
+            1856,
+            876
+          ]
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0001.jpg",
+          "sha256": "8aa8146976973df831bf4347e4117af626771932b45ceea625db5cb70143e2d9"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0002.jpg",
+          "sha256": "60e25a30feb7982cf76542318767e2cba4fc2545390d85f41c49aa94849a95e8"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0003.jpg",
+          "sha256": "686ffc8570c2b98d244045cdb351adaea5d68764fd7bf4a2756254c46419773b"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0004.jpg",
+          "sha256": "c56a248bab4aaecf52f3a64d59ed415ea0806956322c562cd70fd77e456caeb3"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0005.jpg",
+          "sha256": "f5ddaf8e651467ac4cd78e078e517be6e9d73530a01dd7bd118888a50caccc6a"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0006.jpg",
+          "sha256": "376cca61ba81e87b0e275104ae7504f13a18627c53b9c96846b3679c4ed66407"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0007.jpg",
+          "sha256": "f604f5af6bdff6a0c7367a2bb33d84cea8e4e7829bc37be08956f67a7fcf0714"
+        },
+        {
+          "role": "overlapping_original_comparison",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2011\\midterm\\2011_181112_0008.jpg",
+          "sha256": "47b66e00dbe5f9a85b6f6a1fe11feb2055bf0d21e3810d7e93647757f2223458"
+        }
+      ],
+      "approved_reconstruction_assumption": "User selected the faint Figure3 common-gate bus connected toVDD, with explicit note.",
+      "limitations": [
+        "Q2 printed short-circuit voltage polynomial is preserved; physical overlap correction shown",
+        "Q2 e=2 approximation separated from exact discrete taper minimum",
+        "Q3 high-VT penalties/leakage models not supplied: conditional feasibility only",
+        "Q4 parta body effect andinitialYcharge not quantified",
+        "Q5 calibrateduniformlumpedRCmodel; finite TG delay differs from continuumwire approximation"
+      ]
+    },
+    "exams/2012/final": {
+      "year": 2012,
+      "exam": "final",
+      "source_year_evidence": "Fall 2012 original footer, pages3-1 through3-3",
+      "originals": [
+        {
+          "relative_archive_path": "2012/final/final (1).jpg",
+          "sha256": "91cffec4caf7de44d1cfcf73c8d27565a9a2890d7dfe7d8d937498e65896419b",
+          "dimensions": [
+            2940,
+            3920
+          ]
+        },
+        {
+          "relative_archive_path": "2012/final/final (2).jpg",
+          "sha256": "28afc6e3c401b608ecb5119c8f0e63c2ed5defaa4fa7deab6489bfbbfab8eb8e",
+          "dimensions": [
+            2940,
+            3920
+          ]
+        },
+        {
+          "relative_archive_path": "2012/final/final (3).jpg",
+          "sha256": "c67f77a857e9ca25499898e54112b3822d33792f8ff2f83f3649576d7fd33d57",
+          "dimensions": [
+            2940,
+            3920
+          ]
+        }
+      ],
+      "student_answers": {
+        "sha256": {
+          "answerA\\answer (1).jpg": "a9b586a72522fd48e1b0d095483e742af4ca8ba0865e4078ffc6bc694f12e5f9",
+          "answerA\\answer (2).jpg": "db4a248baeed7d419346ecc3d253401a5f9f72123d12f6f02a0b9536db6edf33",
+          "answerA\\answer (3).jpg": "1f68f3db1c355155ccf440beabb7337a1550ea97fc3da0029523acdedb064cf1",
+          "answerA\\answer (4).jpg": "2737faa9da752c005340a335e3c3268d5a102b84c9390f3add26a841937d9612",
+          "answerB\\answer (1).jpg": "af2dcfa0e19a7358021f7ba2b0bffac270297eb21be4890ca360da68564e06e1",
+          "answerB\\answer (2).jpg": "6f40dc770e26b189de124651c6ef4a3860d0c2f83cec8609af2fc5c7b9e18f57",
+          "answerB\\answer (3).jpg": "6f8a2c09c8eb0d3cd6c689cc982e4c61f847b316651d6d72088ca45067107889",
+          "answerB\\answer (4).jpg": "4a8f988eae861daa9a88e2007b2583daaf9923986fa07c13bd6b869f8531f1f5"
+        },
+        "within_A_B_duplicates": [],
+        "identical_2013_image_matches": [],
+        "scope": "No student names, IDs, or grades transcribed."
+      },
+      "student_scope": "Two local sets, four images each, independently compared after source derivation. Identities and marks are not reproduced.",
+      "original_preservation": "Original JPEG bytes preserved in raw DCT streams, see original-image-hashes.json",
+      "references": [
+        {
+          "title": "NCU Introduction to VLSI ch06, combinational circuits",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch06.pdf",
+          "use": "Primary conceptual reference only; source controls actual circuit connectivity."
+        }
+      ]
+    },
+    "exams/2012/midterm": {
+      "year": 2012,
+      "exam": "midterm",
+      "original": {
+        "status": "Complete original question panels; no printed year visible in the crops",
+        "attribution": "The 2012 archive folder supplies the year; the photographed panels do not expose a printed date.",
+        "package_copy": "original-exam.pdf",
+        "package_sha256": "ab0b76432345215a9d6ec9ea9c572f312cfba63ec610c61841a587b6fd9d5b76",
+        "pages": 6,
+        "printed_pages": 3,
+        "preservation": "Each source JPEG panel is embedded byte-for-byte on one proportional PDF page, without cropping, recoloring, rotation or perspective correction.",
+        "panels": [
+          {
+            "filename": "2012\\midterm\\midterm (1).JPG",
+            "sha256": "f6e5f927a2a50ba24ec7bb3056b8848b0094e2da6d00029ce51dfec88007502c",
+            "source_pixels": [
+              1724,
+              1404
+            ],
+            "original_pdf_page": 1,
+            "printed_page": 1,
+            "questions": "Q1(a–j)",
+            "embedded_JPEG_bytes_identical": true
+          },
+          {
+            "filename": "2012\\midterm\\midterm (2).jpg",
+            "sha256": "3762234ffe4b34e621c7cc92dda39cbe9b8ac8f4dd9e03461cbc0dcf34476366",
+            "source_pixels": [
+              2412,
+              1916
+            ],
+            "original_pdf_page": 2,
+            "printed_page": 1,
+            "questions": "Q2(a,b)",
+            "embedded_JPEG_bytes_identical": true
+          },
+          {
+            "filename": "2012\\midterm\\midterm (3).jpg",
+            "sha256": "8ab6c9a062d4a0bed27744e7f3f35589839c14da5ddffcaff3a11536e40e22fa",
+            "source_pixels": [
+              2780,
+              1476
+            ],
+            "original_pdf_page": 3,
+            "printed_page": 2,
+            "questions": "Q3",
+            "embedded_JPEG_bytes_identical": true
+          },
+          {
+            "filename": "2012\\midterm\\midterm (4).JPG",
+            "sha256": "44a800d217e14bee773e12450fbbf48fa871ed0637c32ca1cd673c1e915b56f2",
+            "source_pixels": [
+              1468,
+              876
+            ],
+            "original_pdf_page": 4,
+            "printed_page": 2,
+            "questions": "Q4(a,b)",
+            "embedded_JPEG_bytes_identical": true
+          },
+          {
+            "filename": "2012\\midterm\\midterm (5).JPG",
+            "sha256": "dc717f11e0c5a9584e6a203d90be5cc2edd47cdaad5034ca6a53667733d48752",
+            "source_pixels": [
+              1614,
+              686
+            ],
+            "original_pdf_page": 5,
+            "printed_page": 2,
+            "questions": "Q5",
+            "embedded_JPEG_bytes_identical": true
+          },
+          {
+            "filename": "2012\\midterm\\midterm (6).JPG",
+            "sha256": "a62b06125d3c24ea84f94a4da762a110c64021688f40d4d8ddbbea949ab21efb",
+            "source_pixels": [
+              1571,
+              855
+            ],
+            "original_pdf_page": 6,
+            "printed_page": 3,
+            "questions": "Q6(a,b);Q7(a–c)",
+            "embedded_JPEG_bytes_identical": true
+          }
+        ]
+      },
+      "local_reference": {
+        "status": "Six matching graded student answer panels have identical copies under 2013. Directory duplication does not establish a second dated exam.",
+        "published": false,
+        "identity": "Student identity remains local and is not transcribed.",
+        "panels": [
+          {
+            "filename": "2012\\midterm\\answer (1).JPG",
+            "sha256": "f89ea4459d5e207a4964ac0896a85528e4939893da0d754ed7d8094dec721dc0",
+            "published": false,
+            "byte_identical_other_year": "2013\\2013_mid_sol_1.JPG",
+            "comparison": "Q1a–h: methods/noise margins consistent; unqualified2x width needs mobility/threshold assumptions; crosstalk approaches scoped."
+          },
+          {
+            "filename": "2012\\midterm\\answer (2).JPG",
+            "sha256": "1398f2772b078e543c699bc527d54aa0c1bf40abf5c885d9be052639f94354a8",
+            "published": false,
+            "byte_identical_other_year": "2013\\2013_mid_sol_2.JPG",
+            "comparison": "Q1i,j andQ2: same majority circuit; full-credit firstmoment omits output-attached opposite-network caps. Internal power expression correct forcharging-event activity."
+          },
+          {
+            "filename": "2012\\midterm\\answer (3).JPG",
+            "sha256": "294cd03f66138c013cb65e5f8f8904ea04bef8aa0a280e2c88478f243e7c8148",
+            "published": false,
+            "byte_identical_other_year": "2013\\2013_mid_sol_3.JPG",
+            "comparison": "Q3/Q5:24MOS circuit matches. Conservative14L/10H dualVt relies on an assumed gate-delay normalization and unprovided highVt penalty. Q5sameT8RC andalpha1/3 roots;alpha1choice agrees."
+          },
+          {
+            "filename": "2012\\midterm\\answer (4).JPG",
+            "sha256": "678b9dd68ff4d9789abc667762a39c9500a533a3d5463e05f9e4c85a509e3076",
+            "published": false,
+            "byte_identical_other_year": "2013\\2013_mid_sol_4.JPG",
+            "comparison": "Q6/Q7a: Q6a8MOS correct; Q6b10MOS NAND+compound circuit reducesconstant0. Fulladder truth table agrees."
+          },
+          {
+            "filename": "2012\\midterm\\answer (5).JPG",
+            "sha256": "3f9d2bcae17af714e2af1701d39ae657bcbc43f9e2c00b68f964cc817d815249",
+            "published": false,
+            "byte_identical_other_year": "2013\\2013_mid_sol_5.JPG",
+            "comparison": "Q7b,c: Boolean truth/SOP consistent; complement-literal carry PDN can give truecarry, but generators forcomplemented primaryinputs are omitted. Complete28MOS independent implementation supplied."
+          },
+          {
+            "filename": "2012\\midterm\\answer (6).JPG",
+            "sha256": "87fbc4e2667a7dbb3c5d3c65c85bc25571a41a1d2a02ac9c9f1fc9db275145ed",
+            "published": false,
+            "byte_identical_other_year": "2013\\2013_mid_sol_6.JPG",
+            "comparison": "Q4: exact1.8/.4 premises match;Y1V/Z1.4V levels andm1bothregions/m2..6linear classification agree with stated constantthreshold/no-bodyeffect scope."
+          }
+        ],
+        "match_basis": "Question functions, circuit edges and numerical premises were independently matched; the score records provenance only."
+      },
+      "scope": {
+        "questions": 7,
+        "original_points": 100,
+        "original_gaps": [],
+        "scan_ambiguities": [],
+        "semantic_conditions": [
+          "The archive year is not printed, but all seven questions are covered by the six original panels.",
+          "Q1(h): mobility and threshold ratios are not provided. Use the general current-matching equation without inventing a two-times width.",
+          "Q2: complete final ON-graph first moments include attached opposite-network capacitors. The full-level constant-R model is declared; a 10–90 conversion is a one-pole estimate.",
+          "Q2: alpha01 means charging probability; activity counting both edges needs a factor of one-half. Internal nodes only.",
+          "Q3: high-Vt delay penalties and leakage weights are absent. The 24-MOS candidate has conditional 12L/12H marking and explicit slack bounds, with no unconditional optimum or speed guarantee.",
+          "Q4: constant threshold is 0.4 V. Body-effect parameters are absent; qualitative levels are not measured dynamic waveforms.",
+          "Q5: exactly 8RC; alpha=1 and 3 are feasible, and 1 minimizes modeled power. The first-two-stage bracket excludes the third external load.",
+          "Q6: conventional single complementary-gate XOR uses 12 MOS; broader static TG XOR uses 8. Style and minimum scope are explicit.",
+          "Q7: the complete 28-MOS implementation uses only true primary inputs; the reference omits complement generators."
+        ]
+      },
+      "primary_references": [
+        {
+          "id": "ncu-fabrication",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch03.pdf",
+          "authority": "Jin-Fu Li, National Central University; official course lecture",
+          "locators": "slides 8, 37–41",
+          "questions": [
+            "Q1a,b,c",
+            "Q3"
+          ],
+          "access": "Official PDF text opened and relevant passages read."
+        },
+        {
+          "id": "berkeley-doublegate",
+          "url": "https://www2.eecs.berkeley.edu/Colloquium/Archives/11-12/Fall2011/kingliu-presentation.pdf",
+          "authority": "Tsu-Jae King Liu, UC Berkeley, 2011 colloquium",
+          "locators": "slide 19: Double-Gate FinFET",
+          "questions": [
+            "Q1i"
+          ],
+          "access": "The indexed primary search result describes the double-gate structure. Direct PDF access returned 403; the full PDF was not read."
+        },
+        {
+          "id": "intel-trigate",
+          "url": "https://www.intc.com/news-events/press-releases/detail/655/intel-reinvents-transistors-using-new-3-d-structure",
+          "authority": "Intel Corporation, May 4, 2011 primary announcement",
+          "locators": "Three controlled fin surfaces: two sidewalls and the top",
+          "questions": [
+            "Q1i"
+          ],
+          "access": "Primary search result read; geometry description verified."
+        }
+      ],
+      "reconstruction": {
+        "language": "English",
+        "standalone_editable_vectors": true,
+        "source_wording": "Printed English is preserved with typeset units and equations. The Q6 letter w was confirmed directly in an enlarged native crop.",
+        "figures": "Inline TikZ preserves original MOS polarities and joins, low/high threshold symbols, the upper degraded-gate pass connection and the first-two-stage delay bracket."
+      },
+      "no_process_measurement": true
+    },
+    "exams/2013/final": {
+      "year": 2013,
+      "exam": "final",
+      "original_points": 150,
+      "sources": [
+        {
+          "role": "authoritative_original",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\final (1).jpg",
+          "package_file": "original-pages\\page-1.jpg",
+          "sha256": "a3921af6a09b390b67a79691fdd542040c44a23e11bf444e5527f7418f60f16b",
+          "native_pixels": [
+            720,
+            960
+          ]
+        },
+        {
+          "role": "authoritative_original",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\final (2).jpg",
+          "package_file": "original-pages\\page-2.jpg",
+          "sha256": "0987c1e4a2b9c93dee474f3519f05c129103df27da8a00fe67630df2da79dbff",
+          "native_pixels": [
+            720,
+            960
+          ]
+        },
+        {
+          "role": "authoritative_original",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\final (3).jpg",
+          "package_file": "original-pages\\page-3.jpg",
+          "sha256": "3efd43345200585975e89d1c6f69d957d313e0e09f2ea02651a94117912dcb01",
+          "native_pixels": [
+            720,
+            960
+          ]
+        },
+        {
+          "role": "ungraded_student_comparison_only",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (1).JPG",
+          "sha256": "8f642f584ae07b6392648d76e719761c3f5e87a31a682755e84b91c1746963a0"
+        },
+        {
+          "role": "ungraded_student_comparison_only",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (2).JPG",
+          "sha256": "aa4652b19b3ef4b1dc4ec8708113964a53b1fed9ec6268e81aaae27d32fcb232"
+        },
+        {
+          "role": "ungraded_student_comparison_only",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (3).JPG",
+          "sha256": "740d92da0098553f5c9563385de8fad2849d12859a7eec0669060709c282a605"
+        },
+        {
+          "role": "ungraded_student_comparison_only",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (4).JPG",
+          "sha256": "f29aed307aa7b37728f5da5484583f16c0a5db13664f6c036b84a9ab7cac1e25"
+        },
+        {
+          "role": "identical_figure_contact_comparator_only",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2012\\final\\final (2).jpg",
+          "sha256": "28afc6e3c401b608ecb5119c8f0e63c2ed5defaa4fa7deab6489bfbbfab8eb8e"
+        },
+        {
+          "role": "identical_figure_contact_comparator_only",
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2012\\final\\final (3).jpg",
+          "sha256": "c67f77a857e9ca25499898e54112b3822d33792f8ff2f83f3649576d7fd33d57"
+        }
+      ],
+      "printed_note": "Total number of points is 150, but the number of points you can get is smaller than 100.",
+      "limits": [
+        "Q4 external X/Y loads absent; literal unloaded limit and symbolic loads shown",
+        "Q5 separate gate minimum delays and signed skew absent; explicit timing model",
+        "Q7 upper Schmitt threshold not identifiable from shown falling waveform"
+      ]
+    },
+    "exams/2016/final": {
+      "year": 2016,
+      "exam": "final",
+      "source_filename": "EE3032(2016期末考考題).pdf",
+      "source_archive_folder": "2021/期末考",
+      "year_basis": "Printed Fall2016 footer on3originalquestionpages",
+      "source_sha256": "c15769816ca3288bde8e47dfb49698eeb839db2755941d8fd3ec287b9026031f",
+      "original_copy_sha256": "c15769816ca3288bde8e47dfb49698eeb839db2755941d8fd3ec287b9026031f",
+      "original_pdf_pages": 4,
+      "original_prompt_pages": [
+        1,
+        2,
+        3
+      ],
+      "printed_page_labels": [
+        "3-1",
+        "3-2",
+        "3-3"
+      ],
+      "nearly_blank_page": 4,
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "printed_question_points": [
+        20,
+        8,
+        10,
+        15,
+        15,
+        10,
+        12,
+        30
+      ],
+      "printed_total": 120,
+      "student_comparison": "No matching suppliedstudentanswerfound; allsolutions independentlyderived",
+      "source_features": [
+        "Q1 per-nodebalance leavesn free; common-timedesign labelledadditionalconstraint",
+        "Q2 rising-inputtrip notobserved;1.2Vnoisepeak notusedasupperthreshold",
+        "Q3 clockcap/equaltime doesnotuniquelyspecifysizing",
+        "Q4a literalcol6 gate/outputXself-connection retained",
+        "Q4b INVoutputbar a drivesNOR; all4OFFisolationdevicesretained",
+        "Q5 clockskewdirection unspecified; bothsignsandholdrequirements reported"
+      ],
+      "reconstruction": "EnglishstandaloneLaTeX with editableTikZ, no originalrasterimages inreconstructedreports",
+      "simulation": "No process-modelsimulation; reproducible analyticalandgraphchecks"
+    },
+    "exams/2018/final": {
+      "year": 2018,
+      "exam": "final",
+      "original": {
+        "filename": "2018.pdf 的副本.pdf",
+        "sha256": "b95f18f9a6418d238bf91535124f39ff2fab3b6895570c9ea1987971acb1271f",
+        "pages": 5,
+        "package_copy": "original-exam.pdf",
+        "package_sha256": "6c8c6194e7e2d00cd74b98696e91832e7c4b535f08315b769225a5997600b81a",
+        "extraction": "Original printed prompt only: source pages1–3 in F-1,F-2,F-3 order; source pages4–5 are handwritten notes and omitted. PDF container was rewritten by pypdf, not claimed byte-identical.",
+        "status": "Complete printed Fall2018 original; study ink retained only in authentic source extract and excluded from reconstructed TeX."
+      },
+      "original_crosscheck": {
+        "filename": "2018_final.zip",
+        "sha256": "a3aeb7cb014bb804e242348d31883bdcd343765b339d21cde6c19c2b84a793c3",
+        "member": "2018_final.pdf",
+        "member_sha256": "aada47654cac303556ac5cbc2de1a68e382b257c97b2d58f027f2b721f2a04c7",
+        "pages": 3,
+        "actual_footer_order": [
+          "F-3",
+          "F-1",
+          "F-2"
+        ],
+        "rotation": "270degrees after joining native image strips; filename page indices are not footer order",
+        "matching_loose_original_pages": [
+          3,
+          1,
+          2
+        ],
+        "published": false
+      },
+      "local_reference": {
+        "filename": "2018答案.pdf 的副本.pdf",
+        "sha256": "b87ae2920172f355bc6f6995122f304e5eeca483e7970196cb98ea34425f1268",
+        "pages": 4,
+        "published": false,
+        "status": "Matched Fall2018 graded student booklet; student identity stays local; grading is provenance, not correctness.",
+        "page_comparison": {
+          "1": "Q1: retain cell-height/rail requirements and dynamic limitations; correct physical design versus fabrication and qualify masking explanations.",
+          "2": "Q2: final4ns correct, but positive-output/raw-edge explanation reversed; independent retention1.1us=1100ns. Begins Q3a.",
+          "3": "Q3a balanced100/200nm widths receive full credit; independently derive nonunique pMOS family. Q3b opposite power claim crossed out; use declared complete resistor-network overlap comparison and explain absent waveform model. Q4 complementary PDN has wrong Ab placement. Q5 function wrong, balanced widths and19C clock loading consistent.",
+          "4": "Q8b2ns correct; Q8c1.5ns/1.1ns arithmetic present but no completed aligned cut. Source Q6,Q7,Q8a solutions not available in this booklet."
+        }
+      },
+      "scope": {
+        "questions": 8,
+        "original_points": 115,
+        "original_gaps": [],
+        "scan_ambiguities": [],
+        "semantic_conditions": [
+          "Q2 explicitly50percent clock duty; minimum period4ns.",
+          "Q3 outputC has no stated CgateN1 equality; effective-load answer plus eta-parameterized literal gate loading.",
+          "Q3b new trip/supply parameters require feedback2R ratios; full cycle-average Psc not determined without waveform/device currents.",
+          "Q4 DSL Vref/device strengths unspecified; ideal proof checks complementary lower PDNs, not analogue margins.",
+          "Q6 literal permanent feedback20MOS; negative-edge Y=X behavior conditional on ratioed write strength.",
+          "Q7 setup0.25ns is classroom forward settling; two strict ratio inequalities determine weak feedback.",
+          "Q8 propagation values do not supply contamination delays; hold requirements explicit. Optional latch delay/duty bounds conditional.",
+          "Q8 target printed4/3, four aligned new registers plus separate two-inverter pairs on both new bypass paths."
+        ]
+      },
+      "primary_references": [
+        {
+          "id": "ncu-dsl",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch06.pdf",
+          "authority": "Jin-Fu Li, National Central University; official course lecture",
+          "locators": "slide32",
+          "questions": [
+            "Q4(3)"
+          ],
+          "access": "Official PDF opened; local cached slide32 rendered and viewed; reference clamp gatesVref, pMOS load gates opposite LOWER nodes verified."
+        }
+      ],
+      "reconstruction": {
+        "language": "English",
+        "source_wording": "Original printed English retained with typeset units/equations; no student notes inserted as premises.",
+        "figures": "Editable inline TikZ; normalized geometry and qualitative source waveforms. Layout contact template reused only after independent2018 native contact tracing confirmed all20crossings and joins."
+      },
+      "no_process_measurement": true
+    },
+    "exams/2021/final": {
+      "exam": "2021 final",
+      "year_basis": "archive folder, no printed date",
+      "original_container_pages": 3,
+      "printed_whole_question_points": [
+        15,
+        10,
+        10,
+        10,
+        20,
+        15,
+        25
+      ],
+      "printed_total": 105,
+      "answerable_original": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q7a",
+        "Q7b",
+        "Q7c"
+      ],
+      "missing_and_skipped": [
+        "Q6 numerical premises",
+        "Q6a",
+        "Q6b",
+        "Q6c numerical redesign",
+        "original Q7d-Q7f"
+      ],
+      "secondary_unverified_supplement": [
+        "Q7d",
+        "Q7e",
+        "Q7f"
+      ],
+      "sources": [
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考考題.pdf",
+          "sha256": "64ee54848424de59260ae7fb30a90b76fe119ac725bf398f29c86af053395ba0",
+          "role": "original photographed fragments + secondary typed supplement"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考考題.docx",
+          "sha256": "cfa8419d79fd6378b40fe7eccd15b9eb95a1df029e73190ab266087421506ed0",
+          "role": "original photographed fragments + secondary typed supplement"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末 參考答案.pdf",
+          "sha256": "2514bbce4f89aca8c56d9c175b3666f5d0bca5e22ab077d8af83a6dfef834452",
+          "role": "corrected student answers + later commentary"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末 參考答案.docx",
+          "sha256": "a4aa0034065e8ee400d36c82b572e19de8f8eae84f5f5262e85d6cda6eb1449c",
+          "role": "corrected student answers + later commentary"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考答案卷-1.jpg",
+          "sha256": "0869d7f34b4e80ecf9a1985a02e090f2282ccd55495e4a61507e3a20af254bed",
+          "role": "corrected student answers + later commentary"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考答案卷-2.jpg",
+          "sha256": "f56674ce39b3f5668a733cae555430ae920a5818f3176f4e97e5c606696c9b40",
+          "role": "corrected student answers + later commentary"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期末考\\2021期末考答案卷-3.jpg",
+          "sha256": "1eb7d093a18710b0ccb1f8adbe0cf7a5c30971f7bf3b87b0ed923a7414d25603",
+          "role": "corrected student answers + later commentary"
+        }
+      ]
+    },
+    "exams/2021/midterm": {
+      "exam": "2021 midterm",
+      "year_basis": "archive folder; paper has no printed date",
+      "original_pages": 2,
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "printed_total": 100,
+      "q4_points": {
+        "printed_total": 15,
+        "printed_subparts": [
+          9,
+          6
+        ]
+      },
+      "sources": [
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\2021.pdf",
+          "sha256": "4b785699ed70ec7ee1a939dd33fe968f6884ce6d79f2f659e449fb3c9cf194eb",
+          "role": "corrected student answer and/or later annotations"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\S__41730050.jpg",
+          "sha256": "e71e7e1213e14a48ae2ff3ff31c02ecba3bb1f32c9957a0cb65e35646a45b842",
+          "role": "original question photo"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\S__41730052.jpg",
+          "sha256": "53c0cedd1bc91dc40918b95c63602607399f47a67fa808fc8e4defe1e5725291",
+          "role": "original question photo"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_1.jpg",
+          "sha256": "658b47b543f1b2847604e0816f845039715bd5f8ceb402bac398df70fe2ecdc7",
+          "role": "corrected student answer and/or later annotations"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_2.jpg",
+          "sha256": "b1cbf57a2d535b16ef343ee77a01ea65e79e3d03f4dd436943e3aca247cbd73a",
+          "role": "corrected student answer and/or later annotations"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_3.jpg",
+          "sha256": "4dc2b3abfd261e41b7e153802f0f48243d24d97231c2e6a32826d8cbcc854c13",
+          "role": "corrected student answer and/or later annotations"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_4.jpg",
+          "sha256": "f1233f3f450f89ac2c2f409b34ae543a054f581969c3d2b8cce93d254fa39ea0",
+          "role": "corrected student answer and/or later annotations"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_5.jpg",
+          "sha256": "a3ebfe406c1bbe5f6b0964a68e76799811ff521b453475ba8c63d98290892705",
+          "role": "lecture-board correction photograph"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_6.jpg",
+          "sha256": "47af6368b1222087f7bb08ef65b0e711d6bb3743afc40a1ca53a0ca86215e194",
+          "role": "lecture-board correction photograph"
+        },
+        {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2021\\期中考\\期中卷答案_7.jpg",
+          "sha256": "1f123f8c78da90de06249b806421c7e38e36141c5a91632d7d762e2598b9da57",
+          "role": "lecture-board correction photograph"
+        }
+      ]
+    },
+    "exams/2022/midterm": {
+      "source_filename": "111學年度第一學期超大型積體電路導論期中考 李進福.pdf",
+      "source_sha256": "791b7765de09a37a691ddcd3aaf3df7725a6e2575ed37953f66817f0bbc5eff5",
+      "source_pages": 15,
+      "printed_original_pages": [
+        1,
+        2
+      ],
+      "printed_page_labels": [
+        "2-1",
+        "2-2"
+      ],
+      "graded_answer_pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "separator_page": 7,
+      "supplement_notes_pages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "year_basis": "Fall2022 printed footer plus111 academic-year filename",
+      "complete_questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "question_points": [
+        35,
+        20,
+        10,
+        15,
+        10,
+        10
+      ],
+      "total_points": 100,
+      "Q1_subpart_points": [
+        3,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        6,
+        3,
+        3,
+        2
+      ],
+      "original_image_sha256_before": [
+        [
+          "67590f28d1d106fde4478af9819db1d44eafc541f976341ff92e0e8974d94c56"
+        ],
+        [
+          "762410b76f01e3132e72f35600cca581f4cce02d5789e736ad7e1f12340e4ba6"
+        ]
+      ],
+      "original_image_sha256_after": [
+        [
+          "67590f28d1d106fde4478af9819db1d44eafc541f976341ff92e0e8974d94c56"
+        ],
+        [
+          "762410b76f01e3132e72f35600cca581f4cce02d5789e736ad7e1f12340e4ba6"
+        ]
+      ],
+      "extraction": "Container rebuilt for originalpages1–2; all embedded photographs verified byte-identical",
+      "reconstruction": "StandaloneEnglishLaTeX with editableTikZ; no scans in typeset exam/solution; handwriting removed from question constraints",
+      "interpretations": [
+        "Q1(c) literal dry/wet oxidation distinguished from growth/CVD oxide formation",
+        "Q1(k) bonding orientation and assembly granularity distinguished",
+        "Q2 mux selector index explicitly4s0+2s1+s2; printed completionstubs are blank",
+        "Q3(b) fixednMOS and doubledpMOS raises firstbufferload to1.5Cg; finalCL fixed",
+        "Q4 uses givenconstantONresistance estimate",
+        "Q6(b) Rp/Rn and Co keptsymbolic; anymobilityratio conditional"
+      ],
+      "verification": "Source-derived graph/truth and analyticalRC; no processsimulation"
+    },
+    "exams/2023/final": {
+      "year": 2023,
+      "exam": "final",
+      "original": {
+        "filename": "112學年度第一學期超大型積體電路導論期末考 李進福.pdf",
+        "sha256": "0e367de4671f18321e4332d028b0c9c9e9a7a2aa6ef7741668e6bdaf34304971",
+        "pages": 2,
+        "package_copy": "original-exam.pdf",
+        "status": "complete printed original; Fall2023 footer"
+      },
+      "local_reference": {
+        "filename": "期末整理.pdf",
+        "sha256": "9d10ef2752981e95e5d3ed452e45275e2b0a1e0e9d99899ad00f6d01c7b11373",
+        "pages": 17,
+        "status": "mixed-year study compilation; no matched graded booklet",
+        "published": false,
+        "comparison": "General notes consulted; differently parameterized question snippets cannot supply missing clock duty, latch properties, or unique sizing.",
+        "page_comparison": {
+          "6": "General dynamic-logic/common-rail notes useful; physical-design wording conflates geometry generation with fabrication, corrected in Q1.",
+          "8": "Related f=NOT(x1*x2+x3) designs; several drawings marked uncertain. All submitted DPL/NP graphs are independently derived and checked.",
+          "12": "Different AND-to-OR question explicitly says50percent duty and3/2ns,2.5/2ns edges. Cannot supply absent duty for this AND-to-AND3/1ns,2/1ns question.",
+          "2,4,13,16": "Related Schmitt-trigger divider methods, but different widths/thresholds/supply/edge target. Recalculate all2023 quantities.",
+          "14_layout": "Related symbolic layout functional10MOS inverter/NOR/inverter is consistent; retain4physical off isolation devices missing from simplified drawing.",
+          "14,15_timing": "Different handwritten gate parameters/logic paths; reversed hold reasoning and unrelated clock-buffer proposal are not adopted. Derive all original2023 clock taps/latch bounds."
+        }
+      },
+      "scope": {
+        "questions": 7,
+        "original_points": 115,
+        "original_gaps": [],
+        "scan_ambiguities": [
+          "Q3 middle clock glyph top stroke touches footer gate wire: phi_bar selected transcription; phi alternate explicitly covered; primary static-middle repair works under both"
+        ],
+        "semantic_conditions": [
+          "Q2 numerical duty absent: both6ns adjustable and10ns50percent shown",
+          "Q3 supplied internal node capacitances: totals primary, wire-only alternatives",
+          "Q5 fixed-output-C vs literal feedback-gate-capacitance model",
+          "Q7 latch and gate minimum delays not provided; clock high phase H unspecified: general bounds and explicit50percent conditional ideal-latch limit"
+        ]
+      },
+      "primary_references": [
+        {
+          "id": "ncu-power",
+          "url": "https://staff.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch04.pdf",
+          "authority": "Jin-Fu Li, National Central University; official course lecture",
+          "locators": "slides 58, 60, 62, 65, 66–67",
+          "questions": [
+            "Q1(a)",
+            "Q1(d)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "ncu-dynamic-limitations",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch06.pdf",
+          "authority": "Jin-Fu Li, National Central University; official course lecture",
+          "locators": "slides 13–18",
+          "questions": [
+            "Q1(e)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "ncu-physical",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch05.pdf",
+          "authority": "Jin-Fu Li, National Central University; official course lecture",
+          "locators": "slides 3, 7, 12, 26–31",
+          "questions": [
+            "Q1(b)",
+            "Q1(c)",
+            "Q1(f)",
+            "Q1(h)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "ncu-clock",
+          "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch07.pdf",
+          "authority": "Jin-Fu Li, National Central University; official course lecture",
+          "locators": "slides 37–41",
+          "questions": [
+            "Q1(a)",
+            "Q7(d)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "hmc-cell-design",
+          "url": "https://pages.hmc.edu/harris/class/e158/01/lect09.pdf",
+          "authority": "David Harris, Harvey Mudd College; lecture based on Mark Horowitz Stanford EE271",
+          "locators": "slides 8–9, 12, 14",
+          "questions": [
+            "Q1(c)",
+            "Q1(h)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "nptel-design-rules",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/117101058/Slides/13.1.htm",
+          "authority": "NPTEL university engineering course; Lecture 13 Layout Design Rules",
+          "locators": "section 13.1 Motivation",
+          "questions": [
+            "Q1(f)"
+          ],
+          "access": "HTML opened successfully"
+        },
+        {
+          "id": "tufts-dynamic",
+          "url": "https://www.cs.tufts.edu/comp/103/notes/Lecture16(DynamicLogic).pdf",
+          "authority": "Tufts COMP103 Lecture 16; adapted from Mary Jane Irwin/Rabaey",
+          "locators": "slides 7, 10–16, 21",
+          "questions": [
+            "Q1(a)",
+            "Q1(e)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "openroad-fill",
+          "url": "https://openroad.readthedocs.io/en/latest/main/src/dpl/README.html#filler-placement",
+          "authority": "OpenROAD official implementation documentation",
+          "locators": "Filler Placement",
+          "questions": [
+            "Q1(g): filler"
+          ],
+          "access": "HTML opened successfully"
+        },
+        {
+          "id": "iastate-fill",
+          "url": "https://class.ece.iastate.edu/ee330/labs/EE%20330%20Lab%209%20Spring%202026.pdf",
+          "authority": "Iowa State University EE330 laboratory instructions",
+          "locators": "Filler Cells subsection",
+          "questions": [
+            "Q1(g): filler"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "cadence-physical-cells",
+          "url": "https://community.cadence.com/cadence_blogs_8/b/di/posts/you-know-how-but-do-you-remember-why",
+          "authority": "Cadence official Digital Design training blog, 1 June 2026",
+          "locators": "DCap Cells; EndCap Cells; Filler Cells",
+          "questions": [
+            "Q1(g): filler, decap, endcap"
+          ],
+          "access": "HTML opened successfully"
+        },
+        {
+          "id": "cadence-tap-endcap",
+          "url": "https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/11105/end-cap-cells",
+          "authority": "Cadence-hosted technical forum; expert reply, supporting rather than strongest source",
+          "locators": "Ted / Austin CAD Guy reply",
+          "questions": [
+            "Q1(g): tap, endcap"
+          ],
+          "access": "Indexed page content available"
+        },
+        {
+          "id": "gatech-tap",
+          "url": "https://gtcad.gatech.edu/www/papers/06423265.pdf",
+          "authority": "Georgia Tech author-hosted IEEE paper: TABB: A Post-Silicon Tuning Method to Minimize Clock Skew Variations in 3-D ICs",
+          "locators": "printed page 1728; PDF page 9",
+          "questions": [
+            "Q1(g): tap"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "openroad-tap-endcap",
+          "url": "https://openroad.readthedocs.io/en/latest/main/src/tap/README.html",
+          "authority": "OpenROAD official implementation documentation",
+          "locators": "Add Tapcell/Endcap; options table",
+          "questions": [
+            "Q1(g): tap, endcap"
+          ],
+          "access": "HTML opened successfully"
+        },
+        {
+          "id": "ncu-gatearray-time",
+          "url": "https://www.ee.ncu.edu.tw/jimmy/public_html/courses/DSD06/01_intro.pdf",
+          "authority": "National Central University DSD06 course lecture",
+          "locators": "slides 1-23 through 1-28; PDF pages 12–14",
+          "questions": [
+            "Q1(h)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "imperial-gatearray-sog",
+          "url": "https://www.ee.ic.ac.uk/pcheung/teaching/ee4_asic/notes/lecture1%20-%20introduction.pdf",
+          "authority": "Peter Cheung, Imperial College London E4.20 Digital IC Design",
+          "locators": "lecture slides 13–14",
+          "questions": [
+            "Q1(h)"
+          ],
+          "access": "Search index exposes exact slide text, but direct open timed out; use NCU/HMC as robust references"
+        },
+        {
+          "id": "amd-fpga-time",
+          "url": "https://www.amd.com/en/blogs/2025/from-invention-to-ai-acceleration--celebrating-40-years-of-fpga-.html",
+          "authority": "AMD FPGA inventor/vendor official history blog",
+          "locators": "opening paragraphs",
+          "questions": [
+            "Q1(h), alternative FPGA interpretation"
+          ],
+          "access": "Indexed official page content available"
+        },
+        {
+          "id": "unm-htree",
+          "url": "https://www.unm.edu/~pzarkesh/ECE520/lectures/lecture18.pdf",
+          "authority": "University of New Mexico ECE520 Lecture 18",
+          "locators": "slide 13",
+          "questions": [
+            "Q7(d)"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "rochester-clock",
+          "url": "https://hajim.rochester.edu/ece/sites/friedman/papers/MK_Chapter11_08.pdf",
+          "authority": "Eby Friedman, University of Rochester author-hosted clock-distribution chapter",
+          "locators": "section 11.4.4 Symmetric Topologies; printed page 425",
+          "questions": [
+            "Q7(d)"
+          ],
+          "access": "Source opens as PDF; exact section content available through search index; direct PDF text extraction returned zero lines."
+        },
+        {
+          "id": "synopsys-mesh",
+          "url": "https://www.ispd.cc/slides/2009/s7p1.pdf",
+          "authority": "Synopsys Industrial Clock Synthesis presentation at ISPD 2009",
+          "locators": "slide 24; PDF page 24",
+          "questions": [
+            "Q7(d), supplemental mesh alternative"
+          ],
+          "access": "PDF text opened successfully"
+        },
+        {
+          "id": "openroad-clock-balancing",
+          "url": "https://openroad.readthedocs.io/en/latest/main/src/cts/README.html",
+          "authority": "OpenROAD official CTS documentation; TritonCTS authors",
+          "locators": "clock_tree_synthesis options: balance_levels, dont_use_dummy_load, delay_buffer_derate, repair_clock_nets",
+          "questions": [
+            "Q7(d): practical balanced-tree explanation"
+          ],
+          "access": "HTML opened successfully"
+        }
+      ]
+    },
+    "exams/2023/midterm": {
+      "source_filename": "112學年度第一學期超大型積體電路導論期中考 李進福.pdf",
+      "source_sha256": "9fa9d53721924acf773f21a3d126d4b8e23037e201f0c75de2b5b49366764579",
+      "source_pages": 10,
+      "year_basis": "printed Fall2023 footer and112 academic-year filename",
+      "original_exam_pages": [
+        1
+      ],
+      "original_printed_page_label": "2-2",
+      "student_sets": {
+        "A": {
+          "source_pdf_pages": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "retained_question_answers": {
+            "Q5": [
+              4
+            ],
+            "Q6": [
+              4
+            ],
+            "Q7": [
+              5
+            ]
+          }
+        },
+        "B": {
+          "source_pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "retained_question_answers": {
+            "Q5": [
+              8
+            ],
+            "Q6": [],
+            "Q7": [
+              10
+            ]
+          },
+          "Q6_status": "No complete readable Q6 answer in the supplied set; a cropped neighboring-page edge is insufficient"
+        }
+      },
+      "image_stream_sha256_before": [
+        "852febfcaca32d7b8936a3a7b8ad77ef0d583f9ab74389472f6863693c065667"
+      ],
+      "image_stream_sha256_after": [
+        "852febfcaca32d7b8936a3a7b8ad77ef0d583f9ab74389472f6863693c065667"
+      ],
+      "extraction": "PDF container rebuilt for originalpage1; embedded photograph bytes verified identical",
+      "complete_questions": [
+        5,
+        6,
+        7
+      ],
+      "complete_question_points": [
+        10,
+        10,
+        15
+      ],
+      "complete_point_total": 35,
+      "fragment": "Q4 continuation andFig3 retained; missing opening means no answer supplied",
+      "unavailable_questions": [
+        1,
+        2,
+        3
+      ],
+      "unavailable_original_page": "2-1",
+      "orphan_Figure2": "Present only inoriginal-exam.pdf; no missing Q3stem invented",
+      "reconstruction": "Standalone English LaTeX; all included diagrams editableTikZ, no scanimage embedded",
+      "qualified_assumptions": [
+        "Q5 structural inequalities use conventional matched-threshold ideal-rail VTC; no numericmargins",
+        "Q6 uses specified idealRC model"
+      ],
+      "question_7_exact_functions": [
+        "X(Y+Z)+XW",
+        "not[X(Y+Z)]",
+        "XY+YZ"
+      ],
+      "transcription_uncertainties": [],
+      "verification": "verify.py graph/truth checks and analyticalRC assertions; no processsimulation"
+    },
+    "exams/2024/final": {
+      "year": 2024,
+      "exam": "final",
+      "source_filename": "113學年度第一學期超大型積體電路導論期末考 李進福.pdf",
+      "source_sha256": "58bc674c37ec690d99e39d5cccf66873ab8dc16ecd53e87eb893a429060fea6c",
+      "source_pages": 7,
+      "published_original_exam_pages": [
+        1,
+        2
+      ],
+      "local_reviewed_handwritten_answer_pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "source_partition": {
+        "partial_student_answer": [
+          3
+        ],
+        "complete_student_answer": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "original_exam_sha256": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170",
+      "question_points": [
+        45,
+        5,
+        15,
+        11,
+        10,
+        24
+      ],
+      "question_1_part_points": [
+        6,
+        6,
+        6,
+        4,
+        6,
+        4,
+        4,
+        4,
+        5
+      ],
+      "printed_total_points": 110,
+      "transcription": "Original numbered questions, symbols, full complement bar and connections retained; photos redrawn as editable vectors and page spacing normalized. Incidental annotations excluded.",
+      "confirmed_user_decisions": {
+        "Q4": "Both classroom fixed-output-C convention and literal feedback-gate-capacitance limitation",
+        "Q6": "Both literal positive R4 capture-clock delay and adverse-skew classroom convention; preserve original diagram"
+      },
+      "process_model_required": false,
+      "prompt_page_content_sha256": [
+        "0037977a8cd362fa68ff2a779fecfe0b9adc316ec250f14acc9d5f00318cdbd0",
+        "0037977a8cd362fa68ff2a779fecfe0b9adc316ec250f14acc9d5f00318cdbd0"
+      ]
+    },
+    "exams/2024/midterm": {
+      "source_filename": "113學年度第一學期超大型積體電路導論期中考 李進福.pdf",
+      "source_sha256": "ec6af4865c12d98f1dd3ab0161730925afb3871b0a351a54aaa7471dd632cb37",
+      "source_pages": 6,
+      "year_basis": "113 academic-year filename, source archive 2024 folder and user selection",
+      "published_original_exam_pages": [
+        1,
+        2
+      ],
+      "local_reviewed_handwritten_answer_pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_exam_sha256": "d891dedaa48694e323901d393bd4a8e50ae79595479bab72c2bea1bd81d5a9d5",
+      "extraction": "Original page content and embedded photographs retained; PDF container rebuilt for the two prompt pages. It is not a byte-identical full-source copy.",
+      "reconstruction": "Text and every circuit/waveform redrawn as editable LaTeX/TikZ; no scan images used in typeset exam or solution. Original numbering, marks, equations and connections retained; perspective, annotations and spacing not reproduced.",
+      "question_points": [
+        30,
+        15,
+        10,
+        10,
+        10,
+        10,
+        15
+      ],
+      "question_1_part_points": [
+        4,
+        3,
+        2,
+        2,
+        2,
+        5,
+        4,
+        2,
+        3,
+        3
+      ],
+      "transcription_uncertainties": [],
+      "model_library_required": false,
+      "prompt_page_content_sha256": [
+        "5db4b7bdada373bedbb74dda5c42bd7f41a25a41e84e679ea6b67c7be57a799e",
+        "0037977a8cd362fa68ff2a779fecfe0b9adc316ec250f14acc9d5f00318cdbd0"
+      ]
+    }
+  }
+}

@@ -1,1 +1,0 @@
-Original available course prompts are preserved unchanged. SHA-256 identities are recorded in the year source ledger. Missing prompts are documented in `../coverage.json`; only original-prompt assignments are solved.
