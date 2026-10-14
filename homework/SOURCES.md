@@ -7,7 +7,7 @@ The first individually selected exam is the 2024 midterm, reconstructed from its
 
 ## Older original-prompt assignments
 
-The renamed repository is `ncu-intro-vlsi-homework-solutions`, following the
+The repository is `ncu-intro-vlsi-homework-and-exam-solutions`, following the
 account's `ncu-digital-system-design-exams` course-prefix naming style.
 The extension includes only authentic original-prompt tasks: [2019 HW2](2019/SOURCES.md),
 [2018 HW1/HW2](2018/SOURCES.md), [2017 HW1–HW4](2017/SOURCES.md),
