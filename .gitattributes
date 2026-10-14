@@ -1,0 +1,2 @@
+# Preserve every private original byte, including text attachment line endings.
+* -text
