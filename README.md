@@ -1,61 +1,61 @@
-# Introduction to VLSI Design - 2024
+# Introduction to VLSI Design — 2020, 2021, 2023 and 2024
 
-National Central University, EE3032 Introduction to VLSI Design, Jin-Fu Li, Fall 2024.
+National Central University, EE3032, Jin-Fu Li. Complete English LaTeX reports,
+original assignment PDFs, CMOS transistor circuits and reproducible numerical
+verification are organized by course year. The newly requested range is
+**2023, 2021 and 2020**, with **2022 skipped**. Existing 2024 work remains available.
 
-This repository covers **2024 HW1-HW4 only**. The four original assignment PDFs are in [`2024/assignments`](2024/assignments/). All solution reports and repository explanations are in **English**, with compilable LaTeX, transistor-level HSPICE netlists, and reproducible numerical verification.
+| Year | Coverage and reports | Numerical evidence |
+|---|---|---|
+| [2023](2023/README.md) | HW1–HW4; four LaTeX/PDF reports | 284 HW1 functional checks; three HW2 HSPICE decks; RCA: 128 states, 896 directed single-input transitions, 1 ps critical-case refinement |
+| [2021](2021/README.md) | HW1–HW4; four LaTeX/PDF reports | HW1: 32 Boolean cases and 5050 square-law points; HW2: 64 electrical rotator cases; HW3/HW4: 36 delay measurements each |
+| [2020](2020/README.md) | HW1–HW4; four LaTeX/PDF reports | HW1 32 Boolean cases; HW2 64 electrical rotator cases; HW3 18 runs with timestep/slew checks |
+| [2024](2024/README.md) | Existing HW1–HW4 reports | HW1 100 checks; HW2 43 checks; HW3 512 measured states; HW4 eight prescribed vectors |
 
-| Assignment | Deliverables |
-| --- | --- |
-| [HW1](2024/HW1/) | CMOS derivations, transistor diagrams, truth tables, and switch-connectivity verification |
-| [HW2](2024/HW2/) | Complete analytical answers plus ideal-model and CIC018 HSPICE checks |
-| [HW3](2024/HW3/) | Four-bit XNOR/multiplexer-based adder, prescribed 9 ns stimulus, area/energy statistics, and exhaustive input checks |
-| [HW4](2024/HW4/) | Verified HW3 netlist and pre-layout testbench; layout, DRC, LVS, PEX, and post-layout results are outside the requested scope |
+The original PDFs are in each year's `assignments/` directory, copied byte for
+byte. The 2020 HW4 archive contains two original copies, both preserved.
+Every new homework has `solution.tex`, a compiled and visually inspected
+`solution.pdf`, and a README. HW1 contains derivations and transistor diagrams.
+HW2 includes the full analytical answers plus executable logic/electrical
+verification. HW3 contains actual HSPICE code and measured data.
+**HW4 stops at pre-layout `.sp`**, as requested; no layout/DRC/LVS/PEX results
+are claimed. Each year's HW4 circuit is the identical verified HW3 circuit;
+the report states whether evidence was rerun or explicitly reused.
 
-Each homework README explains the requirements, design choices, file purposes, reproduction commands, and validation results.
+## Source review and interpretation
 
-## Local requirements
+All three newly requested years have existing supplied answers. They were
+read first, independently checked, and integrated with attribution and
+explicit corrections in [2023](2023/SOURCES.md), [2021](2021/SOURCES.md),
+[2020](2020/SOURCES.md), and the overall [source review](SOURCES.md).
+Important corrections include the printed HW1 AOI overbar, incorrect body
+connections or 3.3 V use on 1.8 V devices in some references, required loads,
+and the distinction between an averaged selected-path delay and a measured
+maximum. The 2023 HW2 “smallest low” wording is solved literally and separately
+from the earlier years' conventional “highest low” specification.
 
-- PrimeSim HSPICE S-2021.09. The executable used here was `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`.
-- The user's external CIC018 model, default `D:/cic018.l`: TT, 1.8 V, 25 C. The model is read locally and is not redistributed.
-- Python 3; see each homework folder for reproduction instructions.
-- Each English `.tex` report is standalone and compiles with PDFLaTeX; a PDF preview is included. Diagrams and statistics come from source or simulation data, without hspui screenshots.
+## Reproduction
 
-## Sources and comparison
+- Python 3. The saved-data package checker uses only the standard library.
+- PrimeSim HSPICE S-2021.09; default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`.
+- User-provided CIC018 process model; default `D:/cic018.l`, TT, 1.8 V, 25 C.
+  The model remains external and is not redistributed.
+- PDFLaTeX for reports; each `.tex` is self-contained. Optional Matplotlib
+  regenerates the scientific waveform PNGs.
 
-Existing supplied answers were reviewed, then checked against independent derivations, truth tables, and simulations. Adoption and correction decisions appear in the reports and [SOURCES.md](SOURCES.md). Original assignment PDFs remain unchanged. Previous students' layouts and PEX are not presented as results of this design.
-
-Instructor clarifications are provided in English in both Markdown and plain-text formats, linked from the assignment [README](2024/assignments/README.md). Their source originals remain in the local course archive.
-
-## Verification results
-
-| Assignment | Completed checks and measurements |
-| --- | --- |
-| HW1 | 100 ideal MOS switch/logic checks passed; 96 truth-table rows. These are not process-model simulations. |
-| HW2 | Three HSPICE decks completed; 43/43 numerical checks passed. Retention example: 12.6 ms analytical, 12.600025 ms measured. |
-| HW3 | 512/512 transistor-level transient cases passed. Six candidates were compared; the selected 64T design has `sum(WL)=5.4144 um²`. |
-| HW4 | The identical HW3 netlist was rerun independently; all 8 prescribed vectors passed. Pre-layout only. |
-
-Refined HW3/HW4 settings (TT, 1.8 V, 25 C, no added output load, maximum timestep 1 ps): total power **69.558498 uW**, total energy over 9 ns **626.026482 fJ**. The maximum measured 50% delay within the prescribed sequence is **152.910320 ps**, not a global worst case across all transitions or PVT conditions. The original instructor `.tran 0.1ns 9n` result is reported separately: **69.002216 uW, 621.019943 fJ**. The two timestep settings are not mixed.
-
-The 64T version has the lowest energy, area, and PDP among the six evaluated candidates. PDP is delay times power; full-sequence energy is power times 9 ns. See [HW3](2024/HW3/README.md) for the comparison and selection rationale.
-
-## Reports
-
-| Assignment | LaTeX source | PDF preview |
-| --- | --- | --- |
-| HW1 | [solutions.tex](2024/HW1/solutions.tex) | [solutions.pdf](2024/HW1/solutions.pdf) |
-| HW2 | [solution.tex](2024/HW2/solution.tex) | [solution.pdf](2024/HW2/solution.pdf) |
-| HW3 | [solution.tex](2024/HW3/solution.tex) | [solution.pdf](2024/HW3/solution.pdf) |
-| HW4 | [solution.tex](2024/HW4/solution.tex) | [solution.pdf](2024/HW4/solution.pdf) |
-
-All four reports have been compiled and their rendered pages inspected.
-
-## Reproduction and package checks
-
-Each homework README provides HSPICE commands and model-path overrides. To check downloaded artifacts, saved measurements, source hashes, and links without rerunning HSPICE, run from the repository root:
-
-```powershell
+```sh
 python verify_package.py
 ```
 
-This reads saved simulation data; it does not claim to run a new simulation. `MANIFEST.json` records original PDFs, the external model fingerprint, and artifact SHA256 hashes. Text line endings are canonicalized to LF to avoid Windows/Git conversion mismatches. Raw simulator and compiler outputs remain in the local workspace; the public repository contains compact results.
+This verifies saved measurements, full assignment/report coverage, original
+PDF hashes, artifact hashes, README links and matching HW3/HW4 netlists.
+It does not launch a new simulation. Each homework README gives the actual
+HSPICE reproduction command and model/executable overrides.
+`MANIFEST.json` records text hashes with LF line endings and binary hashes
+without transformation. Raw simulator/compiler outputs stay local.
+
+The 2023 RCA's worst delay in the 2 ps sweep is 833.526988 ps over all settled
+single-input transitions under its stated conditions. The refined critical-case
+1 ps result is 833.905310 ps; the difference is 0.0454%. VDD-only supply power
+is 177.082000 uW for its documented 384 ns workload. These numbers do not imply a PVT bound or
+equal conditions across different years; see the individual reports.

@@ -1,5 +1,12 @@
 # Source review and decisions
 
+## Added 2020, 2021 and 2023 reviews
+
+All twelve newly requested homeworks have supplied completed answers. They were read and compared with independent derivations and new simulations. See [2023](2023/SOURCES.md), [2021](2021/SOURCES.md) and [2020](2020/SOURCES.md) for per-source adoption/correction decisions and original-file fingerprints. The scope is 2023 through 2020, skipping2022; HW4 is pre-layout SPICE only.
+
+The following existing section records the2024 review.
+
+
 Review date: 2026-10-13. The supplied **Fall 2024** PDFs and instructor clarifications define the requirements. Code from other years is used only as an architectural reference. All repository content is in English, including the translated instructor clarifications. The four original assignment PDFs are already in English and remain unchanged.
 
 ## Original assignments
