@@ -1,10 +1,29 @@
 # Source review and decisions
 
+## Older original-prompt assignments
+
+The renamed repository is `ncu-intro-vlsi-homework-solutions`, following the
+account's `ncu-digital-system-design-exams` course-prefix naming style.
+The extension includes only authentic original-prompt tasks: [2019 HW2](2019/SOURCES.md),
+[2018 HW1/HW2](2018/SOURCES.md), [2017 HW1–HW4](2017/SOURCES.md),
+[2016 HW3](2016/SOURCES.md), [2015 HW1–HW4](2015/SOURCES.md), and
+[2013 HW1–HW3](2013/SOURCES.md). Student-only material in 2012/2014 and 2018 HW3
+is explicitly omitted following the user's clarification. The root coverage
+catalog records every omitted assignment, without substituting neighbouring years.
+
+The official [Fall 2013 course page](https://www.ee.ncu.edu.tw/jfli/public_html/vlsi1/Syllabus.htm)
+directs homework downloads to Blackboard. The supplied 2013 `HW1.pdf`–`HW3.pdf`
+were individually inspected and are genuine printed prompts, despite filenames
+that differ from later `homework*.pdf` names. All supplied references were read
+before independent derivation. Their reports/code are not republished as new work.
+
+
+
 ## Added 2020, 2021 and 2023 reviews
 
-All twelve newly requested homeworks have supplied completed answers. They were read and compared with independent derivations and new simulations. See [2023](2023/SOURCES.md), [2021](2021/SOURCES.md) and [2020](2020/SOURCES.md) for per-source adoption/correction decisions and original-file fingerprints. The scope is 2023 through 2020, skipping2022; HW4 is pre-layout SPICE only.
+All twelve newly requested homeworks have supplied completed answers. They were read and compared with independent derivations and new simulations. See [2023](2023/SOURCES.md), [2021](2021/SOURCES.md) and [2020](2020/SOURCES.md) for per-source adoption/correction decisions and original-file fingerprints. That earlier extension covered 2023 through 2020, skipping 2022; HW4 remains pre-layout SPICE only.
 
-The following existing section records the2024 review.
+The following existing section records the 2024 review.
 
 
 Review date: 2026-10-13. The supplied **Fall 2024** PDFs and instructor clarifications define the requirements. Code from other years is used only as an architectural reference. All repository content is in English, including the translated instructor clarifications. The four original assignment PDFs are already in English and remain unchanged.

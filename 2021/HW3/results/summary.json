@@ -5,7 +5,6 @@
   "temperature_C": 25,
   "load_fF": 1.0,
   "input_slew_0_to_100_ns": 1.0,
-  "max_time_step_ps": 2.0,
   "delay_definition": "input and output 50 percent crossings; input-to-F and input-to-Z",
   "cases": [
     {
@@ -55,5 +54,6 @@
       "direction": "LH",
       "delay_ps": 161.192667
     }
-  ]
+  ],
+  "requested_output_time_step_ps": 2.0
 }

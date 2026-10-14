@@ -75,7 +75,7 @@ MN6&1.00&0.18&Inverter pull-down\\\bottomrule
 $A$&$B$&$F$&$Z$\\\midrule0&0&1&0\\0&1&1&0\\1&0&1&0\\1&1&0&1\\\bottomrule
 \end{tabular}\end{center}
 The NAND nMOS widths are doubled relative to MN6 to compensate approximately for its two-device stack. The pMOS width is three times MN6 to offset lower hole mobility. The prompt permits arbitrary sizes; this choice also enables a direct comparison with the supplied HW3 answer.
-\textbf{Simulation conditions.} Actual PrimeSim HSPICE S-2021.09 win64, local CIC018 TT BSIM3 models, $\VDD=1.8$ V, $\VSS=0$, $25^\circ$C, and exactly 1 fF from $Z$ to ground. The input rise/fall time is 1 ns (0--100\%), the pulse width is 4 ns, and the period is 10 ns. The transient stop time is 32 ns and the maximum internal timestep is 2 ps.
+\textbf{Simulation conditions.} Actual PrimeSim HSPICE S-2021.09 win64, local CIC018 TT BSIM3 models, $\VDD=1.8$ V, $\VSS=0$, $25^\circ$C, and exactly 1 fF from $Z$ to ground. The input rise/fall time is 1 ns (0--100\%), the pulse width is 4 ns, and the period is 10 ns. The transient stop time is 32 ns and the requested output timestep is 2 ps.
 
 \textbf{Voltage verification.} Sampling each initial state at 4 ns and the 11 state at 9 ns gives all four truth-table rows. All six samples pass with low $\le0.2$ V and high $\ge1.6$ V. The highest measured low value is below 12 $\mu$V; the lowest high value exceeds 1.79999 V.
 \newpage

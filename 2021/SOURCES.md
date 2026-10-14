@@ -42,7 +42,7 @@ The supplied report uses W/L=2/1 um and includes layout. This solution retains t
 
 - HW1: exhaustive switch-level Boolean evaluation and ideal long-channel equal-current equations; neither is claimed to be a BSIM simulation.
 - HW2: exhaustive logic checks, actual CIC018 TT rotator and pseudo-NOR simulation, plus an explicitly illustrative Level-1 dual-Vt topology test. The provided model has no characterized dual-Vt variants, so no physical leakage saving or unqualified timing guarantee is reported.
-- HW3/HW4: actual PrimeSim HSPICE S-2021.09 win64 runs with the local process model at TT, 25 C, 1.8 V, 1 fF, 1 ns input edges, and 2 ps maximum timestep. The four directional worst delays are reported from 36 measurements per homework.
+- HW3/HW4: actual PrimeSim HSPICE S-2021.09 win64 runs with the local process model at TT, 25 C, 1.8 V, 1 fF, 1 ns input edges, and 2 ps requested output timestep. The four directional worst delays are reported from 36 measurements per homework.
 - Reports were compiled and rendered for visual inspection. Standalone LaTeX embeds every diagram and waveform.
 - Public search in this task did not identify a trustworthy complete original 2021 solution; no unverified web answer was used.
 - `D:/cic018.l` is used locally as authorized, and is not copied, quoted, or redistributed.

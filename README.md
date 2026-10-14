@@ -1,61 +1,78 @@
-# Introduction to VLSI Design — 2020, 2021, 2023 and 2024
+# NCU Introduction to VLSI Design — Homework Solutions
 
-National Central University, EE3032, Jin-Fu Li. Complete English LaTeX reports,
-original assignment PDFs, CMOS transistor circuits and reproducible numerical
-verification are organized by course year. The newly requested range is
-**2023, 2021 and 2020**, with **2022 skipped**. Existing 2024 work remains available.
+National Central University, EE3032, Jin-Fu Li. Original assignment PDFs,
+English LaTeX reports, transistor diagrams, runnable SPICE and measured evidence
+are organized by course year.
 
-| Year | Coverage and reports | Numerical evidence |
+The repository covers **31 assignments across ten years from 2013 to 2024**.
+The latest extension adds **15 assignments from 2013–2019**. Only work with
+an authentic original prompt is included; student-only material is skipped.
+
+| Year | Completed original-prompt assignments | Reports and evidence |
 |---|---|---|
-| [2023](2023/README.md) | HW1–HW4; four LaTeX/PDF reports | 284 HW1 functional checks; three HW2 HSPICE decks; RCA: 128 states, 896 directed single-input transitions, 1 ps critical-case refinement |
-| [2021](2021/README.md) | HW1–HW4; four LaTeX/PDF reports | HW1: 32 Boolean cases and 5050 square-law points; HW2: 64 electrical rotator cases; HW3/HW4: 36 delay measurements each |
-| [2020](2020/README.md) | HW1–HW4; four LaTeX/PDF reports | HW1 32 Boolean cases; HW2 64 electrical rotator cases; HW3 18 runs with timestep/slew checks |
-| [2024](2024/README.md) | Existing HW1–HW4 reports | HW1 100 checks; HW2 43 checks; HW3 512 measured states; HW4 eight prescribed vectors |
+| [2024](2024/README.md) | [HW1](2024/HW1/), [HW2](2024/HW2/), [HW3](2024/HW3/), [HW4](2024/HW4/) | Existing four reports; 100 HW1 checks, 43 HW2 checks, 512 RCA states and prescribed HW4 vectors |
+| [2023](2023/README.md) | [HW1](2023/HW1/), [HW2](2023/HW2/), [HW3](2023/HW3/), [HW4](2023/HW4/) | 284 switch-connectivity checks; three HW2 decks; 128 RCA states and 896 single-input transitions |
+| [2021](2021/README.md) | [HW1](2021/HW1/), [HW2](2021/HW2/), [HW3](2021/HW3/), [HW4](2021/HW4/) | 32 Boolean cases and 5050 stack points; 64 electrical rotator cases; measured AND delays |
+| [2020](2020/README.md) | [HW1](2020/HW1/), [HW2](2020/HW2/), [HW3](2020/HW3/), [HW4](2020/HW4/) | 32 Boolean cases; 64 electrical rotator cases; 18 AND runs and timestep/slew checks |
+| [2019](2019/README.md) | [HW2](2019/HW2/) | Independent four-question HW2; new slew and pi-RC runs |
+| [2018](2018/README.md) | [HW1](2018/HW1/), [HW2](2018/HW2/) | 40 Boolean checks and 5050 stack points; slew and ideal pi-RC HSPICE verification |
+| [2017](2017/README.md) | [HW1](2017/HW1/), [HW2](2017/HW2/), [HW3](2017/HW3/), [HW4](2017/HW4/) | Four reports; analytical/program checks; AND/Psc measurements; balanced mirror and domino SPICE |
+| [2016](2016/README.md) | [HW3](2016/HW3/) | Independent HW3: equal-size AND delay and specified five-load Psc curve |
+| [2015](2015/README.md) | [HW1](2015/HW1/), [HW2](2015/HW2/), [HW3](2015/HW3/), [HW4](2015/HW4/) | Four reports; theory/CMOS checks; equal-size AND and Psc; balanced mirror and domino SPICE |
+| [2013](2013/README.md) | [HW1](2013/HW1/), [HW2](2013/HW2/), [HW3](2013/HW3/) | 32 CMOS/MUX checks, 80,800 square-law points; clock/noise analysis; fixed-size TG MUX comparison and Psc sweep |
 
-The original PDFs are in each year's `assignments/` directory, copied byte for
-byte. The 2020 HW4 archive contains two original copies, both preserved.
-Every new homework has `solution.tex`, a compiled and visually inspected
-`solution.pdf`, and a README. HW1 contains derivations and transistor diagrams.
-HW2 includes the full analytical answers plus executable logic/electrical
-verification. HW3 contains actual HSPICE code and measured data.
-**HW4 stops at pre-layout `.sp`**, as requested; no layout/DRC/LVS/PEX results
-are claimed. Each year's HW4 circuit is the identical verified HW3 circuit;
-the report states whether evidence was rerun or explicitly reused.
+## Coverage and missing material
 
-## Source review and interpretation
+- **2012 and 2014:** skipped entirely because only student answers are available.
+- **2013:** HW1–HW3; HW4 missing.
+- **2016:** HW3 only.
+- **2018:** HW1/HW2 only; student-only HW3 and missing HW4 skipped.
+- **2019:** HW2 only.
+- **2022:** absent and explicitly skipped.
 
-All three newly requested years have existing supplied answers. They were
-read first, independently checked, and integrated with attribution and
-explicit corrections in [2023](2023/SOURCES.md), [2021](2021/SOURCES.md),
-[2020](2020/SOURCES.md), and the overall [source review](SOURCES.md).
-Important corrections include the printed HW1 AOI overbar, incorrect body
-connections or 3.3 V use on 1.8 V devices in some references, required loads,
-and the distinction between an averaged selected-path delay and a measured
-maximum. The 2023 HW2 “smallest low” wording is solved literally and separately
-from the earlier years' conventional “highest low” specification.
+See [COVERAGE.json](COVERAGE.json) for every year and homework status.
+2019 HW2 and 2016 HW3 are self-contained and require no previous homework circuit.
+Original PDFs are copied byte for byte into each year’s `assignments/` folder.
+The two original 2020 HW4 archive copies are both preserved.
 
-## Reproduction
+## Reports, source comparison and requested scope
 
-- Python 3. The saved-data package checker uses only the standard library.
+Each included homework contains a standalone `.tex` report, a compiled and
+visually inspected PDF, a README, source comparison and reproducible checks.
+HW1 retains full derivations and transistor diagrams. HW2/HW3 contain complete
+analytical answers and applicable executable verification.
+
+Existing supplied answers were read first, independently checked and integrated
+with explicit attribution and corrections. 2019 has no same-year answer; its
+identical 2018 HW2 questions allow an attributed cross-year comparison. See the
+[source index](SOURCES.md) and each year’s `SOURCES.md`.
+
+**HW4 stops at pre-layout SPICE.** In 2015/2017 the original HW4 asks for mirror
+and domino full-adder circuits; both are implemented and simulated. In 2020
+and later, HW4 uses the verified HW3 circuit, with rerun/reuse provenance
+explained. No layout, DRC, LVS, PEX or invented post-layout results are claimed.
+
+The reports distinguish ideal/square-law reasoning from actual process
+simulation, RC first moments from threshold-crossing times, VDD supply power
+from an explicitly defined short-circuit-current overlap estimate, and bounded
+tested delays from a global PVT guarantee. Numerical conditions differ by year.
+
+## Reproduction and package verification
+
+- Python 3; the package checker uses the standard library.
 - PrimeSim HSPICE S-2021.09; default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`.
-- User-provided CIC018 process model; default `D:/cic018.l`, TT, 1.8 V, 25 C.
-  The model remains external and is not redistributed.
-- PDFLaTeX for reports; each `.tex` is self-contained. Optional Matplotlib
-  regenerates the scientific waveform PNGs.
+- The local CIC018 model, default `D:/cic018.l`; it is not redistributed.
+- PDFLaTeX for standalone reports. Optional Matplotlib regenerates selected plots.
 
 ```sh
 python verify_package.py
 ```
 
-This verifies saved measurements, full assignment/report coverage, original
-PDF hashes, artifact hashes, README links and matching HW3/HW4 netlists.
-It does not launch a new simulation. Each homework README gives the actual
-HSPICE reproduction command and model/executable overrides.
-`MANIFEST.json` records text hashes with LF line endings and binary hashes
-without transformation. Raw simulator/compiler outputs stay local.
+This checks original/report coverage, artifact hashes, saved numerical results,
+scope, README links and applicable HW3/HW4 netlist consistency. It does not
+launch new HSPICE runs. Each homework README provides reproduction commands,
+model/executable overrides and precise limitations.
 
-The 2023 RCA's worst delay in the 2 ps sweep is 833.526988 ps over all settled
-single-input transitions under its stated conditions. The refined critical-case
-1 ps result is 833.905310 ps; the difference is 0.0454%. VDD-only supply power
-is 177.082000 uW for its documented 384 ns workload. These numbers do not imply a PVT bound or
-equal conditions across different years; see the individual reports.
+`MANIFEST.json` uses SHA256 with text line endings normalized to LF; binaries
+remain unchanged. Raw simulator/compiler and license outputs stay local.
+The detailed existing 2024 course work is indexed in [2024/README.md](2024/README.md).

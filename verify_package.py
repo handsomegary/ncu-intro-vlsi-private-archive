@@ -11,6 +11,7 @@ import json
 import math
 import re
 import verify_multi_year
+import verify_older_years
 
 ROOT=Path(__file__).resolve().parent
 TEXT={'.md','.tex','.sp','.py','.csv','.json','.txt'}
@@ -74,6 +75,7 @@ def main():
             if '://' in target or target.startswith('#'):continue
             require((readme.parent/target.split('#')[0]).exists(),f'Broken link in {readme.relative_to(ROOT)}: {target}')
     verify_multi_year.main()
+    verify_older_years.main()
     print(f'PASS: {len(manifest["original_assignments"])} original PDFs; 2024 HW1 {hw1["total_asserted_cases"]} logic checks; HW2 43 checks; HW3 512 measured cases; HW4 8 measured vectors; hashes and README links.')
     print('Saved-data verification only. Reproduction commands in the homework READMEs rerun HSPICE.')
 

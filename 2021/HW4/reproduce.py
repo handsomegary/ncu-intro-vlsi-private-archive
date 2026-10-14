@@ -79,6 +79,6 @@ def main():
     for node in ['F','Z']:
         for direction in ['HL','LH']:
             v=max((r for r in delays if r['node']==node and r['direction']==direction),key=lambda r:r['delay_ps']);worst.append(v)
-    summary=dict(simulator='PrimeSim HSPICE S-2021.09 win64',model='CIC018 TT BSIM3 (local)',VDD_V=1.8,temperature_C=25,load_fF=1.0,input_slew_0_to_100_ns=1.0,max_time_step_ps=2.0,delay_definition='input and output 50 percent crossings; input-to-F and input-to-Z',cases=statuses,functional_samples=len(levels),all_logic_levels_pass=True,worst_case=worst)
+    summary=dict(simulator='PrimeSim HSPICE S-2021.09 win64',model='CIC018 TT BSIM3 (local)',VDD_V=1.8,temperature_C=25,load_fF=1.0,input_slew_0_to_100_ns=1.0,requested_output_time_step_ps=2.0,delay_definition='input and output 50 percent crossings; input-to-F and input-to-Z',cases=statuses,functional_samples=len(levels),all_logic_levels_pass=True,worst_case=worst)
     (results/'summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8');print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()
