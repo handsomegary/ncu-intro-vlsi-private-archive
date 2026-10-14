@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "standalone_tex": true,
+  "inline_vector_figures": true,
+  "original_prompt_pages": 3,
+  "pdf_page_counts": {
+    "original-exam.pdf": 3,
+    "exam.pdf": 4,
+    "solution.pdf": 12
+  },
+  "csv_file_count": 21,
+  "csv_data_rows": 964,
+  "csv_row_counts": {
+    "q2_domino_truth.csv": 8,
+    "q2_phase_checks.csv": 64,
+    "q2_retention.csv": 2,
+    "q3_classroom_sizing.csv": 6,
+    "q3_overlap_model.csv": 2,
+    "q4_DSL_netlist.csv": 12,
+    "q4_dynamic_phase_checks.csv": 32,
+    "q4_logic_checks.csv": 16,
+    "q5_balanced_sizing.csv": 12,
+    "q5_clock_loading.csv": 4,
+    "q5_NP_phase_checks.csv": 512,
+    "q5_NP_truth.csv": 128,
+    "q6_conditional_events.csv": 24,
+    "q6_layout_states.csv": 16,
+    "q6_physical_MOS.csv": 20,
+    "q7_ratio_bounds_examples.csv": 2,
+    "q7_register_states.csv": 16,
+    "q8_original_repaired_paths.csv": 8,
+    "q8_pipeline_consecutive_samples.csv": 64,
+    "q8_pipeline_paths.csv": 8,
+    "q8_truth.csv": 8
+  },
+  "verification_status": "PASS",
+  "compile": {
+    "builtin": "Both source documents compiled successfully",
+    "local": "MiKTeX pdfLaTeX;2passes;no overfull/underfull warnings"
+  },
+  "visual_review": {
+    "original": 3,
+    "exam": 4,
+    "solution": 12,
+    "status": "All19pages viewed; readable text, correct overbars/labels/contacts, no clipping. Last solution10/11 vector repairs rerendered and reviewed."
+  },
+  "analytical_only": true,
+  "no_process_measurement": true,
+  "artifact_sha256": {
+    "original-exam.pdf": "6c8c6194e7e2d00cd74b98696e91832e7c4b535f08315b769225a5997600b81a",
+    "exam.tex": "5c496b78832c76c84028f18348c53d3c0150c99bb26407f63f501df3ef112801",
+    "exam.pdf": "8c8ae0eb2c9bf34d60d21b08ee33703d8a8f2db5363dd4cb7a77fb8b480be8d9",
+    "solution.tex": "988c07ae24f4b58741b28bbb78b5fd05cbccb4f44ec5c90cce36d12220b31d5d",
+    "solution.pdf": "7e44a713c3e78b30fa9f80aec014a5b4ac520bf8dd4fdfd5187c142460cd4e4b",
+    "verify_logic_timing.py": "42e7d22ef662dabd1e80eecd5900ef5b2170e1dfa8803be3b3c3b6830475be4d"
+  }
+}

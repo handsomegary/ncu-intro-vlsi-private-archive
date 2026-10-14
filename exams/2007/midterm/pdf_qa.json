@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "exam_pages": 3,
+  "solution_pages": 5,
+  "original_pages": 3,
+  "all_final_pages_visually_checked": true,
+  "builtin_compiler": "success for both latest sources",
+  "local_compiler": "MiKTeX pdfLaTeX, two passes for each source",
+  "overfull_boxes": 0,
+  "underfull_boxes": 0,
+  "typeset_raster_image_count": 0,
+  "original_pdf_byte_identical": true,
+  "scope": "All7 original questions; printed110% retained",
+  "artifact_sha256": {
+    "exam.tex": "3ea184d59bac0a630253c5c3d2b42a7ea7bdbf31913e65a578003b2590fc1c68",
+    "solution.tex": "48a0de66f0465b68a5aee5ea98814ee88f69820a4cdc0a2bbd36134f3b1f17ce",
+    "exam.pdf": "bfff0469d06de9379c3e90eac1f7a6c39b6fd2c61222e2372c5995c6720b6010",
+    "solution.pdf": "1fdaadc12090461b1ee5b68de9750bd03a90e6f5eeacba0f1a63bc85dae5bf88",
+    "original-exam.pdf": "a862db63343c6754fa87b0224ac68a9375c407681dab5af42535d7968016a263"
+  }
+}

@@ -109,6 +109,124 @@
       "exam_pdf": "2021/final/exam.pdf",
       "solution_tex": "2021/final/solution.tex",
       "solution_pdf": "2021/final/solution.pdf"
+    },
+    {
+      "year": 2018,
+      "exam": "final",
+      "status": "complete",
+      "questions_count": 8,
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "points_printed_total": 115,
+      "original_prompt_pages": 3,
+      "missing": [],
+      "notes": "All eight printed questions available; model-dependent numerical claims explicitly conditioned.",
+      "points": 115,
+      "question_details": [
+        {
+          "number": 1,
+          "points": 30,
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "points": 10,
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "points": 10,
+          "status": "complete"
+        },
+        {
+          "number": 4,
+          "points": 15,
+          "status": "complete"
+        },
+        {
+          "number": 5,
+          "points": 15,
+          "status": "complete"
+        },
+        {
+          "number": 6,
+          "points": 10,
+          "status": "complete"
+        },
+        {
+          "number": 7,
+          "points": 10,
+          "status": "complete"
+        },
+        {
+          "number": 8,
+          "points": 15,
+          "status": "complete"
+        }
+      ],
+      "original": "2018/final/original-exam.pdf",
+      "exam_tex": "2018/final/exam.tex",
+      "exam_pdf": "2018/final/exam.pdf",
+      "solution_tex": "2018/final/solution.tex",
+      "solution_pdf": "2018/final/solution.pdf"
+    },
+    {
+      "year": 2016,
+      "exam": "final",
+      "questions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "question_count": 8,
+      "points_printed_total": 120,
+      "original_prompt_pages": 4,
+      "preserved_original_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "complete",
+      "missing": [],
+      "points": 120,
+      "question_page_numbers": [
+        1,
+        2,
+        3
+      ],
+      "original": "2016/final/original-exam.pdf",
+      "exam_tex": "2016/final/exam.tex",
+      "exam_pdf": "2016/final/exam.pdf",
+      "solution_tex": "2016/final/solution.tex",
+      "solution_pdf": "2016/final/solution.pdf"
+    },
+    {
+      "year": 2007,
+      "exam": "midterm",
+      "questions": 7,
+      "points": 110,
+      "original_prompt_pages": 3,
+      "status": "complete",
+      "scope_label": "Q1-Q7; printed110% retained",
+      "original": "2007/midterm/original-exam.pdf",
+      "exam_tex": "2007/midterm/exam.tex",
+      "exam_pdf": "2007/midterm/exam.pdf",
+      "solution_tex": "2007/midterm/solution.tex",
+      "solution_pdf": "2007/midterm/solution.pdf"
     }
   ],
   "other_archive_exams": "pending individual selection and original/source checks"

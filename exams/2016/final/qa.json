@@ -1,0 +1,113 @@
+{
+  "status": "ready",
+  "scope": "All complete original Q1-Q8;120 printed points",
+  "pdfs": {
+    "exam": {
+      "pages": 4,
+      "raster_images": 0
+    },
+    "solution": {
+      "pages": 9,
+      "raster_images": 0
+    },
+    "original-exam": {
+      "pages": 4,
+      "raster_images": 12
+    }
+  },
+  "compilation": {
+    "built_in": {
+      "exam": "success",
+      "solution": "success"
+    },
+    "local": {
+      "exam": {
+        "pages": 4,
+        "warnings": [],
+        "compiled": true
+      },
+      "solution": {
+        "pages": 9,
+        "warnings": [],
+        "compiled": true
+      }
+    }
+  },
+  "visual_qa": {
+    "exam_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "latest_changed_pages_rechecked": {
+      "exam": [
+        1,
+        2,
+        4
+      ],
+      "solution": [
+        2
+      ]
+    },
+    "result": "All13 reconstructed pages inspected. Figure-label spacing, waveform trip placement, clock control polarity, literal source contacts and all MOS named nets checked."
+  },
+  "original_pdf_byte_identical": true,
+  "checks": "All analytic/graph assertions passed; no process simulation",
+  "csv_row_counts": {
+    "q1_balancing_family.csv": 6,
+    "q1_phase_truth.csv": 2,
+    "q2_threshold_family.csv": 4,
+    "q3_balanced_paths.csv": 25,
+    "q4a_literal_netlist.csv": 12,
+    "q4a_literal_phase_checks.csv": 16,
+    "q4b_contact_truth.csv": 8,
+    "q4b_literal_netlist.csv": 12,
+    "q4b_switch_truth.csv": 8,
+    "q5_boolean_truth.csv": 8,
+    "q5_path_delays.csv": 24,
+    "q6_divider_cases.csv": 243,
+    "q7_dual_network_truth.csv": 16
+  },
+  "sha256": {
+    "coverage-entry.json": "ed968998616a6c151d1102e2166d152af1324118ab11a2255fda3440595c5cc6",
+    "exam.pdf": "9cc0ce50b562bda1e37bf5f861eb38fb9fb7abdaf818fc7acca5ff8c21ea536f",
+    "exam.tex": "4051940ba8e21198df867797bbdcdca09cd343aa5604b2a4e64adba452202ff9",
+    "original-exam.pdf": "c15769816ca3288bde8e47dfb49698eeb839db2755941d8fd3ec287b9026031f",
+    "q1_balancing_family.csv": "fe7449b28e0cf8f22052e2c3bd10e1cd6ee21d3d7f3fce1a8983f877cba0f2f8",
+    "q1_phase_truth.csv": "41b4c8bcc04906af58a3c9e583abbe0e4aa187f4385dc472ccab6cc0694e4052",
+    "q2_threshold_family.csv": "e3ce6824eac0383ef76214918528bcb4cf0920deda0f1bad97c3d6b3fc1a7adf",
+    "q3_balanced_paths.csv": "1a83281d7d8d156b953bb5dbd96ac1e2dc44883ab4f72af802bd6f10b11e556d",
+    "q4_verification.json": "248c2d01bc0a69539f0e1b3576b8f0959b6d4453d16614be505f1d4acca3d66e",
+    "q4a_literal_netlist.csv": "1f137ae246dfe02fd791594ef385c2d77c3b8dc3671b33c985a2d81731eca90e",
+    "q4a_literal_phase_checks.csv": "acfa813dd5eee41fdb60e53d9e52fa31b1440138ce1a3db70294aa93e76a562e",
+    "q4b_contact_truth.csv": "203c8fc37d31596092103f03cf9730e4e9879299eccd1942a3bb7fdbecd8fd99",
+    "q4b_literal_netlist.csv": "58d4dd818c7a73c77b8cb2225958cdacbce0541a127619d4aae90c13de804aef",
+    "q4b_switch_truth.csv": "9eac7c06fdd24c11a169c0b0f072607577c0054d04a4fa2622088754d63292b3",
+    "q5_boolean_truth.csv": "14447a02237813ccbb8da053db57732fc70be37f886b43926a094d531c5e5f72",
+    "q5_path_delays.csv": "1ce253cc467289be615658392b8851a6abdf4ca6bdbf2fb9105712525ba50e2d",
+    "q6_divider_cases.csv": "2abbba0722b33893bdcc242db27dbde858291ff886ed10cf5a9f83e492b79c98",
+    "q7_dual_network_truth.csv": "db96f68d69b4a0397c2d565f395564f8d8141a1e70b809fc415ea9ff50aa87f1",
+    "README.md": "4c986b42a8e9314122c35471ea1defc1eeab89ceb6f56ef913c0a95d4e21b804",
+    "solution.pdf": "cfbe80d6f19c503a7b0860500f9a9141a36184a3b82e3feb8f467980cbef2624",
+    "solution.tex": "ab25ae8791ff57df646192c5453acc8b2abaf5fa7608763ac112911cbc2a2cfc",
+    "sources.json": "d6a511c74fa6df48a2a120bcc71131a32bdcd522af6c2b394dfbe3c573a62d88",
+    "SOURCES.md": "5d7e845f43fb76cd23fa8c73277c9e4217b025bfdcc86720fe6a55403a572726",
+    "timing-verification.json": "10c2fcfb3b378097ac9d99ed9cb7b09c8c552161017bf39d162c0b2d83132d4f",
+    "verification.json": "abbe5985873362b14592e2052aed44df44f4cda865073ccb86018c94ef01cf52",
+    "verify.py": "4ee3f69869eb20ae716a3145854a331ac698231bffd3805e17a5be40dc2ef920",
+    "verify_layout.py": "b772e86dd3fa8eb9d55a673ff24c90444bd1d6225d029a6ebecf23cd67bca3a5",
+    "verify_timing.py": "0641683e83834a1bbd5ba3d44e3b6fb23d1bb9ab24883eb35737caa927693c17"
+  }
+}
