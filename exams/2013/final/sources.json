@@ -1,0 +1,73 @@
+{
+  "year": 2013,
+  "exam": "final",
+  "original_points": 150,
+  "sources": [
+    {
+      "role": "authoritative_original",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\final (1).jpg",
+      "package_file": "original-pages\\page-1.jpg",
+      "sha256": "a3921af6a09b390b67a79691fdd542040c44a23e11bf444e5527f7418f60f16b",
+      "native_pixels": [
+        720,
+        960
+      ]
+    },
+    {
+      "role": "authoritative_original",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\final (2).jpg",
+      "package_file": "original-pages\\page-2.jpg",
+      "sha256": "0987c1e4a2b9c93dee474f3519f05c129103df27da8a00fe67630df2da79dbff",
+      "native_pixels": [
+        720,
+        960
+      ]
+    },
+    {
+      "role": "authoritative_original",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\final (3).jpg",
+      "package_file": "original-pages\\page-3.jpg",
+      "sha256": "3efd43345200585975e89d1c6f69d957d313e0e09f2ea02651a94117912dcb01",
+      "native_pixels": [
+        720,
+        960
+      ]
+    },
+    {
+      "role": "ungraded_student_comparison_only",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (1).JPG",
+      "sha256": "8f642f584ae07b6392648d76e719761c3f5e87a31a682755e84b91c1746963a0"
+    },
+    {
+      "role": "ungraded_student_comparison_only",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (2).JPG",
+      "sha256": "aa4652b19b3ef4b1dc4ec8708113964a53b1fed9ec6268e81aaae27d32fcb232"
+    },
+    {
+      "role": "ungraded_student_comparison_only",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (3).JPG",
+      "sha256": "740d92da0098553f5c9563385de8fad2849d12859a7eec0669060709c282a605"
+    },
+    {
+      "role": "ungraded_student_comparison_only",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2013\\final\\answer (4).JPG",
+      "sha256": "f29aed307aa7b37728f5da5484583f16c0a5db13664f6c036b84a9ab7cac1e25"
+    },
+    {
+      "role": "identical_figure_contact_comparator_only",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2012\\final\\final (2).jpg",
+      "sha256": "28afc6e3c401b608ecb5119c8f0e63c2ed5defaa4fa7deab6489bfbbfab8eb8e"
+    },
+    {
+      "role": "identical_figure_contact_comparator_only",
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2012\\final\\final (3).jpg",
+      "sha256": "c67f77a857e9ca25499898e54112b3822d33792f8ff2f83f3649576d7fd33d57"
+    }
+  ],
+  "printed_note": "Total number of points is 150, but the number of points you can get is smaller than 100.",
+  "limits": [
+    "Q4 external X/Y loads absent; literal unloaded limit and symbolic loads shown",
+    "Q5 separate gate minimum delays and signed skew absent; explicit timing model",
+    "Q7 upper Schmitt threshold not identifiable from shown falling waveform"
+  ]
+}

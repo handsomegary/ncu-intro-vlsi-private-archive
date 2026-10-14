@@ -13,6 +13,7 @@ Original wording, circuit symbols, contacts and specified definitions govern eac
 | [2021 final](2021/final/README.md) | Q1-Q5 and Q7(a)-(c),76pts; cropped Q6 omitted | [PDF](2021/final/original-exam.pdf) | [PDF](2021/final/exam.pdf), [TeX](2021/final/exam.tex) | [PDF](2021/final/solution.pdf), [TeX](2021/final/solution.tex) |
 | [2018 final](2018/final/README.md) | Complete, 115pts | [PDF](2018/final/original-exam.pdf) | [PDF](2018/final/exam.pdf), [TeX](2018/final/exam.tex) | [PDF](2018/final/solution.pdf), [TeX](2018/final/solution.tex) |
 | [2016 final](2016/final/README.md) | Complete, 120pts | [PDF](2016/final/original-exam.pdf) | [PDF](2016/final/exam.pdf), [TeX](2016/final/exam.tex) | [PDF](2016/final/solution.pdf), [TeX](2016/final/solution.tex) |
+| [2013 final](2013/final/README.md) | Complete, 150pts | [PDF](2013/final/original-exam.pdf) | [PDF](2013/final/exam.pdf), [TeX](2013/final/exam.tex) | [PDF](2013/final/solution.pdf), [TeX](2013/final/solution.tex) |
 | [2007 midterm](2007/midterm/README.md) | Complete, 110pts | [PDF](2007/midterm/original-exam.pdf) | [PDF](2007/midterm/exam.pdf), [TeX](2007/midterm/exam.tex) | [PDF](2007/midterm/solution.pdf), [TeX](2007/midterm/solution.tex) |
 
 [Coverage catalog](COVERAGE.json) records scope and missing premises. The 2024 final retains the original110-point total and both user-approved Q4/Q6 interpretations. The 2023 midterm retains only the available latter questions, as requested.
