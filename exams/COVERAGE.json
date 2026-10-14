@@ -1,0 +1,20 @@
+{
+  "policy": "One exam at a time; authentic original prompts required; correct supplied student work first, independently derive missing answers. Reconstruct scans in editable LaTeX with explicit uncertainty.",
+  "completed_exams": [
+    {
+      "year": 2024,
+      "exam": "midterm",
+      "questions": 7,
+      "points": 100,
+      "original_prompt_pages": 2,
+      "reviewed_answer_pages": 4,
+      "original": "2024/midterm/original-exam.pdf",
+      "exam_tex": "2024/midterm/exam.tex",
+      "exam_pdf": "2024/midterm/exam.pdf",
+      "solution_tex": "2024/midterm/solution.tex",
+      "solution_pdf": "2024/midterm/solution.pdf",
+      "status": "complete"
+    }
+  ],
+  "other_archive_exams": "pending individual selection and original/source checks"
+}

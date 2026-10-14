@@ -1,10 +1,10 @@
-# NCU Introduction to VLSI Design — Homework Solutions
+# NCU Introduction to VLSI Design — Homework and Exam Solutions
 
 National Central University, EE3032, Jin-Fu Li. Original assignment PDFs,
 English LaTeX reports, transistor diagrams, runnable SPICE and measured evidence
 are organized by course year.
 
-The repository covers **31 assignments across ten years from 2013 to 2024**.
+The homework collection covers **31 assignments across ten years from 2013 to 2024**.
 The latest extension adds **15 assignments from 2013–2019**. Only work with
 an authentic original prompt is included; student-only material is skipped.
 
@@ -20,6 +20,10 @@ an authentic original prompt is included; student-only material is skipped.
 | [2016](2016/README.md) | [HW3](2016/HW3/) | Independent HW3: equal-size AND delay and specified five-load Psc curve |
 | [2015](2015/README.md) | [HW1](2015/HW1/), [HW2](2015/HW2/), [HW3](2015/HW3/), [HW4](2015/HW4/) | Four reports; theory/CMOS checks; equal-size AND and Psc; balanced mirror and domino SPICE |
 | [2013](2013/README.md) | [HW1](2013/HW1/), [HW2](2013/HW2/), [HW3](2013/HW3/) | 32 CMOS/MUX checks, 80,800 square-law points; clock/noise analysis; fixed-size TG MUX comparison and Psc sweep |
+
+## Exam papers and corrected answers
+
+The [exam archive](exams/README.md) is handled one paper at a time. The first completed paper is the [2024 midterm](exams/2024/midterm/README.md): two reconstructed original-paper pages, six corrected-answer pages, editable LaTeX/TikZ, and reproducible analytical checks. Supplied handwritten answers are reviewed before correction; missing original questions are not invented.
 
 ## Coverage and missing material
 

@@ -637,11 +637,33 @@
     "2024/assignments/hw4_clarifications.en.md": "e094ed40e6680e6e077c5e1c8e2c2f45a4e3edff4358e5e9f5f1c034a539e620",
     "2024/assignments/hw4_clarifications.txt": "2cc10ecb40acb5efbc702bca06aa353140d9c9a22407921b28558d4395a21b5b",
     "COVERAGE.json": "e3fdb89c72d6839dbb7e98f8cc808381e3b5ea8df45849517b2c9175b282863c",
-    "README.md": "17b5295e5ea99d428dcb037a4168059230e27903cbac314103863b58a86ec93e",
-    "SOURCES.md": "cbb3947cccfb9f852eb84d4f0c34de870de02bf6ec0dfc46bf702de74fc0f833",
+    "README.md": "cbf4eaa223eac992406e46e900a6ac6fdd7208d90a9ffabcf32659bc47ebb6a7",
+    "SOURCES.md": "06c26d4702671b717cef385a4f8c4ad75d328e49660ab104dc63dce1ed2c94b5",
+    "exams/2024/midterm/README.md": "2f428fc9891a693afaa32393a9ee6c84106e44a3d8065a715001b3ca2ea0c407",
+    "exams/2024/midterm/SOURCES.md": "6a0d94a3dae9dc7cb4cff1497f15546e322372309a7681d1e295b4eff4cc6a81",
+    "exams/2024/midterm/exam.pdf": "44d715bb9cfd9b1eca192523f2dc3961bb095d86969023d70e92e5752ddc324a",
+    "exams/2024/midterm/exam.tex": "99a9984cea08a9d04fe8d2d2bdb5bf45a87d149574693c5cafc64947fde05d2a",
+    "exams/2024/midterm/original-exam.pdf": "d891dedaa48694e323901d393bd4a8e50ae79595479bab72c2bea1bd81d5a9d5",
+    "exams/2024/midterm/pdf_qa.json": "b3872b962f231325343afe3e64ea7a34d8e3db8bfd0192af0fd91f8d80bb519b",
+    "exams/2024/midterm/q2_mux_truth.csv": "ed93d0c286f0003049e4da060ed56370cb70834d8f64259dfcd9cdc30b7507d3",
+    "exams/2024/midterm/q2_q7_verification.json": "a131ecdcc6e5d9f81b12a0f43e48a34f466d6d180a2a0dcf0f349681bc8408b4",
+    "exams/2024/midterm/q3_q6_verification.json": "85e563a82060e1d8fca1054494e62711cc110529b460b03d0796171771b0cdce",
+    "exams/2024/midterm/q3_stage_checks.csv": "68edd980aff5c27ad73bd9eefb0074bf7a7176eb8148be82e2438b8f3e4625d3",
+    "exams/2024/midterm/q4_regions.csv": "ccb62b9b43b4dd82b894586f3b838507f8761b6f84ee75c88e5cfd56880d5ff2",
+    "exams/2024/midterm/q5_noise_scenarios.csv": "c7a48f4b9a5cbddbe4a7d0350d4c8a4276e8dabf6cac675b078aab93b39aa0ae",
+    "exams/2024/midterm/q6_delay_checks.csv": "7809e18223de97bf527bc8617a56a6788fa6fc30210dbb1235b10acbc66229dd",
+    "exams/2024/midterm/q7_switch_checks.csv": "1eda5f386c1bd7e0e46a014530cb3610f0d16d46bf6e1e3d342b0c96e25501a7",
+    "exams/2024/midterm/solution.pdf": "29dccc98b8d3c5a7f88e305bb226df34baf4aa685263f0946bd4e28dfd46435f",
+    "exams/2024/midterm/solution.tex": "83d6f3581ec28253e51ea3fafdbfc68db4df2922f4c903bfdfac21ccb2dbe0e5",
+    "exams/2024/midterm/sources.json": "33acb68ad3be6eaf04c5c3abc3381b57c8762b42f7510e2771b02c908e660801",
+    "exams/2024/midterm/verify_q2_q7.py": "b8f6bcac50afaf47f08f02b6bb341e53afda5d9d0307647614c7440ad98ed988",
+    "exams/2024/midterm/verify_q3_q6.py": "e4214a075974008730846cbfec23f06abff84a78d96abd54cc3fea6522c84f6d",
+    "exams/COVERAGE.json": "9b4865c9aa6e402a8461e157a10ffecf871373ea42e6621fec95976f6e5774b0",
+    "exams/README.md": "ae2f951c442541cf9073b208a9f704b002c7f43e7c062bdc1848ac1b0237ecfd",
+    "verify_exams.py": "fa11c76461cc26f4988fa46e556c75469af6f472fee985f3fd54eeecef4c0e99",
     "verify_multi_year.py": "3272da269cb901035c4731dbd9c43b3f80e2be51e526b9c8416b36b88ac2979d",
     "verify_older_years.py": "fbdba5a11854d119a2df6c10a7a27bcbc42d2194b4bc417724e322d55c87eccf",
-    "verify_package.py": "22486111965993e183e6a3d66c8105023b84f57b713538ecce9d65fb9db76e6c"
+    "verify_package.py": "2926f764ff281a790c474ba6aa8d4892d4767c406088d68c6b0fb0e1cea27a65"
   },
   "assignment_years": [
     2013,
@@ -669,5 +691,7 @@
     2022
   ],
   "coverage_catalog": "COVERAGE.json",
-  "completed_assignments": 31
+  "completed_assignments": 31,
+  "completed_exams": 1,
+  "exam_coverage_catalog": "exams/COVERAGE.json"
 }

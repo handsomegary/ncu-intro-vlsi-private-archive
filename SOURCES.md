@@ -1,5 +1,10 @@
 # Source review and decisions
 
+## Added exam archive
+
+The first individually selected exam is the 2024 midterm, reconstructed from its two photographed original pages after reading all four matching handwritten-answer pages. Its [source comparison](exams/2024/midterm/SOURCES.md) retains verified work, identifies the Q6 capacitance-unit correction, and qualifies the Q3 missing NAND sizing assumption. The [exam index](exams/README.md) records known incomplete/misfiled material for future selections.
+
+
 ## Older original-prompt assignments
 
 The renamed repository is `ncu-intro-vlsi-homework-solutions`, following the
