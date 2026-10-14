@@ -21,10 +21,16 @@ Original wording, circuit symbols, contacts and specified definitions govern eac
 | [2009 midterm](2009/midterm/README.md) | Complete, 105pts | [PDF](2009/midterm/original-exam.pdf) | [PDF](2009/midterm/exam.pdf), [TeX](2009/midterm/exam.tex) | [PDF](2009/midterm/solution.pdf), [TeX](2009/midterm/solution.tex) |
 | [2009 final](2009/final/README.md) | Complete, 90pts | [PDF](2009/final/original-exam.pdf) | [PDF](2009/final/exam.pdf), [TeX](2009/final/exam.tex) | [PDF](2009/final/solution.pdf), [TeX](2009/final/solution.tex) |
 | [2008 midterm](2008/midterm/README.md) | Complete, 100pts | [PDF](2008/midterm/original-exam.pdf) | [PDF](2008/midterm/exam.pdf), [TeX](2008/midterm/exam.tex) | [PDF](2008/midterm/solution.pdf), [TeX](2008/midterm/solution.tex) |
+| [2008 final](2008/final/README.md) | Complete, 115pts | [PDF](2008/final/original-exam.pdf) | [PDF](2008/final/exam.pdf), [TeX](2008/final/exam.tex) | [PDF](2008/final/solution.pdf), [TeX](2008/final/solution.tex) |
 | [2007 midterm](2007/midterm/README.md) | Complete, 110pts | [PDF](2007/midterm/original-exam.pdf) | [PDF](2007/midterm/exam.pdf), [TeX](2007/midterm/exam.tex) | [PDF](2007/midterm/solution.pdf), [TeX](2007/midterm/solution.tex) |
+| [2007 final](2007/final/README.md) | Complete, 105pts | [PDF](2007/final/original-exam.pdf) | [PDF](2007/final/exam.pdf), [TeX](2007/final/exam.tex) | [PDF](2007/final/solution.pdf), [TeX](2007/final/solution.tex) |
 
-[Coverage catalog](COVERAGE.json) records scope and missing premises. The 2024 final retains the original110-point total and both user-approved Q4/Q6 interpretations. The 2023 midterm retains only the available latter questions, as requested.
+[Coverage catalog](COVERAGE.json) records scope and missing premises. The 2024 final retains its printed 110 points and both user-approved Q4/Q6 interpretations. The 2023 midterm preserves its surviving latter questions; the 2021 final labels the cropped parts unsolvable.
 
-## Remaining archive observations
+## Source classification
 
-The archive contains242 files/148 distinct byte contents, not148 exams.2023 final and2022 midterm have authentic original pages.2021 midterm has two original photographs;2021 final lacks Q6(a)/(b) context. A genuine Fall2016 final is misfiled under2021.2020/2019 midterm material is student-only.2018 and2013 finals have originals;2017/2015 midterms are answer-only. The2013 midterm answers duplicate2012 byte-for-byte and their year is unresolved. Older papers need individual source review.
+[Archive review](ARCHIVE_REVIEW.json) records every year and term from 2024 back to the oldest supplied year, 2007. The 242 files contain 148 distinct byte contents, including duplicate photos, student work and mixed-year compilations; those counts are not exam counts.
+
+Material without an identifiable original prompt is skipped, as requested. This includes the student material filed under 2020, 2019 midterm, 2018 midterm, 2017, 2016 midterm and 2015 midterm. The 2013 midterm answer pages duplicate 2012; their folder name does not establish a separate original paper. Terms with no supplied original are recorded separately.
+
+Source footers and circuits control year/term identification. The Fall 2016 final is recovered from a folder labeled 2021. The mixed 36-page 2008 file is divided by its original dated subpapers; it is never treated as one 2008 exam. Spring 2008 midterm and Fall 2008 final retain their printed terms.

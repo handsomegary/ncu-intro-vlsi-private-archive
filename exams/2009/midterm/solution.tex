@@ -169,30 +169,36 @@ Ignoring the actual two-gate fanout changes the answer. If mobility balance is n
 
 (c) The conservative original physical paths are $a\to d\to O_0=10.5$, $a\to b\to O_0=9$, and $a\to d\to O_1=10$ units. One conditional allocation puts b's four NOR2 devices at high $V_T$ and retains all other devices at low $V_T$, provided its added delay is at most 1.5 units. The source's threshold-symbol convention is reproduced below (device type is also stated explicitly):
 \begin{center}\begin{tikzpicture}[x=.65cm,y=.65cm,font=\scriptsize]
-\mos{0.0}{0.0}{\mathrm{I1}}{0}
+\mos{0.0}{0.0}{\mathrm{I1}}{1}
 \draw(0.25,0.5)--(0.25,0.7)node[above]{$\mathrm{VDD}$};
 \draw(0.25,-0.5)--(0.25,-0.7)node[below]{$\mathrm{aN1}$};
 \node[right]at(0.5,0.0){aNP0 (p)};
-\mos{5.3}{0.0}{\mathrm{I1}}{1}
+\draw[line width=1.1pt](-0.16,-0.23)--(-0.16,0.23);
+\mos{5.3}{0.0}{\mathrm{I1}}{0}
 \draw(5.55,0.5)--(5.55,0.7)node[above]{$\mathrm{ar}$};
 \draw(5.55,-0.5)--(5.55,-0.7)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,0.0){aNN0 (n)};
-\mos{10.6}{0.0}{\mathrm{I2}}{0}
+\draw[line width=1.1pt](5.14,-0.23)--(5.14,0.23);
+\mos{10.6}{0.0}{\mathrm{I2}}{1}
 \draw(10.85,0.5)--(10.85,0.7)node[above]{$\mathrm{aN1}$};
 \draw(10.85,-0.5)--(10.85,-0.7)node[below]{$\mathrm{ar}$};
 \node[right]at(11.1,0.0){aNP1 (p)};
-\mos{15.899999999999999}{0.0}{\mathrm{I2}}{1}
+\draw[line width=1.1pt](10.44,-0.23)--(10.44,0.23);
+\mos{15.899999999999999}{0.0}{\mathrm{I2}}{0}
 \draw(16.15,0.5)--(16.15,0.7)node[above]{$\mathrm{ar}$};
 \draw(16.15,-0.5)--(16.15,-0.7)node[below]{$\mathrm{GND}$};
 \node[right]at(16.4,0.0){aNN1 (n)};
-\mos{0.0}{-2.7}{\mathrm{ar}}{0}
+\draw[line width=1.1pt](15.739999999999998,-0.23)--(15.739999999999998,0.23);
+\mos{0.0}{-2.7}{\mathrm{ar}}{1}
 \draw(0.25,-2.2)--(0.25,-2.0)node[above]{$\mathrm{VDD}$};
 \draw(0.25,-3.2)--(0.25,-3.4000000000000004)node[below]{$\mathrm{a}$};
 \node[right]at(0.5,-2.7){aIP (p)};
-\mos{5.3}{-2.7}{\mathrm{ar}}{1}
+\draw[line width=1.1pt](-0.16,-2.93)--(-0.16,-2.47);
+\mos{5.3}{-2.7}{\mathrm{ar}}{0}
 \draw(5.55,-2.2)--(5.55,-2.0)node[above]{$\mathrm{a}$};
 \draw(5.55,-3.2)--(5.55,-3.4000000000000004)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,-2.7){aIN (n)};
+\draw[line width=1.1pt](5.14,-2.93)--(5.14,-2.47);
 \mos{10.6}{-2.7}{\mathrm{I0}}{1}
 \draw(10.85,-2.2)--(10.85,-2.0)node[above]{$\mathrm{VDD}$};
 \draw(10.85,-3.2)--(10.85,-3.4000000000000004)node[below]{$\mathrm{bN1}$};
@@ -209,78 +215,96 @@ Ignoring the actual two-gate fanout changes the answer. If mobility balance is n
 \draw(5.55,-4.9)--(5.55,-4.7)node[above]{$\mathrm{b}$};
 \draw(5.55,-5.9)--(5.55,-6.1000000000000005)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,-5.4){bNN1 (n)};
-\mos{10.6}{-5.4}{\mathrm{a}}{0}
+\mos{10.6}{-5.4}{\mathrm{a}}{1}
 \draw(10.85,-4.9)--(10.85,-4.7)node[above]{$\mathrm{VDD}$};
 \draw(10.85,-5.9)--(10.85,-6.1000000000000005)node[below]{$\mathrm{d}$};
 \node[right]at(11.1,-5.4){dNP0 (p)};
-\mos{15.899999999999999}{-5.4}{\mathrm{a}}{1}
+\draw[line width=1.1pt](10.44,-5.630000000000001)--(10.44,-5.17);
+\mos{15.899999999999999}{-5.4}{\mathrm{a}}{0}
 \draw(16.15,-4.9)--(16.15,-4.7)node[above]{$\mathrm{d}$};
 \draw(16.15,-5.9)--(16.15,-6.1000000000000005)node[below]{$\mathrm{dN1}$};
 \node[right]at(16.4,-5.4){dNN0 (n)};
-\mos{0.0}{-8.100000000000001}{\mathrm{I3}}{0}
+\draw[line width=1.1pt](15.739999999999998,-5.630000000000001)--(15.739999999999998,-5.17);
+\mos{0.0}{-8.100000000000001}{\mathrm{I3}}{1}
 \draw(0.25,-7.600000000000001)--(0.25,-7.400000000000001)node[above]{$\mathrm{VDD}$};
 \draw(0.25,-8.600000000000001)--(0.25,-8.8)node[below]{$\mathrm{d}$};
 \node[right]at(0.5,-8.100000000000001){dNP1 (p)};
-\mos{5.3}{-8.100000000000001}{\mathrm{I3}}{1}
+\draw[line width=1.1pt](-0.16,-8.330000000000002)--(-0.16,-7.870000000000001);
+\mos{5.3}{-8.100000000000001}{\mathrm{I3}}{0}
 \draw(5.55,-7.600000000000001)--(5.55,-7.400000000000001)node[above]{$\mathrm{dN1}$};
 \draw(5.55,-8.600000000000001)--(5.55,-8.8)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,-8.100000000000001){dNN1 (n)};
-\mos{10.6}{-8.100000000000001}{\mathrm{b}}{0}
+\draw[line width=1.1pt](5.14,-8.330000000000002)--(5.14,-7.870000000000001);
+\mos{10.6}{-8.100000000000001}{\mathrm{b}}{1}
 \draw(10.85,-7.600000000000001)--(10.85,-7.400000000000001)node[above]{$\mathrm{VDD}$};
 \draw(10.85,-8.600000000000001)--(10.85,-8.8)node[below]{$\mathrm{o0N1}$};
 \node[right]at(11.1,-8.100000000000001){o0NP0 (p)};
-\mos{15.899999999999999}{-8.100000000000001}{\mathrm{b}}{1}
+\draw[line width=1.1pt](10.44,-8.330000000000002)--(10.44,-7.870000000000001);
+\mos{15.899999999999999}{-8.100000000000001}{\mathrm{b}}{0}
 \draw(16.15,-7.600000000000001)--(16.15,-7.400000000000001)node[above]{$\mathrm{r0}$};
 \draw(16.15,-8.600000000000001)--(16.15,-8.8)node[below]{$\mathrm{GND}$};
 \node[right]at(16.4,-8.100000000000001){o0NN0 (n)};
-\mos{0.0}{-10.8}{\mathrm{d}}{0}
+\draw[line width=1.1pt](15.739999999999998,-8.330000000000002)--(15.739999999999998,-7.870000000000001);
+\mos{0.0}{-10.8}{\mathrm{d}}{1}
 \draw(0.25,-10.3)--(0.25,-10.100000000000001)node[above]{$\mathrm{o0N1}$};
 \draw(0.25,-11.3)--(0.25,-11.5)node[below]{$\mathrm{o0N2}$};
 \node[right]at(0.5,-10.8){o0NP1 (p)};
-\mos{5.3}{-10.8}{\mathrm{d}}{1}
+\draw[line width=1.1pt](-0.16,-11.030000000000001)--(-0.16,-10.57);
+\mos{5.3}{-10.8}{\mathrm{d}}{0}
 \draw(5.55,-10.3)--(5.55,-10.100000000000001)node[above]{$\mathrm{r0}$};
 \draw(5.55,-11.3)--(5.55,-11.5)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,-10.8){o0NN1 (n)};
-\mos{10.6}{-10.8}{\mathrm{I4}}{0}
+\draw[line width=1.1pt](5.14,-11.030000000000001)--(5.14,-10.57);
+\mos{10.6}{-10.8}{\mathrm{I4}}{1}
 \draw(10.85,-10.3)--(10.85,-10.100000000000001)node[above]{$\mathrm{o0N2}$};
 \draw(10.85,-11.3)--(10.85,-11.5)node[below]{$\mathrm{r0}$};
 \node[right]at(11.1,-10.8){o0NP2 (p)};
-\mos{15.899999999999999}{-10.8}{\mathrm{I4}}{1}
+\draw[line width=1.1pt](10.44,-11.030000000000001)--(10.44,-10.57);
+\mos{15.899999999999999}{-10.8}{\mathrm{I4}}{0}
 \draw(16.15,-10.3)--(16.15,-10.100000000000001)node[above]{$\mathrm{r0}$};
 \draw(16.15,-11.3)--(16.15,-11.5)node[below]{$\mathrm{GND}$};
 \node[right]at(16.4,-10.8){o0NN2 (n)};
-\mos{0.0}{-13.5}{\mathrm{r0}}{0}
+\draw[line width=1.1pt](15.739999999999998,-11.030000000000001)--(15.739999999999998,-10.57);
+\mos{0.0}{-13.5}{\mathrm{r0}}{1}
 \draw(0.25,-13.0)--(0.25,-12.8)node[above]{$\mathrm{VDD}$};
 \draw(0.25,-14.0)--(0.25,-14.2)node[below]{$\mathrm{O0}$};
 \node[right]at(0.5,-13.5){o0IP (p)};
-\mos{5.3}{-13.5}{\mathrm{r0}}{1}
+\draw[line width=1.1pt](-0.16,-13.73)--(-0.16,-13.27);
+\mos{5.3}{-13.5}{\mathrm{r0}}{0}
 \draw(5.55,-13.0)--(5.55,-12.8)node[above]{$\mathrm{O0}$};
 \draw(5.55,-14.0)--(5.55,-14.2)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,-13.5){o0IN (n)};
-\mos{10.6}{-13.5}{\mathrm{d}}{0}
+\draw[line width=1.1pt](5.14,-13.73)--(5.14,-13.27);
+\mos{10.6}{-13.5}{\mathrm{d}}{1}
 \draw(10.85,-13.0)--(10.85,-12.8)node[above]{$\mathrm{VDD}$};
 \draw(10.85,-14.0)--(10.85,-14.2)node[below]{$\mathrm{r1}$};
 \node[right]at(11.1,-13.5){o1NP0 (p)};
-\mos{15.899999999999999}{-13.5}{\mathrm{d}}{1}
+\draw[line width=1.1pt](10.44,-13.73)--(10.44,-13.27);
+\mos{15.899999999999999}{-13.5}{\mathrm{d}}{0}
 \draw(16.15,-13.0)--(16.15,-12.8)node[above]{$\mathrm{r1}$};
 \draw(16.15,-14.0)--(16.15,-14.2)node[below]{$\mathrm{o1N1}$};
 \node[right]at(16.4,-13.5){o1NN0 (n)};
-\mos{0.0}{-16.200000000000003}{\mathrm{I4}}{0}
+\draw[line width=1.1pt](15.739999999999998,-13.73)--(15.739999999999998,-13.27);
+\mos{0.0}{-16.200000000000003}{\mathrm{I4}}{1}
 \draw(0.25,-15.700000000000003)--(0.25,-15.500000000000004)node[above]{$\mathrm{VDD}$};
 \draw(0.25,-16.700000000000003)--(0.25,-16.900000000000002)node[below]{$\mathrm{r1}$};
 \node[right]at(0.5,-16.200000000000003){o1NP1 (p)};
-\mos{5.3}{-16.200000000000003}{\mathrm{I4}}{1}
+\draw[line width=1.1pt](-0.16,-16.430000000000003)--(-0.16,-15.970000000000002);
+\mos{5.3}{-16.200000000000003}{\mathrm{I4}}{0}
 \draw(5.55,-15.700000000000003)--(5.55,-15.500000000000004)node[above]{$\mathrm{o1N1}$};
 \draw(5.55,-16.700000000000003)--(5.55,-16.900000000000002)node[below]{$\mathrm{GND}$};
 \node[right]at(5.8,-16.200000000000003){o1NN1 (n)};
-\mos{10.6}{-16.200000000000003}{\mathrm{r1}}{0}
+\draw[line width=1.1pt](5.14,-16.430000000000003)--(5.14,-15.970000000000002);
+\mos{10.6}{-16.200000000000003}{\mathrm{r1}}{1}
 \draw(10.85,-15.700000000000003)--(10.85,-15.500000000000004)node[above]{$\mathrm{VDD}$};
 \draw(10.85,-16.700000000000003)--(10.85,-16.900000000000002)node[below]{$\mathrm{O1}$};
 \node[right]at(11.1,-16.200000000000003){o1IP (p)};
-\mos{15.899999999999999}{-16.200000000000003}{\mathrm{r1}}{1}
+\draw[line width=1.1pt](10.44,-16.430000000000003)--(10.44,-15.970000000000002);
+\mos{15.899999999999999}{-16.200000000000003}{\mathrm{r1}}{0}
 \draw(16.15,-15.700000000000003)--(16.15,-15.500000000000004)node[above]{$\mathrm{O1}$};
 \draw(16.15,-16.700000000000003)--(16.15,-16.900000000000002)node[below]{$\mathrm{GND}$};
-\node[right]at(16.4,-16.200000000000003){o1IN (n)};\end{tikzpicture}\\\small 28 physical MOS. Only bN devices are high-VT in this conditional example. Equal terminal names denote connected wires. Bodies: nMOS to GND, pMOS to VDD.\end{center}
+\node[right]at(16.4,-16.200000000000003){o1IN (n)};
+\draw[line width=1.1pt](15.739999999999998,-16.430000000000003)--(15.739999999999998,-15.970000000000002);\end{tikzpicture}\\\small 28 physical MOS. Only bN devices are high-VT in this conditional example. Equal terminal names denote connected wires. Bodies: nMOS to GND, pMOS to VDD.\end{center}
 If the added delay of the final AND is at most .5 units, its six devices can also be high-$V_T$ under that conservative timing envelope. These are feasible examples, not a proven unique leakage optimum. The question supplies no high-$V_T$ penalty, leakage currents or polarity-specific arc model, so an unconditional minimum-leakage transistor assignment cannot be derived. Within the four settled words $O_0$ is constant, but deleting its physical paths would be a separate logic optimization and would miss the possible hazard above.
 \newpage\textbf{5. TSV manufacturing order}
 \begin{center}\begin{tikzpicture}[x=1cm,y=1cm,font=\scriptsize]

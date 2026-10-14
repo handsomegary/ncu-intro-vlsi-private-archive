@@ -14,5 +14,6 @@
     "solution.tex": "83018ec5a0197d9c80f2bcd38182753d83304ffc2eb71f47bc69918cf24e9b11",
     "solution.pdf": "cd2c06eeed9f435d1f4e9beea71f6b49709f71f31af0b493e3446c9ea4deb54c",
     "original-exam.pdf": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170"
-  }
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json."
 }

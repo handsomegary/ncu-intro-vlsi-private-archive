@@ -67,11 +67,12 @@
   },
   "artifact_hashes": {
     "original-exam.pdf": "10bca0b02b8e18257187eb633e95f48571f7e585878ae7fb609ba07b45de9a9a",
-    "exam.tex": "7e8447b5529e70c7e7724d2679dff1ec691248b96a7d43329a155b17038e3778",
+    "exam.tex": "909907ef848797da994d4c0c9ab1c5b18aada182087feb7baadd0f35f5516cb4",
     "exam.pdf": "6ea0484aa5ec7f80d626864e991a2f252a6cd98e7436d55951949979e835da3e",
-    "solution.tex": "9c74d34d0f74685edcb05b02a62ea21d9b39921971f4359569e82a41be718bb9",
+    "solution.tex": "333478a00ff3b17dcc2e1b3cc0c786a016370a9d261033c01761f0b7f06406d2",
     "solution.pdf": "fbd3001bec6c0c401af3dc03255b6eb190a74239746498db81c836f09ddd2e07",
-    "verify_logic_timing.py": "4c6421d94ad3c6a534ebeb9200a0839220b3f4eced3b292ac84f990e5a2b3dca",
-    "logic_timing_verification.json": "c97cd3d29c7d9b01e52596ea8d857e3749866fdf92ae0b22db496d6994c946c0"
-  }
+    "verify_logic_timing.py": "5e92c44b22bf014c0335d85264077959ae21470772e6169b30d50edbafda7038",
+    "logic_timing_verification.json": "2b92f8bc4ae94ec7082e40a8d0b55bf7a3e0ce4eaf7b9160ecc9432bd2037ccc"
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json."
 }

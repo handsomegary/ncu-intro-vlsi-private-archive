@@ -52,5 +52,6 @@
     "SOURCES.md": "f9e85b87aa10ca7449f0a71eabce54bb5aadd790dc01953fb2f283a065a18678",
     "verification.json": "d71f4413c646d8e053cc00110d44f2eabf8559fae9667281c8092912c06d0e99",
     "verify.py": "ee1a9afa79d3d2123c12bdd795ee28d2d19e27f362459f356ccee306de6eab8e"
-  }
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json."
 }

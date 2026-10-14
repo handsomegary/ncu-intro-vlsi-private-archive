@@ -35,9 +35,8 @@
 \draw(0,0)rectangle(8,1.4);\draw(4.1,.4)rectangle(7.8,1.4);\node at(6,.55){nWell};\node at(3,.25){P-substrate};
 \foreach\x/\t in{.5/p^+,1.7/n^+,3/n^+,4.9/p^+,6.3/p^+,7.2/n^+}{\draw(\x,1)rectangle(\x+.5,1.35);\node at(\x+.25,1.18){$\t$};}
 \foreach\x in{2.45,5.85}{\draw[fill=gray](\x-.2,1.45)rectangle(\x+.2,1.58);}
-\draw(.75,1.35)--(.75,1.8)--(.2,1.8);\grd{.2}{1.8}
+\draw(.75,1.35)--(.75,1.55)--(1.95,1.55)--(1.95,1.35);\draw(.75,1.55)--(.75,1.8)--(.2,1.8);\grd{.2}{1.8}
 \draw(6.55,1.35)--(6.55,1.8)--(7.45,1.8)--(7.45,1.35);\node[above]at(7,1.8){$V_{DD}$};
-\draw(3.25,1.35)--(3.25,1.7)--(5.15,1.7)--(5.15,1.35);
 \end{tikzpicture}\\Figure 1: Process cross section of a CMOS inverter.\end{center}
 \textbf{3. (10 points)} Figure 2 depicts two designs of inverter chains. Assume that the equivalent resistance of a minimum size W/L NMOS is $R$ and $\mu_n=2\mu_p$. The gate capacitance of a W/L transistor is $C_g$. Also, the parasitic capacitance of drain/source and wires are neglected. Which inverter chain consumes lower short-circuit power? Explain your answer.
 \begin{center}\begin{tikzpicture}[x=.83cm,y=.83cm,font=\scriptsize]\begin{scope}[xshift=0cm]
@@ -110,7 +109,7 @@
 \draw(o1.output)--(8,.2)node[above]{$O_1$}--(8,-.2);\draw(7.8,-.2)--(8.2,-.2) (7.8,-.3)--(8.2,-.3);\grd{8}{-.4}\node[right]at(8.2,-.25){$2C_i$};
 \end{tikzpicture}\end{center}\begin{center}\begin{tikzpicture}[font=\scriptsize]
 \mos{0}{1}{g}{1}\mos{2}{1}{g}{0}\node at(1,0){High-$V_T$ (source symbols)};
-\mos{4}{1}{g}{0}\mos{6}{1}{g}{1}\node at(5,0){Low-$V_T$ (source symbols)};
+\mos{4}{1}{g}{0}\mos{6}{1}{g}{1}\foreach\x in{4,6}{\draw[line width=1.1pt](\x-.16,.77)--(\x-.16,1.23);}\node at(5,0){Low-$V_T$ (thick gate)};
 \end{tikzpicture}\end{center}\begin{center}Figure 3: (a) CMOS circuit (b) original high-/low-$V_T$ symbols.\end{center}
 \textbf{5. (10 points)} Three-dimensional (3D) integration technology using through-silicon via (TSV) is an emerging technology for integrated circuit (IC) designs. Figure 4 shows partial manufacturing steps for implementing a 3D IC using via-first and via-last TSV processes.
 \begin{enumerate}[label=(\alph*),leftmargin=7mm]

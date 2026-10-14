@@ -23,16 +23,16 @@ an authentic original prompt is included; student-only material is skipped.
 
 ## Exam papers and corrected answers
 
-The [exam archive](exams/README.md) provides original prompts, reconstructed LaTeX/TikZ papers, independently derived corrected solutions and reproducible analytical evidence. Its [coverage catalog](exams/COVERAGE.json) distinguishes complete papers from user-approved partial originals. Student answers are fallible references; missing original premises are not invented.
+The [exam archive](exams/README.md) contains **20 papers from 2024 back to the oldest supplied year, 2007**: original prompts, reconstructed LaTeX/TikZ papers, independently derived corrected solutions and reproducible analytical evidence. Its [coverage catalog](exams/COVERAGE.json) distinguishes complete papers from user-approved partial originals; the [source review](exams/ARCHIVE_REVIEW.json) records skipped or missing terms. Student answers are fallible references; missing original premises are not invented.
 
 ## Coverage and missing material
 
-- **2012 and 2014:** skipped entirely because only student answers are available.
+- **Homework years 2012 and 2014:** skipped because only student answers are available; this does not exclude the original 2012 exam papers.
 - **2013:** HW1–HW3; HW4 missing.
 - **2016:** HW3 only.
 - **2018:** HW1/HW2 only; student-only HW3 and missing HW4 skipped.
 - **2019:** HW2 only.
-- **2022:** absent and explicitly skipped.
+- **Homework year 2022:** absent and explicitly skipped; the separate 2022 midterm original is included in the exam archive.
 
 See [COVERAGE.json](COVERAGE.json) for every year and homework status.
 2019 HW2 and 2016 HW3 are self-contained and require no previous homework circuit.

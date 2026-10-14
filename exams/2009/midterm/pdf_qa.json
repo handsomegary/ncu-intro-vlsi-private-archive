@@ -44,9 +44,9 @@
   "artifact_sha256": {
     "coverage-entry.json": "0365801bf9a3d0d4ea39a68917209c38979555b18f5c09b533d70da2a405612d",
     "device-netlists.json": "5bc632da005f05436be2235064a566426fec8d68a4eacdcf3af268a18c26b576",
-    "exam.pdf": "ae6965bca68fcd4caa5d5f180628027ab5470efd2a15d54d5427fc3787904572",
-    "exam.tex": "c9b87da5bbba49234dd0ca58b36f116656770ac064e9ebecf30d0ab03fa959fc",
-    "original-exam.pdf": "f83b8261edba7558da5a3ac52022a79727097614cf8c4413f43d8cd312f844d3",
+    "exam.pdf": "17dc6e09699a1e38c7c8a6af660782a7c86ed54af3596e94a1cbacf14836541e",
+    "exam.tex": "443a39057c0623a3fcf7e7a6c512899a707becedf9550f363e0e2250b1a80fab",
+    "original-exam.pdf": "394432f845fcd153d1a6b2357814543a0b6b4a35fff374fc67d51eea0130217f",
     "q1_full_CMOS_truth.csv": "00be636dee4edb86cbad65baf80e679ace4440885acc44d8650248931ee6d976",
     "q3_declared_overlap_comparison.csv": "b64fdbadffb9d4347478132e7ccc39522fe1eefe725bd5758f7d22212b2d1d85",
     "q3_literal_slews.csv": "84a0f3599ab2fcd7521f372eed869bc57101af45f8a2b2d38cfa74ff5134b681",
@@ -60,11 +60,12 @@
     "q6_literal_majority_truth.csv": "d2b9fa89dc024d5c2dda3968ed8600cb139c4aa62212368d5cca6935bc832046",
     "q6_literal_MOS.csv": "b25ff6ffd67557c706037cc340f2b9228dcf45a7dd45e086b0e3341a191c7b47",
     "README.md": "cbf9d256a3e5dc861fc25937d45796763b50c714551492204c8cc08110082ccd",
-    "solution.pdf": "65b4556ef44b44f8197e511a5973d2ab56d6dc6e0d5e5279e8e0f2ce47905ee1",
-    "solution.tex": "9f70e51f0f491aa7298df0e83c937cf66efbd52169d83c793b85078b618486db",
+    "solution.pdf": "af3761d1d3043421fd7ad3e5b854fed682208df2f5962073ddf2f622e9150d99",
+    "solution.tex": "9c34b35b67bd4bb202fa0d1c17189ac11e4046d7cd115134d44c78a3275e56aa",
     "sources.json": "92056c8feb0b877c4cd42c105763aa4f3e115f6e917ca5edab3b61cd522e4c53",
     "SOURCES.md": "ba558ff63e9061a782ad0665d494ce26e1005255ac1e15b7e2bfd074c74bec22",
     "verification.json": "36303e3203b03d563217b398813a29829acf40a3e37ad04b1f1089e7d3d000ff",
     "verify.py": "a45d7029da35d883297e1e744513e38cee3683431670027522e4bb70e6462b41"
-  }
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json."
 }

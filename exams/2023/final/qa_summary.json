@@ -55,10 +55,11 @@
   ],
   "artifact_sha256": {
     "exam.pdf": "86811b2a35c34c51ab46a3555cb918620876e83ee15098f79dda933602f72726",
-    "exam.tex": "3792f4348ae2c1f2283550a008c19757e40972e164bc99e0788afca53d2d9e92",
+    "exam.tex": "4d4d4d565a06ac369cb7a994c410797d9f103ed042d2ab984ee7b768994ceea0",
     "original-exam.pdf": "0e367de4671f18321e4332d028b0c9c9e9a7a2aa6ef7741668e6bdaf34304971",
     "solution.pdf": "b89732f8ca5b4810e2d2fe783b9c725fc04572f9afc20c4a6b5d4c54d396fd38",
-    "solution.tex": "9f2bcf768b831ca835304d3c0444e6eff3d7fd94cfcf7b01d3589b4c06e0dd29",
+    "solution.tex": "9800d35e9065a51b2b64a32ec342d2aab0b0cd659928802d8e394559c6ba4520",
     "verify_logic_timing.py": "b6503de54158bae64b31a77fc6593c2671410f3fb9e897201a8b6d0dcf941aac"
-  }
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json."
 }
