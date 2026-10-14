@@ -1,0 +1,143 @@
+{
+  "year": 2008,
+  "season": "Spring",
+  "exam": "midterm",
+  "course": "EE332 Introduction to VLSI",
+  "original": {
+    "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\2008期中考-1.pdf",
+    "sha256": "5d5956eb1495269b283091689552718ece538a19eb6d906735deedc9081a68ed",
+    "bytes": 1186418,
+    "total_pages": 36,
+    "used_original_pages": [
+      1,
+      2
+    ],
+    "published_only_actual_question_pages": true,
+    "excluded_pages": "3-6 are matching student answers; 7-36 contain unrelated years or notes."
+  },
+  "original_extract": {
+    "path": "C:\\Users\\User\\Documents\\Codex\\2026-10-13\\c-users-user-downloads-introduction-to-2\\work\\exams\\2008-midterm-package\\original-exam.pdf",
+    "sha256": "10bca0b02b8e18257187eb633e95f48571f7e585878ae7fb609ba07b45de9a9a",
+    "bytes": 68623,
+    "pages": 2,
+    "extraction": "pypdf first-two-page extraction; PDF container rewritten; decoded original content and images preserved.",
+    "page_checks": [
+      {
+        "source_pdf_page": 1,
+        "extracted_page": 1,
+        "decoded_content_sha256": "92989685850878102ea9624fe0a5ecf9903aef19a9ea5120eddbed38c691bc89",
+        "image_count": 1,
+        "page_content_preserved": true
+      },
+      {
+        "source_pdf_page": 2,
+        "extracted_page": 2,
+        "decoded_content_sha256": "258d9ec93bc1b906251cd2dc74d606eb98bcbb432bda8d7d17f278322a65921a",
+        "image_count": 1,
+        "page_content_preserved": true
+      }
+    ]
+  },
+  "native_photo_crosschecks": [
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\midterm (1).jpg",
+      "sha256": "0aa3c11ad7ff8e066daa3a199f00b30e944058e3807f916abbd5ef870e6059ca",
+      "bytes": 227573,
+      "original_printed_page": 1,
+      "annotations": "Handwritten study ink is visible; reconstruction uses printed content only."
+    },
+    {
+      "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\midterm (2).jpg",
+      "sha256": "a046352b9f06924d3ffc28daa541f21ac73cfa6e0121b48eba2d1c66ef55763a",
+      "bytes": 196864,
+      "original_printed_page": 2,
+      "annotations": "Handwritten study ink is visible; reconstruction uses printed content only."
+    }
+  ],
+  "graded_student_reference": {
+    "source": "2008期中考-1.pdf",
+    "pdf_pages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "booklet_page_order": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "cover_pdf_page": 6,
+    "overall_mark": 67,
+    "matching_basis": "Question numbers, circuit, taper chain, sizing and full-adder table match the two original pages.",
+    "scope": "Fallible comparison only; grades do not establish correctness; student identity pages remain local."
+  },
+  "ungraded_student_reference": {
+    "duplicate_image_pairs": [
+      {
+        "primary": {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\answer (1).jpg",
+          "sha256": "34f8510f03c3b401c9c607afd2ac2e8ffbb1fa01e066a9bab5f1451851b837c7",
+          "bytes": 158091
+        },
+        "duplicate": {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\mid-answer (1).jpg",
+          "sha256": "34f8510f03c3b401c9c607afd2ac2e8ffbb1fa01e066a9bab5f1451851b837c7",
+          "bytes": 158091
+        },
+        "byte_identical": true
+      },
+      {
+        "primary": {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\answer (2).jpg",
+          "sha256": "e665ba1012f05866e2304c0c28955605a4716fc065c722364d7c4b5b15f68999",
+          "bytes": 128562
+        },
+        "duplicate": {
+          "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\mid-answer (2).jpg",
+          "sha256": "e665ba1012f05866e2304c0c28955605a4716fc065c722364d7c4b5b15f68999",
+          "bytes": 128562
+        },
+        "byte_identical": true
+      }
+    ],
+    "duplicate_pdfs": [
+      {
+        "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\answer.pdf",
+        "sha256": "a30bf4a52888227b74fef76aa09588ad73d7a847897ff3aa24d8dd950000d514",
+        "bytes": 121564
+      },
+      {
+        "path": "C:\\Users\\User\\Downloads\\新增資料夾\\超大型積體電路導論 Introduction to VLSI 李進福\\考古\\2008\\midterm\\mid-answer.pdf",
+        "sha256": "a30bf4a52888227b74fef76aa09588ad73d7a847897ff3aa24d8dd950000d514",
+        "bytes": 121564
+      }
+    ],
+    "duplicate_pdf_bytes_identical": true,
+    "matching_basis": "Q1 function, Q2 circuit/fanout, Q3 taper metric, Q4 sizing and Q5 forward full-adder match.",
+    "corrections": "Preserve the correct fanout-aware delays and forward adder equations; qualify broad Q1 claims and supply full transistor expansion and integer-stage correction."
+  },
+  "primary_context": [
+    {
+      "title": "Jin-Fu Li, Fabrication of CMOS Integrated Circuits, Chapter 3",
+      "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch03.pdf",
+      "checked": "2026-10-14",
+      "slides": [
+        37,
+        41
+      ],
+      "use": "Antenna charging and qualitative threshold/leakage tradeoff only; no unprovided numerical process characterization."
+    }
+  ],
+  "source_decisions": [
+    "Printed footer establishes Spring 2008; the mixed-year compilation is never treated as one exam.",
+    "Q2 printed output gates are OR and AND with no output bubbles. O0 is steady constant 1; preserve the original physical network and distinguish physical path arc sums from sensitizable edges.",
+    "Q2 balanced numerical mean delays require Rp = Rn. General Rp/Rn formulas are included because Q2 does not state a mobility ratio. Dual-Vt selection is conditional on quantified slack and is not a unique global optimum.",
+    "Q3 uses the printed eta = (PT-PL)/PT, an intermediate-load overhead fraction. Integer N and recomputed beta preserve the actual load.",
+    "Q4 brackets the first two of three inverters. Alpha = 1 and 2 both meet T = 6RC; alpha = 1 minimizes the modeled switching power.",
+    "Q5 is a forward full adder. The printed final row is 111 -> s = 1, co = 1; the photo circle is annotation. The graded booklet instead solves an inverse relation and is corrected.",
+    "Q5 prints (10%), while the preceding questions total 90 points. Preserve the percentage mark and interpret it as the remaining ten points only for the coverage total."
+  ],
+  "publication": "Only the authentic two-page original, reconstructed exam, independent solutions and verification evidence are published; references remain local."
+}

@@ -1,0 +1,139 @@
+{
+  "status": "ready",
+  "scope": "All original Q1-Q7; printed weights90%",
+  "pdfs": {
+    "exam": {
+      "pages": 4,
+      "raster_images": 0
+    },
+    "solution": {
+      "pages": 8,
+      "raster_images": 0
+    },
+    "original-exam": {
+      "pages": 3,
+      "raster_images": 7
+    }
+  },
+  "compilation": {
+    "built_in": {
+      "exam": "success",
+      "solution": "success"
+    },
+    "local": {
+      "exam": {
+        "pages": 4,
+        "warnings": [],
+        "compiled": true
+      },
+      "solution": {
+        "pages": 8,
+        "warnings": [],
+        "compiled": true
+      }
+    }
+  },
+  "visual_qa": {
+    "exam_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "original_pages": [
+      1,
+      2,
+      3
+    ],
+    "latest_changed_pages_rechecked": {
+      "exam": [
+        1
+      ],
+      "solution": [
+        1
+      ]
+    },
+    "result": "All12 reconstructed pages and all3 original pages inspected. Corrected feedback-gate routing to avoid channel/label crossings; exact clock bubble/edge polarities, native colored layout contacts, all MOS and Q7 overbar checked. No clipping or overlap."
+  },
+  "original_pdf_byte_identical": true,
+  "checks": "All source-derived analytical assertions passed; no process simulation",
+  "csv_row_counts": {
+    "q1_divider_cases.csv": 72,
+    "q1_latch_netlist.csv": 10,
+    "q2_dynamic_register_netlist.csv": 12,
+    "q2_phase_histories.csv": 8,
+    "q2_static_replacement_netlist.csv": 20,
+    "q3a_literal_netlist.csv": 7,
+    "q3a_node_capacitances.csv": 4,
+    "q3a_sharing_parameter_checks.csv": 42,
+    "q3a_switch_components.csv": 16,
+    "q3b_completed_TG_netlist.csv": 4,
+    "q3b_TG_truth.csv": 4,
+    "q4_domino_complete_netlist.csv": 32,
+    "q4_np_netlist.csv": 20,
+    "q4_phase_truth.csv": 8,
+    "q5_timing_bounds.csv": 5,
+    "q6_literal_netlist.csv": 8,
+    "q6_switch_truth.csv": 16,
+    "q7_differential_candidates.csv": 128,
+    "q7_domino_complete_netlist.csv": 19,
+    "q7_domino_phases.csv": 64,
+    "q7_fully_differential_complete_netlist.csv": 22,
+    "q7_static_CMOS_netlist.csv": 10,
+    "q7_transistor_counts.csv": 5,
+    "q7_truth.csv": 32
+  },
+  "csv_total_rows": 568,
+  "sha256": {
+    "coverage-entry.json": "3746f2db2765c61ee9f6c71eb4276112b1ebb262ae7c675a9134d66dc3d4fef1",
+    "exam.pdf": "a942294dcde7acd11cec8370a3847779d2b25851023ba90def16bd9e973b9e5e",
+    "exam.tex": "b945ef0f87b6f0d6bf255eced0ea483f30c7cf7720f84334c4b38dd6634290bb",
+    "layout-vector-paths.json": "7f15a4859b4f1b4f979689c97308daf50ef226d08f11792ad96bb52c938a280e",
+    "numerical-verification.json": "dde0d15f9c88f0052cc0915bf62326288c411744755ca095a91d0f4be4457c75",
+    "original-exam.pdf": "8ad3ece107ccd8b61bfb11826fc669c6cbd3c9ba05c63400a130aff171d0ec14",
+    "q1_divider_cases.csv": "3e93c15076a0c6de3b0bb9df5de1adf7df44343eb3aba1ab26bb754d41763eb1",
+    "q1_latch_netlist.csv": "a86675378f28c5ea0eebbe1e475761de96b46fdfc43f7c95c8b88aa7bb5f0336",
+    "q2_dynamic_register_netlist.csv": "02f2d917127abf5e8e6c577b8d3703ab737abf3b6949efda973939d8e4d372c6",
+    "q2_phase_histories.csv": "d29f10762ce5e48d3947f75d302d488a9b63fe85d5206cba4c11abcb95003630",
+    "q2_static_replacement_netlist.csv": "2a61267331c491f7ef9d7f1ee3ecd69aaec40ae1959b985ff680977a09ef157d",
+    "q3a_literal_netlist.csv": "3a1c3f2aa874166cb4bff3f6abf708c59ec427d7bb84c24f3c89a78ed4884be9",
+    "q3a_node_capacitances.csv": "7789edfc31daf73df45b9ef4de85c35883a6f41a5b500b92403b8c4233a07245",
+    "q3a_sharing_parameter_checks.csv": "4915be5d247b9d65d608d976a8cb1ebf1f1da39e38f5e01c6678288bbbc7aceb",
+    "q3a_switch_components.csv": "7974e322c8529ad57ae397b4d5821e043252955fdc13674a1cfa9d95e3818de1",
+    "q3b_completed_TG_netlist.csv": "2c6f0d5bd924136f5b4c01cc69aaa109d649eddd26a8446be8be016243eca1e9",
+    "q3b_TG_truth.csv": "6e1c7bcec1ac7656eda7d1750924fadbbdf87bc1616bde7a93cc027ed240fbf5",
+    "q4_domino_complete_netlist.csv": "a7a2f9ae9dffaaa942594cfabe422b037e374f0b9a358f2bf3a27919cb095b43",
+    "q4_np_netlist.csv": "906fdfec0be4410de08ef5bf7b59babbd8ef9cfdffcc5b2caa05c0085b4b392b",
+    "q4_phase_truth.csv": "79c7664d8d7b0c3a3e68c1c4e3985fd853789d932cc1e75b41210cdf27ce1528",
+    "q5_timing_bounds.csv": "ba19b0fac9136882c4658cff2043cc56fb43879c07ca948d9a029e90e5b67b50",
+    "q6_literal_netlist.csv": "3308ff1c140082e50a55fb92e2b0e28b347cb01aa431e62f648b0ebbaf77e375",
+    "q6_switch_truth.csv": "a0a75f9c3d9b1da4c0545bc4151ca21062404963a288c8d0003e437d05c2a1c3",
+    "q7_differential_candidates.csv": "c7f1394ce3689ed2b69aa8816589f17b35268d5a652772b2d22ff2c0cbe4a8b2",
+    "q7_domino_complete_netlist.csv": "5e20746323e561d05d8fb6c067a0e9d39ca2193bb2d7e81b15a729d02e01857f",
+    "q7_domino_phases.csv": "0033add967f149e85bdd2e5f55b758db8e1373cf0dfb5690b54000ae06faf295",
+    "q7_fully_differential_complete_netlist.csv": "d503d185ecd6283ca57d842f2682333cd0952489d0250b3f2cd9e473ed84ead3",
+    "q7_static_CMOS_netlist.csv": "8485cddbca771a5114fa954549907c4e7f206409ba961a47b076f87d630cfdde",
+    "q7_transistor_counts.csv": "27db9d988d21288419b482663893ee6d2abe84b18105afeb83e23de3e5e0f0be",
+    "q7_truth.csv": "0ad0ac63df43edf29f40e81944d1e0db814e054d1d6fbe7bc88f8da2c5f95871",
+    "README.md": "0f9472dba08509d964b2e27f3002bda591aa55db7ff361890dd601aecb3e7803",
+    "register-layout-verification.json": "beb852016cfd99216abb468d7b0f571ac6a128f7d6ed8f29346293c4c7bd3260",
+    "solution.pdf": "8b92c4cd14d5c72fdb365b68e699bb792612d177972d79e3c03321a175e526d3",
+    "solution.tex": "70fe809f7d467adbe54467ed8423f0edbac400027ac5a66fe3ff8f336f13f087",
+    "sources.json": "b92ffa330b778f97eb972d18fbaa2f52eb826641847207e9a74ffd36512efeb2",
+    "SOURCES.md": "88b97f93ce2ab85b37a36567fcf92816477e517cc8afbeee565f88bb5d619ee9",
+    "verification.json": "afe13c6e379e52dc61286137863393cf1c75453fa78ec7ca5a6b4bf54b1ac4b7",
+    "verify.py": "ecf146a2639f259221300baa7d7c6385f5d49276db3698d75fde4a0978269712",
+    "verify_numerical.py": "bc69ca0a7a037deb37c9034bf4fa60e7be4551c5ac25ab853667ba6a9c6e93bb",
+    "verify_register_layout.py": "63768205026b23dd5758fcb88204dd3460dccdedecc0daf9e722b89c06fa47d2"
+  }
+}

@@ -16,7 +16,10 @@ Original wording, circuit symbols, contacts and specified definitions govern eac
 | [2013 final](2013/final/README.md) | Complete, 150pts | [PDF](2013/final/original-exam.pdf) | [PDF](2013/final/exam.pdf), [TeX](2013/final/exam.tex) | [PDF](2013/final/solution.pdf), [TeX](2013/final/solution.tex) |
 | [2012 midterm](2012/midterm/README.md) | Complete, 100pts | [PDF](2012/midterm/original-exam.pdf) | [PDF](2012/midterm/exam.pdf), [TeX](2012/midterm/exam.tex) | [PDF](2012/midterm/solution.pdf), [TeX](2012/midterm/solution.tex) |
 | [2012 final](2012/final/README.md) | Complete, 140pts | [PDF](2012/final/original-exam.pdf) | [PDF](2012/final/exam.pdf), [TeX](2012/final/exam.tex) | [PDF](2012/final/solution.pdf), [TeX](2012/final/solution.tex) |
+| [2011 midterm](2011/midterm/README.md) | Complete, 110pts | [PDF](2011/midterm/original-exam.pdf) | [PDF](2011/midterm/exam.pdf), [TeX](2011/midterm/exam.tex) | [PDF](2011/midterm/solution.pdf), [TeX](2011/midterm/solution.tex) |
 | [2010 final](2010/final/README.md) | Complete, 130pts | [PDF](2010/final/original-exam.pdf) | [PDF](2010/final/exam.pdf), [TeX](2010/final/exam.tex) | [PDF](2010/final/solution.pdf), [TeX](2010/final/solution.tex) |
+| [2009 final](2009/final/README.md) | Complete, 90pts | [PDF](2009/final/original-exam.pdf) | [PDF](2009/final/exam.pdf), [TeX](2009/final/exam.tex) | [PDF](2009/final/solution.pdf), [TeX](2009/final/solution.tex) |
+| [2008 midterm](2008/midterm/README.md) | Complete, 100pts | [PDF](2008/midterm/original-exam.pdf) | [PDF](2008/midterm/exam.pdf), [TeX](2008/midterm/exam.tex) | [PDF](2008/midterm/solution.pdf), [TeX](2008/midterm/solution.tex) |
 | [2007 midterm](2007/midterm/README.md) | Complete, 110pts | [PDF](2007/midterm/original-exam.pdf) | [PDF](2007/midterm/exam.pdf), [TeX](2007/midterm/exam.tex) | [PDF](2007/midterm/solution.pdf), [TeX](2007/midterm/solution.tex) |
 
 [Coverage catalog](COVERAGE.json) records scope and missing premises. The 2024 final retains the original110-point total and both user-approved Q4/Q6 interpretations. The 2023 midterm retains only the available latter questions, as requested.
