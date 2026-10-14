@@ -1,0 +1,5 @@
+event,phi,z,original_middle_Y,static_repair_Y,right_X,original_middle_condition
+previous_evaluation_settled_F1,1,0,1,1,1,pMOS on; Y high
+next_precharge,0,1,1,0,0,pMOS off and footer off; Y floats holding prior high
+evaluation_footer_on_before_z_falls,1,1,0,0,0,z-gated nMOS and phi footer discharge Y
+new_evaluation_settled_F1,1,0,1,1,1,z falls; middle pMOS recharges Y

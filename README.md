@@ -23,7 +23,7 @@ an authentic original prompt is included; student-only material is skipped.
 
 ## Exam papers and corrected answers
 
-The [exam archive](exams/README.md) is handled one paper at a time. The first completed paper is the [2024 midterm](exams/2024/midterm/README.md): two reconstructed original-paper pages, six corrected-answer pages, editable LaTeX/TikZ, and reproducible analytical checks. Supplied handwritten answers are reviewed before correction; missing original questions are not invented.
+The [exam archive](exams/README.md) provides original prompts, reconstructed LaTeX/TikZ papers, independently derived corrected solutions and reproducible analytical evidence. Its [coverage catalog](exams/COVERAGE.json) distinguishes complete papers from user-approved partial originals. Student answers are fallible references; missing original premises are not invented.
 
 ## Coverage and missing material
 

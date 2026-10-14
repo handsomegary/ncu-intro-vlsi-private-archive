@@ -1,5 +1,5 @@
 {
-  "policy": "One exam at a time; authentic original prompts required; correct supplied student work first, independently derive missing answers. Reconstruct scans in editable LaTeX with explicit uncertainty.",
+  "policy": "Authentic original prompts govern independent derivations; student answers are fallible references. Missing original premises are not inferred. User-approved partial coverage is labeled explicitly.",
   "completed_exams": [
     {
       "year": 2024,
@@ -14,6 +14,39 @@
       "solution_tex": "2024/midterm/solution.tex",
       "solution_pdf": "2024/midterm/solution.pdf",
       "status": "complete"
+    },
+    {
+      "year": 2024,
+      "exam": "final",
+      "questions": 6,
+      "points": 110,
+      "original_prompt_pages": 2,
+      "reviewed_answer_pages": 5,
+      "original": "2024/final/original-exam.pdf",
+      "exam_tex": "2024/final/exam.tex",
+      "exam_pdf": "2024/final/exam.pdf",
+      "solution_tex": "2024/final/solution.tex",
+      "solution_pdf": "2024/final/solution.pdf",
+      "status": "complete"
+    },
+    {
+      "year": 2023,
+      "exam": "midterm",
+      "questions": [
+        5,
+        6,
+        7
+      ],
+      "points": 35,
+      "original_prompt_pages": 1,
+      "reviewed_answer_pages": 9,
+      "original": "2023/midterm/original-exam.pdf",
+      "exam_tex": "2023/midterm/exam.tex",
+      "exam_pdf": "2023/midterm/exam.pdf",
+      "solution_tex": "2023/midterm/solution.tex",
+      "solution_pdf": "2023/midterm/solution.pdf",
+      "status": "available_questions_complete",
+      "missing": "Q1-Q3 and Q4 opening; Q4 tail preserved without inferred answer"
     }
   ],
   "other_archive_exams": "pending individual selection and original/source checks"

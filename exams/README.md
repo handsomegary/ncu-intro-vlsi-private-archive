@@ -1,22 +1,15 @@
-# Introduction to VLSI - exam archive
+# NCU Introduction to VLSI - exam archive
 
-Exams are handled one at a time after checking original-paper pages, matching handwritten answers, year identity, and duplicates. With a matching student answer, correct portions are retained and errors are repaired; without one, a new answer is derived. Photographs and photocopies are transcribed to standalone LaTeX with editable vector circuits, while originals remain available for comparison.
+Original wording, circuit symbols, contacts and specified definitions govern each solution. Student answers are checked after independent derivation; grades are recorded only as provenance. Scanned originals are retained and reconstructed as standalone editable LaTeX/TikZ.
 
-| Completed exam | Original | Reconstructed exam | Corrected solution |
-|---|---|---|---|
-| 2024 midterm | [Two original photographed pages](2024/midterm/original-exam.pdf) | [PDF](2024/midterm/exam.pdf), [TeX](2024/midterm/exam.tex) | [PDF](2024/midterm/solution.pdf), [TeX](2024/midterm/solution.tex) |
+| Exam | Scope | Original | Reconstructed paper | Corrected solution |
+|---|---|---|---|---|
+| [2024 midterm](2024/midterm/README.md) | Complete, 100pts | [PDF](2024/midterm/original-exam.pdf) | [PDF](2024/midterm/exam.pdf), [TeX](2024/midterm/exam.tex) | [PDF](2024/midterm/solution.pdf), [TeX](2024/midterm/solution.tex) |
+| [2024 final](2024/final/README.md) | Complete, 110pts | [PDF](2024/final/original-exam.pdf) | [PDF](2024/final/exam.pdf), [TeX](2024/final/exam.tex) | [PDF](2024/final/solution.pdf), [TeX](2024/final/solution.tex) |
+| [2023 midterm](2023/midterm/README.md) | Q5-Q7,35pts; Q4 fragment unsolved | [PDF](2023/midterm/original-exam.pdf) | [PDF](2023/midterm/exam.pdf), [TeX](2023/midterm/exam.tex) | [PDF](2023/midterm/solution.pdf), [TeX](2023/midterm/solution.tex) |
 
-The first selected exam has seven questions/100 points. Its Q6 capacitance error is corrected; Q3's missing NAND sizing assumption is explicit. See its [reproduction/source review](2024/midterm/README.md) and [coverage](COVERAGE.json).
+[Coverage catalog](COVERAGE.json) records scope and missing premises. The 2024 final retains the original110-point total and both user-approved Q4/Q6 interpretations. The 2023 midterm retains only the available latter questions, as requested.
 
-## Inventory observations for future selections
+## Remaining archive observations
 
-The supplied archive has 242 files with 148 distinct byte contents across 2007-2024; these are files, not an exam count. Several nested year folders are exact duplicates. Inventory alone does not mark an exam solved.
-
-- 2024 final has a complete two-page original and two student answer sets; it is pending.
-- 2023 midterm lacks original page 2-1, including Q1-Q3 and the opening of Q4. It cannot be fully reconstructed by guessing from student answers. The 2023 final has two original pages and separate review notes.
-- 2022 has a complete original midterm plus student/review material. Its availability is separate from the missing 2022 homework archive.
-- 2021 midterm has two original JPG pages and multiple answers. Its final prompt is incomplete at Q6(a)/(b). A Fall 2016 final filed under 2021 is a separate paper.
-- The root 2013 midterm-answer photographs exactly duplicate 2012 answer files; their year remains unresolved without an original header/source.
-- A filename containing a year or an exam name can still be an answer set: the 2017-midterm and 2019_midterm PDFs are examples. Student-only material is not promoted to an original exam.
-
-Only the selected 2024 midterm has been authored/published as complete. Missing or ambiguous papers require evidence before later reconstruction.
+The archive contains242 files/148 distinct byte contents, not148 exams.2023 final and2022 midterm have authentic original pages.2021 midterm has two original photographs;2021 final lacks Q6(a)/(b) context. A genuine Fall2016 final is misfiled under2021.2020/2019 midterm material is student-only.2018 and2013 finals have originals;2017/2015 midterms are answer-only. The2013 midterm answers duplicate2012 byte-for-byte and their year is unresolved. Older papers need individual source review.

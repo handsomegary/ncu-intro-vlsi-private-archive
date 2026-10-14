@@ -8,9 +8,7 @@ def need(ok,msg):
 def js(name):return json.loads((P/name).read_text(encoding='utf-8-sig'))
 def rows(name):
     with (P/name).open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
-def main():
-    coverage=json.loads((ROOT/'exams'/'COVERAGE.json').read_text(encoding='utf-8-sig'))
-    need(len(coverage['completed_exams'])==1,'Exam coverage count')
+def verify_2024_midterm():
     for name in ['original-exam.pdf','exam.pdf','solution.pdf']:
         need((P/name).read_bytes().startswith(b'%PDF-'),'Missing exam PDF')
     for name in ['exam.tex','solution.tex']:
@@ -49,4 +47,31 @@ def main():
     qa=js('pdf_qa.json')
     need(qa['all_final_pages_visually_checked'] and qa['exam_pages']==2 and qa['solution_pages']==6 and qa['overfull_boxes']==0 and qa['typeset_raster_image_count']==0,'PDF QA and editable vectors')
     print('PASS: 2024 midterm; 7 original questions/100 points, 16 MUX +32 CMOS cases, conditional buffer sizing, corrected 7RCg bound, standalone vector PDFs.')
+def main():
+    import subprocess,sys
+    coverage=json.loads((ROOT/'exams'/'COVERAGE.json').read_text(encoding='utf-8-sig'))
+    need(len(coverage['completed_exams'])>=1,'Exam coverage count')
+    for item in coverage['completed_exams']:
+        p=ROOT/'exams'/str(item['year'])/item['exam']
+        for key in ['original','exam_pdf','exam_tex','solution_pdf','solution_tex']:
+            need((ROOT/'exams'/item[key]).is_file(),'Coverage artifact missing')
+        for name in ['original-exam.pdf','exam.pdf','solution.pdf']:
+            need((p/name).read_bytes().startswith(b'%PDF-'),'Missing exam PDF')
+        for name in ['exam.tex','solution.tex']:
+            tex=(p/name).read_text(encoding='utf-8')
+            need('\\begin{document}' in tex and '\\end{document}' in tex,'Standalone TeX')
+            need('\\includegraphics' not in tex and '\\input{' not in tex,'Editable standalone reconstruction')
+        if item['status']!='complete':need('missing' in item,'Partial original scope must be labeled')
+        for script in sorted(p.glob('verify*.py')):
+            subprocess.run([sys.executable,str(script)],cwd=p,check=True)
+    verify_2024_midterm()
+    p=ROOT/'exams'/'2024'/'final'
+    if p.exists():
+        s=json.loads((p/'sources.json').read_text(encoding='utf-8'))
+        need(sum(s['question_points'])==110,'Preserve original final point total')
+        need(s['published_original_exam_pages']==[1,2] and s['local_reviewed_handwritten_answer_pages']==[3,4,5,6,7],'Final source partition')
+        q=json.loads((p/'pdf_qa.json').read_text(encoding='utf-8'))
+        need(q['all_final_pages_visually_checked'] and q['typeset_raster_image_count']==q['overfull_boxes']==0,'Final PDF QA')
+    print('PASS:',len(coverage['completed_exams']),'exam packets; original scope, editable sources and analytical evidence.')
+
 if __name__=='__main__':main()

@@ -1,0 +1,18 @@
+{
+  "exam_pages": 3,
+  "solution_pages": 11,
+  "all_final_pages_visually_checked": true,
+  "builtin_compiler": "success for both final standalone TeX sources",
+  "local_export": "MiKTeX pdfLaTeX, two final passes per source",
+  "overfull_boxes": 0,
+  "underfull_boxes": 0,
+  "typeset_raster_image_count": 0,
+  "original_page_content_and_images_verified_unchanged": true,
+  "artifact_sha256": {
+    "exam.tex": "36e269db692d27ab92762164d1f970e846db0fce6313a779fca866b98efdcb90",
+    "exam.pdf": "7c793a3e05b735ca631f1a46c013a783e95e5f9050ae2af14091c819f56921ad",
+    "solution.tex": "f867e51de05867e5c18c75e2024d361820c28e0c030d51928b9890122b189fc3",
+    "solution.pdf": "7aac4a8c3505c0ffd635fdd338b54f369c5a5b8e60f5bf203bec2b97a4d8d2c2",
+    "original-exam.pdf": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170"
+  }
+}
