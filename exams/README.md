@@ -7,6 +7,7 @@ Original wording, circuit symbols, contacts and specified definitions govern eac
 | [2024 midterm](2024/midterm/README.md) | Complete, 100pts | [PDF](2024/midterm/original-exam.pdf) | [PDF](2024/midterm/exam.pdf), [TeX](2024/midterm/exam.tex) | [PDF](2024/midterm/solution.pdf), [TeX](2024/midterm/solution.tex) |
 | [2024 final](2024/final/README.md) | Complete, 110pts | [PDF](2024/final/original-exam.pdf) | [PDF](2024/final/exam.pdf), [TeX](2024/final/exam.tex) | [PDF](2024/final/solution.pdf), [TeX](2024/final/solution.tex) |
 | [2023 midterm](2023/midterm/README.md) | Q5-Q7,35pts; Q4 fragment unsolved | [PDF](2023/midterm/original-exam.pdf) | [PDF](2023/midterm/exam.pdf), [TeX](2023/midterm/exam.tex) | [PDF](2023/midterm/solution.pdf), [TeX](2023/midterm/solution.tex) |
+| [2023 final](2023/final/README.md) | Complete, 115pts | [PDF](2023/final/original-exam.pdf) | [PDF](2023/final/exam.pdf), [TeX](2023/final/exam.tex) | [PDF](2023/final/solution.pdf), [TeX](2023/final/solution.tex) |
 | [2022 midterm](2022/midterm/README.md) | Complete, 100pts | [PDF](2022/midterm/original-exam.pdf) | [PDF](2022/midterm/exam.pdf), [TeX](2022/midterm/exam.tex) | [PDF](2022/midterm/solution.pdf), [TeX](2022/midterm/solution.tex) |
 | [2021 midterm](2021/midterm/README.md) | Complete, 100pts | [PDF](2021/midterm/original-exam.pdf) | [PDF](2021/midterm/exam.pdf), [TeX](2021/midterm/exam.tex) | [PDF](2021/midterm/solution.pdf), [TeX](2021/midterm/solution.tex) |
 
