@@ -1,0 +1,38 @@
+{
+  "builtin_compiler": "both standalone documents successful",
+  "local_compiler": "pdfLaTeX two passes each",
+  "box_warnings": 0,
+  "render_dpi": 120,
+  "total_pages_inspected": 14,
+  "records": [
+    {
+      "file": "exam.pdf",
+      "pages": 3,
+      "sha256": "66c1a339ae40cab34ac7e4390730c1caacc1c23328ec69335b2f300f273429ab",
+      "all_pages_rendered_and_visually_inspected": true
+    },
+    {
+      "file": "solution.pdf",
+      "pages": 8,
+      "sha256": "a047ebc47ebc2490e8c299d9fa343b078562dcf12cdaf4c3c05317967030dd42",
+      "all_pages_rendered_and_visually_inspected": true
+    },
+    {
+      "file": "original-exam.pdf",
+      "pages": 3,
+      "sha256": "fc4c1e3a273938976e9cae395cb398925fbae64b102b6f7a445e75e6f46b6d2f",
+      "all_pages_rendered_and_visually_inspected": true
+    }
+  ],
+  "visual_adjustments": [
+    "separated Q3 device/input labels",
+    "moved NP output X away from adjacent A gate label",
+    "moved Q6 Z leader clear of gate/well lines",
+    "widened pipeline gate block",
+    "separated Q8 feedback labels and explanatory note",
+    "kept Q8 explanation together on its own page"
+  ],
+  "source_preservation": "original JPEG streams byte-identical; see original-jpeg-integrity.csv",
+  "status": "passed",
+  "source_integrity_context": "Original integrity records describe the pre-migration check; original files are now owner-only private. Public artifact hashes refer to this cleaned export."
+}

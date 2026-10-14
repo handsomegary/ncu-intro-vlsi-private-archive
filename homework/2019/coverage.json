@@ -1,0 +1,32 @@
+{
+  "year": 2019,
+  "policy": "only original-prompt assignments; skip student-answer-only tasks",
+  "available": [
+    {
+      "homework": 2,
+      "status": "complete",
+      "original_prompt_present": true,
+      "prompt": "assignments/homework2.pdf",
+      "original_sha256": "fba75f1a9985fd6bf7a9ec7a28015be7805625701f14fb49b1bc6bb1ea5dcfa6",
+      "report": "HW2/solution.tex",
+      "pdf": "HW2/solution.pdf"
+    }
+  ],
+  "omitted": [
+    {
+      "homework": 1,
+      "status": "skipped_missing_original_prompt",
+      "original_prompt_present": false
+    },
+    {
+      "homework": 3,
+      "status": "skipped_missing_original_prompt",
+      "original_prompt_present": false
+    },
+    {
+      "homework": 4,
+      "status": "skipped_missing_original_prompt",
+      "original_prompt_present": false
+    }
+  ]
+}

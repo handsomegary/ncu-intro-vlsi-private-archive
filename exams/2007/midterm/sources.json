@@ -1,0 +1,38 @@
+{
+  "year": 2007,
+  "exam": "midterm",
+  "printed_term": "Fall 2007",
+  "original_source": "2007/midterm/midterm.pdf",
+  "original_sha256": "a862db63343c6754fa87b0224ac68a9375c407681dab5af42535d7968016a263",
+  "original_pages": 3,
+  "question_allocation": [
+    40,
+    10,
+    20,
+    10,
+    10,
+    10,
+    10
+  ],
+  "points_sum": 110,
+  "student_sources": [
+    "2007/midterm/answer.pdf",
+    "2007/midterm/answer (1).jpg",
+    "2007/midterm/answer (2).jpg",
+    "2007/midterm/answer (3).jpg"
+  ],
+  "student_sources_redistributed": false,
+  "preservation": "Original PDF byte copy, full3 pages; standalone source/solution vector figures, no raster embed.",
+  "student_source_sha256": {
+    "2007/midterm/answer.pdf": "881da14277306b10e6ff044aed54f38e5c2ae5411ae2a5c82895bfcc2412a3cf",
+    "2007/midterm/answer (1).jpg": "6065417b469a6a02698f6d5a2a2f99a1922a5e012fd33739db7e40a008361170",
+    "2007/midterm/answer (2).jpg": "a94b1f0429625ea6c4f240f567ccd88600bb107a03cda91c62c6394e4bca68f7",
+    "2007/midterm/answer (3).jpg": "b0b7beed7420c3c3c92ee20b790bf34cb92c31cd12ebf7b5eb2bfa199db1420c"
+  },
+  "reviewed_student_pages": 5,
+  "student_sets_distinct": true,
+  "original_storage": "owner-only private repository",
+  "private_archive": "handsomegary/ncu-intro-vlsi-originals",
+  "private_original_path": "exams/2007/midterm/original-exam.pdf",
+  "source_locator_redacted": true
+}

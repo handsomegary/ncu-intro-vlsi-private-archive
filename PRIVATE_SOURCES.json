@@ -1,0 +1,327 @@
+{
+  "repository": "handsomegary/ncu-intro-vlsi-originals",
+  "visibility": "private; owner only",
+  "hash_policy": "SHA256 of exact original bytes",
+  "assets": [
+    {
+      "path": "homework/2013/assignments/homework1.pdf",
+      "sha256": "f10c5c107f247cd233de54855e0bc76f024301480bba97a1a4588094be80baac",
+      "bytes": 15688
+    },
+    {
+      "path": "homework/2013/assignments/homework2.pdf",
+      "sha256": "9cf70011bf1523685cfa989b216da691d817a3c6dd9621c53e98d01644fe30fc",
+      "bytes": 19678
+    },
+    {
+      "path": "homework/2013/assignments/homework3.pdf",
+      "sha256": "2c1b3d1be71fda40ecd3ffb830fa35707c2bb3f0028b71b8019ca15149163a82",
+      "bytes": 9098
+    },
+    {
+      "path": "homework/2015/assignments/homework1.pdf",
+      "sha256": "5f12fd2ce7f66b02adf4eb6aa2897c3bb1b9843c1359583ffe166ce6c5431f63",
+      "bytes": 15688
+    },
+    {
+      "path": "homework/2015/assignments/homework2.pdf",
+      "sha256": "50486dbce58ff01494e7e325ce140cf57545458d5416eb15aef1587b7cefb2cd",
+      "bytes": 19677
+    },
+    {
+      "path": "homework/2015/assignments/homework3.pdf",
+      "sha256": "2e839750e3f5c44dab208db4689b14cee99f8d9203064d53372c5c3459203ece",
+      "bytes": 8769
+    },
+    {
+      "path": "homework/2015/assignments/homework4.pdf",
+      "sha256": "cb83588d255dc52cf7d226f16bdc2436ac570e907fcb9b8f211376b5daed4f72",
+      "bytes": 16200
+    },
+    {
+      "path": "homework/2016/assignments/homework3.pdf",
+      "sha256": "6be83e172ba28cfe3bce6b97bcd101afd9c2480ba90714c27d70080bcdb2004a",
+      "bytes": 8768
+    },
+    {
+      "path": "homework/2017/assignments/homework1.pdf",
+      "sha256": "9d6dec85a4fd1a9de6c045c8447e61ce88d09a270cc89c39612a9b042b8b29be",
+      "bytes": 19891
+    },
+    {
+      "path": "homework/2017/assignments/homework2.pdf",
+      "sha256": "9cd5d02fda2b755a2f501d47867c29bd7f63a8a2527ebfdd7527b105d4cffe6e",
+      "bytes": 16286
+    },
+    {
+      "path": "homework/2017/assignments/homework3.pdf",
+      "sha256": "04d3cd0cdee1fc2a0ca0488e16a0ff9b8154c67587d9fc734b5967adeaed1602",
+      "bytes": 8497
+    },
+    {
+      "path": "homework/2017/assignments/homework4.pdf",
+      "sha256": "a8fe77fbc1c73087b71667d66801ab89703356e6b140d13a5dfd707ad432b84c",
+      "bytes": 14253
+    },
+    {
+      "path": "homework/2018/assignments/homework1.pdf",
+      "sha256": "a3b82c6a88e072396c8270edc137c507a3f53141cd92bb2aebc97fa8f29b6654",
+      "bytes": 19462
+    },
+    {
+      "path": "homework/2018/assignments/homework2.pdf",
+      "sha256": "f070cd4e3876fc5cf558f4afb8cc92237169745ca30081cff12c6a593d412c87",
+      "bytes": 16773
+    },
+    {
+      "path": "homework/2019/assignments/homework2.pdf",
+      "sha256": "fba75f1a9985fd6bf7a9ec7a28015be7805625701f14fb49b1bc6bb1ea5dcfa6",
+      "bytes": 16659
+    },
+    {
+      "path": "homework/2020/assignments/homework1.pdf",
+      "sha256": "20da1b86b10c0d6254af5deaecedaa53c2bcb526da554b9dc2f52ab5ce415d34",
+      "bytes": 15415
+    },
+    {
+      "path": "homework/2020/assignments/homework2.pdf",
+      "sha256": "dace54f8bb0e1f4af6f6470954720d8c5d3411e7806ba5ddbc54f3370cc63d19",
+      "bytes": 14507
+    },
+    {
+      "path": "homework/2020/assignments/homework3.pdf",
+      "sha256": "04dd7a61b676f76e5dd8523d6b959800582fdd0e7d8173cfe32493eeffffe860",
+      "bytes": 4739
+    },
+    {
+      "path": "homework/2020/assignments/homework4.pdf",
+      "sha256": "ebada170c815ff3ff478370ffae6329c5abef1e8eb5d69777532162687f1f3d5",
+      "bytes": 11775
+    },
+    {
+      "path": "homework/2020/assignments/homework4_version2.pdf",
+      "sha256": "ebada170c815ff3ff478370ffae6329c5abef1e8eb5d69777532162687f1f3d5",
+      "bytes": 11775
+    },
+    {
+      "path": "homework/2021/assignments/homework1.pdf",
+      "sha256": "3de7e17b66b89624c86d8285d124e8185f0045d9f4b06bd51863d119c620f11d",
+      "bytes": 29459
+    },
+    {
+      "path": "homework/2021/assignments/homework2.pdf",
+      "sha256": "fc0bf6510726bd472dd5979de6781c646bcee3b26120a4fcc64bb19b18110034",
+      "bytes": 28106
+    },
+    {
+      "path": "homework/2021/assignments/homework3.pdf",
+      "sha256": "c8b17f2d1ad3de1ed0e322393e5b3a7d6fd0bf9871b35d7b22734f82e66d4efd",
+      "bytes": 11046
+    },
+    {
+      "path": "homework/2021/assignments/homework4.pdf",
+      "sha256": "cb8b2f35e268cae534c830cd62567327c2b20e43ca3dbfabf10e3a70cc53f797",
+      "bytes": 11797
+    },
+    {
+      "path": "homework/2023/assignments/homework1.pdf",
+      "sha256": "88c4579e080f5ddfd5ddf8dfac48650e312c4a9da4d96e2de5ae56cc8a7a0068",
+      "bytes": 21126
+    },
+    {
+      "path": "homework/2023/assignments/homework2.pdf",
+      "sha256": "eb05a15cf127f2dc8cdac21b13631b785ecc6a7b7868b85e26f417184da797f0",
+      "bytes": 28906
+    },
+    {
+      "path": "homework/2023/assignments/homework3.pdf",
+      "sha256": "c600c7c7174bc1629ec44a9a48bbcfcea005b38c324e1a042dd5a9bb45081ac0",
+      "bytes": 11663
+    },
+    {
+      "path": "homework/2023/assignments/homework4.pdf",
+      "sha256": "72d8409bf4fef4ecc4d5a467e873425c2d276971c78f9db62e15581af5a90fc5",
+      "bytes": 9869
+    },
+    {
+      "path": "homework/2024/assignments/homework1.pdf",
+      "sha256": "46ca699fd7660b0a9da924ee9f12d771425198bc6e0c9eabe992900ccc6577b3",
+      "bytes": 21093
+    },
+    {
+      "path": "homework/2024/assignments/homework2.pdf",
+      "sha256": "537d0e739dd3f94bb076a65f78b2bc80a26716d4efeff517ee12774bc9c2d16d",
+      "bytes": 21351
+    },
+    {
+      "path": "homework/2024/assignments/homework3.pdf",
+      "sha256": "7990d0b7a895468af2392c27b8215b9476e7c63951ab8fbf6a5c87568f94ee84",
+      "bytes": 24718
+    },
+    {
+      "path": "homework/2024/assignments/homework4.pdf",
+      "sha256": "84b51b2b635ef4ea8be605189913eaf65a59a71e2146cb1de8bf58947995e59c",
+      "bytes": 10218
+    },
+    {
+      "path": "homework/2024/assignments/hw3_clarifications.txt",
+      "sha256": "46f4111c311ffb1c2e68c9a3fe25bccb66340c32763d1d0738a182d6a60ec317",
+      "bytes": 1248
+    },
+    {
+      "path": "homework/2024/assignments/hw3_instructor_testbench.sp",
+      "sha256": "17b510dd5d3042695e0f65eceb5ebbad0fb4052c04620e061969f4d9505da01a",
+      "bytes": 950
+    },
+    {
+      "path": "homework/2024/assignments/hw4_clarifications.txt",
+      "sha256": "2cc10ecb40acb5efbc702bca06aa353140d9c9a22407921b28558d4395a21b5b",
+      "bytes": 1406
+    },
+    {
+      "path": "exams/2007/final/original-exam.pdf",
+      "sha256": "53466dcc846963b6bbedf6906aec26502a0ed6b2c9b482d2533af01c3b21bcc8",
+      "bytes": 66876
+    },
+    {
+      "path": "exams/2007/midterm/original-exam.pdf",
+      "sha256": "a862db63343c6754fa87b0224ac68a9375c407681dab5af42535d7968016a263",
+      "bytes": 34944
+    },
+    {
+      "path": "exams/2008/final/original-exam.pdf",
+      "sha256": "2160c74b82a8203483b2913649bc5e9abdeb147d5bda60880480f670572aae39",
+      "bytes": 91973
+    },
+    {
+      "path": "exams/2008/midterm/original-exam.pdf",
+      "sha256": "10bca0b02b8e18257187eb633e95f48571f7e585878ae7fb609ba07b45de9a9a",
+      "bytes": 68623
+    },
+    {
+      "path": "exams/2009/final/original-exam.pdf",
+      "sha256": "8ad3ece107ccd8b61bfb11826fc669c6cbd3c9ba05c63400a130aff171d0ec14",
+      "bytes": 23667
+    },
+    {
+      "path": "exams/2009/midterm/original-exam.pdf",
+      "sha256": "394432f845fcd153d1a6b2357814543a0b6b4a35fff374fc67d51eea0130217f",
+      "bytes": 2096452
+    },
+    {
+      "path": "exams/2010/final/original-exam.pdf",
+      "sha256": "56b3561b04c10aab07d8e82392f238e336178bd20805fb53b836066216f42fe9",
+      "bytes": 103257
+    },
+    {
+      "path": "exams/2011/midterm/original-exam.pdf",
+      "sha256": "4f25fc1325df3e39f26ba7b45f85e70eb3a5183ae9116d354d12e2071c095ce3",
+      "bytes": 5403074
+    },
+    {
+      "path": "exams/2011/midterm/original-pages/panel-1.jpg",
+      "sha256": "2098f8d5d8381f451715632933279cc9a7e2a5efc210265c22eb93e05813f50c",
+      "bytes": 541042
+    },
+    {
+      "path": "exams/2011/midterm/original-pages/panel-2.jpg",
+      "sha256": "d2ce204196b3f35cd52eadacf90e3ab65325192068ba6a46c02f16441cb400e6",
+      "bytes": 968415
+    },
+    {
+      "path": "exams/2011/midterm/original-pages/panel-3.jpg",
+      "sha256": "7c1d4bef3c3faf049dbc5112b356a57366d4c97ffb0e3186e3304978f8834860",
+      "bytes": 897621
+    },
+    {
+      "path": "exams/2011/midterm/original-pages/panel-4.jpg",
+      "sha256": "6b9777ff1318137a0415a7f8a0a077ec39ec7924dbfc456d49cdb9a73678209a",
+      "bytes": 611629
+    },
+    {
+      "path": "exams/2011/midterm/original-pages/panel-5.jpg",
+      "sha256": "553fc8511bbab36867f760b30cb8e27c277808c28b5cfefe1ff451fb452f515d",
+      "bytes": 855648
+    },
+    {
+      "path": "exams/2011/midterm/original-pages/panel-6.jpg",
+      "sha256": "ab9cc477b08049d41000d7f3479def550979a95f3fd483d5562061c213656c97",
+      "bytes": 444071
+    },
+    {
+      "path": "exams/2012/final/original-exam.pdf",
+      "sha256": "878571215d0c1d077ddd8cf45e2e57f7f62170b81e2e3fb102c89dc9449276f1",
+      "bytes": 8291587
+    },
+    {
+      "path": "exams/2012/midterm/original-exam.pdf",
+      "sha256": "ab0b76432345215a9d6ec9ea9c572f312cfba63ec610c61841a587b6fd9d5b76",
+      "bytes": 3184958
+    },
+    {
+      "path": "exams/2013/final/original-exam.pdf",
+      "sha256": "fc4c1e3a273938976e9cae395cb398925fbae64b102b6f7a445e75e6f46b6d2f",
+      "bytes": 247965
+    },
+    {
+      "path": "exams/2013/final/original-pages/page-1.jpg",
+      "sha256": "a3921af6a09b390b67a79691fdd542040c44a23e11bf444e5527f7418f60f16b",
+      "bytes": 80665
+    },
+    {
+      "path": "exams/2013/final/original-pages/page-2.jpg",
+      "sha256": "0987c1e4a2b9c93dee474f3519f05c129103df27da8a00fe67630df2da79dbff",
+      "bytes": 57958
+    },
+    {
+      "path": "exams/2013/final/original-pages/page-3.jpg",
+      "sha256": "3efd43345200585975e89d1c6f69d957d313e0e09f2ea02651a94117912dcb01",
+      "bytes": 57841
+    },
+    {
+      "path": "exams/2016/final/original-exam.pdf",
+      "sha256": "c15769816ca3288bde8e47dfb49698eeb839db2755941d8fd3ec287b9026031f",
+      "bytes": 178882
+    },
+    {
+      "path": "exams/2018/final/original-exam.pdf",
+      "sha256": "6c8c6194e7e2d00cd74b98696e91832e7c4b535f08315b769225a5997600b81a",
+      "bytes": 5536426
+    },
+    {
+      "path": "exams/2021/final/original-exam.pdf",
+      "sha256": "64ee54848424de59260ae7fb30a90b76fe119ac725bf398f29c86af053395ba0",
+      "bytes": 1161566
+    },
+    {
+      "path": "exams/2021/midterm/original-exam.pdf",
+      "sha256": "eeaf156caba79acb77ddd685f59472b75972fe761d88ab2a1492b6bf09a219ce",
+      "bytes": 301923
+    },
+    {
+      "path": "exams/2022/midterm/original-exam.pdf",
+      "sha256": "d85b07949ed720b3837d5345ac7da59d038c89324d3ed0407d1bd0e91781bb50",
+      "bytes": 797252
+    },
+    {
+      "path": "exams/2023/final/original-exam.pdf",
+      "sha256": "0e367de4671f18321e4332d028b0c9c9e9a7a2aa6ef7741668e6bdaf34304971",
+      "bytes": 574368
+    },
+    {
+      "path": "exams/2023/midterm/original-exam.pdf",
+      "sha256": "f4f87411990863413a10caf6b744d3da887812bc8d7fd59847e8e30da6e1636e",
+      "bytes": 82244
+    },
+    {
+      "path": "exams/2024/final/original-exam.pdf",
+      "sha256": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170",
+      "bytes": 2338952
+    },
+    {
+      "path": "exams/2024/midterm/original-exam.pdf",
+      "sha256": "d891dedaa48694e323901d393bd4a8e50ae79595479bab72c2bea1bd81d5a9d5",
+      "bytes": 1796939
+    }
+  ]
+}

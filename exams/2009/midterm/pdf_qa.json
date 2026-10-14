@@ -1,0 +1,74 @@
+{
+  "status": "ready",
+  "scope": "All six original Fall 2009 questions, 105 printed points",
+  "exam_pages": 3,
+  "solution_pages": 7,
+  "original_pages": 3,
+  "builtin_compiler": "both latest standalone sources success",
+  "local_compiler": "MiKTeX pdfLaTeX two passes each",
+  "all_final_pages_visually_checked": true,
+  "box_warnings": 0,
+  "raster_images_in_typeset_pdfs": 0,
+  "original_JPEG_integrity": [
+    {
+      "panel": 1,
+      "embedded_JPEG_sha256": "72197bda99f21a651c6e5c7670060f3a3c48e73e6bf177168e49bbc0829dc634",
+      "bytes_preserved": true
+    },
+    {
+      "panel": 2,
+      "embedded_JPEG_sha256": "5b317f8c43f90bef3b5c5a3cea1cb28ac29440b080711e993841678bf86fb9bc",
+      "bytes_preserved": true
+    },
+    {
+      "panel": 3,
+      "embedded_JPEG_sha256": "97fed0e4c8c9d1f9c7ef067ea3d74b50c6bc54cb2dc87116a5151dbec943edc2",
+      "bytes_preserved": true
+    }
+  ],
+  "Q6_independent_audit": "General formulas checked against 192 independently parameterized nodal systems; another agent independently confirms equal-R/channel-cap limiting example.",
+  "csv_row_counts": {
+    "q1_full_CMOS_truth.csv": 16,
+    "q3_declared_overlap_comparison.csv": 3,
+    "q3_literal_slews.csv": 8,
+    "q4_actual_load_delays.csv": 5,
+    "q4_conditional_VT_examples.csv": 3,
+    "q4_full_CMOS_truth.csv": 32,
+    "q4_literal_MOS.csv": 28,
+    "q4_physical_path_delays.csv": 6,
+    "q4_settled_charging_events.csv": 4,
+    "q6_full_nodal_moment_checks.csv": 192,
+    "q6_literal_majority_truth.csv": 8,
+    "q6_literal_MOS.csv": 10
+  },
+  "artifact_sha256": {
+    "coverage-entry.json": "0365801bf9a3d0d4ea39a68917209c38979555b18f5c09b533d70da2a405612d",
+    "device-netlists.json": "5bc632da005f05436be2235064a566426fec8d68a4eacdcf3af268a18c26b576",
+    "exam.pdf": "17dc6e09699a1e38c7c8a6af660782a7c86ed54af3596e94a1cbacf14836541e",
+    "exam.tex": "443a39057c0623a3fcf7e7a6c512899a707becedf9550f363e0e2250b1a80fab",
+    "q1_full_CMOS_truth.csv": "00be636dee4edb86cbad65baf80e679ace4440885acc44d8650248931ee6d976",
+    "q3_declared_overlap_comparison.csv": "b64fdbadffb9d4347478132e7ccc39522fe1eefe725bd5758f7d22212b2d1d85",
+    "q3_literal_slews.csv": "84a0f3599ab2fcd7521f372eed869bc57101af45f8a2b2d38cfa74ff5134b681",
+    "q4_actual_load_delays.csv": "c0e779d49cd533c26d8d96d4e525d9e327049b143c45adb9ef18958c8589a57e",
+    "q4_conditional_VT_examples.csv": "46b43560d004b8586afe43796fef540ea1d9ea57c58870662afdad3c1901406d",
+    "q4_full_CMOS_truth.csv": "015ecaa1cb8aaf3241492a8e998d2f1da38f18f9cffc01890a7e7085d921e27b",
+    "q4_literal_MOS.csv": "e6210ebe8eae8c59af557d9df94ff0c73e668bf63d6c5d6b7f677dfc7e039d97",
+    "q4_physical_path_delays.csv": "7c672c22c6d02692df0ca28d5e74760ea7127ec23a6b5b1c3cfba5a3816790db",
+    "q4_settled_charging_events.csv": "c685704600e34023300e580d0f8f9cfce9d639890782bde973efa840f994239e",
+    "q6_full_nodal_moment_checks.csv": "2b7873bbe100766e92a45485c436429fb22c29572a893db17d0cc581f13bdc94",
+    "q6_literal_majority_truth.csv": "d2b9fa89dc024d5c2dda3968ed8600cb139c4aa62212368d5cca6935bc832046",
+    "q6_literal_MOS.csv": "b25ff6ffd67557c706037cc340f2b9228dcf45a7dd45e086b0e3341a191c7b47",
+    "README.md": "a1ce08431f37322cfbc161bfa4a289be37580ff95dafb864d37c2f668a2464cf",
+    "solution.pdf": "af3761d1d3043421fd7ad3e5b854fed682208df2f5962073ddf2f622e9150d99",
+    "solution.tex": "9c34b35b67bd4bb202fa0d1c17189ac11e4046d7cd115134d44c78a3275e56aa",
+    "sources.json": "d3869b23abe2a14623e80a93f704d121cb50faead09ea08f0eb0e1eae7df878a",
+    "SOURCES.md": "ba558ff63e9061a782ad0665d494ce26e1005255ac1e15b7e2bfd074c74bec22",
+    "verification.json": "36303e3203b03d563217b398813a29829acf40a3e37ad04b1f1089e7d3d000ff",
+    "verify.py": "a45d7029da35d883297e1e744513e38cee3683431670027522e4bb70e6462b41"
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json.",
+  "private_source_sha256": {
+    "original-exam.pdf": "394432f845fcd153d1a6b2357814543a0b6b4a35fff374fc67d51eea0130217f"
+  },
+  "source_integrity_context": "Original integrity records describe the pre-migration check; original files are now owner-only private. Public artifact hashes refer to this cleaned export."
+}

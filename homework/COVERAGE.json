@@ -1,0 +1,592 @@
+{
+  "repository": "handsomegary/ncu-intro-vlsi-homework-solutions",
+  "policy": "Solve only assignments with authentic original prompts; no reconstruction of student-only tasks. HW4 pre-layout SPICE only.",
+  "source_archive_year_range": [
+    2012,
+    2024
+  ],
+  "earliest_completed_year": 2013,
+  "latest_completed_year": 2024,
+  "completed_assignments": 31,
+  "newly_added_older_assignments": 15,
+  "years": [
+    {
+      "year": 2012,
+      "completed_homeworks": [],
+      "reason": "Only student answers/archive code, including a misfiled HW3 report; no original assignment prompt. Entire year skipped by explicit user instruction.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 2,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 3,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "completed_homeworks": [
+        1,
+        2,
+        3
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2013/assignments/homework1.pdf",
+          "solution_tex": "2013/HW1/solution.tex",
+          "solution_pdf": "2013/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2013/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2013/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2013/assignments/homework2.pdf",
+          "solution_tex": "2013/HW2/solution.tex",
+          "solution_pdf": "2013/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2013/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2013/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2013/assignments/homework3.pdf",
+          "solution_tex": "2013/HW3/solution.tex",
+          "solution_pdf": "2013/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2013/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2013/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "completed_homeworks": [],
+      "reason": "Only student HW3 material, no original prompt. Entire year skipped by explicit user instruction.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 2,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 3,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "completed_homeworks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2015/assignments/homework1.pdf",
+          "solution_tex": "2015/HW1/solution.tex",
+          "solution_pdf": "2015/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2015/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2015/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2015/assignments/homework2.pdf",
+          "solution_tex": "2015/HW2/solution.tex",
+          "solution_pdf": "2015/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2015/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2015/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2015/assignments/homework3.pdf",
+          "solution_tex": "2015/HW3/solution.tex",
+          "solution_pdf": "2015/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2015/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2015/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2015/assignments/homework4.pdf",
+          "solution_tex": "2015/HW4/solution.tex",
+          "solution_pdf": "2015/HW4/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2015/assignments/homework4.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2015/assignments/homework4.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "completed_homeworks": [
+        3
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 2,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2016/assignments/homework3.pdf",
+          "solution_tex": "2016/HW3/solution.tex",
+          "solution_pdf": "2016/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2016/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2016/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "completed_homeworks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2017/assignments/homework1.pdf",
+          "solution_tex": "2017/HW1/solution.tex",
+          "solution_pdf": "2017/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2017/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2017/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2017/assignments/homework2.pdf",
+          "solution_tex": "2017/HW2/solution.tex",
+          "solution_pdf": "2017/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2017/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2017/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2017/assignments/homework3.pdf",
+          "solution_tex": "2017/HW3/solution.tex",
+          "solution_pdf": "2017/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2017/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2017/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2017/assignments/homework4.pdf",
+          "solution_tex": "2017/HW4/solution.tex",
+          "solution_pdf": "2017/HW4/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2017/assignments/homework4.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2017/assignments/homework4.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "completed_homeworks": [
+        1,
+        2
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2018/assignments/homework1.pdf",
+          "solution_tex": "2018/HW1/solution.tex",
+          "solution_pdf": "2018/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2018/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2018/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2018/assignments/homework2.pdf",
+          "solution_tex": "2018/HW2/solution.tex",
+          "solution_pdf": "2018/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2018/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2018/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "completed_homeworks": [
+        2
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2019/assignments/homework2.pdf",
+          "solution_tex": "2019/HW2/solution.tex",
+          "solution_pdf": "2019/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2019/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2019/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "completed_homeworks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2020/assignments/homework1.pdf",
+          "solution_tex": "2020/HW1/solution.tex",
+          "solution_pdf": "2020/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2020/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2020/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2020/assignments/homework2.pdf",
+          "solution_tex": "2020/HW2/solution.tex",
+          "solution_pdf": "2020/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2020/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2020/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2020/assignments/homework3.pdf",
+          "solution_tex": "2020/HW3/solution.tex",
+          "solution_pdf": "2020/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2020/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2020/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2020/assignments/homework4.pdf",
+          "solution_tex": "2020/HW4/solution.tex",
+          "solution_pdf": "2020/HW4/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2020/assignments/homework4.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2020/assignments/homework4.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "completed_homeworks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2021/assignments/homework1.pdf",
+          "solution_tex": "2021/HW1/solution.tex",
+          "solution_pdf": "2021/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2021/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2021/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2021/assignments/homework2.pdf",
+          "solution_tex": "2021/HW2/solution.tex",
+          "solution_pdf": "2021/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2021/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2021/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2021/assignments/homework3.pdf",
+          "solution_tex": "2021/HW3/solution.tex",
+          "solution_pdf": "2021/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2021/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2021/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2021/assignments/homework4.pdf",
+          "solution_tex": "2021/HW4/solution.tex",
+          "solution_pdf": "2021/HW4/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2021/assignments/homework4.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2021/assignments/homework4.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "completed_homeworks": [],
+      "reason": "No source year in supplied archive; explicitly skipped by user.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 2,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 3,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        },
+        {
+          "homework": 4,
+          "status": "skipped_no_original_prompt",
+          "original_prompt_present": false
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "completed_homeworks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2023/assignments/homework1.pdf",
+          "solution_tex": "2023/HW1/solution.tex",
+          "solution_pdf": "2023/HW1/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2023/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2023/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2023/assignments/homework2.pdf",
+          "solution_tex": "2023/HW2/solution.tex",
+          "solution_pdf": "2023/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2023/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2023/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2023/assignments/homework3.pdf",
+          "solution_tex": "2023/HW3/solution.tex",
+          "solution_pdf": "2023/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2023/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2023/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2023/assignments/homework4.pdf",
+          "solution_tex": "2023/HW4/solution.tex",
+          "solution_pdf": "2023/HW4/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2023/assignments/homework4.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2023/assignments/homework4.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "completed_homeworks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Original-prompt assignments only; missing assignments are not inferred from student-only answers.",
+      "homeworks": [
+        {
+          "homework": 1,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2024/assignments/homework1.pdf",
+          "solution_tex": "2024/HW1/solutions.tex",
+          "solution_pdf": "2024/HW1/solutions.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2024/assignments/homework1.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework1.pdf"
+        },
+        {
+          "homework": 2,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2024/assignments/homework2.pdf",
+          "solution_tex": "2024/HW2/solution.tex",
+          "solution_pdf": "2024/HW2/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2024/assignments/homework2.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework2.pdf"
+        },
+        {
+          "homework": 3,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2024/assignments/homework3.pdf",
+          "solution_tex": "2024/HW3/solution.tex",
+          "solution_pdf": "2024/HW3/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2024/assignments/homework3.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework3.pdf"
+        },
+        {
+          "homework": 4,
+          "status": "complete",
+          "original_prompt_present": true,
+          "prompt": "2024/assignments/homework4.pdf",
+          "solution_tex": "2024/HW4/solution.tex",
+          "solution_pdf": "2024/HW4/solution.pdf",
+          "original_storage": "private",
+          "private_original_path": "homework/2024/assignments/homework4.pdf",
+          "original_url": "https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework4.pdf"
+        }
+      ]
+    }
+  ]
+}

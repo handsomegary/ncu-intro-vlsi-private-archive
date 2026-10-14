@@ -1,0 +1,130 @@
+{
+  "year": 2011,
+  "exam": "midterm",
+  "printed_question_points": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    10
+  ],
+  "total_points": 110,
+  "source_physical_pages": 3,
+  "original_photo_panels": 6,
+  "student_solutions_found": false,
+  "sources": [
+    {
+      "role": "original_question_panel",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "package_file": "original-pages\\panel-1.jpg",
+      "sha256": "2098f8d5d8381f451715632933279cc9a7e2a5efc210265c22eb93e05813f50c",
+      "native_pixels": [
+        1858,
+        970
+      ]
+    },
+    {
+      "role": "original_question_panel",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "package_file": "original-pages\\panel-2.jpg",
+      "sha256": "d2ce204196b3f35cd52eadacf90e3ab65325192068ba6a46c02f16441cb400e6",
+      "native_pixels": [
+        1793,
+        1473
+      ]
+    },
+    {
+      "role": "original_question_panel",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "package_file": "original-pages\\panel-3.jpg",
+      "sha256": "7c1d4bef3c3faf049dbc5112b356a57366d4c97ffb0e3186e3304978f8834860",
+      "native_pixels": [
+        1864,
+        1444
+      ]
+    },
+    {
+      "role": "original_question_panel",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "package_file": "original-pages\\panel-4.jpg",
+      "sha256": "6b9777ff1318137a0415a7f8a0a077ec39ec7924dbfc456d49cdb9a73678209a",
+      "native_pixels": [
+        1800,
+        1144
+      ]
+    },
+    {
+      "role": "original_question_panel",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "package_file": "original-pages\\panel-5.jpg",
+      "sha256": "553fc8511bbab36867f760b30cb8e27c277808c28b5cfefe1ff451fb452f515d",
+      "native_pixels": [
+        1940,
+        1596
+      ]
+    },
+    {
+      "role": "original_question_panel",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "package_file": "original-pages\\panel-6.jpg",
+      "sha256": "ab9cc477b08049d41000d7f3479def550979a95f3fd483d5562061c213656c97",
+      "native_pixels": [
+        1856,
+        876
+      ]
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "8aa8146976973df831bf4347e4117af626771932b45ceea625db5cb70143e2d9"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "60e25a30feb7982cf76542318767e2cba4fc2545390d85f41c49aa94849a95e8"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "686ffc8570c2b98d244045cdb351adaea5d68764fd7bf4a2756254c46419773b"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "c56a248bab4aaecf52f3a64d59ed415ea0806956322c562cd70fd77e456caeb3"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "f5ddaf8e651467ac4cd78e078e517be6e9d73530a01dd7bd118888a50caccc6a"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "376cca61ba81e87b0e275104ae7504f13a18627c53b9c96846b3679c4ed66407"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "f604f5af6bdff6a0c7367a2bb33d84cea8e4e7829bc37be08956f67a7fcf0714"
+    },
+    {
+      "role": "overlapping_original_comparison",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "47b66e00dbe5f9a85b6f6a1fe11feb2055bf0d21e3810d7e93647757f2223458"
+    }
+  ],
+  "approved_reconstruction_assumption": "User selected the faint Figure3 common-gate bus connected toVDD, with explicit note.",
+  "limitations": [
+    "Q2 printed short-circuit voltage polynomial is preserved; physical overlap correction shown",
+    "Q2 e=2 approximation separated from exact discrete taper minimum",
+    "Q3 high-VT penalties/leakage models not supplied: conditional feasibility only",
+    "Q4 parta body effect andinitialYcharge not quantified",
+    "Q5 calibrateduniformlumpedRCmodel; finite TG delay differs from continuumwire approximation"
+  ],
+  "original_storage": "owner-only private repository",
+  "private_archive": "handsomegary/ncu-intro-vlsi-originals",
+  "private_original_path": "exams/2011/midterm/original-exam.pdf",
+  "source_locator_redacted": true
+}
