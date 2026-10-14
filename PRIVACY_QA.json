@@ -1,11 +1,14 @@
 {
   "date": "2026-10-14",
-  "public_generated_pdfs": 71,
+  "public_pdfs": 103,
+  "public_solution_and_exam_pdfs": 71,
+  "public_homework_question_pdfs": 32,
+  "homework_question_pages": 37,
   "homework_report_pages": 120,
   "exam_vector_pages": 232,
-  "original_files_in_public_tree": 0,
+  "unedited_master_files_in_public_tree": 0,
   "instructor_full_name_hits_in_public_text_and_pdf_metadata": 0,
-  "source_storage": "owner-only private repository",
+  "source_storage": "Private unedited masters; complete public homework question PDFs with surname-only author footer",
   "public_hierarchy": [
     "homework",
     "exams"
@@ -292,6 +295,27 @@
       "vector_exam": true
     },
     {
+      "path": "homework/2013/assignments/homework1.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2013/assignments/homework2.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2013/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
       "path": "homework/2013/HW1/solution.pdf",
       "pages": 5,
       "full_name_hits": 0,
@@ -308,6 +332,34 @@
     {
       "path": "homework/2013/HW3/solution.pdf",
       "pages": 3,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2015/assignments/homework1.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2015/assignments/homework2.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2015/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2015/assignments/homework4.pdf",
+      "pages": 1,
       "full_name_hits": 0,
       "metadata_full_name_hits": 0,
       "vector_exam": false
@@ -341,8 +393,43 @@
       "vector_exam": false
     },
     {
+      "path": "homework/2016/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
       "path": "homework/2016/HW3/solution.pdf",
       "pages": 3,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2017/assignments/homework1.pdf",
+      "pages": 2,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2017/assignments/homework2.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2017/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2017/assignments/homework4.pdf",
+      "pages": 1,
       "full_name_hits": 0,
       "metadata_full_name_hits": 0,
       "vector_exam": false
@@ -376,6 +463,20 @@
       "vector_exam": false
     },
     {
+      "path": "homework/2018/assignments/homework1.pdf",
+      "pages": 2,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2018/assignments/homework2.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
       "path": "homework/2018/HW1/solution.pdf",
       "pages": 5,
       "full_name_hits": 0,
@@ -390,8 +491,50 @@
       "vector_exam": false
     },
     {
+      "path": "homework/2019/assignments/homework2.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
       "path": "homework/2019/HW2/solution.pdf",
       "pages": 4,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2020/assignments/homework1.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2020/assignments/homework2.pdf",
+      "pages": 2,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2020/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2020/assignments/homework4.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2020/assignments/homework4_version2.pdf",
+      "pages": 1,
       "full_name_hits": 0,
       "metadata_full_name_hits": 0,
       "vector_exam": false
@@ -425,6 +568,34 @@
       "vector_exam": false
     },
     {
+      "path": "homework/2021/assignments/homework1.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2021/assignments/homework2.pdf",
+      "pages": 2,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2021/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2021/assignments/homework4.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
       "path": "homework/2021/HW1/solution.pdf",
       "pages": 4,
       "full_name_hits": 0,
@@ -453,6 +624,34 @@
       "vector_exam": false
     },
     {
+      "path": "homework/2023/assignments/homework1.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2023/assignments/homework2.pdf",
+      "pages": 2,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2023/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2023/assignments/homework4.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
       "path": "homework/2023/HW1/solution.pdf",
       "pages": 6,
       "full_name_hits": 0,
@@ -475,6 +674,34 @@
     },
     {
       "path": "homework/2023/HW4/solution.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2024/assignments/homework1.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2024/assignments/homework2.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2024/assignments/homework3.pdf",
+      "pages": 1,
+      "full_name_hits": 0,
+      "metadata_full_name_hits": 0,
+      "vector_exam": false
+    },
+    {
+      "path": "homework/2024/assignments/homework4.pdf",
       "pages": 1,
       "full_name_hits": 0,
       "metadata_full_name_hits": 0,

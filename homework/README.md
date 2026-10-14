@@ -1,12 +1,33 @@
 # NCU Introduction to VLSI Design — Homework archive
 
-National Central University, EE3032. Original prompts are stored privately;
+National Central University, EE3032. Complete original-format question PDFs are public;
 English LaTeX reports, transistor diagrams, runnable SPICE and measured evidence
 are organized by course year.
 
 The homework collection covers **31 assignments across ten years from 2013 to 2024**.
 The latest extension adds **15 assignments from 2013–2019**. Only work with
 an authentic original prompt is included; student-only material is skipped.
+
+## Public assignment questions
+
+These PDFs preserve the original questions, figures, point values and page layout. The author footer uses surname Li only. [Prompt catalog and preservation checks](PROMPTS.json).
+
+| Year | HW1 | HW2 | HW3 | HW4 |
+|---|---|---|---|---|
+| 2024 | [PDF](2024/assignments/homework1.pdf) | [PDF](2024/assignments/homework2.pdf) | [PDF](2024/assignments/homework3.pdf) | [PDF](2024/assignments/homework4.pdf) |
+| 2023 | [PDF](2023/assignments/homework1.pdf) | [PDF](2023/assignments/homework2.pdf) | [PDF](2023/assignments/homework3.pdf) | [PDF](2023/assignments/homework4.pdf) |
+| 2021 | [PDF](2021/assignments/homework1.pdf) | [PDF](2021/assignments/homework2.pdf) | [PDF](2021/assignments/homework3.pdf) | [PDF](2021/assignments/homework4.pdf) |
+| 2020 | [PDF](2020/assignments/homework1.pdf) | [PDF](2020/assignments/homework2.pdf) | [PDF](2020/assignments/homework3.pdf) | [PDF](2020/assignments/homework4.pdf) |
+| 2019 | Not supplied | [PDF](2019/assignments/homework2.pdf) | Not supplied | Not supplied |
+| 2018 | [PDF](2018/assignments/homework1.pdf) | [PDF](2018/assignments/homework2.pdf) | Not supplied | Not supplied |
+| 2017 | [PDF](2017/assignments/homework1.pdf) | [PDF](2017/assignments/homework2.pdf) | [PDF](2017/assignments/homework3.pdf) | [PDF](2017/assignments/homework4.pdf) |
+| 2016 | Not supplied | Not supplied | [PDF](2016/assignments/homework3.pdf) | Not supplied |
+| 2015 | [PDF](2015/assignments/homework1.pdf) | [PDF](2015/assignments/homework2.pdf) | [PDF](2015/assignments/homework3.pdf) | [PDF](2015/assignments/homework4.pdf) |
+| 2013 | [PDF](2013/assignments/homework1.pdf) | [PDF](2013/assignments/homework2.pdf) | [PDF](2013/assignments/homework3.pdf) | Not supplied |
+
+The supplied duplicate [2020 HW4 version2](2020/assignments/homework4_version2.pdf) is also preserved.
+
+## Solutions and evidence
 
 | Year | Completed original-prompt assignments | Reports and evidence |
 |---|---|---|
@@ -33,7 +54,7 @@ an authentic original prompt is included; student-only material is skipped.
 
 See [COVERAGE.json](COVERAGE.json) for every year and homework status.
 2019 HW2 and 2016 HW3 are self-contained and require no previous homework circuit.
-Original PDFs are preserved byte for byte in the owner-only private original archive.
+Public question PDFs retain all original questions and figures; only the author first name is removed from the footer. Unedited masters are preserved byte for byte in the private original archive.
 The two original 2020 HW4 archive copies are both preserved.
 
 ## Reports, source comparison and requested scope

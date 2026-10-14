@@ -1,7 +1,7 @@
 # 2023 Homework 1
 
 Complete English solution to the three handwritten circuit-design questions.
-The original [assignment PDF (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2023/assignments/homework1.pdf) is preserved separately.
+The original [assignment PDF](../assignments/homework1.pdf) is preserved separately.
 
 - [solution.tex](solution.tex): standalone LaTeX source, with transistor diagrams.
 - [solution.pdf](solution.pdf): compiled and visually checked six-page solution.

@@ -1,6 +1,6 @@
 # 2024 Homework 2: Non-ideal effects and pseudo-NMOS NOR
 
-The original [homework2.pdf (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework2.pdf) contains two analytical problems. This directory includes complete LaTeX derivations, a compiled PDF, and supplementary HSPICE verification that was actually executed.
+The original [homework2.pdf](../assignments/homework2.pdf) contains two analytical problems. This directory includes complete LaTeX derivations, a compiled PDF, and supplementary HSPICE verification that was actually executed.
 
 ## Assignment requirements and solutions
 

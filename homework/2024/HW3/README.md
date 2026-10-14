@@ -2,7 +2,7 @@
 
 ## Assignment requirements
 
-Implement the 4-bit serial-parallel multiplexer-based adder in Figure 1 of [homework3.pdf (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework3.pdf) and verify it with HSPICE. The upper row computes each bit's XNOR in parallel, carry propagates through four cascaded multiplexers, and the lower XNOR row produces the sums. Here, serial-parallel describes a combinational architecture; there is no clock or cycle-by-cycle serial input.
+Implement the 4-bit serial-parallel multiplexer-based adder in Figure 1 of [homework3.pdf](../assignments/homework3.pdf) and verify it with HSPICE. The upper row computes each bit's XNOR in parallel, carry propagates through four cascaded multiplexers, and the lower XNOR row produces the sums. Here, serial-parallel describes a combinational architecture; there is no clock or cycle-by-cycle serial input.
 
 The assignment and [instructor clarifications](../assignments/hw3_clarifications.en.md) specify CIC018 TT, 1.8 V, minimum W = 0.47 um, the instructor's testbench and signal names, and CIN = 0. Apply `(1,5), (15,13), (11,9), (4,8), (3,7), (12,14), (2,15), (6,10)` in order, then measure average power, worst-case delay, and `sum(WL)`. The additional grading metrics are area and energy over 9 ns. This solution uses L = 0.18 um and W = 0.47 um for every MOS device.
 

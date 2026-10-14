@@ -4,12 +4,14 @@ National Central University, EE3032. Editable LaTeX papers and solutions, transi
 
 | Archive | Coverage | Contents |
 |---|---|---|
-| [Homework archive](homework/README.md) | 31 assignments, 2013–2024 | Written derivations, reports, programs and measured evidence; HW4 stops at pre-layout SPICE. |
+| [Homework archive](homework/README.md) | 31 assignments, 2013–2024 | Complete public question PDFs, written derivations, reports, programs and measured evidence; HW4 stops at pre-layout SPICE. |
 | [Exam archive](exams/README.md) | 20 papers, 2007–2024 | Reconstructed papers and independently checked corrected solutions; incomplete source questions are labeled. |
 
 ## Original sources and privacy
 
-Unedited assignment PDFs, scanned exam PDFs, photograph panels and supplied instructor attachments are stored in the [owner-only private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals). Its files and historical commits are accessible only to the repository owner. Public visitors can use the reconstructed papers and solutions here. Instructor references use surname Li only.
+The [homework archive](homework/README.md#public-assignment-questions) includes complete public question PDFs in the original page format. Only the author first name is removed from the footer; all question text, circuit figures, marks, dates and pagination are preserved. Instructor references use surname Li only.
+
+Unedited source masters, original exam scans, photograph panels and supplied instructor attachments remain in the [owner-only private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals). Public exam readers can use the reconstructed papers and corrected solutions here.
 
 [PRIVATE_SOURCES.json](PRIVATE_SOURCES.json) records neutral private archive paths and original-byte hashes. The previous repository history is retained inside the private archive; this public repository starts with the cleaned collection.
 

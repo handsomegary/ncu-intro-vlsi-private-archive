@@ -1,6 +1,6 @@
 # 2013 HW1
 
-[Original prompt (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2013/assignments/homework1.pdf), [standalone LaTeX](solution.tex),
+[Original prompt](../assignments/homework1.pdf), [standalone LaTeX](solution.tex),
 and [compiled solution](solution.pdf).
 
 All four original questions are answered. The series-MOS proof covers both

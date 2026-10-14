@@ -1,13 +1,15 @@
 # NCU Introduction to VLSI Design — Fall 2019
 
-Original PDFs and photograph panels mentioned below are stored only in the owner-only [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals), under the same `homework/` or `exams/` path. This public folder contains the authored reports, reconstructions and verification evidence.
+Public questions: [HW2 PDF](assignments/homework2.pdf).
+
+Complete assignment question PDFs are public in `assignments/`, with the original page layout and circuit figures preserved. Only the author first name in the footer is removed; surname Li remains. Unedited master files are preserved in the [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals).
 
 Only assignments with authentic original prompts are completed, according to
-the user's clarified scope. The prompt PDFs are copied byte for byte.
+the user's clarified scope. The prompt PDFs are copied in original format with only the author first name removed.
 
 | Homework | Original prompt | Reports |
 |---|---|---|
-| [HW2](HW2/) | [Original (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2019/assignments/homework2.pdf) | [LaTeX](HW2/solution.tex), [PDF](HW2/solution.pdf) |
+| [HW2](HW2/) | [Original](assignments/homework2.pdf) | [LaTeX](HW2/solution.tex), [PDF](HW2/solution.pdf) |
 
 Only HW2 is present. HW1/HW3/HW4 are skipped. HW2 is independently
 specified and requires no previous homework circuit.

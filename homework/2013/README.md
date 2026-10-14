@@ -1,9 +1,11 @@
 # 2013 homework solutions
 
-Original PDFs and photograph panels mentioned below are stored only in the owner-only [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals), under the same `homework/` or `exams/` path. This public folder contains the authored reports, reconstructions and verification evidence.
+Public questions: [HW1 PDF](assignments/homework1.pdf), [HW2 PDF](assignments/homework2.pdf), [HW3 PDF](assignments/homework3.pdf).
+
+Complete assignment question PDFs are public in `assignments/`, with the original page layout and circuit figures preserved. Only the author first name in the footer is removed; surname Li remains. Unedited master files are preserved in the [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals).
 
 Three genuine printed Fall 2013 assignment PDFs are available and preserved
-byte-for-byte in [assignments (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/tree/main/homework/2013/assignments). HW4 has no original prompt in the
+in their original page format in [assignments](assignments/). HW4 has no original prompt in the
 supplied folder and is omitted, following the requested scope.
 
 | Homework | Original questions and completed work |

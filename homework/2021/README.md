@@ -1,8 +1,10 @@
 # 2021 Introduction to VLSI Design solutions
 
-Original PDFs and photograph panels mentioned below are stored only in the owner-only [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals), under the same `homework/` or `exams/` path. This public folder contains the authored reports, reconstructions and verification evidence.
+Public questions: [HW1 PDF](assignments/homework1.pdf), [HW2 PDF](assignments/homework2.pdf), [HW3 PDF](assignments/homework3.pdf), [HW4 PDF](assignments/homework4.pdf).
 
-Each homework has an English standalone `solution.tex`, its rendered PDF, runnable verification, and a README. Original prompts are retained privately under `homework/2021/assignments/`.
+Complete assignment question PDFs are public in `assignments/`, with the original page layout and circuit figures preserved. Only the author first name in the footer is removed; surname Li remains. Unedited master files are preserved in the [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals).
+
+Each homework has an English standalone `solution.tex`, its rendered PDF, runnable verification, and a README. Complete original-format prompts are public in `assignments/`, with the author first name removed.
 
 | Homework | Scope | Verification |
 | --- | --- | --- |

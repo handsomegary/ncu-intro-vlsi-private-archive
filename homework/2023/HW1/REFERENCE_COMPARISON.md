@@ -25,4 +25,4 @@ Final choices:
 No reported simulation numbers from the submissions are reused. HW1 asks for
 logic designs; the evidence is an exhaustive ideal-switch connectivity check
 against the original functions and table. The original prompt is copied without
-modification to [2023/assignments/homework1.pdf (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2023/assignments/homework1.pdf).
+modification to [2023/assignments/homework1.pdf](../assignments/homework1.pdf).

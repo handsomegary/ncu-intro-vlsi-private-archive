@@ -1,5 +1,9 @@
-# Authentic original assignments
+# 2019 assignment questions
 
-The PDFs in this directory are unchanged originals from the user-supplied
-archive. SHA256 values appear in the year coverage record and root manifest.
-No missing prompt is reconstructed from student-only answers.
+These are complete public question PDFs in the original page format. Only the author first name is removed from the footer; surname Li remains. All question text, circuit figures, marks, dates and pagination are retained. [Preservation catalog](../../PROMPTS.json) records public hashes and the separate private-master hashes.
+
+| Assignment | Complete question PDF | Pages | Public SHA256 |
+|---|---|---|---|
+| HW2 | [PDF](homework2.pdf) | 1 | `d8ca62c426aad3017bc0db7d7aff3c3691f1735b02a7c84082ae0830dcc75a94` |
+
+Unedited source masters are retained in the [owner-only private archive](https://github.com/handsomegary/ncu-intro-vlsi-originals). The public PDF hashes above describe these surname-only copies.

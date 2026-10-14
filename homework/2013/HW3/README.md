@@ -1,6 +1,6 @@
 # 2013 HW3
 
-[Original prompt (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2013/assignments/homework3.pdf), [standalone LaTeX](solution.tex),
+[Original prompt](../assignments/homework3.pdf), [standalone LaTeX](solution.tex),
 and [compiled solution](solution.pdf).
 
 Both printed questions are completed using the user's local CIC018 model and

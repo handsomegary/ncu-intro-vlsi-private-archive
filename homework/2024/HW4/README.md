@@ -2,7 +2,7 @@
 
 ## Original assignment and scope of this delivery
 
-The original [homework4.pdf (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework4.pdf) requires a layout of the HW3 four-bit adder, extracted netlists, and pre/post-layout comparisons. As requested by the user, this delivery contains a **pre-layout transistor-level `.sp`, runnable testbench, actual statistics, and LaTeX report**.
+The original [homework4.pdf](../assignments/homework4.pdf) requires a layout of the HW3 four-bit adder, extracted netlists, and pre/post-layout comparisons. As requested by the user, this delivery contains a **pre-layout transistor-level `.sp`, runnable testbench, actual statistics, and LaTeX report**.
 
 Layout, DRC, LVS, PEX, post-layout simulation, and physical layout area are outside this delivery's scope and are not claimed as completed. The complete course submission requirements are preserved in the [instructor clarifications](../assignments/hw4_clarifications.en.md).
 

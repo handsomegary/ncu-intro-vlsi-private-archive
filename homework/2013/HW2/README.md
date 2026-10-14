@@ -1,6 +1,6 @@
 # 2013 HW2
 
-[Original prompt (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2013/assignments/homework2.pdf), [standalone LaTeX](solution.tex),
+[Original prompt](../assignments/homework2.pdf), [standalone LaTeX](solution.tex),
 and [compiled solution](solution.pdf).
 
 All four analytical questions are answered. The printed clock-tree C buffer is

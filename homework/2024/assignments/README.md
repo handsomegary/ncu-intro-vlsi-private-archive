@@ -1,13 +1,15 @@
 # Original 2024 assignments and instructor clarifications
 
+These are complete public question PDFs in the original page format. Only the author first name is removed from the footer; surname Li remains. All question text, circuit figures, marks, dates and pagination are retained. [Preservation catalog](../../PROMPTS.json) records public hashes and the separate private-master hashes.
+
 The original PDFs define the assignments. This table describes the requirements and delivered scope.
 
 | Assignment | Original requirement | Delivered scope |
 | --- | --- | --- |
-| [HW1 (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework1.pdf) | Static CMOS logic, controlled four-input/four-output circuit, pass-transistor analysis, CMOS implementation | [HW1](../HW1/): derivations, transistor diagrams, truth tables |
-| [HW2 (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework2.pdf) | Nonideal NMOS transmission and retention; ratioed logic function and sizing | [HW2](../HW2/): analytical solutions with HSPICE checks. The original 2024 questions are analytical. |
-| [HW3 (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework3.pdf) | Four-bit serial-parallel multiplexer-based adder; worst-case delay, power, transistor WL area, energy/area comparison | [HW3](../HW3/): transistor-level `.sp`, prescribed patterns, verification and candidate comparison |
-| [HW4 (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework4.pdf) | HW3 layout, extracted netlist, pre/post-layout comparison | [HW4](../HW4/): runnable pre-layout `.sp` as requested; no layout, DRC, LVS, PEX, or post-layout results |
+| [HW1](homework1.pdf) | Static CMOS logic, controlled four-input/four-output circuit, pass-transistor analysis, CMOS implementation | [HW1](../HW1/): derivations, transistor diagrams, truth tables |
+| [HW2](homework2.pdf) | Nonideal NMOS transmission and retention; ratioed logic function and sizing | [HW2](../HW2/): analytical solutions with HSPICE checks. The original 2024 questions are analytical. |
+| [HW3](homework3.pdf) | Four-bit serial-parallel multiplexer-based adder; worst-case delay, power, transistor WL area, energy/area comparison | [HW3](../HW3/): transistor-level `.sp`, prescribed patterns, verification and candidate comparison |
+| [HW4](homework4.pdf) | HW3 layout, extracted netlist, pre/post-layout comparison | [HW4](../HW4/): runnable pre-layout `.sp` as requested; no layout, DRC, LVS, PEX, or post-layout results |
 
 ## HW3 instructor conditions
 

@@ -1,10 +1,12 @@
 # Introduction to VLSI Design - 2024
 
-Original PDFs and photograph panels mentioned below are stored only in the owner-only [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals), under the same `homework/` or `exams/` path. This public folder contains the authored reports, reconstructions and verification evidence.
+Public questions: [HW1 PDF](assignments/homework1.pdf), [HW2 PDF](assignments/homework2.pdf), [HW3 PDF](assignments/homework3.pdf), [HW4 PDF](assignments/homework4.pdf).
+
+Complete assignment question PDFs are public in `assignments/`, with the original page layout and circuit figures preserved. Only the author first name in the footer is removed; surname Li remains. Unedited master files are preserved in the [private original archive](https://github.com/handsomegary/ncu-intro-vlsi-originals).
 
 National Central University, EE3032 Introduction to VLSI Design, Li, Fall 2024.
 
-This year covers **2024 HW1–HW4**. The four original assignment PDFs are retained privately; [assignment descriptions](assignments/README.md) remain public. All solution reports and repository explanations are in **English**, with compilable LaTeX, transistor-level HSPICE netlists, and reproducible numerical verification.
+This year covers **2024 HW1–HW4**. The four complete assignment question PDFs are public in [assignments](assignments/README.md), with the author first name removed. All solution reports and repository explanations are in **English**, with compilable LaTeX, transistor-level HSPICE netlists, and reproducible numerical verification.
 
 | Assignment | Deliverables |
 | --- | --- |

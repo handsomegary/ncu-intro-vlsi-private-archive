@@ -41,7 +41,22 @@ def main():
         require(sha(ROOT/name)==digest,f'Changed artifact: {name}')
     private=json.loads((ROOT/'PRIVATE_SOURCES.json').read_text(encoding='utf-8-sig'))
     for asset in private['assets']:
-        require(not (ROOT/asset['path']).exists(),f'Private source present in public archive: {asset["path"]}')
+        public_copy=asset.get('public_prompt')
+        if public_copy:
+            require(public_copy['path']==asset['path'] and public_copy['path'].startswith('homework/'), 'Public prompt path must identify a homework source')
+            require(sha(ROOT/public_copy['path'])==public_copy['sha256'],f'Public question PDF changed: {public_copy["path"]}')
+            require(public_copy['sha256']!=asset['sha256'],'Unedited master incorrectly used as a public copy')
+        else:require(not (ROOT/asset['path']).exists(),f'Private source present in public archive: {asset["path"]}')
+    prompts=read_json('PROMPTS.json')
+    require(prompts['assignments']==31 and prompts['pdf_files']==len(prompts['prompts'])==32,'Public assignment question coverage')
+    require(prompts['pages']==sum(p['pages']for p in prompts['prompts'])==37,'Public assignment question pages')
+    for prompt in prompts['prompts']:
+        require(sha(ROOT/prompt['path'])==prompt['sha256'],'Public prompt hash')
+        require(prompt['all_question_and_figure_pixels_identical'] and prompt['non_author_content_operators_unchanged'] and prompt['figure_image_bytes_unchanged'] and prompt['all_pages_visually_checked'] and not prompt['contains_handwriting'],'Public prompt preservation QA')
+    for year in read_json('COVERAGE.json')['years']:
+        for assignment in year['homeworks']:
+            if assignment['status']=='complete':
+                require(assignment.get('prompt_storage')=='public' and sha(HW/assignment['prompt'])==assignment['prompt_sha256'],'Missing complete public assignment question')
     import os
     original_root=os.environ.get('VLSI_PRIVATE_ORIGINALS')
     if original_root:

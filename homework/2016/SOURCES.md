@@ -1,6 +1,6 @@
 # 2016 source ledger
 
-Original course prompts: Li, EE3032, National Central University, Fall 2016. Original PDFs are byte-for-byte copies.
+Original course prompts: Li, EE3032, National Central University, Fall 2016. Original PDFs are original-format copies with only the author first name removed.
 
 - `assignments/homework3.pdf`: SHA-256 `6be83e172ba28cfe3bce6b97bcd101afd9c2480ba90714c27d70080bcdb2004a`.
 

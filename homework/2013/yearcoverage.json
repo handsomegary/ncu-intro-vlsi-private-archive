@@ -19,7 +19,11 @@
       "original_questions": 4,
       "report": "HW1/solution.tex",
       "pdf": "HW1/solution.pdf",
-      "verification": "HW1/verification.json"
+      "verification": "HW1/verification.json",
+      "prompt_storage": "public",
+      "public_prompt_sha256": "df588a11fc9dee41657c6ced8a322fc4115a770374e47d4a5ddd992054933af5",
+      "private_master_sha256": "f10c5c107f247cd233de54855e0bc76f024301480bba97a1a4588094be80baac",
+      "original_sha256_storage": "private unedited master"
     },
     {
       "homework": 2,
@@ -28,7 +32,11 @@
       "original_questions": 4,
       "report": "HW2/solution.tex",
       "pdf": "HW2/solution.pdf",
-      "verification": "HW2/verification.json"
+      "verification": "HW2/verification.json",
+      "prompt_storage": "public",
+      "public_prompt_sha256": "90c52ec202882899c9af4632ea904c73bd5693981992ff5e1f3dd5efb4c1dbd0",
+      "private_master_sha256": "9cf70011bf1523685cfa989b216da691d817a3c6dd9621c53e98d01644fe30fc",
+      "original_sha256_storage": "private unedited master"
     },
     {
       "homework": 3,
@@ -37,7 +45,11 @@
       "original_questions": 2,
       "report": "HW3/solution.tex",
       "pdf": "HW3/solution.pdf",
-      "verification": "HW3/results/summary.json"
+      "verification": "HW3/results/summary.json",
+      "prompt_storage": "public",
+      "public_prompt_sha256": "b1adac1d0ce341ddefc23ee8b60583d5898bde9a93b7622bd53c83087ed1bca1",
+      "private_master_sha256": "2c1b3d1be71fda40ecd3ffb830fa35707c2bb3f0028b71b8019ca15149163a82",
+      "original_sha256_storage": "private unedited master"
     },
     {
       "homework": 4,

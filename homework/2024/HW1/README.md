@@ -35,7 +35,7 @@ All other controls are zero. The assignment does not specify non-one-hot operati
 | [truth_tables.csv](truth_tables.csv) | All 96 main-circuit input cases, with expected outputs, observed outputs, and PASS status. |
 | [verification.json](verification.json) | Test counts, device counts, and the LaTeX source SHA-256. |
 
-The unchanged instructor assignment is [2024/assignments/homework1.pdf (private)](https://github.com/handsomegary/ncu-intro-vlsi-originals/blob/main/homework/2024/assignments/homework1.pdf). Two pre-existing handwritten references were supplied locally by the user. Their provenance and comparison are acknowledged in the solution and the repository's source inventory. Their content is not presented as newly authored work.
+The unchanged instructor assignment is [2024/assignments/homework1.pdf](../assignments/homework1.pdf). Two pre-existing handwritten references were supplied locally by the user. Their provenance and comparison are acknowledged in the solution and the repository's source inventory. Their content is not presented as newly authored work.
 
 ## Verification and results
 

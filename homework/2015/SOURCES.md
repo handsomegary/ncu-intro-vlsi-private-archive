@@ -1,6 +1,6 @@
 # 2015 source reconciliation
 
-All four original instructor PDFs are available and copied byte-for-byte into `assignments`. The answer PDFs/JPGs/DOCX/code archives were inspected before independent work. No process library or historical simulator/license logs are redistributed.
+All four original instructor PDFs are available and copied in original format with only the author first name removed into `assignments`. The answer PDFs/JPGs/DOCX/code archives were inspected before independent work. No process library or historical simulator/license logs are redistributed.
 
 | Source | Retained | Corrections / scope |
 |---|---|---|
