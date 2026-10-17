@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "standalone_tex": true,
+  "inline_vector_figures": true,
+  "pdf_page_counts": {
+    "original-exam.pdf": 6,
+    "exam.pdf": 3,
+    "solution.pdf": 10
+  },
+  "visual_review": {
+    "original": 6,
+    "exam": 3,
+    "solution": 10,
+    "total": 19,
+    "status": "All 19 pages rendered and viewed. Source w, Figure 1 spacing, Q3 intermediate c and the student carry comparison were corrected and rechecked. No clipping or overlapping labels."
+  },
+  "embedded_source_JPEG_hashes_match": true,
+  "csv_file_count": 16,
+  "csv_data_rows": 203,
+  "csv_row_counts": {
+    "q2_elmore_coefficients.csv": 6,
+    "q2_majority_truth.csv": 8,
+    "q2_worst_transitions.csv": 2,
+    "q3_conditional_vt_netlist.csv": 24,
+    "q3_logic_truth.csv": 64,
+    "q3_slack_examples.csv": 4,
+    "q4_levels.csv": 2,
+    "q4_region_examples.csv": 7,
+    "q5_alpha_candidates.csv": 2,
+    "q6a_logic.csv": 16,
+    "q6a_MOS.csv": 8,
+    "q6b_complementary_MOS.csv": 12,
+    "q6b_logic_and_reference.csv": 4,
+    "q6b_TG_alternative_MOS.csv": 8,
+    "q7_full_adder_MOS.csv": 28,
+    "q7_full_adder_truth.csv": 8
+  },
+  "compile": {
+    "builtin": "Both final source files compiled successfully.",
+    "local": "MiKTeX pdfLaTeX; two passes; no overfull or underfull warnings."
+  },
+  "verification_status": "PASS",
+  "no_process_measurement": true,
+  "artifact_sha256": {
+    "exam.tex": "5b8960477e8e8c0b6a399fed83173ebbea778200b0c7f806934d185133485fe0",
+    "exam.pdf": "f022c6bccc834bfa412d7e7173fec9f8719ea03e6a98bfd1832bdd72cf77801f",
+    "solution.tex": "6efc153e77622fee6009769608b9eb3c16ec3fb9cbf434e6d6b4b665e4641988",
+    "solution.pdf": "e61516adbbf8424213ca1aceae0590f978e9ecc916c0de2d2121eb15606aa275",
+    "verify_logic_timing.py": "13847a23ed7548a398ba90eedc96ebff885140e417ead6e6d35859cecfed015c"
+  },
+  "artifact_hash_convention": "SHA256 of exact binary bytes; text artifacts normalized to LF, matching Git archive and MANIFEST.json.",
+  "private_source_sha256": {
+    "original-exam.pdf": "ab0b76432345215a9d6ec9ea9c572f312cfba63ec610c61841a587b6fd9d5b76"
+  },
+  "source_integrity_context": "Original integrity records describe the pre-migration check; original files are now owner-only private. Public artifact hashes refer to this cleaned export."
+}

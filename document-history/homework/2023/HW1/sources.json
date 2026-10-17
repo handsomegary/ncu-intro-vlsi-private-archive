@@ -1,0 +1,30 @@
+[
+  {
+    "path": "Private local source locator withheld; original provenance retained privately",
+    "relative_path": "2023\\HW1\\109501570_簡肇亨_hw1.pdf",
+    "sha256": "7f5854e4d789f07e8c0279ba97f5545cabdd5bd76aa0ce097ae64d31c8f034c6",
+    "pages": 2,
+    "role": "existing_work_or_resource"
+  },
+  {
+    "path": "Private local source locator withheld; original provenance retained privately",
+    "relative_path": "2023\\HW1\\110501512_廖柏森_hw1.pdf",
+    "sha256": "d0bd8c56a5ca58978f0eaeac1372a469d0bd1aff68a39c92019e47310da59bdb",
+    "pages": 4,
+    "role": "existing_work_or_resource"
+  },
+  {
+    "path": "Private local source locator withheld; original provenance retained privately",
+    "relative_path": "2023\\HW1\\110501558_林意盛_hw1.pdf",
+    "sha256": "78d1c5008f9d0f4ce4a6362cc9e2a9dd67200e82a377e4c5f135a4c27647f9aa",
+    "pages": 2,
+    "role": "existing_work_or_resource"
+  },
+  {
+    "path": "Private local source locator withheld; original provenance retained privately",
+    "relative_path": "2023\\HW1\\homework1.pdf",
+    "sha256": "88c4579e080f5ddfd5ddf8dfac48650e312c4a9da4d96e2de5ae56cc8a7a0068",
+    "pages": 1,
+    "role": "prompt"
+  }
+]

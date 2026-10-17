@@ -1,0 +1,4649 @@
+{
+  "schema": 1,
+  "consolidated_on": "2026-10-17",
+  "visibility": "private",
+  "access": "owner only",
+  "source_repositories": [
+    {
+      "name": "handsomegary/ncu-intro-vlsi-originals",
+      "id": 1418110159,
+      "head": "be7dc3db3059173a223c7d9e1b38285fd2300359",
+      "tree": "89c2b1af03886f7370ab8c8aacd912c333db3a95",
+      "refs": {
+        "refs/heads/main": "be7dc3db3059173a223c7d9e1b38285fd2300359"
+      },
+      "commits": [
+        "061e696aafea756e7a67eacd1ec01583538a7a24",
+        "1256ed6b6db65b54022211ae136e41d345e9993d",
+        "2927c91f99b4c51ac65145dacf5885b5a5850d95",
+        "2e590c48aef1fd1d02d87c1174f8932be9ad9f09",
+        "3d33044b1cff1809e9896e7a4da4a3159c82247e",
+        "40841c28b77aa3b8565623703c43358d28efbce4",
+        "4d49c0dd9c702876f5c2ffe4883c5864cecbbe7f",
+        "5e525ef4d9b58072825f007a137604a7f55641a4",
+        "621a99c6d1b6db1cbae2b47b3a1f057c554d3842",
+        "7e5481daa3aaeec7be90ed0071d0ad219c598382",
+        "91cf4295b56c0b55d71da414454004c605844be3",
+        "9273eb65362e064be934defa31e9374f35c15e5f",
+        "a1343ebc94e1287e7aaf32a684d43dde344fc71c",
+        "aada2426f621a9cf114f587530377a2d41e6b513",
+        "abd849b04d352a8c7fdee624c8b07b964ef0b319",
+        "be7dc3db3059173a223c7d9e1b38285fd2300359",
+        "d0fb8e963e6558b3f53e4801c4620a7352918b9e",
+        "d39c119a9e9a6e5caf0a60a201252182a4fca55d",
+        "de270d8e492336930ac6a09d92138a5747ca0d07",
+        "f862400dcb19bc9f52189aa4371a41407e04b8b8"
+      ]
+    },
+    {
+      "name": "handsomegary/ncu-intro-vlsi-document-history",
+      "id": 1419860085,
+      "head": "0b439c53e574d8a5c99a073c5471bd432d7bb691",
+      "tree": "c34a46b7fbd7563daf7a4f6e26ad8bce74c70640",
+      "refs": {
+        "refs/heads/main": "0b439c53e574d8a5c99a073c5471bd432d7bb691"
+      },
+      "commits": [
+        "0b439c53e574d8a5c99a073c5471bd432d7bb691",
+        "b42a6a1e36d029c83b3cc3afc460fee248ff3fcd",
+        "b9b445b2c5469254f1ce4a677727db797c261e24"
+      ]
+    }
+  ],
+  "preserved_source_files": 1050,
+  "preserved_commits": 23,
+  "source_files": {
+    "originals/.gitattributes": {
+      "mode": "100644",
+      "sha": "d77d250a64a8ac95a890bca200d8148c1f8ec6e2"
+    },
+    "originals/README.md": {
+      "mode": "100644",
+      "sha": "e33e65347808c9ea922cc57b46e55a7bc583d830"
+    },
+    "originals/SOURCE_INDEX.json": {
+      "mode": "100644",
+      "sha": "60abee17df2c09577f01d4cd3558d5f6b950e3ef"
+    },
+    "originals/exams/2007/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "7f47db882da94a6b57bfe400f7d9db1a9db2ebc3"
+    },
+    "originals/exams/2007/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "d8ad2515420a627ce20a82d8ad6ec2d17a51ceb3"
+    },
+    "originals/exams/2008/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "4bcd61ba35166b0a0bab2c7cbe2820c5a6eb34dc"
+    },
+    "originals/exams/2008/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "15d6aa6234f595da07a4e553c744cd321fb60fac"
+    },
+    "originals/exams/2009/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "a24850eeceb06880c15cb85a152d2fbb43952134"
+    },
+    "originals/exams/2009/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "018802ab7fd0dbcaa39d1848e3a4a6bb899d8eec"
+    },
+    "originals/exams/2010/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "58c686bcacc963ab05182ebc3cd5ecb90f5db4b8"
+    },
+    "originals/exams/2011/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "58fc77cf60ba4d02ccfef5761832c34b7db26977"
+    },
+    "originals/exams/2011/midterm/original-pages/panel-1.jpg": {
+      "mode": "100644",
+      "sha": "fc809e279ff10f480a54951a4f1df529476149b8"
+    },
+    "originals/exams/2011/midterm/original-pages/panel-2.jpg": {
+      "mode": "100644",
+      "sha": "bd4f61e746c29a6c23f0bfafa48680e2168a38ea"
+    },
+    "originals/exams/2011/midterm/original-pages/panel-3.jpg": {
+      "mode": "100644",
+      "sha": "54be8facd5b63ad01e2d9bafc3afe635f2470038"
+    },
+    "originals/exams/2011/midterm/original-pages/panel-4.jpg": {
+      "mode": "100644",
+      "sha": "20c48baa277128774ee1f6fac1804134f728dd16"
+    },
+    "originals/exams/2011/midterm/original-pages/panel-5.jpg": {
+      "mode": "100644",
+      "sha": "5cc43742954cb08449455364d0cc9f748b64e1a9"
+    },
+    "originals/exams/2011/midterm/original-pages/panel-6.jpg": {
+      "mode": "100644",
+      "sha": "62e00387827ec9190176425829ab463f46539519"
+    },
+    "originals/exams/2012/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "fee7d5636c22ca31ccaab728fce45f48e63ccbe0"
+    },
+    "originals/exams/2012/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "2396ff9260e35105a8eb1a10830558df9d13647d"
+    },
+    "originals/exams/2013/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "f111be724831c036959758a15ffae5bea168cf82"
+    },
+    "originals/exams/2013/final/original-pages/page-1.jpg": {
+      "mode": "100644",
+      "sha": "bd9695c6b1122886c137d02a73a0cd0b3939f11d"
+    },
+    "originals/exams/2013/final/original-pages/page-2.jpg": {
+      "mode": "100644",
+      "sha": "82c23f269c5fc6760484a53a01dfd7b26390d57b"
+    },
+    "originals/exams/2013/final/original-pages/page-3.jpg": {
+      "mode": "100644",
+      "sha": "f65cf4a54548551173f1fc1c9a884489f98f2d7d"
+    },
+    "originals/exams/2016/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "4ee1d90de5c630eaa3a25289bd32f3170317c7d2"
+    },
+    "originals/exams/2018/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "365966bb74c43eeab07a91e35a5344e591fdf506"
+    },
+    "originals/exams/2021/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "8d65fa8808d3725d9a9810790f325c9aa432dcee"
+    },
+    "originals/exams/2021/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "db6101c7adaee437715ddc0d7d8ab795036ebab6"
+    },
+    "originals/exams/2022/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "7ab04a9b45d7d631bbc3f56d92ea7c58979b680e"
+    },
+    "originals/exams/2023/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "ed0a9a3db2801defa217a0ad90d1bf3afa8bea53"
+    },
+    "originals/exams/2023/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "2cb5cb569033746efa2ada14760f682a70565711"
+    },
+    "originals/exams/2024/final/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "69b27b31e7d85e420f4f1f5a7f8cfe2ea46aa6ce"
+    },
+    "originals/exams/2024/midterm/original-exam.pdf": {
+      "mode": "100644",
+      "sha": "972d3e70677fc70f0c9e8f16fb960d6520939580"
+    },
+    "originals/homework/2013/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "afbba58f53c2793e7fb82bec46b8f16784dd5316"
+    },
+    "originals/homework/2013/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "acfa613931225c137158342d88aaac849d0f5b18"
+    },
+    "originals/homework/2013/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "33b6e9d09c4f4095a008bf9b7812297da260639c"
+    },
+    "originals/homework/2015/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "1af460578d412249812972779741ada88c565108"
+    },
+    "originals/homework/2015/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "ec1168c30f71ea82c477bba7f773478a55d61663"
+    },
+    "originals/homework/2015/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "7a80dd0b2430853b2ee8216a0e8e87e2735b99ca"
+    },
+    "originals/homework/2015/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "64be4d7ac4bfa39bbab01bffd36830a13b1cc9a4"
+    },
+    "originals/homework/2016/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "4248dc3b804d0caf9993348a99b54fba52a529b8"
+    },
+    "originals/homework/2017/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "1673f3cacada3183ec45c1a0e511617a6b78d4f8"
+    },
+    "originals/homework/2017/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "55fb267cda68beedb6270c9d08e4fc310d2fb45c"
+    },
+    "originals/homework/2017/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "c52e20f5f84b3e456f71c53e9b4ababd35db3c88"
+    },
+    "originals/homework/2017/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "e0f3f1c717688372ee14ad2589b8f8a943738145"
+    },
+    "originals/homework/2018/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "cdbc5ca77ffff804891f4af20920d5937e3548ed"
+    },
+    "originals/homework/2018/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "b8317937ce182b160f093dcd665d10f9c6380168"
+    },
+    "originals/homework/2019/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "9f354fe07a1cd832ab8dfbb50e8347422fc759fb"
+    },
+    "originals/homework/2020/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "35290518111e1baf5bf3025e196f77c006156691"
+    },
+    "originals/homework/2020/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "b5eea87094dbf8cd05ed2d91594dd73d833592fb"
+    },
+    "originals/homework/2020/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "e4c1a1857471ed2d6b65dc123c005cc5a2c2eb52"
+    },
+    "originals/homework/2020/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "ff6227d08014a0024498a65a153a8c2740294921"
+    },
+    "originals/homework/2020/assignments/homework4_version2.pdf": {
+      "mode": "100644",
+      "sha": "ff6227d08014a0024498a65a153a8c2740294921"
+    },
+    "originals/homework/2021/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "044f0bf53635c33e3c4b6612e67cddc617aac772"
+    },
+    "originals/homework/2021/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "41143803d7678ebe3bce8c18e12c30015c7f0fea"
+    },
+    "originals/homework/2021/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "7f23d7b0339a3c9fde699b9d229d73cf3a8f992e"
+    },
+    "originals/homework/2021/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "469f54378e3ccdf1b2fde17cbafa3da50a634bba"
+    },
+    "originals/homework/2023/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "e10efef248108eed62dca1d82f317bc3f350d388"
+    },
+    "originals/homework/2023/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "44372823ad8c966fe986993ec75b4ed82239e240"
+    },
+    "originals/homework/2023/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "f2a81b4a02b4fcda35283240f53502e3e4c48a46"
+    },
+    "originals/homework/2023/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "8a11e9028d0681ed819d97eba591a94b6fdfd297"
+    },
+    "originals/homework/2024/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "ba50bdadc83081914054f9587e25c6ebec0d6bca"
+    },
+    "originals/homework/2024/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "edef42a559287e881a2a88dad3fc0212a34e6374"
+    },
+    "originals/homework/2024/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "c635880aef7eb99dc65a1d9bccf3414c2b9c8541"
+    },
+    "originals/homework/2024/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "07b7933709ae4b7df1d0f4eea685f27882a0f148"
+    },
+    "originals/homework/2024/assignments/hw3_clarifications.txt": {
+      "mode": "100644",
+      "sha": "f80ffb5262f5e67c13eb842ad14ed1309589b4a8"
+    },
+    "originals/homework/2024/assignments/hw3_instructor_testbench.sp": {
+      "mode": "100644",
+      "sha": "6dfcfd60376fa54b4ad5562836d4b334bc79c35f"
+    },
+    "originals/homework/2024/assignments/hw4_clarifications.txt": {
+      "mode": "100644",
+      "sha": "fb0271a9a48abf5bd7dbb82f97fcd2696fda3eb3"
+    },
+    "document-history/.gitattributes": {
+      "mode": "100644",
+      "sha": "4a39c88fb0480aa6f95dca38b87e53a5e39f9e40"
+    },
+    "document-history/.gitignore": {
+      "mode": "100644",
+      "sha": "a5e33bd0c25be475965db6161212d5f9009ac3c0"
+    },
+    "document-history/MANIFEST.json": {
+      "mode": "100644",
+      "sha": "26e2bb82de1079fbd4a84a90625ea47e2b0fd44f"
+    },
+    "document-history/PRIVACY_QA.json": {
+      "mode": "100644",
+      "sha": "0b2676a94dc9d9c6ed20d422da79bd545c4a0b72"
+    },
+    "document-history/PRIVATE_SOURCES.json": {
+      "mode": "100644",
+      "sha": "19bb849b9f2a844af2da24d96294300729772413"
+    },
+    "document-history/README.md": {
+      "mode": "100644",
+      "sha": "8582d3684f106bb34949d583c0ad6a87c4f7cdec"
+    },
+    "document-history/exams/2007/final/README.md": {
+      "mode": "100644",
+      "sha": "ba98787d9d3f37ddc2ff4730df4dd35043f8cdcb"
+    },
+    "document-history/exams/2007/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "f5a925151a6bbb60fb534ca32c9910a5c67a017e"
+    },
+    "document-history/exams/2007/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "94c10a03c21de663ca66f4e51b80fb77eece3adb"
+    },
+    "document-history/exams/2007/final/device-netlists.json": {
+      "mode": "100644",
+      "sha": "38bcaedab32f1831beaf314417ffaf7f714d09c3"
+    },
+    "document-history/exams/2007/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "d131e6932760c10d686f6e6c5d17300f472b7289"
+    },
+    "document-history/exams/2007/final/exam.tex": {
+      "mode": "100644",
+      "sha": "0c376043a38284a4be01b4fb21b76de34e47b313"
+    },
+    "document-history/exams/2007/final/q2-xnor-switch-paths.csv": {
+      "mode": "100644",
+      "sha": "56f8ce0e1b49491efe556cc7b848ea59ca203f9b"
+    },
+    "document-history/exams/2007/final/q3-contact-audit.md": {
+      "mode": "100644",
+      "sha": "d05f246b3100ebd02589411f744f2c0e71145cd4"
+    },
+    "document-history/exams/2007/final/q3-equilibrium-check.csv": {
+      "mode": "100644",
+      "sha": "6a5f0b73db3aa69be451181f914708b572886846"
+    },
+    "document-history/exams/2007/final/q3-independent-switch-states.csv": {
+      "mode": "100644",
+      "sha": "66d9bc6322b9c8f4a2108c8d1a8eca486411291b"
+    },
+    "document-history/exams/2007/final/q3-layer-geometry-verification.json": {
+      "mode": "100644",
+      "sha": "e71928311c194a8740e2e9fe645b71e857e8ac2a"
+    },
+    "document-history/exams/2007/final/q3-layout-verification.json": {
+      "mode": "100644",
+      "sha": "7f6e4e7e5a3c51c0cd5ca4ce7e65391e7b93119b"
+    },
+    "document-history/exams/2007/final/q3-literal-netlist.csv": {
+      "mode": "100644",
+      "sha": "8aa858ed34bf0f159414957d52052fa95f748c28"
+    },
+    "document-history/exams/2007/final/q3-normalized-metal-routes.csv": {
+      "mode": "100644",
+      "sha": "12ee75a1d1bf6bbc9bdeefd67cc703de77c64d92"
+    },
+    "document-history/exams/2007/final/q3-write-contention-check.csv": {
+      "mode": "100644",
+      "sha": "75d2572bd0477ca4761c05bf7d29d6a12d188321"
+    },
+    "document-history/exams/2007/final/q4-duty-dependent-frequency.csv": {
+      "mode": "100644",
+      "sha": "5a7037951fcd55b164bbcdfbe38d23e36f9caecc"
+    },
+    "document-history/exams/2007/final/q4-full-adder-truth.csv": {
+      "mode": "100644",
+      "sha": "927094524d2a947f329e3d2dbb07237284a88120"
+    },
+    "document-history/exams/2007/final/q4-node-capacitance-retention.csv": {
+      "mode": "100644",
+      "sha": "d8223e1dcc8106bb0175f61c68394aeae531f5a9"
+    },
+    "document-history/exams/2007/final/q5-three-style-truth.csv": {
+      "mode": "100644",
+      "sha": "761776f8bc75a0c57303b314b1f955d8c97330a1"
+    },
+    "document-history/exams/2007/final/q6-dynamic-phase-events.csv": {
+      "mode": "100644",
+      "sha": "b4f7c2c2e8693ff050a9008b29fa624864e397a7"
+    },
+    "document-history/exams/2007/final/q7-timing.csv": {
+      "mode": "100644",
+      "sha": "ea869045adb403ae87b2fab5a75c8df4a0cd029f"
+    },
+    "document-history/exams/2007/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "24226d2badb5230e624eff56d751e1564645cd30"
+    },
+    "document-history/exams/2007/final/solution.tex": {
+      "mode": "100644",
+      "sha": "16b8a8f52b99c7f7517bc130dab4d832a585b799"
+    },
+    "document-history/exams/2007/final/sources.json": {
+      "mode": "100644",
+      "sha": "fdae1b134c5ca979f837c192fd9e14ff39e7f6c1"
+    },
+    "document-history/exams/2007/final/verification.json": {
+      "mode": "100644",
+      "sha": "198ffe100b1c8e7dac2777a8e12dc29e5720000b"
+    },
+    "document-history/exams/2007/final/verify.py": {
+      "mode": "100644",
+      "sha": "0a32bb174ffc748b0cdd0d5189423a710927b151"
+    },
+    "document-history/exams/2007/final/verify_layout.py": {
+      "mode": "100644",
+      "sha": "c6e9ce4ab2f6b963bb34638d2bc42c9cc838291c"
+    },
+    "document-history/exams/2007/final/verify_layout_geometry.py": {
+      "mode": "100644",
+      "sha": "14ef06fdae335451794cf7a3a586b50f919d0e6e"
+    },
+    "document-history/exams/2007/final/visual-qa.json": {
+      "mode": "100644",
+      "sha": "8442aecfcb0814a8dc139890e295efe3064b3028"
+    },
+    "document-history/exams/2007/midterm/README.md": {
+      "mode": "100644",
+      "sha": "389ee4fb46a00a5add4eeb9282771404310ee081"
+    },
+    "document-history/exams/2007/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "431482668e3e3f3a1a3474d92451f0d893c93146"
+    },
+    "document-history/exams/2007/midterm/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "209dcd9f0244e1915686ed216b11eae8f14bc02c"
+    },
+    "document-history/exams/2007/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "5f82f78cc3b7138d2be9c6a6c2ceb397098013b2"
+    },
+    "document-history/exams/2007/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "99b33d537e325dd6f466c110f42daffe16a92296"
+    },
+    "document-history/exams/2007/midterm/pdf_qa.json": {
+      "mode": "100644",
+      "sha": "ee15577602a85e230f429bbfa5ae64ab68902d96"
+    },
+    "document-history/exams/2007/midterm/q1_aoi21_truth.csv": {
+      "mode": "100644",
+      "sha": "5aad44be9ebf1ff8bb38bfdcadaf41734241716e"
+    },
+    "document-history/exams/2007/midterm/q2_TG_xor.csv": {
+      "mode": "100644",
+      "sha": "44b77ef4df41fff3093a9fe2b7ae945da6c20e1e"
+    },
+    "document-history/exams/2007/midterm/q2_mux_cases.csv": {
+      "mode": "100644",
+      "sha": "8630ca4fa3153d6f1282a86d6e8e8b0192b4a363"
+    },
+    "document-history/exams/2007/midterm/q2_mux_netlist.csv": {
+      "mode": "100644",
+      "sha": "1e4a6e3f657c3b4a04a2d93801580f83dc520870"
+    },
+    "document-history/exams/2007/midterm/q3_independent_sample_probability.csv": {
+      "mode": "100644",
+      "sha": "070752baf6e163a960b0ec181ccaf8dbc78de506"
+    },
+    "document-history/exams/2007/midterm/q4_crosstalk.csv": {
+      "mode": "100644",
+      "sha": "03fea8f086d406db6c937516022f9069f6853208"
+    },
+    "document-history/exams/2007/midterm/q5_declared_overlap_comparison.csv": {
+      "mode": "100644",
+      "sha": "1880772451a694b1d0cdff1ceedfbce38fb80c84"
+    },
+    "document-history/exams/2007/midterm/q5_literal_width_transition_times.csv": {
+      "mode": "100644",
+      "sha": "6d0830997000c74734cf38f29c29a53b0a3eb1cd"
+    },
+    "document-history/exams/2007/midterm/q6_repeater_position_sweep.csv": {
+      "mode": "100644",
+      "sha": "ad0a3564ae680da4edb5f95611da171824617910"
+    },
+    "document-history/exams/2007/midterm/q7_full_switch_graph.csv": {
+      "mode": "100644",
+      "sha": "5d2283720e6ba94b1bb55cb7e9df310a972cc13c"
+    },
+    "document-history/exams/2007/midterm/q7_sized_MOS_netlist.csv": {
+      "mode": "100644",
+      "sha": "461ea2bd37f14b587824e11551a7754f024e99da"
+    },
+    "document-history/exams/2007/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "992359eac6c288b4087e4b4b3603a57be4102c38"
+    },
+    "document-history/exams/2007/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "b1052b3981256d31cf0e8ef79691430e53ffff81"
+    },
+    "document-history/exams/2007/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "f8dd043d0f0b2fb2345869608d7ce9422294f8f6"
+    },
+    "document-history/exams/2007/midterm/verification.json": {
+      "mode": "100644",
+      "sha": "b4ccacb9955a2f268a1d4776088a5961aaa78c43"
+    },
+    "document-history/exams/2007/midterm/verify.py": {
+      "mode": "100644",
+      "sha": "daa594edb497be0e20e76e87ac951202a26355a4"
+    },
+    "document-history/exams/2008/final/README.md": {
+      "mode": "100644",
+      "sha": "424f5a4909ce8df5034066ea1fdc1abe5b3b6f66"
+    },
+    "document-history/exams/2008/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "b0bcf8b04ffeec53ac0e7330f32c750c6f62ef81"
+    },
+    "document-history/exams/2008/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "ccf2763867b739a7363250592b3a9342ce97068c"
+    },
+    "document-history/exams/2008/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "e1898cad7e875a33c2f8ab0e15ee07850080d6e4"
+    },
+    "document-history/exams/2008/final/exam.tex": {
+      "mode": "100644",
+      "sha": "8fc2dc63605414a7597b460abbef7e4f466086f5"
+    },
+    "document-history/exams/2008/final/logic-layout-verification.json": {
+      "mode": "100644",
+      "sha": "616d321481fa74def6c6113b8b64acd1c159f5b5"
+    },
+    "document-history/exams/2008/final/numerical-verification.json": {
+      "mode": "100644",
+      "sha": "78fb773e457c2eb362a0fc337babf6acc2522c75"
+    },
+    "document-history/exams/2008/final/q2_differential_candidates.csv": {
+      "mode": "100644",
+      "sha": "a32d35a4a731c167131efaccb8dbbe5fdac132c4"
+    },
+    "document-history/exams/2008/final/q2_differential_complete_netlist.csv": {
+      "mode": "100644",
+      "sha": "18a052bce44cc2110a77d4363a0ddfd180e1a916"
+    },
+    "document-history/exams/2008/final/q2_domino_complete_netlist.csv": {
+      "mode": "100644",
+      "sha": "7b0331ad6370531507d09118231ea27e62f021ea"
+    },
+    "document-history/exams/2008/final/q2_domino_phases.csv": {
+      "mode": "100644",
+      "sha": "892dca2a04f41a8a773e0144ec5289b4965ac55a"
+    },
+    "document-history/exams/2008/final/q2_static_netlist.csv": {
+      "mode": "100644",
+      "sha": "6143a40ba663bac308781a5fc92c9caa3f6745d2"
+    },
+    "document-history/exams/2008/final/q2_truth.csv": {
+      "mode": "100644",
+      "sha": "d3ae5d83a5859cc2f39c454ee5377da3eb0af28e"
+    },
+    "document-history/exams/2008/final/q3_dynamic_register_netlist.csv": {
+      "mode": "100644",
+      "sha": "34a09dca393f8d5abecb83c1a8d83f846bb3d44c"
+    },
+    "document-history/exams/2008/final/q3_phase_histories.csv": {
+      "mode": "100644",
+      "sha": "bc020480a55a0f1b3c0616ebfc55b829441af08b"
+    },
+    "document-history/exams/2008/final/q4_duty_parameter.csv": {
+      "mode": "100644",
+      "sha": "df4b71ad0f86ad27d75afa3b64254b1f7988dddb"
+    },
+    "document-history/exams/2008/final/q4_dynamic_capacitances.csv": {
+      "mode": "100644",
+      "sha": "9d43e890b169567322dac00960122ff8b9f220b7"
+    },
+    "document-history/exams/2008/final/q4_full_adder_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "672de06b133a63ddc6b09d531b03f0295c861dbc"
+    },
+    "document-history/exams/2008/final/q4_full_adder_truth.csv": {
+      "mode": "100644",
+      "sha": "8424f8072eb55eec24272faf0671fbe0c125fb87"
+    },
+    "document-history/exams/2008/final/q4_retention_bounds.csv": {
+      "mode": "100644",
+      "sha": "d40f7b0b5fc67d151d322bf67198459f1496da3f"
+    },
+    "document-history/exams/2008/final/q5_conditional_hold.csv": {
+      "mode": "100644",
+      "sha": "c8f93da9dd6ac6e4aeef75ac471b1ac66859ccc6"
+    },
+    "document-history/exams/2008/final/q5_setup_bound.csv": {
+      "mode": "100644",
+      "sha": "fc29aea9c39e545ee287f6c798a0645b66efd268"
+    },
+    "document-history/exams/2008/final/q6_schmitt_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "5b0d338814207f09e932b74b8fc3615fbeb4d834"
+    },
+    "document-history/exams/2008/final/q6_symbolic_family_checks.csv": {
+      "mode": "100644",
+      "sha": "a6bfea5b59e4289daee42230ead59b75edb0543c"
+    },
+    "document-history/exams/2008/final/q6_trip_regions_symbolic.csv": {
+      "mode": "100644",
+      "sha": "4a9a98b1e836caa287d9ce2dc64c382c73cabe42"
+    },
+    "document-history/exams/2008/final/q7a-gap-evidence.json": {
+      "mode": "100644",
+      "sha": "865044548f105fca5072043d340b5c420b5a3264"
+    },
+    "document-history/exams/2008/final/q7a_latch_candidates.csv": {
+      "mode": "100644",
+      "sha": "f55f0a32522b2d0f7d48e7b09c9c3950a2425e9e"
+    },
+    "document-history/exams/2008/final/q7a_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "5d3fe4e4014c0adef3fe03913f69eb5bb3dfaf0d"
+    },
+    "document-history/exams/2008/final/q7b_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "2feb469a945b9a18a04b2f3421403fcbd44b15ba"
+    },
+    "document-history/exams/2008/final/q7b_switch_truth.csv": {
+      "mode": "100644",
+      "sha": "647ea3110c75ad8f0803a26a20b4b64cdf59973d"
+    },
+    "document-history/exams/2008/final/q8a_keeper_write_checks.csv": {
+      "mode": "100644",
+      "sha": "3fe29e179f66bfa02073a84d78d80f5b5a2cc42f"
+    },
+    "document-history/exams/2008/final/q8a_upstream_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "6b72ec6febb9d65b6facdef3751eedb052f5395f"
+    },
+    "document-history/exams/2008/final/q8a_upstream_truth_resistance.csv": {
+      "mode": "100644",
+      "sha": "475665befde69f5b912f6e3f3112159eaa02e7a4"
+    },
+    "document-history/exams/2008/final/q8b_negative_edge_trace.csv": {
+      "mode": "100644",
+      "sha": "430ced6255cee8b1e1e18d6a92ae066265c9b477"
+    },
+    "document-history/exams/2008/final/q8b_source_mux_phases.csv": {
+      "mode": "100644",
+      "sha": "d6be2235c7e354a7bd2b3062be0eb1ade0c7f71b"
+    },
+    "document-history/exams/2008/final/qa.json": {
+      "mode": "100644",
+      "sha": "ed74a206d432fc64cd5a8a94e012ea9bb81c59c5"
+    },
+    "document-history/exams/2008/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "7f334d1473462acf45bfe833939eb5fa92828e96"
+    },
+    "document-history/exams/2008/final/solution.tex": {
+      "mode": "100644",
+      "sha": "ca11aedd704f55780ce56c581bf8ad1367edd605"
+    },
+    "document-history/exams/2008/final/sources.json": {
+      "mode": "100644",
+      "sha": "b33b341102a986741e68ca493b34afcc84131f59"
+    },
+    "document-history/exams/2008/final/student-comparison.csv": {
+      "mode": "100644",
+      "sha": "5863a5db8cca9da0e97ff42cc59b121ed4b61bb8"
+    },
+    "document-history/exams/2008/final/verification.json": {
+      "mode": "100644",
+      "sha": "d3634c2280723a8a0cba4b54bec171c64c0bd94d"
+    },
+    "document-history/exams/2008/final/verify.py": {
+      "mode": "100644",
+      "sha": "52707d953384fdaf836cedcb5b83a4974b4b5e92"
+    },
+    "document-history/exams/2008/final/verify_logic_layout.py": {
+      "mode": "100644",
+      "sha": "5872f109f1a02e6ecbd0dba904a22e49dfb39118"
+    },
+    "document-history/exams/2008/final/verify_numerical.py": {
+      "mode": "100644",
+      "sha": "7cbdb456e427df399520efc9ad9b7356f1654a95"
+    },
+    "document-history/exams/2008/midterm/README.md": {
+      "mode": "100644",
+      "sha": "adadc334378f0310a3af0bce65509f01037e5abe"
+    },
+    "document-history/exams/2008/midterm/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "6e5c7fa21467418d17020979e215080265b1b630"
+    },
+    "document-history/exams/2008/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "a0d2fc4615ebcf3b8bab814bf92291f6a13160ea"
+    },
+    "document-history/exams/2008/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "c84c936e3dfc62c6d5aba4c7d4b33cc0216eb043"
+    },
+    "document-history/exams/2008/midterm/logic_timing_verification.json": {
+      "mode": "100644",
+      "sha": "8cd0a2aac665508d68cbb94495c8ba4558c83570"
+    },
+    "document-history/exams/2008/midterm/q1c_CMOS_truth.csv": {
+      "mode": "100644",
+      "sha": "b72fffa77196f704ff48808557986f807b8a39eb"
+    },
+    "document-history/exams/2008/midterm/q1c_MOS.csv": {
+      "mode": "100644",
+      "sha": "712e1c10110542cbed0e084ee35645f915f6a6a2"
+    },
+    "document-history/exams/2008/midterm/q2_balanced_gate_delays.csv": {
+      "mode": "100644",
+      "sha": "9feeaa9e323a0f3e1b1e9eb6afdf8d457b5e3e48"
+    },
+    "document-history/exams/2008/midterm/q2_balanced_reconvergence.csv": {
+      "mode": "100644",
+      "sha": "44ee3ddf2bdb6aadd5bd71d32a6e22db3a4c45e2"
+    },
+    "document-history/exams/2008/midterm/q2_conditional_vt_MOS.csv": {
+      "mode": "100644",
+      "sha": "d5f4fd2a7cdf7884049e94e516a2e3fe0be8ac57"
+    },
+    "document-history/exams/2008/midterm/q2_general_resistance_delays.csv": {
+      "mode": "100644",
+      "sha": "1605b5320f59fba1da03a242e058d106ebe2cec4"
+    },
+    "document-history/exams/2008/midterm/q2_highVt_slack_examples.csv": {
+      "mode": "100644",
+      "sha": "e7cfa4fbf056be4784bfebf85c460daf5e2231f9"
+    },
+    "document-history/exams/2008/midterm/q2_physical_path_delays.csv": {
+      "mode": "100644",
+      "sha": "6c0931e0810394e08e4f4c62c56966b1d6041d94"
+    },
+    "document-history/exams/2008/midterm/q2_truth.csv": {
+      "mode": "100644",
+      "sha": "0313bce8966d565c386d18a76e21db26ea3ebe25"
+    },
+    "document-history/exams/2008/midterm/q3_even_buffer_optima.csv": {
+      "mode": "100644",
+      "sha": "717c2a619e757f9d20b0165fb178c33978e1b14a"
+    },
+    "document-history/exams/2008/midterm/q3_integer_buffer_optima.csv": {
+      "mode": "100644",
+      "sha": "49222d0dd0a03881b50e6da89ea11484cc9c0207"
+    },
+    "document-history/exams/2008/midterm/q4_alpha_candidates.csv": {
+      "mode": "100644",
+      "sha": "1ae8d3b30dd326d76c0db30fd2a5d5d26d84672e"
+    },
+    "document-history/exams/2008/midterm/q5_full_adder_MOS.csv": {
+      "mode": "100644",
+      "sha": "57ab4f4924dadc4f9145997248133418bef84cca"
+    },
+    "document-history/exams/2008/midterm/q5_full_adder_truth.csv": {
+      "mode": "100644",
+      "sha": "04cc9b1e6ef668505aec801b661f9305947c8922"
+    },
+    "document-history/exams/2008/midterm/qa.json": {
+      "mode": "100644",
+      "sha": "ee709f35893451a4f1d464a3bf6878fc76403ac1"
+    },
+    "document-history/exams/2008/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "cbc89770c63ae2b13f681bc8d189eb5190a58485"
+    },
+    "document-history/exams/2008/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "75643df547f98b7b8da7e9a2469ae36c64891d96"
+    },
+    "document-history/exams/2008/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "54019847757ca807beb2149c79db9d36b734cdaa"
+    },
+    "document-history/exams/2008/midterm/verify_logic_timing.py": {
+      "mode": "100644",
+      "sha": "eb65ae0632be5ef844dfc52f446f1eb16605190d"
+    },
+    "document-history/exams/2009/final/README.md": {
+      "mode": "100644",
+      "sha": "4fbe0e7e8f59871a4a690fab513cc27387b04854"
+    },
+    "document-history/exams/2009/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "5dbeced64a1d3e002bbfeb19b6e879993c36b175"
+    },
+    "document-history/exams/2009/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "51fdbae08092573f74ba60bd4d089d5bda79cd3a"
+    },
+    "document-history/exams/2009/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "82061d493266abb3408fede6203ec8a591a52fb3"
+    },
+    "document-history/exams/2009/final/exam.tex": {
+      "mode": "100644",
+      "sha": "78666340abc857a55673fa54a375011c225422ce"
+    },
+    "document-history/exams/2009/final/layout-vector-paths.json": {
+      "mode": "100644",
+      "sha": "82ae75569cec1f6fc4e8df40159eea7919aab38d"
+    },
+    "document-history/exams/2009/final/numerical-verification.json": {
+      "mode": "100644",
+      "sha": "deccb0d41ad7795af2b8117d6a9a805b3b021626"
+    },
+    "document-history/exams/2009/final/q1_divider_cases.csv": {
+      "mode": "100644",
+      "sha": "95afd33f4e116c65abdc3426ca426c1380061db2"
+    },
+    "document-history/exams/2009/final/q1_latch_netlist.csv": {
+      "mode": "100644",
+      "sha": "f05cfb83afd64eea7949014594fa0aa3643b19ce"
+    },
+    "document-history/exams/2009/final/q2_dynamic_register_netlist.csv": {
+      "mode": "100644",
+      "sha": "839ccb9aa4610c12287709f4ea2239c907089620"
+    },
+    "document-history/exams/2009/final/q2_phase_histories.csv": {
+      "mode": "100644",
+      "sha": "d85b822985c772fb8863d45ac1e5371215c7d159"
+    },
+    "document-history/exams/2009/final/q2_static_replacement_netlist.csv": {
+      "mode": "100644",
+      "sha": "42d6b91294ed8a669b1ae127ffb608b6b61b3703"
+    },
+    "document-history/exams/2009/final/q3a_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "1ced43fbf15fe052a5896d20e3d06771b96be6ae"
+    },
+    "document-history/exams/2009/final/q3a_node_capacitances.csv": {
+      "mode": "100644",
+      "sha": "fd87f5b05a404f9dc5b7bfc63eb9b1af2c511d8a"
+    },
+    "document-history/exams/2009/final/q3a_sharing_parameter_checks.csv": {
+      "mode": "100644",
+      "sha": "56ded0b9e4ae86fe917c8f9ca91c64178bf34c52"
+    },
+    "document-history/exams/2009/final/q3a_switch_components.csv": {
+      "mode": "100644",
+      "sha": "2b433eefb7368d62e40ec45f007852d60b8dd8ae"
+    },
+    "document-history/exams/2009/final/q3b_TG_truth.csv": {
+      "mode": "100644",
+      "sha": "d6993a831984660249dbaaada467487b62211b1e"
+    },
+    "document-history/exams/2009/final/q3b_completed_TG_netlist.csv": {
+      "mode": "100644",
+      "sha": "bb60581448b4eee2f827b7f0fd5f5deabd13950f"
+    },
+    "document-history/exams/2009/final/q4_domino_complete_netlist.csv": {
+      "mode": "100644",
+      "sha": "93c516eb23cd04d5e15540bf055f4a71ce243916"
+    },
+    "document-history/exams/2009/final/q4_np_netlist.csv": {
+      "mode": "100644",
+      "sha": "d4324bb18bf0751267a7231e2fea4297aadf1b62"
+    },
+    "document-history/exams/2009/final/q4_phase_truth.csv": {
+      "mode": "100644",
+      "sha": "c09a2db17c3adddb86b797f0d277ca124350fcef"
+    },
+    "document-history/exams/2009/final/q5_timing_bounds.csv": {
+      "mode": "100644",
+      "sha": "ade19890664904f61cbe46bc8a16637c99be4d27"
+    },
+    "document-history/exams/2009/final/q6_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "d7a397b898ad3ab43fd4bf9e93cfc41df162a54e"
+    },
+    "document-history/exams/2009/final/q6_switch_truth.csv": {
+      "mode": "100644",
+      "sha": "37c37486eb9640422272eb61a7bb8d33308d9b5a"
+    },
+    "document-history/exams/2009/final/q7_differential_candidates.csv": {
+      "mode": "100644",
+      "sha": "fbf423c337f5e288c0ed733d6c4a05df32d2339a"
+    },
+    "document-history/exams/2009/final/q7_domino_complete_netlist.csv": {
+      "mode": "100644",
+      "sha": "33c92503e7a2632063bbf5456c80a85a7ab36003"
+    },
+    "document-history/exams/2009/final/q7_domino_phases.csv": {
+      "mode": "100644",
+      "sha": "9710a357b590ca915fbeaca0ee48320ab6ead1cf"
+    },
+    "document-history/exams/2009/final/q7_fully_differential_complete_netlist.csv": {
+      "mode": "100644",
+      "sha": "36415ab7aac635622ceafed79a2c14ee95ee6a3e"
+    },
+    "document-history/exams/2009/final/q7_static_CMOS_netlist.csv": {
+      "mode": "100644",
+      "sha": "351c383201ff5f81960dce2bc85a2bb0da02ea18"
+    },
+    "document-history/exams/2009/final/q7_transistor_counts.csv": {
+      "mode": "100644",
+      "sha": "8e2582598cd9ba9d7dbe51ca8080faf2d9e3e044"
+    },
+    "document-history/exams/2009/final/q7_truth.csv": {
+      "mode": "100644",
+      "sha": "9900dd189f3c91a3da1280dd1052d06e6f221b48"
+    },
+    "document-history/exams/2009/final/qa.json": {
+      "mode": "100644",
+      "sha": "2484928a9b30991a3e1c0508d39d53bd1b1bd83d"
+    },
+    "document-history/exams/2009/final/register-layout-verification.json": {
+      "mode": "100644",
+      "sha": "98ee36ec2b09820f54ac4b99671edb5a57e0edaa"
+    },
+    "document-history/exams/2009/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "8560946ac5863415119b1830551f477e5cef7bc8"
+    },
+    "document-history/exams/2009/final/solution.tex": {
+      "mode": "100644",
+      "sha": "69d216fbc301c0ec63482256e0853c420ca955f1"
+    },
+    "document-history/exams/2009/final/sources.json": {
+      "mode": "100644",
+      "sha": "447ed65687575f1729b971af73de2fd389b5225a"
+    },
+    "document-history/exams/2009/final/verification.json": {
+      "mode": "100644",
+      "sha": "35463120babb5801b00371b9d07bb7b5f1e6333a"
+    },
+    "document-history/exams/2009/final/verify.py": {
+      "mode": "100644",
+      "sha": "22f67b453b185dbddfb64ba2f0caae9d4269e351"
+    },
+    "document-history/exams/2009/final/verify_numerical.py": {
+      "mode": "100644",
+      "sha": "02558ba01c98f56078de0e33489660a98c3e5655"
+    },
+    "document-history/exams/2009/final/verify_register_layout.py": {
+      "mode": "100644",
+      "sha": "4cb1156d61024aeb93c655d75d19d57a1c6da736"
+    },
+    "document-history/exams/2009/midterm/README.md": {
+      "mode": "100644",
+      "sha": "5605c8d77e17d6217b3bb451c8aba0837bbdad33"
+    },
+    "document-history/exams/2009/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "8930b4dd60d367f5819ef68db943cae7c81c22df"
+    },
+    "document-history/exams/2009/midterm/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "ef90d4e72ca6505b878c8a90edb25d2d144365b0"
+    },
+    "document-history/exams/2009/midterm/device-netlists.json": {
+      "mode": "100644",
+      "sha": "7b45782198dd5bd17d700ad43ca3415d1e309780"
+    },
+    "document-history/exams/2009/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "3738d8be58ff008ce0e03c87826f3970e9a80eb7"
+    },
+    "document-history/exams/2009/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "ef8f21080b934996ee37e3b4c41bc21dbb6c0eb2"
+    },
+    "document-history/exams/2009/midterm/pdf_qa.json": {
+      "mode": "100644",
+      "sha": "9f57038d7d5f6a1b59f067faad330d57c7ef7bfa"
+    },
+    "document-history/exams/2009/midterm/q1_full_CMOS_truth.csv": {
+      "mode": "100644",
+      "sha": "2a3ca51aa1ebdd342db2f8f042c1925168c64374"
+    },
+    "document-history/exams/2009/midterm/q3_declared_overlap_comparison.csv": {
+      "mode": "100644",
+      "sha": "9b0e4382e0f1ee35e90c96f6a3ad282e531a8fee"
+    },
+    "document-history/exams/2009/midterm/q3_literal_slews.csv": {
+      "mode": "100644",
+      "sha": "3ec4879981229e2364d940d9b1360f38cb6410b9"
+    },
+    "document-history/exams/2009/midterm/q4_actual_load_delays.csv": {
+      "mode": "100644",
+      "sha": "a02e36646a8e7b1f68c36cc73b8a7d0035c64e05"
+    },
+    "document-history/exams/2009/midterm/q4_conditional_VT_examples.csv": {
+      "mode": "100644",
+      "sha": "3e45a09ddc08c13ffd09d8300e2b7a060f1aa6e0"
+    },
+    "document-history/exams/2009/midterm/q4_full_CMOS_truth.csv": {
+      "mode": "100644",
+      "sha": "a5dbe7d9260562a5421513952cc5b3cad425ce0b"
+    },
+    "document-history/exams/2009/midterm/q4_literal_MOS.csv": {
+      "mode": "100644",
+      "sha": "d14cd8752026f2cf3b0b2349711f5ad0b2b4ec4f"
+    },
+    "document-history/exams/2009/midterm/q4_physical_path_delays.csv": {
+      "mode": "100644",
+      "sha": "4c67f6483cdb21cd3bb74ccd154cc1b608e204de"
+    },
+    "document-history/exams/2009/midterm/q4_settled_charging_events.csv": {
+      "mode": "100644",
+      "sha": "7a20aa3699c2a04bba81d44c94c1c34b325280e2"
+    },
+    "document-history/exams/2009/midterm/q6_full_nodal_moment_checks.csv": {
+      "mode": "100644",
+      "sha": "5abd1b0ac5b557ee3b0c7b4023ab6fc9189846db"
+    },
+    "document-history/exams/2009/midterm/q6_literal_MOS.csv": {
+      "mode": "100644",
+      "sha": "b6690ada1511ad161b205768dbed153bddb471a0"
+    },
+    "document-history/exams/2009/midterm/q6_literal_majority_truth.csv": {
+      "mode": "100644",
+      "sha": "80b005078311bd577c31fc8aaa0e95f74c337a5e"
+    },
+    "document-history/exams/2009/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "6f1f4917be3cb46813276700abf2e9902fec1609"
+    },
+    "document-history/exams/2009/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "9f9192e8224fa97075387e382f67bf245662e74b"
+    },
+    "document-history/exams/2009/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "e256b87a70db21ec11cab560d2cfdf065b50ef2d"
+    },
+    "document-history/exams/2009/midterm/verification.json": {
+      "mode": "100644",
+      "sha": "8f108175754c137465862e9b8a1af247c2cde2ea"
+    },
+    "document-history/exams/2009/midterm/verify.py": {
+      "mode": "100644",
+      "sha": "4b41bd125e5ceb2f976874e747f551008d150ead"
+    },
+    "document-history/exams/2010/final/README.md": {
+      "mode": "100644",
+      "sha": "ae92610a25783a8dafd6128ee0bb257d68b545ff"
+    },
+    "document-history/exams/2010/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "d95b06391f101774f034f2627af84832279db6be"
+    },
+    "document-history/exams/2010/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "6cd515cbc2d52576bc718c08d278cbe9cd6cdb50"
+    },
+    "document-history/exams/2010/final/device-netlists.json": {
+      "mode": "100644",
+      "sha": "819d2d8d96f0221e3a8702492710743ced04a8b9"
+    },
+    "document-history/exams/2010/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "eaa8d06e14b9846b53872d7dcb4f0788c6bf86f1"
+    },
+    "document-history/exams/2010/final/exam.tex": {
+      "mode": "100644",
+      "sha": "71cb40fdfaad584ed294d48082e618b1391cca30"
+    },
+    "document-history/exams/2010/final/pdf_qa.json": {
+      "mode": "100644",
+      "sha": "cfc37aa3ffed9b2b7432bc91e42de0195b6e4fe7"
+    },
+    "document-history/exams/2010/final/q3_dynamic_phases.csv": {
+      "mode": "100644",
+      "sha": "ddc85e795bdeda089891577e2c82fd26694a4435"
+    },
+    "document-history/exams/2010/final/q3_static_differential_truth.csv": {
+      "mode": "100644",
+      "sha": "b9e3cd45767253df0b669929950ce9701f8e28d4"
+    },
+    "document-history/exams/2010/final/q3_transistor_counts.csv": {
+      "mode": "100644",
+      "sha": "78bc20b6952058f5fa84ae2cbdd60edc8f64ef4d"
+    },
+    "document-history/exams/2010/final/q4_all64_switch_resistance.csv": {
+      "mode": "100644",
+      "sha": "a77f4c2ce1147d5962212ef9802a828558c13b70"
+    },
+    "document-history/exams/2010/final/q4_balanced_family.csv": {
+      "mode": "100644",
+      "sha": "2265e0ebcce304e5dfdbd81e2b5f8b66dac38ea5"
+    },
+    "document-history/exams/2010/final/q4_minimal_paths.csv": {
+      "mode": "100644",
+      "sha": "947758ae2a47303dd18bc56ac9fc1461803ea25b"
+    },
+    "document-history/exams/2010/final/q5_correlated_NP_cases.csv": {
+      "mode": "100644",
+      "sha": "59f53ebebe8de50b393bba32b3533205c55a60b2"
+    },
+    "document-history/exams/2010/final/q5_legal_sharing.csv": {
+      "mode": "100644",
+      "sha": "b58193bfbb600845e5633caf02a59b0aaa3f9721"
+    },
+    "document-history/exams/2010/final/q6_signed_skew_and_hold.csv": {
+      "mode": "100644",
+      "sha": "52fa40f25df41e1ba521ea6a32aad21da3ae0fe7"
+    },
+    "document-history/exams/2010/final/q7_conditional_cycle_events.csv": {
+      "mode": "100644",
+      "sha": "0aaeae28b25f2d425e948ab92d5956e3bae68bc3"
+    },
+    "document-history/exams/2010/final/q7_conditional_settled_states.csv": {
+      "mode": "100644",
+      "sha": "8c9d61af5062bca2233e061457d78058c1dc02d6"
+    },
+    "document-history/exams/2010/final/q7_literal_MOS.csv": {
+      "mode": "100644",
+      "sha": "bf97b89207522af2586a372e0eaec3dd95e3d9f2"
+    },
+    "document-history/exams/2010/final/q8_bias_current_balance.csv": {
+      "mode": "100644",
+      "sha": "5828a5722b14b9b958ce53cc89e30b8c9ccc5a72"
+    },
+    "document-history/exams/2010/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "db2a7e73759326cd1c395513eb30f22f730ef2da"
+    },
+    "document-history/exams/2010/final/solution.tex": {
+      "mode": "100644",
+      "sha": "9cc95526ebc03729bba985ff8144dfa328ea1a64"
+    },
+    "document-history/exams/2010/final/sources.json": {
+      "mode": "100644",
+      "sha": "5ba33db9b4eb53b26d2adf251cb3fc8b30a5ad4a"
+    },
+    "document-history/exams/2010/final/verification.json": {
+      "mode": "100644",
+      "sha": "6e6dbf932afe4deb6db93ccabc64d0fd98422a82"
+    },
+    "document-history/exams/2010/final/verify.py": {
+      "mode": "100644",
+      "sha": "ac6b8b7378f576e81e50912b5b0da1610f798623"
+    },
+    "document-history/exams/2011/midterm/README.md": {
+      "mode": "100644",
+      "sha": "2f6e8331a3a87a18dfb1bdd08b35c2fb81482a76"
+    },
+    "document-history/exams/2011/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "b660cd7a6d505defdd20866d553bc21cd959b903"
+    },
+    "document-history/exams/2011/midterm/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "66dd5d6844178d1175c518007435ce283e531c79"
+    },
+    "document-history/exams/2011/midterm/device-netlists.json": {
+      "mode": "100644",
+      "sha": "a3efd0e32253009bc97896b7e2d99d2442843c92"
+    },
+    "document-history/exams/2011/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "8e744e87d419ebdcd64bfe998bba6b941a261475"
+    },
+    "document-history/exams/2011/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "a07d7ba1558101968a980db2d64b1ff07b4f99e3"
+    },
+    "document-history/exams/2011/midterm/original-jpeg-integrity.csv": {
+      "mode": "100644",
+      "sha": "798c41974b1256ce3aa2541b50884f8b5dcc124d"
+    },
+    "document-history/exams/2011/midterm/q1-cmos-truth.csv": {
+      "mode": "100644",
+      "sha": "aca736894a093137351b96b280b0107eb2a6916f"
+    },
+    "document-history/exams/2011/midterm/q2-chain-power.csv": {
+      "mode": "100644",
+      "sha": "7759004fd3c7bf278f9dbff90e78e25d5bf8e047"
+    },
+    "document-history/exams/2011/midterm/q2-integer-taper.csv": {
+      "mode": "100644",
+      "sha": "887b2c8bc6dd54dd4c8c590f1efff36280f0d5d7"
+    },
+    "document-history/exams/2011/midterm/q3-cmos-truth.csv": {
+      "mode": "100644",
+      "sha": "d66a3e268e5c22184df1d27bbd4288496c66ffd0"
+    },
+    "document-history/exams/2011/midterm/q3-conditional-dual-VT.csv": {
+      "mode": "100644",
+      "sha": "77fd95985f383ef3743611a695b86047f50e01a2"
+    },
+    "document-history/exams/2011/midterm/q3-transport-events.csv": {
+      "mode": "100644",
+      "sha": "2816ce27d76be7449bfcaa4c8184afa0b04ed5a0"
+    },
+    "document-history/exams/2011/midterm/q4-ideal-threshold-levels.csv": {
+      "mode": "100644",
+      "sha": "e0769a84b1bb43262f62db22863bd43523fc0e3b"
+    },
+    "document-history/exams/2011/midterm/q4-region-inequalities.csv": {
+      "mode": "100644",
+      "sha": "329b14f47de624f990d445c9e16609f7bdeb0beb"
+    },
+    "document-history/exams/2011/midterm/q5-all-buffer-partitions.csv": {
+      "mode": "100644",
+      "sha": "755753e71b6aedc1662f84c491a4e174296024a1"
+    },
+    "document-history/exams/2011/midterm/q6-scr-netlist.json": {
+      "mode": "100644",
+      "sha": "3d8633f49a93e7c9ccc9d08ab0d1679f50f8ec53"
+    },
+    "document-history/exams/2011/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "3df3e7266fd23154a1c6ac46bcbf316c65917df6"
+    },
+    "document-history/exams/2011/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "b0c5dc48dfc4a5b6d74e9a3fe37dcf3193145a17"
+    },
+    "document-history/exams/2011/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "8394f80e87bf1803cfadca47bf4e6e4a098bd643"
+    },
+    "document-history/exams/2011/midterm/verification.json": {
+      "mode": "100644",
+      "sha": "0259e08001a63c64cc915281c91cd383732637f0"
+    },
+    "document-history/exams/2011/midterm/verify.py": {
+      "mode": "100644",
+      "sha": "451646b3ba9e9e337848db73cc8cc4fc81a69cb5"
+    },
+    "document-history/exams/2011/midterm/visual-qa.json": {
+      "mode": "100644",
+      "sha": "53c9772a282057f5e719ec8fb8958b0b1521b126"
+    },
+    "document-history/exams/2012/final/README.md": {
+      "mode": "100644",
+      "sha": "2dfcb80d5e8b03ab8f4c1c6b130d7fe83f4a90bd"
+    },
+    "document-history/exams/2012/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "5723bc71cb4c573bc5037f2fccd4431663224bc8"
+    },
+    "document-history/exams/2012/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "45d14d95d381bdd65e7bfbef439011b1d6b7d8ab"
+    },
+    "document-history/exams/2012/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "e76493398e9260ff18cf58c3da7250fcea5daefd"
+    },
+    "document-history/exams/2012/final/exam.tex": {
+      "mode": "100644",
+      "sha": "b97ec24ae276a298e3b0aa48f01b711614280086"
+    },
+    "document-history/exams/2012/final/logic-layout-verification.json": {
+      "mode": "100644",
+      "sha": "807538f83c86436e4d866280b1e3f12f13c660c4"
+    },
+    "document-history/exams/2012/final/numerical-verification.json": {
+      "mode": "100644",
+      "sha": "dcab80bb4d3421ae0cd5e4d317c42a81f2dd96f0"
+    },
+    "document-history/exams/2012/final/original-image-hashes.json": {
+      "mode": "100644",
+      "sha": "db4d7bb623e83871ddaaefdd2e7543d92de46a9e"
+    },
+    "document-history/exams/2012/final/q2_differential_candidates.csv": {
+      "mode": "100644",
+      "sha": "48868301f7511110ba3f5bc9c79e94734bc34f7a"
+    },
+    "document-history/exams/2012/final/q2_differential_complete_netlist.csv": {
+      "mode": "100644",
+      "sha": "c994ef3f29eae06b44347e6abb8f0180ba16f4af"
+    },
+    "document-history/exams/2012/final/q2_dynamic_netlist.csv": {
+      "mode": "100644",
+      "sha": "8396b6619405d1781dd289ed3d5997f477693543"
+    },
+    "document-history/exams/2012/final/q2_dynamic_phases.csv": {
+      "mode": "100644",
+      "sha": "d167485c7b72a05cc1756d138d92bd0d02e9ff91"
+    },
+    "document-history/exams/2012/final/q2_transistor_counts.csv": {
+      "mode": "100644",
+      "sha": "35a8222cdcd34f59cd0cea095f836cb219cf5775"
+    },
+    "document-history/exams/2012/final/q2_truth.csv": {
+      "mode": "100644",
+      "sha": "b2e6bab5b87c726209f40d68547bd2b7ea768055"
+    },
+    "document-history/exams/2012/final/q3_stage_table.csv": {
+      "mode": "100644",
+      "sha": "09dc338fc615d5b268402e60a20278ba6a7df8fc"
+    },
+    "document-history/exams/2012/final/q4_footer_bound.csv": {
+      "mode": "100644",
+      "sha": "334f4ceb49173bf909740cc7d02e14dabd48a922"
+    },
+    "document-history/exams/2012/final/q4_single_paths.csv": {
+      "mode": "100644",
+      "sha": "47680539e341b25d4898b4675064e59ea113a8d4"
+    },
+    "document-history/exams/2012/final/q4_switch_network.csv": {
+      "mode": "100644",
+      "sha": "c5c0407f628d5039b0965ee11a41d3ff807b7fbd"
+    },
+    "document-history/exams/2012/final/q5-verification.json": {
+      "mode": "100644",
+      "sha": "9cf63513ebe150be08221b277a5a0e764e0689cb"
+    },
+    "document-history/exams/2012/final/q5_n_stage.csv": {
+      "mode": "100644",
+      "sha": "65d9cfb29608f63c7e12c59425f52b60681715e3"
+    },
+    "document-history/exams/2012/final/q5_p_stage_independent_z.csv": {
+      "mode": "100644",
+      "sha": "0927d10f6a5039d594d493637136475db8381b52"
+    },
+    "document-history/exams/2012/final/q5_reachable_paths.csv": {
+      "mode": "100644",
+      "sha": "2710a0517069713321036baa7c38fcf141821da0"
+    },
+    "document-history/exams/2012/final/q5_sharing_cases.csv": {
+      "mode": "100644",
+      "sha": "c7e95cd2f97bd635384282b17ddb21501eaa746a"
+    },
+    "document-history/exams/2012/final/q6_paths.csv": {
+      "mode": "100644",
+      "sha": "060a6c07c1f43a06a0da394c3c13850326b5f0d8"
+    },
+    "document-history/exams/2012/final/q7a_clock_phases.csv": {
+      "mode": "100644",
+      "sha": "6a3dab7b38e352a3dabb9744fe10a073ae5be829"
+    },
+    "document-history/exams/2012/final/q7a_full_switch_connectivity.csv": {
+      "mode": "100644",
+      "sha": "e29c125b50250c78a7b0942f4a57d3f34171c212"
+    },
+    "document-history/exams/2012/final/q7a_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "40b3be938165efa53531e1867a07827b2755514a"
+    },
+    "document-history/exams/2012/final/q7b_full_switch_truth.csv": {
+      "mode": "100644",
+      "sha": "4948a2918adc20b5b5f04d3028f73644d988eafd"
+    },
+    "document-history/exams/2012/final/q7b_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "5e2ebf45be68eeca8a4592868adc5119db87a2bf"
+    },
+    "document-history/exams/2012/final/q8_current_balance.csv": {
+      "mode": "100644",
+      "sha": "3b439b410ff3cd6473d3bbefd3538c6a924ccc59"
+    },
+    "document-history/exams/2012/final/q8_square_law_regions.csv": {
+      "mode": "100644",
+      "sha": "c4938b6e3e05fa977e64a49698ddab5b5181254f"
+    },
+    "document-history/exams/2012/final/qa.json": {
+      "mode": "100644",
+      "sha": "b0ca605f37e7df0c410b9b8b131baef430ae62e6"
+    },
+    "document-history/exams/2012/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "703b1eb58b663e0228668acad5cd39ff3d826787"
+    },
+    "document-history/exams/2012/final/solution.tex": {
+      "mode": "100644",
+      "sha": "2b1da7a98b4a306b4589ae85b1010e2cd1111d4c"
+    },
+    "document-history/exams/2012/final/sources.json": {
+      "mode": "100644",
+      "sha": "cedece1a5a36041ffffcea0d6a4203224f4fb57e"
+    },
+    "document-history/exams/2012/final/student-comparison.csv": {
+      "mode": "100644",
+      "sha": "7b63fe55e7732996220dee0ead1ee889fbcae83f"
+    },
+    "document-history/exams/2012/final/verification.json": {
+      "mode": "100644",
+      "sha": "6078b016dfd1d5ac5229ad4745b81fad7cb58b09"
+    },
+    "document-history/exams/2012/final/verify.py": {
+      "mode": "100644",
+      "sha": "e8682d4e7c5aed3c346f4b523af92d94cb7015a0"
+    },
+    "document-history/exams/2012/final/verify_logic_layout.py": {
+      "mode": "100644",
+      "sha": "04e90fa51f34265672a0b686d98fae4c1b002ab5"
+    },
+    "document-history/exams/2012/final/verify_numerical.py": {
+      "mode": "100644",
+      "sha": "292d30e001e341166af1abc798182781bb933d24"
+    },
+    "document-history/exams/2012/final/verify_q5.py": {
+      "mode": "100644",
+      "sha": "98075679a4217d5258594fb423ca2e1378f071ff"
+    },
+    "document-history/exams/2012/midterm/README.md": {
+      "mode": "100644",
+      "sha": "8b3cd3ec8920564a6f5443f9b2ef635202b37470"
+    },
+    "document-history/exams/2012/midterm/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "e1722e36d788d29d7581b599c922e2a3d622b840"
+    },
+    "document-history/exams/2012/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "cdf11491556910ac251e0480bac4fe246571268b"
+    },
+    "document-history/exams/2012/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "8365d7d051d52e1e7cd7d5380e710cee9a6c1ff1"
+    },
+    "document-history/exams/2012/midterm/logic_timing_verification.json": {
+      "mode": "100644",
+      "sha": "85b7dadf55175364026bcc130bcecd58914d1ed5"
+    },
+    "document-history/exams/2012/midterm/q2_elmore_coefficients.csv": {
+      "mode": "100644",
+      "sha": "023e8cddbb3c4f2a836197a09ac1ce4b1206a936"
+    },
+    "document-history/exams/2012/midterm/q2_majority_truth.csv": {
+      "mode": "100644",
+      "sha": "afabf51ca0cbeadf78bb5137ea821418acdafe6b"
+    },
+    "document-history/exams/2012/midterm/q2_worst_transitions.csv": {
+      "mode": "100644",
+      "sha": "05f089ac74cca18505d5efaa61f0b9e04657c429"
+    },
+    "document-history/exams/2012/midterm/q3_conditional_vt_netlist.csv": {
+      "mode": "100644",
+      "sha": "e18d9a48bbdc42dd1fce2602f21285e6d0d4a510"
+    },
+    "document-history/exams/2012/midterm/q3_logic_truth.csv": {
+      "mode": "100644",
+      "sha": "2aca232c341b00ce4cf8882c7420632a0d4d9b5f"
+    },
+    "document-history/exams/2012/midterm/q3_slack_examples.csv": {
+      "mode": "100644",
+      "sha": "22e8fed7acdaa4612eef5453f0a6f2c6198e420f"
+    },
+    "document-history/exams/2012/midterm/q4_levels.csv": {
+      "mode": "100644",
+      "sha": "a7eb9e4dc1e6d779d073db59f0248284e23458c2"
+    },
+    "document-history/exams/2012/midterm/q4_region_examples.csv": {
+      "mode": "100644",
+      "sha": "fba86350f1c5aa99522129f3d5c4638e849095e6"
+    },
+    "document-history/exams/2012/midterm/q5_alpha_candidates.csv": {
+      "mode": "100644",
+      "sha": "31aca204e92829e788232f1752fedca7b64e748e"
+    },
+    "document-history/exams/2012/midterm/q6a_MOS.csv": {
+      "mode": "100644",
+      "sha": "66cb974ea94ae6a5da70823e5c236d44b1185681"
+    },
+    "document-history/exams/2012/midterm/q6a_logic.csv": {
+      "mode": "100644",
+      "sha": "771b41b45816923536870497f80e8adb033a5b51"
+    },
+    "document-history/exams/2012/midterm/q6b_TG_alternative_MOS.csv": {
+      "mode": "100644",
+      "sha": "0aca4e997b62313ef00a16b67ba2a4edf37f004c"
+    },
+    "document-history/exams/2012/midterm/q6b_complementary_MOS.csv": {
+      "mode": "100644",
+      "sha": "8c564840336f359b7519d5c881e99d69e6658910"
+    },
+    "document-history/exams/2012/midterm/q6b_logic_and_reference.csv": {
+      "mode": "100644",
+      "sha": "9fe3dd1d8fe34742030a86e57be558ad689a9f22"
+    },
+    "document-history/exams/2012/midterm/q7_full_adder_MOS.csv": {
+      "mode": "100644",
+      "sha": "57ab4f4924dadc4f9145997248133418bef84cca"
+    },
+    "document-history/exams/2012/midterm/q7_full_adder_truth.csv": {
+      "mode": "100644",
+      "sha": "75b64094f9681e3784b6519e0407ee92ee908286"
+    },
+    "document-history/exams/2012/midterm/qa.json": {
+      "mode": "100644",
+      "sha": "9656d97c8de95ed397c8764459018365e0cd742b"
+    },
+    "document-history/exams/2012/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "1d5f25cac5915390fe944a120a265dbb9a77009b"
+    },
+    "document-history/exams/2012/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "40a059f8cbf75df27cbd77857a35a3c47141068b"
+    },
+    "document-history/exams/2012/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "54b5486b4c997df991dcfbc5ad1e0e44c86e241d"
+    },
+    "document-history/exams/2012/midterm/verify_logic_timing.py": {
+      "mode": "100644",
+      "sha": "95640ceb643c8e3ad2ed17911f91d4d54d7e4b01"
+    },
+    "document-history/exams/2013/final/README.md": {
+      "mode": "100644",
+      "sha": "36fb848513a7b42a7d2012b372225381d54dbf32"
+    },
+    "document-history/exams/2013/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "c1c548025010bc827f0959b7842128438bbffac5"
+    },
+    "document-history/exams/2013/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "fab6e5e6a256f9fc636d31d5267635a8c62cc5a3"
+    },
+    "document-history/exams/2013/final/device-netlists.json": {
+      "mode": "100644",
+      "sha": "fc30a5ada18a5be5684ac56ca6093a95a5ca5691"
+    },
+    "document-history/exams/2013/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "049eeabf673a8ea2b917c56c84ab1b2b9c28e40a"
+    },
+    "document-history/exams/2013/final/exam.tex": {
+      "mode": "100644",
+      "sha": "be3daf36b822bc33eb2123e07626f0a8eec2f692"
+    },
+    "document-history/exams/2013/final/original-jpeg-integrity.csv": {
+      "mode": "100644",
+      "sha": "3d7fc21ec8ac02f8eb1de14d26c11093c350a179"
+    },
+    "document-history/exams/2013/final/q2-switch-truth.csv": {
+      "mode": "100644",
+      "sha": "8f70c20aa087960a6dc423196f291d33ad2a3abc"
+    },
+    "document-history/exams/2013/final/q3-balanced-widths.csv": {
+      "mode": "100644",
+      "sha": "6fd9d45dff964c268b460ce7280444db9fe7af9c"
+    },
+    "document-history/exams/2013/final/q4-correlated-resistance.csv": {
+      "mode": "100644",
+      "sha": "252a3e777b8fcaaafe8d05e73a6952fa83cd8d50"
+    },
+    "document-history/exams/2013/final/q4-sharing.csv": {
+      "mode": "100644",
+      "sha": "81c8a17127a74c65179034f9973a35a7d2e902ed"
+    },
+    "document-history/exams/2013/final/q5-path-timing.csv": {
+      "mode": "100644",
+      "sha": "68a69af1df2d81e8de70d7f9b8ddd381a25e9952"
+    },
+    "document-history/exams/2013/final/q5-pipeline-cycle-alignment.csv": {
+      "mode": "100644",
+      "sha": "861ee1f96b8571df4898c8cb612fc1b543e7562b"
+    },
+    "document-history/exams/2013/final/q5-pipeline-stage-timing.csv": {
+      "mode": "100644",
+      "sha": "7c4e221b19a6d9b85a888c919fd70e101a9516a0"
+    },
+    "document-history/exams/2013/final/q5-three-register-frontiers.csv": {
+      "mode": "100644",
+      "sha": "7d9e9519917a16f7fca963ced4f44e6f0a314f2c"
+    },
+    "document-history/exams/2013/final/q6-contact-audit.md": {
+      "mode": "100644",
+      "sha": "9440ac5e032811b07c818a1394d6abc2f96e06a9"
+    },
+    "document-history/exams/2013/final/q6-independent-switch-truth.csv": {
+      "mode": "100644",
+      "sha": "5b03bb79dc5fc6fe5deb1f3d5c75ea75ec98438b"
+    },
+    "document-history/exams/2013/final/q6-layout-audit.json": {
+      "mode": "100644",
+      "sha": "530bb701ca21a46d1871ae70abd3b54352b377e6"
+    },
+    "document-history/exams/2013/final/q6a_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "40b3be938165efa53531e1867a07827b2755514a"
+    },
+    "document-history/exams/2013/final/q6b_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "5e2ebf45be68eeca8a4592868adc5119db87a2bf"
+    },
+    "document-history/exams/2013/final/q6b_switch_truth.csv": {
+      "mode": "100644",
+      "sha": "8f10336372e2d1c76bef781a4a69bd187fada773"
+    },
+    "document-history/exams/2013/final/q7-nonidentifiability.csv": {
+      "mode": "100644",
+      "sha": "34441b34283c45c632d294bd5b8e8975cff0083f"
+    },
+    "document-history/exams/2013/final/q8-write-dividers.csv": {
+      "mode": "100644",
+      "sha": "b4ef0766590aa110ae1ab0e09ab4ed11799a6fdf"
+    },
+    "document-history/exams/2013/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "132c4812a9ee48b68e6162ea73701ae0c8928356"
+    },
+    "document-history/exams/2013/final/solution.tex": {
+      "mode": "100644",
+      "sha": "bcdbfa608e0e5c5085c300d95de7c831d9cda8d4"
+    },
+    "document-history/exams/2013/final/sources.json": {
+      "mode": "100644",
+      "sha": "591b84302f7e9a4185ee41bfab04f3aed1c4276d"
+    },
+    "document-history/exams/2013/final/verification.json": {
+      "mode": "100644",
+      "sha": "4c178d756911ea6910c1802843ab86cf0578be4c"
+    },
+    "document-history/exams/2013/final/verify.py": {
+      "mode": "100644",
+      "sha": "3025b5ab1e7aad0fef16e6bce1999ebe2f835fbc"
+    },
+    "document-history/exams/2013/final/visual-qa.json": {
+      "mode": "100644",
+      "sha": "6d2ad69b4ea2b8a479f005f53835d7ba3a6b7092"
+    },
+    "document-history/exams/2016/final/README.md": {
+      "mode": "100644",
+      "sha": "357feee34c2d409d9c03c5a2c100b456a1983094"
+    },
+    "document-history/exams/2016/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "2dfe3ee5b877cf1ae1f34632bad456edaab3d555"
+    },
+    "document-history/exams/2016/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "ee4889c967c528bdb857e82715e44078b05b57d2"
+    },
+    "document-history/exams/2016/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "1aa2dacb3aac3d8351404f5b5a1ffe84639c1b5d"
+    },
+    "document-history/exams/2016/final/exam.tex": {
+      "mode": "100644",
+      "sha": "62b51e0795958515f8cc6cbeb167234d9eee5fdc"
+    },
+    "document-history/exams/2016/final/q1_balancing_family.csv": {
+      "mode": "100644",
+      "sha": "32b3b835964210fa28744dd333394727b54943e7"
+    },
+    "document-history/exams/2016/final/q1_phase_truth.csv": {
+      "mode": "100644",
+      "sha": "550aa43832c41943d974e7042e127493c7324404"
+    },
+    "document-history/exams/2016/final/q2_threshold_family.csv": {
+      "mode": "100644",
+      "sha": "90a5d7182b698550c61f864bf99d9f90a405d72f"
+    },
+    "document-history/exams/2016/final/q3_balanced_paths.csv": {
+      "mode": "100644",
+      "sha": "8c78a8f02e1d0f7ecd51ee6c002f475ffe8f3ddd"
+    },
+    "document-history/exams/2016/final/q4_verification.json": {
+      "mode": "100644",
+      "sha": "9109502448f6aa9e458895e054615181d405fc8d"
+    },
+    "document-history/exams/2016/final/q4a_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "40b3be938165efa53531e1867a07827b2755514a"
+    },
+    "document-history/exams/2016/final/q4a_literal_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "ee9a1bfe173001a3fac81da58d8993b3fbc8bd9d"
+    },
+    "document-history/exams/2016/final/q4b_contact_truth.csv": {
+      "mode": "100644",
+      "sha": "2dbf8b1187ab0c7aa9603533bf85729c85b20e3f"
+    },
+    "document-history/exams/2016/final/q4b_literal_netlist.csv": {
+      "mode": "100644",
+      "sha": "97d5b56362ef765ca17bab2ba5584b84707abc74"
+    },
+    "document-history/exams/2016/final/q4b_switch_truth.csv": {
+      "mode": "100644",
+      "sha": "6dba99de0f54aa133250958c561e0e0bb01dc320"
+    },
+    "document-history/exams/2016/final/q5_boolean_truth.csv": {
+      "mode": "100644",
+      "sha": "8d39c0a8682603f206f9cc8baa703ad690087fda"
+    },
+    "document-history/exams/2016/final/q5_path_delays.csv": {
+      "mode": "100644",
+      "sha": "9ecc8fb9478e9548730f4bc636a2e21c304ad1a2"
+    },
+    "document-history/exams/2016/final/q6_divider_cases.csv": {
+      "mode": "100644",
+      "sha": "a1f405e017d29015d04e5cdf95ba129957132749"
+    },
+    "document-history/exams/2016/final/q7_dual_network_truth.csv": {
+      "mode": "100644",
+      "sha": "1e98022818816b7d25e87d571f3c8ed023e61b00"
+    },
+    "document-history/exams/2016/final/qa.json": {
+      "mode": "100644",
+      "sha": "484501ebc22dc798a190a154df6444327b7f737b"
+    },
+    "document-history/exams/2016/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "2952ac6f5c3bf37a75427906a4dd4de0eb019b56"
+    },
+    "document-history/exams/2016/final/solution.tex": {
+      "mode": "100644",
+      "sha": "2af9424174f992dab835317a794237c854f86ffe"
+    },
+    "document-history/exams/2016/final/sources.json": {
+      "mode": "100644",
+      "sha": "503e9a7604751b66341cc1712b6e82c95d421a0a"
+    },
+    "document-history/exams/2016/final/timing-verification.json": {
+      "mode": "100644",
+      "sha": "4db6efc57b430556db1ac938e3074a942bf42b69"
+    },
+    "document-history/exams/2016/final/verification.json": {
+      "mode": "100644",
+      "sha": "cb330feb0eedd36705cb19388ce59d2789c737b1"
+    },
+    "document-history/exams/2016/final/verify.py": {
+      "mode": "100644",
+      "sha": "18d27d1420074116fb482ff773c1e1714d7b834d"
+    },
+    "document-history/exams/2016/final/verify_layout.py": {
+      "mode": "100644",
+      "sha": "2abda61067993a9e4a7d8db1e7d176a74df0e793"
+    },
+    "document-history/exams/2016/final/verify_timing.py": {
+      "mode": "100644",
+      "sha": "c53964f4749c2a368084f7bd65472df392aa41d6"
+    },
+    "document-history/exams/2018/final/README.md": {
+      "mode": "100644",
+      "sha": "8ac7e1ec56be58ae1345a5db9aac23968f07e802"
+    },
+    "document-history/exams/2018/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "9c1a66306499f88d38591b830c440aa9a799e2d7"
+    },
+    "document-history/exams/2018/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "c894e03b18b786cffdcbd8eeab83465eda1fc168"
+    },
+    "document-history/exams/2018/final/exam.tex": {
+      "mode": "100644",
+      "sha": "a2a411f967ad25876a59380f64d52cd3e5c8c359"
+    },
+    "document-history/exams/2018/final/logic_timing_verification.json": {
+      "mode": "100644",
+      "sha": "88932fc4e8637985521130bb66f7836928b85bdd"
+    },
+    "document-history/exams/2018/final/q2_domino_truth.csv": {
+      "mode": "100644",
+      "sha": "bef403dd78983c8df8578271ad2b2364a56a212f"
+    },
+    "document-history/exams/2018/final/q2_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "0d6ac7d1d3de5eb21d8755d4490953391d1b3b62"
+    },
+    "document-history/exams/2018/final/q2_retention.csv": {
+      "mode": "100644",
+      "sha": "2b7ed6a0fb0ae8b1bb2c59f9c53ac3ebb56e4cfd"
+    },
+    "document-history/exams/2018/final/q3_classroom_sizing.csv": {
+      "mode": "100644",
+      "sha": "a7756ae6d64dec665596d10de848da4f7cd7fa96"
+    },
+    "document-history/exams/2018/final/q3_overlap_model.csv": {
+      "mode": "100644",
+      "sha": "392e8ae8729654bf510d863cd714c5170c1c176c"
+    },
+    "document-history/exams/2018/final/q4_DSL_netlist.csv": {
+      "mode": "100644",
+      "sha": "2df7185ffbbb13cbfad71c9635028b4bae210ba2"
+    },
+    "document-history/exams/2018/final/q4_dynamic_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "6ff30638a693d07ae85aeeb424e17945f38695af"
+    },
+    "document-history/exams/2018/final/q4_logic_checks.csv": {
+      "mode": "100644",
+      "sha": "621be2af614e2ddcfdcb2b646d84a3c224bfaa9c"
+    },
+    "document-history/exams/2018/final/q5_NP_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "f844ba82b1df556175b71a78aa210283f3184c66"
+    },
+    "document-history/exams/2018/final/q5_NP_truth.csv": {
+      "mode": "100644",
+      "sha": "330a48b138f0a033794176cc44881fbb1ac31d26"
+    },
+    "document-history/exams/2018/final/q5_balanced_sizing.csv": {
+      "mode": "100644",
+      "sha": "93702cbf1f6af20c50438ab69e269778f7115abb"
+    },
+    "document-history/exams/2018/final/q5_clock_loading.csv": {
+      "mode": "100644",
+      "sha": "ea10e270942ce24036ded83876f01bcf5e76d451"
+    },
+    "document-history/exams/2018/final/q6_conditional_events.csv": {
+      "mode": "100644",
+      "sha": "27b7a5378e0b94de4abad68fff79580bc4a532cd"
+    },
+    "document-history/exams/2018/final/q6_layout_states.csv": {
+      "mode": "100644",
+      "sha": "4e373adcdae476f7fe89005c32f778a405975aad"
+    },
+    "document-history/exams/2018/final/q6_physical_MOS.csv": {
+      "mode": "100644",
+      "sha": "04d89901fccd96431fd76b111485fccac0b18702"
+    },
+    "document-history/exams/2018/final/q7_ratio_bounds_examples.csv": {
+      "mode": "100644",
+      "sha": "a2800cec481f2350e84b8fc9f279303a672c006b"
+    },
+    "document-history/exams/2018/final/q7_register_states.csv": {
+      "mode": "100644",
+      "sha": "00006cff05c4c02932b015468f918257f46653ea"
+    },
+    "document-history/exams/2018/final/q8_original_repaired_paths.csv": {
+      "mode": "100644",
+      "sha": "972805c1092075a666cacd00d4bd529d9bb2cbc8"
+    },
+    "document-history/exams/2018/final/q8_pipeline_consecutive_samples.csv": {
+      "mode": "100644",
+      "sha": "03429579455ace400632429da5c03f1feca5bfd4"
+    },
+    "document-history/exams/2018/final/q8_pipeline_paths.csv": {
+      "mode": "100644",
+      "sha": "a46392a02665819a4687e146352f487f98339bdd"
+    },
+    "document-history/exams/2018/final/q8_truth.csv": {
+      "mode": "100644",
+      "sha": "4dd2e400aae304ec16e52ef535f604cc5c6f6e57"
+    },
+    "document-history/exams/2018/final/qa.json": {
+      "mode": "100644",
+      "sha": "11ceac6a5af2ed37d643e3e7efa10f9377ed83ca"
+    },
+    "document-history/exams/2018/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "89d921a413f351ee7f5a1e9cfbed26948822764c"
+    },
+    "document-history/exams/2018/final/solution.tex": {
+      "mode": "100644",
+      "sha": "bb3ebab0e6f20679a8aef9a994b42a120710e089"
+    },
+    "document-history/exams/2018/final/sources.json": {
+      "mode": "100644",
+      "sha": "ed14a4cb9669ce91feee17737927d2d4606974db"
+    },
+    "document-history/exams/2018/final/verify_logic_timing.py": {
+      "mode": "100644",
+      "sha": "606ff14dae9e628dea25a6f679b0a3d4c37ff3f1"
+    },
+    "document-history/exams/2021/final/README.md": {
+      "mode": "100644",
+      "sha": "cc921e643692bbc1acc04fe7e4c5405e3937b94f"
+    },
+    "document-history/exams/2021/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "f2b3cf24977960352de632c9ddcd4672ca8351d7"
+    },
+    "document-history/exams/2021/final/coverage-entry.json": {
+      "mode": "100644",
+      "sha": "5c21e779b1ad431b1643f3bb05ba8bde52ab5b35"
+    },
+    "document-history/exams/2021/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "a0ed24c0d700c4148171c9d1eaf60d93956416a9"
+    },
+    "document-history/exams/2021/final/exam.tex": {
+      "mode": "100644",
+      "sha": "559b0990ca7ab08052aa44fbcc0d11c5f932e292"
+    },
+    "document-history/exams/2021/final/layout-checks.csv": {
+      "mode": "100644",
+      "sha": "292792b446a7a88072d46052676143ee93624b62"
+    },
+    "document-history/exams/2021/final/layout-conditional-events.csv": {
+      "mode": "100644",
+      "sha": "22d9672a42d133df351166f0aaf1319029ec13ff"
+    },
+    "document-history/exams/2021/final/layout-connectivity.json": {
+      "mode": "100644",
+      "sha": "84b31ab46954b1d7108a6089bf693ce14a181ea4"
+    },
+    "document-history/exams/2021/final/q1_domino_checks.csv": {
+      "mode": "100644",
+      "sha": "3e11ffae19b3b26164fab618ccfe4dea755995bf"
+    },
+    "document-history/exams/2021/final/q1_retention_checks.csv": {
+      "mode": "100644",
+      "sha": "b45108d7fbfa20f7110017126a3b4f1a4fbf6b9a"
+    },
+    "document-history/exams/2021/final/q2_balanced_size_checks.csv": {
+      "mode": "100644",
+      "sha": "0633b8c1187437f57fd2e82783146e9d5c92cb49"
+    },
+    "document-history/exams/2021/final/q2_series_control_checks.csv": {
+      "mode": "100644",
+      "sha": "661886af34a31ce6e3d6b4409075df21cb24c4c6"
+    },
+    "document-history/exams/2021/final/q3_dynamic_dsl_checks.csv": {
+      "mode": "100644",
+      "sha": "18c77cd3ae53f1a2d22b8a7886d93783f877aee0"
+    },
+    "document-history/exams/2021/final/q5_activity_checks.csv": {
+      "mode": "100644",
+      "sha": "6ec052780a8e0972174537c4052f9e0843ef1459"
+    },
+    "document-history/exams/2021/final/q5_buffer_sizes.csv": {
+      "mode": "100644",
+      "sha": "09f8731ccad79c67663eea7ae13bb6406331abf8"
+    },
+    "document-history/exams/2021/final/q5_ideal_event_checks.csv": {
+      "mode": "100644",
+      "sha": "1fee45028d56b37a9860e8666e8a0ce3f3eeed4d"
+    },
+    "document-history/exams/2021/final/q5_settled_truth.csv": {
+      "mode": "100644",
+      "sha": "a5bba5a64e5575e66b462c36e82b30bce7792283"
+    },
+    "document-history/exams/2021/final/q5_skew_glitch_example.csv": {
+      "mode": "100644",
+      "sha": "581ff665fa47bc331176394a55be8fb612b8248e"
+    },
+    "document-history/exams/2021/final/q5_stage_count_checks.csv": {
+      "mode": "100644",
+      "sha": "da077a26d80fab307d8c8bbfde91529d124a2b89"
+    },
+    "document-history/exams/2021/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "e961926fe8a8821dc25cb58b7203a6587d5bcfcf"
+    },
+    "document-history/exams/2021/final/solution.tex": {
+      "mode": "100644",
+      "sha": "364ae643c22b0956c082df984ea2f9ceb7666fc0"
+    },
+    "document-history/exams/2021/final/sources.json": {
+      "mode": "100644",
+      "sha": "22d03c5fd99b2b03a5e33bb04f3fb3d3c7df9efb"
+    },
+    "document-history/exams/2021/final/verification.json": {
+      "mode": "100644",
+      "sha": "1289a23f2d5cdf1c65bdc7424a28b70706928ff9"
+    },
+    "document-history/exams/2021/final/verify.py": {
+      "mode": "100644",
+      "sha": "01aaba721073814c9bbff5cf8ce586c7a93653b8"
+    },
+    "document-history/exams/2021/final/verify_layout.py": {
+      "mode": "100644",
+      "sha": "9c646059fdba10bebfe6c9657c94ff0a17b5cf55"
+    },
+    "document-history/exams/2021/final/visual-qa.json": {
+      "mode": "100644",
+      "sha": "7c26068aeb6c1c8e21b7d19a6ded295cf2ee0914"
+    },
+    "document-history/exams/2021/midterm/README.md": {
+      "mode": "100644",
+      "sha": "7fc9150f729a24a66626e66af643baf37688ee69"
+    },
+    "document-history/exams/2021/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "e8588fc74d2a8fe4f3f893e3725bfbe910ff2988"
+    },
+    "document-history/exams/2021/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "90631f0f592c69c5e9577d6ccc8bfbf14f4c837a"
+    },
+    "document-history/exams/2021/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "183201cb10177e0cea5378ab514d4e6f7cb0eb66"
+    },
+    "document-history/exams/2021/midterm/q2_mux_checks.csv": {
+      "mode": "100644",
+      "sha": "1acb1d2bb9669b95745421a6b4d6efa14e39f271"
+    },
+    "document-history/exams/2021/midterm/q2_nand_checks.csv": {
+      "mode": "100644",
+      "sha": "863db80a294924004d1656900ea8c93d436173df"
+    },
+    "document-history/exams/2021/midterm/q3_cmos_checks.csv": {
+      "mode": "100644",
+      "sha": "186ed5cc8671dfbb64296b9d214202301d3b2ecf"
+    },
+    "document-history/exams/2021/midterm/q4_discharge_region_checks.csv": {
+      "mode": "100644",
+      "sha": "5ec285a73305d2907db93034cd41c25875bd4fff"
+    },
+    "document-history/exams/2021/midterm/q4_region_checks.csv": {
+      "mode": "100644",
+      "sha": "bb2227824d03238df92b79d7abee7e7dae7cf1c7"
+    },
+    "document-history/exams/2021/midterm/q5_xor_checks.csv": {
+      "mode": "100644",
+      "sha": "dd8f25f5df007ce27b0fe0cd2ef6c4f53365fa22"
+    },
+    "document-history/exams/2021/midterm/q6a_cmos_checks.csv": {
+      "mode": "100644",
+      "sha": "53522f534ba5b0226903c04c1b25d9f180489d56"
+    },
+    "document-history/exams/2021/midterm/q6b_cmos_checks.csv": {
+      "mode": "100644",
+      "sha": "ae4c57081eeebd780450518c3b16e8a26e955986"
+    },
+    "document-history/exams/2021/midterm/q6b_transition_checks.csv": {
+      "mode": "100644",
+      "sha": "8cd2ab043fb69f4dc072618111ca32affec63b99"
+    },
+    "document-history/exams/2021/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "63e99c69e8fb1016ca7ab683aa07cbc122f82454"
+    },
+    "document-history/exams/2021/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "43a3eef7e6916e3c3a8e9edbac23e78ca2bd20ef"
+    },
+    "document-history/exams/2021/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "a9fdf6500f9f51403778b2601a0c99de866ddc98"
+    },
+    "document-history/exams/2021/midterm/verification.json": {
+      "mode": "100644",
+      "sha": "4f8d5557895a1879c2cc86a1c301936cee3e1ae4"
+    },
+    "document-history/exams/2021/midterm/verify.py": {
+      "mode": "100644",
+      "sha": "8205e981efcf1588c337516a785f4d00702b35f7"
+    },
+    "document-history/exams/2021/midterm/visual-qa.json": {
+      "mode": "100644",
+      "sha": "cd5aad5e367835903b1ae31cffb4b3c614a255b4"
+    },
+    "document-history/exams/2022/midterm/README.md": {
+      "mode": "100644",
+      "sha": "81aebc1abebfd5d93d4d3ad0a1c003623f25ac6a"
+    },
+    "document-history/exams/2022/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "4b880fc863159dca9485b5cfee1ecb3fca12e704"
+    },
+    "document-history/exams/2022/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "307194d817d3a273a049fae1076afaa1e7341aa2"
+    },
+    "document-history/exams/2022/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "d18d3f1e121bb995893614d5d0982e232c7a0bd8"
+    },
+    "document-history/exams/2022/midterm/q2_mux8_selection.csv": {
+      "mode": "100644",
+      "sha": "63da35b8d9bc937b97dcc68cb4c7ff6cd167be75"
+    },
+    "document-history/exams/2022/midterm/q2_shannon_truth.csv": {
+      "mode": "100644",
+      "sha": "dec121a026be9f09f93073efc934ee44fec5ab55"
+    },
+    "document-history/exams/2022/midterm/q2_unbuffered_rc_scaling.csv": {
+      "mode": "100644",
+      "sha": "6d788ea810ba4bf9eff45ee3a1d3bb0fac7f99ef"
+    },
+    "document-history/exams/2022/midterm/q3_fixed_NMOS_balancing.csv": {
+      "mode": "100644",
+      "sha": "0c34d7a68120be3e9897ab6c47771209c21696b3"
+    },
+    "document-history/exams/2022/midterm/q3_stage_count.csv": {
+      "mode": "100644",
+      "sha": "433a2790b862833569fd02b7a0f35b5487082b8e"
+    },
+    "document-history/exams/2022/midterm/q4_regions.csv": {
+      "mode": "100644",
+      "sha": "22b46c3725d0c38e5b444e26eacce73ff876c7b2"
+    },
+    "document-history/exams/2022/midterm/q5_xor_routes.csv": {
+      "mode": "100644",
+      "sha": "2942309b8de37f43b6e68358d246e09f3b36c9d2"
+    },
+    "document-history/exams/2022/midterm/q6a_cmos_truth.csv": {
+      "mode": "100644",
+      "sha": "c0d630d0afe3f72f71954d1ac14f39a505b84e17"
+    },
+    "document-history/exams/2022/midterm/q6b_equivalent_inverter.csv": {
+      "mode": "100644",
+      "sha": "8a8a3b1c0034d5634d0d7dfbf9405c1c2458ce9a"
+    },
+    "document-history/exams/2022/midterm/qa.json": {
+      "mode": "100644",
+      "sha": "d6003fe329825595cefb1d9392db5de6ca16506f"
+    },
+    "document-history/exams/2022/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "44ff49703b10bf52258ab82b629c2346cfff3acc"
+    },
+    "document-history/exams/2022/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "0e73502964a33c446f20cb9cccf46bbad6693c22"
+    },
+    "document-history/exams/2022/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "df2f716dbcd56184cb1927a8be0af7e88b76a2aa"
+    },
+    "document-history/exams/2022/midterm/verification.json": {
+      "mode": "100644",
+      "sha": "fc9810d877728ccd8d349fcfe2a7aabb9d6d88ef"
+    },
+    "document-history/exams/2022/midterm/verify.py": {
+      "mode": "100644",
+      "sha": "97010c8663e055fbb9677731581e36ea3abc3e26"
+    },
+    "document-history/exams/2023/final/README.md": {
+      "mode": "100644",
+      "sha": "fb8d72393284473cd2bab07b677d3f5d789d7bfb"
+    },
+    "document-history/exams/2023/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "ecaf48a56fba6e537cd89d8562064c647ccf7c31"
+    },
+    "document-history/exams/2023/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "4800734d59a21384fefcd0ce5f68955e61232c5c"
+    },
+    "document-history/exams/2023/final/exam.tex": {
+      "mode": "100644",
+      "sha": "895fe112ae746146b7b6b9c7465048288296c16a"
+    },
+    "document-history/exams/2023/final/logic_timing_verification.json": {
+      "mode": "100644",
+      "sha": "319f8ece82a203513016b2d3ffc923b807869041"
+    },
+    "document-history/exams/2023/final/q2_MOS_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "dc13eeddf8a30dd5e04d023bea4d18025e9120ab"
+    },
+    "document-history/exams/2023/final/q2_truth.csv": {
+      "mode": "100644",
+      "sha": "1efb886b808e66092ecd092518d3f196096c18a5"
+    },
+    "document-history/exams/2023/final/q2_waveform.csv": {
+      "mode": "100644",
+      "sha": "421c545dc9c72db73fdac84a4e9cc99c3b0e379a"
+    },
+    "document-history/exams/2023/final/q3_alternate_repair_checks.csv": {
+      "mode": "100644",
+      "sha": "6a27d0c3b20e6f5bf73c9956ebc4d56e6a4bc07b"
+    },
+    "document-history/exams/2023/final/q3_charge_sharing.csv": {
+      "mode": "100644",
+      "sha": "59825c5611860ec5747f830c57fd72f804f1e55c"
+    },
+    "document-history/exams/2023/final/q3_majority_checks.csv": {
+      "mode": "100644",
+      "sha": "d015f2c9c82aa6eae793a938a1f5f315142f444a"
+    },
+    "document-history/exams/2023/final/q3_original_phase_failure.csv": {
+      "mode": "100644",
+      "sha": "abb40e4a2c488b8626059b86a8787aaddb8edb0a"
+    },
+    "document-history/exams/2023/final/q3_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "fd3c00518c985568b7d73c7389b5eec3d5989ca4"
+    },
+    "document-history/exams/2023/final/q3_same_phase_counterexample.csv": {
+      "mode": "100644",
+      "sha": "e1ee026b0beb0f7f8b24fde48108bd2383917ffa"
+    },
+    "document-history/exams/2023/final/q4_dynamic_dpl_checks.csv": {
+      "mode": "100644",
+      "sha": "344ae305fe1f3d6f2a71338a3f33da2128f3fc43"
+    },
+    "document-history/exams/2023/final/q4_dynamic_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "bdc1b056531d5bb78f6471974b18de5b46ae3099"
+    },
+    "document-history/exams/2023/final/q4_np_xor_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "f0e62eca59c7955c5524c3e6dcd3c964e68accf2"
+    },
+    "document-history/exams/2023/final/q5_hysteresis.csv": {
+      "mode": "100644",
+      "sha": "85d0fa87c76d6dcd643ca0d68d287b683deec226"
+    },
+    "document-history/exams/2023/final/q5_sizing.csv": {
+      "mode": "100644",
+      "sha": "7f46e1b2926041647764128c867de50f6e28d775"
+    },
+    "document-history/exams/2023/final/q6_layout_checks.csv": {
+      "mode": "100644",
+      "sha": "107302151f5e59343cb425e3667765b6ae8334c2"
+    },
+    "document-history/exams/2023/final/q6_physical_MOS.csv": {
+      "mode": "100644",
+      "sha": "678cfbb8435a108777c02659d6125e95b3bfe9ed"
+    },
+    "document-history/exams/2023/final/q7_latch_bounds.csv": {
+      "mode": "100644",
+      "sha": "bc667646bbb1306ede921ee29b3c90d33b948087"
+    },
+    "document-history/exams/2023/final/q7_path_timing.csv": {
+      "mode": "100644",
+      "sha": "de36ddab899cd75f8d2cc4f0b5a2cf62b51b337a"
+    },
+    "document-history/exams/2023/final/q7_reconvergent_hazard.csv": {
+      "mode": "100644",
+      "sha": "624ab5909abc1260bdf2270aa0617b8b4a0f84b0"
+    },
+    "document-history/exams/2023/final/q7_truth.csv": {
+      "mode": "100644",
+      "sha": "60913d92041a52a2583356125047fed9525a42e8"
+    },
+    "document-history/exams/2023/final/qa_summary.json": {
+      "mode": "100644",
+      "sha": "3f497e342f833d1879e54b2414f83cc6a24ceb09"
+    },
+    "document-history/exams/2023/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "07503ea8924babac0a65829e003a63161e707a28"
+    },
+    "document-history/exams/2023/final/solution.tex": {
+      "mode": "100644",
+      "sha": "c266495089d791e9202ba4ab051581d3b3190643"
+    },
+    "document-history/exams/2023/final/sources.json": {
+      "mode": "100644",
+      "sha": "7c5295066fc7ba356e0a82719c14eefaf0467137"
+    },
+    "document-history/exams/2023/final/verify_logic_timing.py": {
+      "mode": "100644",
+      "sha": "98bc7afb773a067602ed4b81c6041ab2c200ab5a"
+    },
+    "document-history/exams/2023/midterm/README.md": {
+      "mode": "100644",
+      "sha": "39e0aa9d8b60e1643bb82878d595da5cacd852b5"
+    },
+    "document-history/exams/2023/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "24411fbd1d834ed87444848d98a835ee551253ae"
+    },
+    "document-history/exams/2023/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "ba4f8fb9f46c9c47380b43d1ac3432579ebffd43"
+    },
+    "document-history/exams/2023/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "ac04bb727daaa3c417dba990edeb0bd2de25310b"
+    },
+    "document-history/exams/2023/midterm/q5_noise_context.csv": {
+      "mode": "100644",
+      "sha": "3c3bbf16bca8c6091484abf3cce41bd61d7ee408"
+    },
+    "document-history/exams/2023/midterm/q6_rc_delays.csv": {
+      "mode": "100644",
+      "sha": "30db6aa24a5b75369aa7725339bb80cdb5645cd4"
+    },
+    "document-history/exams/2023/midterm/q6_truth.csv": {
+      "mode": "100644",
+      "sha": "7d822929f5b70c653b3f2c601660347d750e5d47"
+    },
+    "document-history/exams/2023/midterm/q7_switch_checks.csv": {
+      "mode": "100644",
+      "sha": "c0b885c80bb1868ca345ccfef5835a8e880a0b55"
+    },
+    "document-history/exams/2023/midterm/qa.json": {
+      "mode": "100644",
+      "sha": "68356ef67c1037239d75929b5803d3f5629a9188"
+    },
+    "document-history/exams/2023/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "bf4f73e0e56e2d101f206a662d3dfd43a6815daf"
+    },
+    "document-history/exams/2023/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "9e871d14d2e9cf8d752861f19499c06dcd952a26"
+    },
+    "document-history/exams/2023/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "64f090693ab9187c99f2d0775e97071bce28cbb2"
+    },
+    "document-history/exams/2023/midterm/verification.json": {
+      "mode": "100644",
+      "sha": "ebdf2cb6ffd1ce7d98f93ee90fff24fafc55010b"
+    },
+    "document-history/exams/2023/midterm/verify.py": {
+      "mode": "100644",
+      "sha": "4578f5cd15c98a51b3aeff9088cfca785478e26a"
+    },
+    "document-history/exams/2024/final/README.md": {
+      "mode": "100644",
+      "sha": "9f39470adb31635138f20f8af5b4c1d02c069520"
+    },
+    "document-history/exams/2024/final/SOURCES.md": {
+      "mode": "100644",
+      "sha": "136e68ad63751ebf1a78a5b38f3e62bd44701641"
+    },
+    "document-history/exams/2024/final/carry_checks.csv": {
+      "mode": "100644",
+      "sha": "322d086e5cb4d50db0889981dd64cbc480357a84"
+    },
+    "document-history/exams/2024/final/carry_phase_checks.csv": {
+      "mode": "100644",
+      "sha": "f57300aa6a0e812143a33f047a7b1fef126b3f93"
+    },
+    "document-history/exams/2024/final/dpl_checks.csv": {
+      "mode": "100644",
+      "sha": "df906bfec276b1adc86a43e29f662f5fbab60871"
+    },
+    "document-history/exams/2024/final/exam.pdf": {
+      "mode": "100644",
+      "sha": "5ddd750dafc14e23290b52f1bf920997625856b3"
+    },
+    "document-history/exams/2024/final/exam.tex": {
+      "mode": "100644",
+      "sha": "da134552e5ada760c84c64c487fa73230e0dff89"
+    },
+    "document-history/exams/2024/final/layout_checks.csv": {
+      "mode": "100644",
+      "sha": "35042550b44f7f4e8b0d301fecf5b0bf3db2f484"
+    },
+    "document-history/exams/2024/final/logic_timing_verification.json": {
+      "mode": "100644",
+      "sha": "d83eb863c5d70c770b22065aac2a30094eaef216"
+    },
+    "document-history/exams/2024/final/np_domino_checks.csv": {
+      "mode": "100644",
+      "sha": "c0686fe7c27587a649092bcf1439b3a41b9540a8"
+    },
+    "document-history/exams/2024/final/pdf_qa.json": {
+      "mode": "100644",
+      "sha": "9e8ad0ecdad6335a00eaed4c542bcf5d11f95b1e"
+    },
+    "document-history/exams/2024/final/q3_pdn_charge_sharing.csv": {
+      "mode": "100644",
+      "sha": "f2171ed329a52f1229843d4e0cfe76041a09dfcf"
+    },
+    "document-history/exams/2024/final/q3_q4_verification.json": {
+      "mode": "100644",
+      "sha": "ef4c42bb7ca4efaad1b3938b00371dfd3110c7d4"
+    },
+    "document-history/exams/2024/final/q3_repeat_cycle_trace.csv": {
+      "mode": "100644",
+      "sha": "b275a51d41b1414371ff9729eb099b692faa5b1a"
+    },
+    "document-history/exams/2024/final/q4_classroom_widths.csv": {
+      "mode": "100644",
+      "sha": "e8ae9da6afb72a0a7b8dba072967829f866c02f9"
+    },
+    "document-history/exams/2024/final/q4_delay_model_comparison.csv": {
+      "mode": "100644",
+      "sha": "79a095db1ac65c31d076100437d69f95a7b6c62c"
+    },
+    "document-history/exams/2024/final/q4_literal_delay_lower_bounds.csv": {
+      "mode": "100644",
+      "sha": "deba27a502c5bf11b6ab8937532f1224d35f4ece"
+    },
+    "document-history/exams/2024/final/q4_switch_hysteresis.csv": {
+      "mode": "100644",
+      "sha": "efc2030c597359fccb2905ea95113b0460122892"
+    },
+    "document-history/exams/2024/final/q6_internal_x_masking.csv": {
+      "mode": "100644",
+      "sha": "08a8aead1b3897daa897d2b130eec5370591d35e"
+    },
+    "document-history/exams/2024/final/q6_logical_masking.csv": {
+      "mode": "100644",
+      "sha": "1846d89377de2be1f0a25ea2628fdeaaeb46a4de"
+    },
+    "document-history/exams/2024/final/q6_original_truth.csv": {
+      "mode": "100644",
+      "sha": "56a0d9187d971baaf71157378ef19e9084508654"
+    },
+    "document-history/exams/2024/final/solution.pdf": {
+      "mode": "100644",
+      "sha": "9bcd3d8ff735b964ce7e618a74528fe741f9680d"
+    },
+    "document-history/exams/2024/final/solution.tex": {
+      "mode": "100644",
+      "sha": "053b22fdcee39f06c75b6618dfb284bc637ba93c"
+    },
+    "document-history/exams/2024/final/sources.json": {
+      "mode": "100644",
+      "sha": "70cf59cc9151f864b818f49ac726c9ae8ff59115"
+    },
+    "document-history/exams/2024/final/timing_paths.csv": {
+      "mode": "100644",
+      "sha": "ec88d48f10e08305493c904b337af08d06184ed4"
+    },
+    "document-history/exams/2024/final/verify_dynamic_schmitt.py": {
+      "mode": "100644",
+      "sha": "0eab130204b2f653fb76918a602e19ab4bdf179a"
+    },
+    "document-history/exams/2024/final/verify_logic_timing.py": {
+      "mode": "100644",
+      "sha": "9348266f03d796bde07b226a39136ad516ddd7cf"
+    },
+    "document-history/exams/2024/midterm/README.md": {
+      "mode": "100644",
+      "sha": "46c48aa700dfd737b8ae30058bb66d44a8ae3dd0"
+    },
+    "document-history/exams/2024/midterm/SOURCES.md": {
+      "mode": "100644",
+      "sha": "c21089ed366db26fa2a02dde46b8501633b06280"
+    },
+    "document-history/exams/2024/midterm/exam.pdf": {
+      "mode": "100644",
+      "sha": "5e42963ab160cc9c0848e328a02f468695c4f686"
+    },
+    "document-history/exams/2024/midterm/exam.tex": {
+      "mode": "100644",
+      "sha": "2bf4be16751aafe15f9947f0f9b2c719acaedf8b"
+    },
+    "document-history/exams/2024/midterm/pdf_qa.json": {
+      "mode": "100644",
+      "sha": "4f86e9cbee18169c32499d9a61c0ee46a53f0d11"
+    },
+    "document-history/exams/2024/midterm/q2_mux_truth.csv": {
+      "mode": "100644",
+      "sha": "90a9b9be5aa7bdbf5259f17507a8a137ce76465f"
+    },
+    "document-history/exams/2024/midterm/q2_q7_verification.json": {
+      "mode": "100644",
+      "sha": "0214b7bc2be81fb051251ce3ef5e9582be98bd34"
+    },
+    "document-history/exams/2024/midterm/q3_q6_verification.json": {
+      "mode": "100644",
+      "sha": "ccd26a3eaaecf3e722af509f383e049886bfb331"
+    },
+    "document-history/exams/2024/midterm/q3_stage_checks.csv": {
+      "mode": "100644",
+      "sha": "96069759bd03186c46db5a986ca738b485a5bcd4"
+    },
+    "document-history/exams/2024/midterm/q4_regions.csv": {
+      "mode": "100644",
+      "sha": "1d2d22f2cfd4852e5fbc1f4c07cebbd05cc9d443"
+    },
+    "document-history/exams/2024/midterm/q5_noise_scenarios.csv": {
+      "mode": "100644",
+      "sha": "fbc0e6b332a6e17c52c79858eac1461050ebdf34"
+    },
+    "document-history/exams/2024/midterm/q6_delay_checks.csv": {
+      "mode": "100644",
+      "sha": "b10f3f36e36f8df4bf90d537d5a7a9768d14dbed"
+    },
+    "document-history/exams/2024/midterm/q7_switch_checks.csv": {
+      "mode": "100644",
+      "sha": "c5d1e64989cfdfbad0243b8ae3be005a59e4e38e"
+    },
+    "document-history/exams/2024/midterm/solution.pdf": {
+      "mode": "100644",
+      "sha": "26f7547c5d170181a7919b8f069db50c10f8764f"
+    },
+    "document-history/exams/2024/midterm/solution.tex": {
+      "mode": "100644",
+      "sha": "c65a9fabe30fa28dc7f0e09420d8b4d4480d4ff7"
+    },
+    "document-history/exams/2024/midterm/sources.json": {
+      "mode": "100644",
+      "sha": "7b73bf8c747b8921dc41ce4db99700e245ffcdef"
+    },
+    "document-history/exams/2024/midterm/verify_q2_q7.py": {
+      "mode": "100644",
+      "sha": "2e2f93f0996298c0cf6dee4e93ecab2ec0c12df1"
+    },
+    "document-history/exams/2024/midterm/verify_q3_q6.py": {
+      "mode": "100644",
+      "sha": "094905b6dea37558b052b43ac7f3e531b344b6be"
+    },
+    "document-history/exams/ARCHIVE_REVIEW.json": {
+      "mode": "100644",
+      "sha": "dcdaccbd4f468641eac2a009ac3b5c97ad19161c"
+    },
+    "document-history/exams/COVERAGE.json": {
+      "mode": "100644",
+      "sha": "ce484f9494a75232bb2f240ad801e50eab348b0d"
+    },
+    "document-history/exams/README.md": {
+      "mode": "100644",
+      "sha": "0b244df9ee7cc276ffc2fd590f5b80192d633a6b"
+    },
+    "document-history/homework/2013/HW1/README.md": {
+      "mode": "100644",
+      "sha": "71ba5589f3eecf955af8baa5cd622974c7f4f6b9"
+    },
+    "document-history/homework/2013/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "788bc651c7794807327ad5d8c673fe6a8afd2082"
+    },
+    "document-history/homework/2013/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "54fe8d96f3a9c96131b530d417330235c5314bb0"
+    },
+    "document-history/homework/2013/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "3f34a4158cb357d4cfe65918764174f29c6c81d2"
+    },
+    "document-history/homework/2013/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "a2702fb98c97cd1c30128869331f088fc2a74142"
+    },
+    "document-history/homework/2013/HW1/verify.py": {
+      "mode": "100644",
+      "sha": "08e7abf3c3543c4c24196d5a40e17aa91d8d146e"
+    },
+    "document-history/homework/2013/HW2/README.md": {
+      "mode": "100644",
+      "sha": "b9beedff1dd0ab447be90143a3506608be5f8d15"
+    },
+    "document-history/homework/2013/HW2/clock_tree.csv": {
+      "mode": "100644",
+      "sha": "031690b2e6876707c48597d74b48f4ab5ff642b0"
+    },
+    "document-history/homework/2013/HW2/noise_margin.csv": {
+      "mode": "100644",
+      "sha": "6221889e22e023487680525caa84ef0e52ce0391"
+    },
+    "document-history/homework/2013/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "d66d921d80c39bc379e37b58d722f9e51df683b5"
+    },
+    "document-history/homework/2013/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "8dc1598ab3711381db6be8bb0688f22e55860d97"
+    },
+    "document-history/homework/2013/HW2/verification.json": {
+      "mode": "100644",
+      "sha": "7248cc562458b452337b97ca1fb638fb59501c9f"
+    },
+    "document-history/homework/2013/HW2/verify.py": {
+      "mode": "100644",
+      "sha": "7dc58d2a65680390c409c74db595be3b3abe176c"
+    },
+    "document-history/homework/2013/HW3/README.md": {
+      "mode": "100644",
+      "sha": "6b0eac8789c8bc9a7ccc6e362f6d9add3dd59ba7"
+    },
+    "document-history/homework/2013/HW3/inverter_testbench.sp": {
+      "mode": "100644",
+      "sha": "7f993de8b9dfe7a048557397c71a9b43fb95ba37"
+    },
+    "document-history/homework/2013/HW3/mux.sp": {
+      "mode": "100644",
+      "sha": "1152b44e7b196575473593b15f8b25b33357f21d"
+    },
+    "document-history/homework/2013/HW3/mux_testbench.sp": {
+      "mode": "100644",
+      "sha": "a2ed383a2feb34b0d0ff714444d7a817e85b3120"
+    },
+    "document-history/homework/2013/HW3/reproduce.py": {
+      "mode": "100644",
+      "sha": "30835efae2d883c859d7615a8c1fbdf9fcde95f1"
+    },
+    "document-history/homework/2013/HW3/results/inverter_power.csv": {
+      "mode": "100644",
+      "sha": "1d69fda62e43d76a5d79d278c1ab3cc82a760316"
+    },
+    "document-history/homework/2013/HW3/results/logic_2048.csv": {
+      "mode": "100644",
+      "sha": "148f03a04e218815f28715a60f3f5b54610bf943"
+    },
+    "document-history/homework/2013/HW3/results/mux_delays.csv": {
+      "mode": "100644",
+      "sha": "ccee7932bb27d470b9128509a8697c597a48a475"
+    },
+    "document-history/homework/2013/HW3/results/summary.json": {
+      "mode": "100644",
+      "sha": "74ad66a0d11475452f7990d93209b1a2aeac6530"
+    },
+    "document-history/homework/2013/HW3/results/topology_checks.json": {
+      "mode": "100644",
+      "sha": "822fa12adb29a8e1b892b6eeb6f7f83c90da5b7e"
+    },
+    "document-history/homework/2013/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "dc0f3fa1ebcee78b20e846e4870e01d8f3a64887"
+    },
+    "document-history/homework/2013/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "f2db52eb2f481f4569483885a641e903f1515049"
+    },
+    "document-history/homework/2013/README.md": {
+      "mode": "100644",
+      "sha": "e68333ed15520fe7925211fa238b17e9b6f5ae40"
+    },
+    "document-history/homework/2013/SOURCES.md": {
+      "mode": "100644",
+      "sha": "bab3b5f674288337b825a01a265f0f59b9179b59"
+    },
+    "document-history/homework/2013/assignments/README.md": {
+      "mode": "100644",
+      "sha": "711f3c91a0d6090e29a6d8c78d5489121c154412"
+    },
+    "document-history/homework/2013/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "d0e39b0a86c242e472ef308d022a91bf384a7400"
+    },
+    "document-history/homework/2013/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "c20dfeab392d29a405a38df52d5274724e350284"
+    },
+    "document-history/homework/2013/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "e069f896c5a84d473d951a65eceaf7c7cb583d91"
+    },
+    "document-history/homework/2013/pdf_qa.json": {
+      "mode": "100644",
+      "sha": "e037a7c7ede12205e39ee13999e35fa4c9e30db9"
+    },
+    "document-history/homework/2013/sources.json": {
+      "mode": "100644",
+      "sha": "88fde4b570a4d760bfa93aa48cba1a5c86434470"
+    },
+    "document-history/homework/2013/yearcoverage.json": {
+      "mode": "100644",
+      "sha": "65e41eebdd8a7d64e0b3d4535b852a665cd147c7"
+    },
+    "document-history/homework/2014/README.md": {
+      "mode": "100644",
+      "sha": "736501025aeb77eff7b8d163396504ca75b5fd02"
+    },
+    "document-history/homework/2015/HW1/README.md": {
+      "mode": "100644",
+      "sha": "d6aa3f1cacd3982ce42fb36a2b609414de8246c6"
+    },
+    "document-history/homework/2015/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "98e65b786c66415e938691dd45db1567b1266158"
+    },
+    "document-history/homework/2015/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "953e8e4883673c641ab4ffd3ff344509652ad1a8"
+    },
+    "document-history/homework/2015/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "be196dc94e86cb92d0244bd6b933d5eb83710067"
+    },
+    "document-history/homework/2015/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "1de13b925cffa4649566162b605d2b70ee34c390"
+    },
+    "document-history/homework/2015/HW1/verify_logic.py": {
+      "mode": "100644",
+      "sha": "77144398a646985715c17712af95b9d60516b1bf"
+    },
+    "document-history/homework/2015/HW2/README.md": {
+      "mode": "100644",
+      "sha": "5f0ad785c15441cc289ba487d29eb3dffd710f98"
+    },
+    "document-history/homework/2015/HW2/clock_paths.csv": {
+      "mode": "100644",
+      "sha": "830f70601fc15d2716db8c5ade6e8c17165cbf37"
+    },
+    "document-history/homework/2015/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "043a9982cb7bbe00f718fc7cfab60df84753aa1f"
+    },
+    "document-history/homework/2015/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "bb1d870591827caa820c491f3fa9b317d7ef9f33"
+    },
+    "document-history/homework/2015/HW2/switching_points.csv": {
+      "mode": "100644",
+      "sha": "8b89ba323b2f63a26d7293454ca7d6ccea445e68"
+    },
+    "document-history/homework/2015/HW2/verification.json": {
+      "mode": "100644",
+      "sha": "6497e829acf5ab4aa84147b13207693aa003c970"
+    },
+    "document-history/homework/2015/HW2/verify.py": {
+      "mode": "100644",
+      "sha": "43e2529659456339eeb72271604dcd28f053b5c2"
+    },
+    "document-history/homework/2015/HW3/README.md": {
+      "mode": "100644",
+      "sha": "688cd3d053272399f52bc52abe9f58e9cfd31f54"
+    },
+    "document-history/homework/2015/HW3/and2.sp": {
+      "mode": "100644",
+      "sha": "f839950194a8b4472587af46ec1796095cb48b24"
+    },
+    "document-history/homework/2015/HW3/and_delays.csv": {
+      "mode": "100644",
+      "sha": "7d43948d2d4f2fdcc8d300baee5e8f246476d796"
+    },
+    "document-history/homework/2015/HW3/and_level_checks.csv": {
+      "mode": "100644",
+      "sha": "28b39da19687a63024517bafbd17cec6d9b685c6"
+    },
+    "document-history/homework/2015/HW3/and_testbench.sp": {
+      "mode": "100644",
+      "sha": "964431abaf9256d068b819eafc044925729a4cec"
+    },
+    "document-history/homework/2015/HW3/and_worst_delays.csv": {
+      "mode": "100644",
+      "sha": "30a1978b3082dd894f361b66fb4a4c09cd8f3d3d"
+    },
+    "document-history/homework/2015/HW3/power_testbench.sp": {
+      "mode": "100644",
+      "sha": "a9611a72b5eebccf19f440496ea48b8d4aff2716"
+    },
+    "document-history/homework/2015/HW3/power_vs_load.csv": {
+      "mode": "100644",
+      "sha": "7346e57f15cc2a99bc336ca6b7548a243298320e"
+    },
+    "document-history/homework/2015/HW3/power_waveforms.csv": {
+      "mode": "100644",
+      "sha": "23726558550482e4a7c13225746db536262a1611"
+    },
+    "document-history/homework/2015/HW3/reproduce.py": {
+      "mode": "100644",
+      "sha": "23264feb1b2a5d82cfecbc291511d8967c8d28a5"
+    },
+    "document-history/homework/2015/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "2c4b2c439ac83951c5a5cbbf97093e19f00e720e"
+    },
+    "document-history/homework/2015/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "f0aa4e84fbd37d8c3c6e200806f02424f555b638"
+    },
+    "document-history/homework/2015/HW3/verification.json": {
+      "mode": "100644",
+      "sha": "5b60d109a5311b85e57e8e71113fa82d20e41d35"
+    },
+    "document-history/homework/2015/HW4/README.md": {
+      "mode": "100644",
+      "sha": "7ae15316f52151e3bf6e597fae242a46d1c3e58b"
+    },
+    "document-history/homework/2015/HW4/domino.sp": {
+      "mode": "100644",
+      "sha": "8d05d1a883fbe0d4971e5df3bfbba8c460b32164"
+    },
+    "document-history/homework/2015/HW4/domino_convergence.csv": {
+      "mode": "100644",
+      "sha": "206e62fd481cf3fc3722c08be9b21bde20640b8c"
+    },
+    "document-history/homework/2015/HW4/domino_delays.csv": {
+      "mode": "100644",
+      "sha": "743b62b386f57a52390fe27942238d5bffd3444c"
+    },
+    "document-history/homework/2015/HW4/domino_fine_delays.csv": {
+      "mode": "100644",
+      "sha": "78dee9107550acbb20f73b37d64e62d6614b496a"
+    },
+    "document-history/homework/2015/HW4/domino_logic.csv": {
+      "mode": "100644",
+      "sha": "233378646d73bdac2e184de7bc907bd9b5c5085f"
+    },
+    "document-history/homework/2015/HW4/domino_testbench.sp": {
+      "mode": "100644",
+      "sha": "b9782b0e8ca13c1d49907ea50e257329f8ae1b79"
+    },
+    "document-history/homework/2015/HW4/domino_waveforms.csv": {
+      "mode": "100644",
+      "sha": "0d3af147b0081977d1f5c5a3e2373eeacb7c447d"
+    },
+    "document-history/homework/2015/HW4/domino_worst_delays.csv": {
+      "mode": "100644",
+      "sha": "f91405b473d7fcfc21ab8b5bad22f880e130a522"
+    },
+    "document-history/homework/2015/HW4/mirror.sp": {
+      "mode": "100644",
+      "sha": "10883be5c2f150c0f2fa13236fce94856a75b105"
+    },
+    "document-history/homework/2015/HW4/mirror_convergence.csv": {
+      "mode": "100644",
+      "sha": "f100260313d75cd97b7afd76359b7950e6172cdb"
+    },
+    "document-history/homework/2015/HW4/mirror_delays.csv": {
+      "mode": "100644",
+      "sha": "eb1d027ccc9781792b61b86358de3690c9300ce0"
+    },
+    "document-history/homework/2015/HW4/mirror_fine_delays.csv": {
+      "mode": "100644",
+      "sha": "8b100d589d1eee96b95e8c8c9966e8ae51dd5e35"
+    },
+    "document-history/homework/2015/HW4/mirror_logic.csv": {
+      "mode": "100644",
+      "sha": "ccda2afa70295417b97f0d79642f1365a41e2049"
+    },
+    "document-history/homework/2015/HW4/mirror_testbench.sp": {
+      "mode": "100644",
+      "sha": "11bb23a7cbacf67c4ae93601e5f4d51231f9337f"
+    },
+    "document-history/homework/2015/HW4/mirror_waveforms.csv": {
+      "mode": "100644",
+      "sha": "7a37877476d7ef96abef49eee80dd8cf0296a8e3"
+    },
+    "document-history/homework/2015/HW4/mirror_worst_delays.csv": {
+      "mode": "100644",
+      "sha": "16635f7029c3c8121cd96d0ba7f3bf6474ab4aae"
+    },
+    "document-history/homework/2015/HW4/reproduce.py": {
+      "mode": "100644",
+      "sha": "f3993f39be44db0636530de89eb01ecd83b50831"
+    },
+    "document-history/homework/2015/HW4/sizing_search.csv": {
+      "mode": "100644",
+      "sha": "1268c49340e4519868c6af4278e781b8a58ff47f"
+    },
+    "document-history/homework/2015/HW4/solution.pdf": {
+      "mode": "100644",
+      "sha": "37c81e7c079bec9bdf89da6b3da81a3ea986d649"
+    },
+    "document-history/homework/2015/HW4/solution.tex": {
+      "mode": "100644",
+      "sha": "083b437c21710d6b12cdf89a5fb47d13ac98d7f0"
+    },
+    "document-history/homework/2015/HW4/verification.json": {
+      "mode": "100644",
+      "sha": "4e07b473558cc745b72a9168f4d541c20ca13536"
+    },
+    "document-history/homework/2015/HW4/waveform_delay_checks.csv": {
+      "mode": "100644",
+      "sha": "936d86814b4e864ca690934b4f5d1267afef6125"
+    },
+    "document-history/homework/2015/README.md": {
+      "mode": "100644",
+      "sha": "e103cfb74f4bdc81d2e159675d6839c006188203"
+    },
+    "document-history/homework/2015/SOURCES.md": {
+      "mode": "100644",
+      "sha": "996d9f8c2eae35769aa782761da35dec8b7bd5a2"
+    },
+    "document-history/homework/2015/assignments/README.md": {
+      "mode": "100644",
+      "sha": "19a079868528fe813f925e2a290e072aa7870ef3"
+    },
+    "document-history/homework/2015/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "4e7c18cfc924b7de7eac731b174c9a4d503aae68"
+    },
+    "document-history/homework/2015/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "bee02d33d7068db6f760199e56954faaf17b5be9"
+    },
+    "document-history/homework/2015/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "df54eb27886c4bcba5caf06be3e49eea84022b5e"
+    },
+    "document-history/homework/2015/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "a18f3076c1bc403079b13f47932b21913c33cb6c"
+    },
+    "document-history/homework/2015/sim_utils.py": {
+      "mode": "100644",
+      "sha": "eeacbba866ef10a44bbfc41cde4622e1d42abf09"
+    },
+    "document-history/homework/2015/verification.json": {
+      "mode": "100644",
+      "sha": "8209990b7018a0fb682abb7a1691e4976078d952"
+    },
+    "document-history/homework/2015/verify_results.py": {
+      "mode": "100644",
+      "sha": "bc52317b43eaff59ad6375f27dc6845de1745579"
+    },
+    "document-history/homework/2016/HW3/README.md": {
+      "mode": "100644",
+      "sha": "2911431d27ad8bec5744f183cc659216b6cd9d04"
+    },
+    "document-history/homework/2016/HW3/and2.sp": {
+      "mode": "100644",
+      "sha": "1f0e80868682e0db772575d273cc3b3b994ded5c"
+    },
+    "document-history/homework/2016/HW3/power_testbench.sp": {
+      "mode": "100644",
+      "sha": "c193312e3d2df0b573e2cd7390079bace5b46444"
+    },
+    "document-history/homework/2016/HW3/reproduce.py": {
+      "mode": "100644",
+      "sha": "8487820062ea39fe25a9d46c5f9c528f05fff9bd"
+    },
+    "document-history/homework/2016/HW3/results/and_gate/delays.csv": {
+      "mode": "100644",
+      "sha": "833011ecc4a2677b17bded41291097d12bd69a53"
+    },
+    "document-history/homework/2016/HW3/results/and_gate/logic_levels.csv": {
+      "mode": "100644",
+      "sha": "6b9ac0eaed37f7845c578f1cbdf7f7a8e53e344a"
+    },
+    "document-history/homework/2016/HW3/results/and_gate/summary.json": {
+      "mode": "100644",
+      "sha": "bbc8989ab5c3eea948f1142ccf9d2fdb874d8be8"
+    },
+    "document-history/homework/2016/HW3/results/and_gate/waveforms.csv": {
+      "mode": "100644",
+      "sha": "d1828a235160e56e5a22e168f1f6513bfbeb4aaa"
+    },
+    "document-history/homework/2016/HW3/results/power/power_curve.csv": {
+      "mode": "100644",
+      "sha": "0e8956a69f29ff0d4ed07616c59aff5e3b0664a0"
+    },
+    "document-history/homework/2016/HW3/results/power/summary.json": {
+      "mode": "100644",
+      "sha": "5425cb89e8651f2338e5b9dd62e0e78997a284d5"
+    },
+    "document-history/homework/2016/HW3/simulate_and.py": {
+      "mode": "100644",
+      "sha": "3a0c1c50f6f5c6c86088adcbfa40b085788f8974"
+    },
+    "document-history/homework/2016/HW3/simulate_power.py": {
+      "mode": "100644",
+      "sha": "2e30dc48090d3c54662e5182273b68dd0adb6299"
+    },
+    "document-history/homework/2016/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "983dfe7b757a8e8b8cd05e6499f9940b2cd2cb20"
+    },
+    "document-history/homework/2016/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "ba55627f1f00fafa153f17dbca26d65f11e8da1b"
+    },
+    "document-history/homework/2016/HW3/testbench.sp": {
+      "mode": "100644",
+      "sha": "364199cb0fcf716ea3cf30e8345bbbdaf089723c"
+    },
+    "document-history/homework/2016/README.md": {
+      "mode": "100644",
+      "sha": "f3ba8ef1df39c62af1eee95075714d7a61cc3e0b"
+    },
+    "document-history/homework/2016/SOURCES.md": {
+      "mode": "100644",
+      "sha": "de2e6d617eec45cbc1e443d5ffabaa843de409c9"
+    },
+    "document-history/homework/2016/assignments/README.md": {
+      "mode": "100644",
+      "sha": "e457ed12eded9e904de6b6ee82e960936e713e2b"
+    },
+    "document-history/homework/2016/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "61239a30d46ca2108e4b1ea6ffe0c38050f04ce5"
+    },
+    "document-history/homework/2016/coverage.json": {
+      "mode": "100644",
+      "sha": "ea5a1757ef2c31084af478513eca279ccfb63915"
+    },
+    "document-history/homework/2017/HW1/README.md": {
+      "mode": "100644",
+      "sha": "e74f1ed7db3bb234fbcc684a0c56e9b6115da177"
+    },
+    "document-history/homework/2017/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "97de4432675e6a6a310becee564c16247cfa79fa"
+    },
+    "document-history/homework/2017/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "585f2cd8bf4510abbd45c28346b88a618a265151"
+    },
+    "document-history/homework/2017/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "0af00917b19590e79f35c4604a2802ac2b56a828"
+    },
+    "document-history/homework/2017/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "0d7688d263d778e8bd08acffea346984ca700f9a"
+    },
+    "document-history/homework/2017/HW1/verify_logic.py": {
+      "mode": "100644",
+      "sha": "130d727a54ee6ca58288a9ce34308272dce5a56d"
+    },
+    "document-history/homework/2017/HW2/README.md": {
+      "mode": "100644",
+      "sha": "ee78ee88ebec90b06ad6a489716a71db76f8c868"
+    },
+    "document-history/homework/2017/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "1a7e0520a3b43be32c05e8525ae5ba0f67b0da6f"
+    },
+    "document-history/homework/2017/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "dd80fa973084afdd3cc9223b4f0b7c7c504405d5"
+    },
+    "document-history/homework/2017/HW2/verification.json": {
+      "mode": "100644",
+      "sha": "3a8ece8d1e700cee099ae3195162facf77e7d51e"
+    },
+    "document-history/homework/2017/HW2/verify_design.py": {
+      "mode": "100644",
+      "sha": "2333146717cc6eca50e866e67e591dcb00ef10ce"
+    },
+    "document-history/homework/2017/HW3/README.md": {
+      "mode": "100644",
+      "sha": "1306d367196d1c72634cbcbe00e2ebb1dd386a5d"
+    },
+    "document-history/homework/2017/HW3/and2.sp": {
+      "mode": "100644",
+      "sha": "d61212834dc954c3b19f4e1916ae126c4aa89e7f"
+    },
+    "document-history/homework/2017/HW3/power_testbench.sp": {
+      "mode": "100644",
+      "sha": "c193312e3d2df0b573e2cd7390079bace5b46444"
+    },
+    "document-history/homework/2017/HW3/reproduce.py": {
+      "mode": "100644",
+      "sha": "8487820062ea39fe25a9d46c5f9c528f05fff9bd"
+    },
+    "document-history/homework/2017/HW3/results/and_gate/delays.csv": {
+      "mode": "100644",
+      "sha": "833011ecc4a2677b17bded41291097d12bd69a53"
+    },
+    "document-history/homework/2017/HW3/results/and_gate/logic_levels.csv": {
+      "mode": "100644",
+      "sha": "6b9ac0eaed37f7845c578f1cbdf7f7a8e53e344a"
+    },
+    "document-history/homework/2017/HW3/results/and_gate/summary.json": {
+      "mode": "100644",
+      "sha": "bbc8989ab5c3eea948f1142ccf9d2fdb874d8be8"
+    },
+    "document-history/homework/2017/HW3/results/and_gate/waveforms.csv": {
+      "mode": "100644",
+      "sha": "d1828a235160e56e5a22e168f1f6513bfbeb4aaa"
+    },
+    "document-history/homework/2017/HW3/results/power/power_curve.csv": {
+      "mode": "100644",
+      "sha": "0e8956a69f29ff0d4ed07616c59aff5e3b0664a0"
+    },
+    "document-history/homework/2017/HW3/results/power/summary.json": {
+      "mode": "100644",
+      "sha": "5425cb89e8651f2338e5b9dd62e0e78997a284d5"
+    },
+    "document-history/homework/2017/HW3/simulate_and.py": {
+      "mode": "100644",
+      "sha": "0f29ec026e3ae6407c312fdfc4be5603ab33772e"
+    },
+    "document-history/homework/2017/HW3/simulate_power.py": {
+      "mode": "100644",
+      "sha": "2e30dc48090d3c54662e5182273b68dd0adb6299"
+    },
+    "document-history/homework/2017/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "3643c1db8f37813a994568166a1272ccd9999248"
+    },
+    "document-history/homework/2017/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "5a2a7c4a296311e9c0d92c299b775c42c25fdcda"
+    },
+    "document-history/homework/2017/HW3/testbench.sp": {
+      "mode": "100644",
+      "sha": "1af786c88aa01f1c59c84cbb65855f8451e05c3b"
+    },
+    "document-history/homework/2017/HW4/README.md": {
+      "mode": "100644",
+      "sha": "7740d466a0c7c43ca13852475f2803d11475fbe3"
+    },
+    "document-history/homework/2017/HW4/domino_full_adder.sp": {
+      "mode": "100644",
+      "sha": "d0d86f34e861ba956db52299c3e467e6ae669be5"
+    },
+    "document-history/homework/2017/HW4/domino_sizes.json": {
+      "mode": "100644",
+      "sha": "fe42e393c25429e928c7223117e806fd07b33465"
+    },
+    "document-history/homework/2017/HW4/domino_testbench.sp": {
+      "mode": "100644",
+      "sha": "a8661571f341355cf0310ea976ce07a4efa26094"
+    },
+    "document-history/homework/2017/HW4/mirror_full_adder.sp": {
+      "mode": "100644",
+      "sha": "584968cb4dc7398fd1c64048650631f53c60b34a"
+    },
+    "document-history/homework/2017/HW4/mirror_sizes.json": {
+      "mode": "100644",
+      "sha": "0d0022661cc9f25af2168ea653a89aa6b3277076"
+    },
+    "document-history/homework/2017/HW4/mirror_testbench.sp": {
+      "mode": "100644",
+      "sha": "f3f36f50feebddce2f4f497814fcc7b16cb94f7c"
+    },
+    "document-history/homework/2017/HW4/reproduce.py": {
+      "mode": "100644",
+      "sha": "4e82df22cffec9808ab6bd8bb00c09eb472a7c16"
+    },
+    "document-history/homework/2017/HW4/results/calibration.json": {
+      "mode": "100644",
+      "sha": "b6ec1fe8daab4569d7eef4f103643c0e13eb78f3"
+    },
+    "document-history/homework/2017/HW4/results/domino_logic.csv": {
+      "mode": "100644",
+      "sha": "086174f4a3a889538acb503f1c20f7f1d27892df"
+    },
+    "document-history/homework/2017/HW4/results/domino_metrics.csv": {
+      "mode": "100644",
+      "sha": "e202a6d69164bbff144af4d6cf74cdea0109f1c6"
+    },
+    "document-history/homework/2017/HW4/results/mirror_logic.csv": {
+      "mode": "100644",
+      "sha": "5cbb8942d007a5494d0a7c1cb2b1d928c0f4b074"
+    },
+    "document-history/homework/2017/HW4/results/mirror_metrics.csv": {
+      "mode": "100644",
+      "sha": "753f14473555703da5a02a90738fa12e4726f56a"
+    },
+    "document-history/homework/2017/HW4/results/summary.json": {
+      "mode": "100644",
+      "sha": "913d45748b0b5c858012f990453f5a9b32b8db33"
+    },
+    "document-history/homework/2017/HW4/solution.pdf": {
+      "mode": "100644",
+      "sha": "b3e2a342f23efe1eea6b5889df759844aa860ffa"
+    },
+    "document-history/homework/2017/HW4/solution.tex": {
+      "mode": "100644",
+      "sha": "49787fecd6cc069ed382b5955c2b74bf59b2a055"
+    },
+    "document-history/homework/2017/README.md": {
+      "mode": "100644",
+      "sha": "77655c9b1ecbc6e2a6c89eb370b10cd1d00f99a1"
+    },
+    "document-history/homework/2017/SOURCES.md": {
+      "mode": "100644",
+      "sha": "61e93ee441904f40e3bcfae33cc6985d8b3add04"
+    },
+    "document-history/homework/2017/assignments/README.md": {
+      "mode": "100644",
+      "sha": "dcfc1a3f3b414c3a78ac1e7179b3ca106dfdb92c"
+    },
+    "document-history/homework/2017/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "587b669b63e7835c860f678a4fd8f91db67b881e"
+    },
+    "document-history/homework/2017/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "ff2f14ad643bc78378daa40e53892fd908ba55f5"
+    },
+    "document-history/homework/2017/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "7d8880c7a6373d50f37f57cea504ee595da5961d"
+    },
+    "document-history/homework/2017/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "bdc7e2ee92fdf9c37be27cca0bbbf5b6d96a8aed"
+    },
+    "document-history/homework/2017/coverage.json": {
+      "mode": "100644",
+      "sha": "4a0a6fabe74a8f6a9802e88cb1e352cd4c8bdb49"
+    },
+    "document-history/homework/2018/HW1/README.md": {
+      "mode": "100644",
+      "sha": "12174663b5f13ef8174ea9b4d295284bd97dc19d"
+    },
+    "document-history/homework/2018/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "95bdc5a6902f1a5ff13b08a8f212999abc667a28"
+    },
+    "document-history/homework/2018/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "af50a1fd0d91c872ec5f512e4a45771e279cca3e"
+    },
+    "document-history/homework/2018/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "c5b737262c97430d59c50c2efbcff502ddfb7608"
+    },
+    "document-history/homework/2018/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "435699547b34a10ae14a042ee188a7306c952f28"
+    },
+    "document-history/homework/2018/HW1/verify_logic.py": {
+      "mode": "100644",
+      "sha": "cf442e806d36393be9c9590d6b5f590216ecb772"
+    },
+    "document-history/homework/2018/HW2/README.md": {
+      "mode": "100644",
+      "sha": "73799281a715ed8ab96bb01d16ecb93ee1780ed6"
+    },
+    "document-history/homework/2018/HW2/gate_capacitance.csv": {
+      "mode": "100644",
+      "sha": "90a7bf197407235f37f7ef9d74b41d8fc44439bd"
+    },
+    "document-history/homework/2018/HW2/mobility_examples.csv": {
+      "mode": "100644",
+      "sha": "6b692971493f0102d540867afbb440caa101cffb"
+    },
+    "document-history/homework/2018/HW2/q1_slew.sp": {
+      "mode": "100644",
+      "sha": "f197293aa1d494dee544616c778b900d7ba3b0d7"
+    },
+    "document-history/homework/2018/HW2/q1_slew_measurements.csv": {
+      "mode": "100644",
+      "sha": "e5d9be6d3b910176ef1746bb1f5f591d83493cdc"
+    },
+    "document-history/homework/2018/HW2/q2_pi_rc.sp": {
+      "mode": "100644",
+      "sha": "6ccd756001020bfe67ab4e60a54b7cea5cf28ba8"
+    },
+    "document-history/homework/2018/HW2/q2_pi_rc_measurements.csv": {
+      "mode": "100644",
+      "sha": "b8d764022f1664917b01bb4523e215431695205d"
+    },
+    "document-history/homework/2018/HW2/rc_checks.csv": {
+      "mode": "100644",
+      "sha": "6386e45eb872f00082b91d3cf63c41249d1e0fde"
+    },
+    "document-history/homework/2018/HW2/rc_expected.csv": {
+      "mode": "100644",
+      "sha": "85524b67f7fe5abab81194f856fc760f1bc2dc31"
+    },
+    "document-history/homework/2018/HW2/reproduce.py": {
+      "mode": "100644",
+      "sha": "3bc41a8d2cf00c20ab5fb0eda05eff2340a22b10"
+    },
+    "document-history/homework/2018/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "8b65640b011b0380b754baf86dfaf20a38421d66"
+    },
+    "document-history/homework/2018/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "0d279e8e69ed7bdc1274355d853579747d8152f0"
+    },
+    "document-history/homework/2018/HW2/validation.json": {
+      "mode": "100644",
+      "sha": "2799ee13ec12cb1c8974534d54281f113e6eea26"
+    },
+    "document-history/homework/2018/README.md": {
+      "mode": "100644",
+      "sha": "adf969c36ab8cd50bf5c21fbb826fd8be156699c"
+    },
+    "document-history/homework/2018/SOURCES.md": {
+      "mode": "100644",
+      "sha": "3e7447d96f28f5e83fb5a5ddeca7c5e311818e79"
+    },
+    "document-history/homework/2018/assignments/README.md": {
+      "mode": "100644",
+      "sha": "374bfa0c31619155d414b35e3ba2fa1f95159d71"
+    },
+    "document-history/homework/2018/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "a8b354946decfbe35b9c19ba128b416e2f59216b"
+    },
+    "document-history/homework/2018/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "2c0146f888e709bb19d48d792763a55cef7cf6a7"
+    },
+    "document-history/homework/2018/coverage.json": {
+      "mode": "100644",
+      "sha": "4592511b5d8299d4f321cf88752213d805b1db9d"
+    },
+    "document-history/homework/2018/sources.json": {
+      "mode": "100644",
+      "sha": "4d701c5a03d4b775f39174cbe72d42ca10b135a0"
+    },
+    "document-history/homework/2019/HW2/README.md": {
+      "mode": "100644",
+      "sha": "73799281a715ed8ab96bb01d16ecb93ee1780ed6"
+    },
+    "document-history/homework/2019/HW2/gate_capacitance.csv": {
+      "mode": "100644",
+      "sha": "90a7bf197407235f37f7ef9d74b41d8fc44439bd"
+    },
+    "document-history/homework/2019/HW2/mobility_examples.csv": {
+      "mode": "100644",
+      "sha": "6b692971493f0102d540867afbb440caa101cffb"
+    },
+    "document-history/homework/2019/HW2/q1_slew.sp": {
+      "mode": "100644",
+      "sha": "f197293aa1d494dee544616c778b900d7ba3b0d7"
+    },
+    "document-history/homework/2019/HW2/q1_slew_measurements.csv": {
+      "mode": "100644",
+      "sha": "e5d9be6d3b910176ef1746bb1f5f591d83493cdc"
+    },
+    "document-history/homework/2019/HW2/q2_pi_rc.sp": {
+      "mode": "100644",
+      "sha": "6ccd756001020bfe67ab4e60a54b7cea5cf28ba8"
+    },
+    "document-history/homework/2019/HW2/q2_pi_rc_measurements.csv": {
+      "mode": "100644",
+      "sha": "b8d764022f1664917b01bb4523e215431695205d"
+    },
+    "document-history/homework/2019/HW2/rc_checks.csv": {
+      "mode": "100644",
+      "sha": "6386e45eb872f00082b91d3cf63c41249d1e0fde"
+    },
+    "document-history/homework/2019/HW2/rc_expected.csv": {
+      "mode": "100644",
+      "sha": "85524b67f7fe5abab81194f856fc760f1bc2dc31"
+    },
+    "document-history/homework/2019/HW2/reproduce.py": {
+      "mode": "100644",
+      "sha": "3bc41a8d2cf00c20ab5fb0eda05eff2340a22b10"
+    },
+    "document-history/homework/2019/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "5a5515b1756540c76c8a90040d70444043e146ea"
+    },
+    "document-history/homework/2019/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "9aec54e62a51ee3500f62f1793d1a38912049d31"
+    },
+    "document-history/homework/2019/HW2/validation.json": {
+      "mode": "100644",
+      "sha": "2799ee13ec12cb1c8974534d54281f113e6eea26"
+    },
+    "document-history/homework/2019/README.md": {
+      "mode": "100644",
+      "sha": "3d191b37c785afbf00f8baa4e2dd03c2a7d38158"
+    },
+    "document-history/homework/2019/SOURCES.md": {
+      "mode": "100644",
+      "sha": "3fb8a9ec51f3b664b7341b0bbdf95adb2e69f7ea"
+    },
+    "document-history/homework/2019/assignments/README.md": {
+      "mode": "100644",
+      "sha": "9ba449b6b54e34156405166db2c25d77b8a60934"
+    },
+    "document-history/homework/2019/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "eeb795fa278a965d22618d428c9e93b67df4a830"
+    },
+    "document-history/homework/2019/coverage.json": {
+      "mode": "100644",
+      "sha": "04ea72f1343dd6c3e85e00189b9f52dcb29bc26f"
+    },
+    "document-history/homework/2019/sources.json": {
+      "mode": "100644",
+      "sha": "0b17ef2982352fc00662496d303a00eb5ac06120"
+    },
+    "document-history/homework/2020/HW1/README.md": {
+      "mode": "100644",
+      "sha": "7394668c48f529856ab05a3044ddf957f5755052"
+    },
+    "document-history/homework/2020/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "11538043b3f0aa048fbca030bf5ccddbdae9a314"
+    },
+    "document-history/homework/2020/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "60088ffff10d3cb8b9e652a5ecce104dd4e119ef"
+    },
+    "document-history/homework/2020/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "445246b21a0c265dba2e662857e9ac1b79756688"
+    },
+    "document-history/homework/2020/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "a53be243cbc065e74548bd10bbe1c6e51fadcfe1"
+    },
+    "document-history/homework/2020/HW1/verify_logic.py": {
+      "mode": "100644",
+      "sha": "81bc32f07a9cf17401859686030734859dd901b8"
+    },
+    "document-history/homework/2020/HW2/README.md": {
+      "mode": "100644",
+      "sha": "57821d87298b8a332056143408a6a899de3a2e02"
+    },
+    "document-history/homework/2020/HW2/dualvt.sp": {
+      "mode": "100644",
+      "sha": "4a3b50f5e4c26ef9465513dc68c1cc69b6001412"
+    },
+    "document-history/homework/2020/HW2/q1_timing.csv": {
+      "mode": "100644",
+      "sha": "b08e7b2f9618518c845368697b8dc1f533e3d729"
+    },
+    "document-history/homework/2020/HW2/q1_truth.csv": {
+      "mode": "100644",
+      "sha": "0ebda525cdbeedcac676910f2771755cfbbc783e"
+    },
+    "document-history/homework/2020/HW2/q2_electrical.csv": {
+      "mode": "100644",
+      "sha": "e11f8a75b9edb6685eba137d3ed0c899c8821cd9"
+    },
+    "document-history/homework/2020/HW2/q2_testbench.sp": {
+      "mode": "100644",
+      "sha": "6cb58509734d7f1044fa761dc8e6dae5736f7db2"
+    },
+    "document-history/homework/2020/HW2/q2_truth.csv": {
+      "mode": "100644",
+      "sha": "a8596f737fb620d286f61f92af4a35304a7e6a39"
+    },
+    "document-history/homework/2020/HW2/q3_cic018_tt.sp": {
+      "mode": "100644",
+      "sha": "25839b3c786ea3d8263c6eee26c6423b4d8e4229"
+    },
+    "document-history/homework/2020/HW2/q3_cic018_tt_measurements.csv": {
+      "mode": "100644",
+      "sha": "8c8475403b373bb4ea6f1444857056643495d0da"
+    },
+    "document-history/homework/2020/HW2/q3_fixed_resistance.sp": {
+      "mode": "100644",
+      "sha": "4d1ff5d1c57e5975efa541a499cfe76354cc8911"
+    },
+    "document-history/homework/2020/HW2/q3_fixed_resistance_measurements.csv": {
+      "mode": "100644",
+      "sha": "dbb0c7d5aefbd186f5b329b8ee3e51a164732a0f"
+    },
+    "document-history/homework/2020/HW2/q3_ideal_expected.csv": {
+      "mode": "100644",
+      "sha": "9f9cb2ba56a57e91ee7e2a96d78a6aba35c80204"
+    },
+    "document-history/homework/2020/HW2/reproduce.py": {
+      "mode": "100644",
+      "sha": "7baffbfe5679e8a2766db5abe2983dcc73ccf216"
+    },
+    "document-history/homework/2020/HW2/rotator.sp": {
+      "mode": "100644",
+      "sha": "85e3bda838b1266a37b163272d1459a280ac47f0"
+    },
+    "document-history/homework/2020/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "22e11467525242f0523fee9e8932b40ca67729fd"
+    },
+    "document-history/homework/2020/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "30f7089fb2cb5f479b9361db7f961be713c8c6ff"
+    },
+    "document-history/homework/2020/HW2/validation.json": {
+      "mode": "100644",
+      "sha": "2c5f6573d382c809499feb9fa136cdcccc7548ac"
+    },
+    "document-history/homework/2020/HW3/README.md": {
+      "mode": "100644",
+      "sha": "0ce4ddd052b532bd8fe26a86388f2319a0c37573"
+    },
+    "document-history/homework/2020/HW3/and2.sp": {
+      "mode": "100644",
+      "sha": "cd89ea618ff0691d3def8e620caee44376f34a3e"
+    },
+    "document-history/homework/2020/HW3/convergence.csv": {
+      "mode": "100644",
+      "sha": "94328e2fe1d79e88035f655b2724343b9a9ca062"
+    },
+    "document-history/homework/2020/HW3/delays.csv": {
+      "mode": "100644",
+      "sha": "8a4b25317023a34c8ae835d6d7e185c38e752417"
+    },
+    "document-history/homework/2020/HW3/level_checks.csv": {
+      "mode": "100644",
+      "sha": "3ff09a5e46697b9149bb5eff879f6ec4e670f488"
+    },
+    "document-history/homework/2020/HW3/simulate.py": {
+      "mode": "100644",
+      "sha": "d487285d6884122769170367d3db71eab49c0c2a"
+    },
+    "document-history/homework/2020/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "1799be5febfcd2f801eb6a811272edd6490180bb"
+    },
+    "document-history/homework/2020/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "93b48eb5737740302e6743f007c9ee36f6723ea5"
+    },
+    "document-history/homework/2020/HW3/testbench.sp": {
+      "mode": "100644",
+      "sha": "3864b019c19c338d1b17d18df5935305504194a7"
+    },
+    "document-history/homework/2020/HW3/validation.json": {
+      "mode": "100644",
+      "sha": "00f284fa9f32acfcfc65dbd70447746edaf6d2bd"
+    },
+    "document-history/homework/2020/HW3/waveform_delay_checks.csv": {
+      "mode": "100644",
+      "sha": "30c0033c98a703d771f597fa55dc4daf8e870ecb"
+    },
+    "document-history/homework/2020/HW3/waveforms.csv": {
+      "mode": "100644",
+      "sha": "e41151570c15dd162c80c2d97caa567a88875cc0"
+    },
+    "document-history/homework/2020/HW3/worst_delays.csv": {
+      "mode": "100644",
+      "sha": "d0268ff049efa61e2d242cf7245c6b05dfa46748"
+    },
+    "document-history/homework/2020/HW4/README.md": {
+      "mode": "100644",
+      "sha": "bd9e695526829e2fa0718eaa7e2eaf5398179bd8"
+    },
+    "document-history/homework/2020/HW4/and2.sp": {
+      "mode": "100644",
+      "sha": "cd89ea618ff0691d3def8e620caee44376f34a3e"
+    },
+    "document-history/homework/2020/HW4/convergence.csv": {
+      "mode": "100644",
+      "sha": "94328e2fe1d79e88035f655b2724343b9a9ca062"
+    },
+    "document-history/homework/2020/HW4/delays.csv": {
+      "mode": "100644",
+      "sha": "8a4b25317023a34c8ae835d6d7e185c38e752417"
+    },
+    "document-history/homework/2020/HW4/level_checks.csv": {
+      "mode": "100644",
+      "sha": "3ff09a5e46697b9149bb5eff879f6ec4e670f488"
+    },
+    "document-history/homework/2020/HW4/provenance.json": {
+      "mode": "100644",
+      "sha": "77a560401d35496941def551bc8d73a5a1775682"
+    },
+    "document-history/homework/2020/HW4/simulate.py": {
+      "mode": "100644",
+      "sha": "d487285d6884122769170367d3db71eab49c0c2a"
+    },
+    "document-history/homework/2020/HW4/solution.pdf": {
+      "mode": "100644",
+      "sha": "56393308b588e799f0020a7709d01b84543b0dd3"
+    },
+    "document-history/homework/2020/HW4/solution.tex": {
+      "mode": "100644",
+      "sha": "96e58889ceef16ea4cbb9d6ea46e1771a4c7671d"
+    },
+    "document-history/homework/2020/HW4/testbench.sp": {
+      "mode": "100644",
+      "sha": "3864b019c19c338d1b17d18df5935305504194a7"
+    },
+    "document-history/homework/2020/HW4/validation.json": {
+      "mode": "100644",
+      "sha": "00f284fa9f32acfcfc65dbd70447746edaf6d2bd"
+    },
+    "document-history/homework/2020/HW4/waveforms.csv": {
+      "mode": "100644",
+      "sha": "e41151570c15dd162c80c2d97caa567a88875cc0"
+    },
+    "document-history/homework/2020/HW4/worst_delays.csv": {
+      "mode": "100644",
+      "sha": "d0268ff049efa61e2d242cf7245c6b05dfa46748"
+    },
+    "document-history/homework/2020/README.md": {
+      "mode": "100644",
+      "sha": "c31d3967cb3c50c9a213790b6af370de43f4cc5c"
+    },
+    "document-history/homework/2020/SOURCES.md": {
+      "mode": "100644",
+      "sha": "aaa34ea4560950bfa0057bc038f0e70914ebc45e"
+    },
+    "document-history/homework/2020/assignments/README.md": {
+      "mode": "100644",
+      "sha": "9f1e4134407a0e77404567a47408e1ff27bdc139"
+    },
+    "document-history/homework/2020/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "2675df8c9a07ff07b910c10202385fe8925de572"
+    },
+    "document-history/homework/2020/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "434f3d92ec005a2f7866da24a34dea1fe1724319"
+    },
+    "document-history/homework/2020/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "669233801139074cb52762e9905c81da37c152a3"
+    },
+    "document-history/homework/2020/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "5ef338013568cbd15f471e8bf91512ba2b5e50fc"
+    },
+    "document-history/homework/2020/assignments/homework4_version2.pdf": {
+      "mode": "100644",
+      "sha": "93773639307a87a4ec7b55c1f5172b9f1dead0c7"
+    },
+    "document-history/homework/2020/verification.json": {
+      "mode": "100644",
+      "sha": "72ba2d0c9e1505e68da8ecee8ba7a25103ac57b5"
+    },
+    "document-history/homework/2020/verify_results.py": {
+      "mode": "100644",
+      "sha": "53952b89e5519c493fb0da4fe39686982c263edb"
+    },
+    "document-history/homework/2021/HW1/README.md": {
+      "mode": "100644",
+      "sha": "83f2885a3de152121be3f47b940485e39eb78af3"
+    },
+    "document-history/homework/2021/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "07cf66a22ea91d07d8d1ceb0c57e6cca477a1153"
+    },
+    "document-history/homework/2021/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "6f9ff4b9660429c7afb4567db68c0443b555211f"
+    },
+    "document-history/homework/2021/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "5058ccb43cb70b61787d272dafeb47d1494b3602"
+    },
+    "document-history/homework/2021/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "1bf71a3a89e387deceed9924276b56ef52a5e4d3"
+    },
+    "document-history/homework/2021/HW1/verify_logic.py": {
+      "mode": "100644",
+      "sha": "cebf43ca10072d9734ee625431364389d1a91d6b"
+    },
+    "document-history/homework/2021/HW2/README.md": {
+      "mode": "100644",
+      "sha": "d9449382a338e0d0ad12506f9778655d56f3a1a2"
+    },
+    "document-history/homework/2021/HW2/constant_resistance.csv": {
+      "mode": "100644",
+      "sha": "161f703abd7868a0ee748513bb9532230dbea7f6"
+    },
+    "document-history/homework/2021/HW2/dual_vt_boolean_testbench.sp": {
+      "mode": "100644",
+      "sha": "6ab353901d80f16a2098f2c18e2d3e3a566e4f43"
+    },
+    "document-history/homework/2021/HW2/dual_vt_logic.sp": {
+      "mode": "100644",
+      "sha": "464b6735c06d41c8a6ae1408aff1957eb5826d4e"
+    },
+    "document-history/homework/2021/HW2/logic_verification.json": {
+      "mode": "100644",
+      "sha": "fb5ddb24c3f0ecee28b4702515742555d012e2ca"
+    },
+    "document-history/homework/2021/HW2/pseudo_nor.sp": {
+      "mode": "100644",
+      "sha": "19bccc7b54a48c7deae58ac45944c392fef4400a"
+    },
+    "document-history/homework/2021/HW2/pseudo_nor_testbench.sp": {
+      "mode": "100644",
+      "sha": "80812bb712a2c64d886d2b464a39c8c28ee1ea07"
+    },
+    "document-history/homework/2021/HW2/reproduce.py": {
+      "mode": "100644",
+      "sha": "b67d4bc38e4ff2e037dfac8b348e08440bdeb3ce"
+    },
+    "document-history/homework/2021/HW2/results/dual_vt_illustrative.csv": {
+      "mode": "100644",
+      "sha": "f7907e9c0b9fbc5301cfc9105d9611b1e8fae6f1"
+    },
+    "document-history/homework/2021/HW2/results/pseudo_nor_electrical.csv": {
+      "mode": "100644",
+      "sha": "7e1c98a0b7256d2cea0922fff9ad9499781ff627"
+    },
+    "document-history/homework/2021/HW2/results/rotator_electrical.csv": {
+      "mode": "100644",
+      "sha": "254b77862075e4c09dbdf52a5085db129c82645e"
+    },
+    "document-history/homework/2021/HW2/results/summary.json": {
+      "mode": "100644",
+      "sha": "f49e334a617ade0002657263be9efc1538f7adeb"
+    },
+    "document-history/homework/2021/HW2/rotator.sp": {
+      "mode": "100644",
+      "sha": "ca59eeda2649dd470667004833cbf499ca363d41"
+    },
+    "document-history/homework/2021/HW2/rotator_testbench.sp": {
+      "mode": "100644",
+      "sha": "4f52d90be7b7aeb4f947e59d9ca43b2f3d3f8867"
+    },
+    "document-history/homework/2021/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "f077d96740f12abe84065f7ae42f5b7367eaacce"
+    },
+    "document-history/homework/2021/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "219f2f150fcfa566bbd46796ab4db37589687a78"
+    },
+    "document-history/homework/2021/HW2/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "589d2acb410e2333bac4b4e7d0f41a60c29ddef0"
+    },
+    "document-history/homework/2021/HW2/verify_logic.py": {
+      "mode": "100644",
+      "sha": "fb0b349fb7f72bb3c0fa14f6adb70a66b9925b01"
+    },
+    "document-history/homework/2021/HW3/README.md": {
+      "mode": "100644",
+      "sha": "ee74e53d7903f093300779d667d29466f34aebe4"
+    },
+    "document-history/homework/2021/HW3/and2.sp": {
+      "mode": "100644",
+      "sha": "947bd3e46c5a0a77c0f9f49d836b438d50fa8ddf"
+    },
+    "document-history/homework/2021/HW3/reproduce.py": {
+      "mode": "100644",
+      "sha": "56e50a58b5e7a1c24380af67bec116cbe36a737d"
+    },
+    "document-history/homework/2021/HW3/results/delays.csv": {
+      "mode": "100644",
+      "sha": "61fd76f105c599b1e135d8c5d1d1ea20ed9c6f8c"
+    },
+    "document-history/homework/2021/HW3/results/logic_levels.csv": {
+      "mode": "100644",
+      "sha": "af754a1ab350c6f7add090ffff82e9b521a66f4f"
+    },
+    "document-history/homework/2021/HW3/results/summary.json": {
+      "mode": "100644",
+      "sha": "29a41232c52919a34b6ad5811e2f089c9eaf8370"
+    },
+    "document-history/homework/2021/HW3/results/waveforms.csv": {
+      "mode": "100644",
+      "sha": "ebcb8971f6e803e7ce12576f4d70fb940db86dd7"
+    },
+    "document-history/homework/2021/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "dccf2af6444775ebd9ba62f04819843f2ea837db"
+    },
+    "document-history/homework/2021/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "7412001ce854e0057ce1244eb67bd42b5b5c63da"
+    },
+    "document-history/homework/2021/HW3/testbench.sp": {
+      "mode": "100644",
+      "sha": "061d5cf3aaf9499dbc199ca54bb7861442a9e31e"
+    },
+    "document-history/homework/2021/HW4/README.md": {
+      "mode": "100644",
+      "sha": "0199ca83adf88ad1acfee24c90dcf58a0f45adfb"
+    },
+    "document-history/homework/2021/HW4/and2.sp": {
+      "mode": "100644",
+      "sha": "947bd3e46c5a0a77c0f9f49d836b438d50fa8ddf"
+    },
+    "document-history/homework/2021/HW4/reproduce.py": {
+      "mode": "100644",
+      "sha": "56e50a58b5e7a1c24380af67bec116cbe36a737d"
+    },
+    "document-history/homework/2021/HW4/results/delays.csv": {
+      "mode": "100644",
+      "sha": "61fd76f105c599b1e135d8c5d1d1ea20ed9c6f8c"
+    },
+    "document-history/homework/2021/HW4/results/logic_levels.csv": {
+      "mode": "100644",
+      "sha": "af754a1ab350c6f7add090ffff82e9b521a66f4f"
+    },
+    "document-history/homework/2021/HW4/results/summary.json": {
+      "mode": "100644",
+      "sha": "29a41232c52919a34b6ad5811e2f089c9eaf8370"
+    },
+    "document-history/homework/2021/HW4/results/waveforms.csv": {
+      "mode": "100644",
+      "sha": "ebcb8971f6e803e7ce12576f4d70fb940db86dd7"
+    },
+    "document-history/homework/2021/HW4/solution.pdf": {
+      "mode": "100644",
+      "sha": "78cdf9d2797cd9a6d408eabfaaeaf58b09fe8e88"
+    },
+    "document-history/homework/2021/HW4/solution.tex": {
+      "mode": "100644",
+      "sha": "3477e6515a3e39bf946d62dc9ba0770e1e894519"
+    },
+    "document-history/homework/2021/HW4/testbench.sp": {
+      "mode": "100644",
+      "sha": "061d5cf3aaf9499dbc199ca54bb7861442a9e31e"
+    },
+    "document-history/homework/2021/README.md": {
+      "mode": "100644",
+      "sha": "306f8ac2695741faf0319342b2e15ea45ba97a7d"
+    },
+    "document-history/homework/2021/SOURCES.md": {
+      "mode": "100644",
+      "sha": "ac8fe994c325e29de4df40d09433459029f527dc"
+    },
+    "document-history/homework/2021/assignments/README.md": {
+      "mode": "100644",
+      "sha": "c53f0754daacb0431bd33ce0e60c60cb853e3ce0"
+    },
+    "document-history/homework/2021/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "77e218a409459799ef8dd495ed7fd9ca914b5263"
+    },
+    "document-history/homework/2021/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "e4766e2aea4172488e099ff6d0424ac9d853a9e9"
+    },
+    "document-history/homework/2021/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "60e9882312194bb267a16686efa98f3236bc0991"
+    },
+    "document-history/homework/2021/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "2b5b6a5ca2caeee3697d4d0ba2ce6a193a904934"
+    },
+    "document-history/homework/2023/HW1/README.md": {
+      "mode": "100644",
+      "sha": "eb00028dd7ed21aae51cbfc3c6f0c8f9fcf68af1"
+    },
+    "document-history/homework/2023/HW1/REFERENCE_COMPARISON.md": {
+      "mode": "100644",
+      "sha": "4c9a1fd20b9c2ab6767fd17db72206eb4845d170"
+    },
+    "document-history/homework/2023/HW1/check_logic.py": {
+      "mode": "100644",
+      "sha": "e066466a823f793a8dcb5f54f4a7bd6be0b8cb0a"
+    },
+    "document-history/homework/2023/HW1/circuits.json": {
+      "mode": "100644",
+      "sha": "5d6e368b91cfc3751f90798fd0e2280628516029"
+    },
+    "document-history/homework/2023/HW1/illegal_controls.csv": {
+      "mode": "100644",
+      "sha": "f9fa4cb4d99a75d8a959ba0e5d7ef3f5e031e4d0"
+    },
+    "document-history/homework/2023/HW1/mux_connectivity.csv": {
+      "mode": "100644",
+      "sha": "95894c65e4d47f6f5de8f0a45cf7396b8f62a47b"
+    },
+    "document-history/homework/2023/HW1/solution.pdf": {
+      "mode": "100644",
+      "sha": "8a74229f5c1a59c8d62ea494a285b2d730777596"
+    },
+    "document-history/homework/2023/HW1/solution.tex": {
+      "mode": "100644",
+      "sha": "fd920ea065ac7e8dfc5cef529e06cf8b7b5952d0"
+    },
+    "document-history/homework/2023/HW1/sources.json": {
+      "mode": "100644",
+      "sha": "5e0b5b00d77dce102160d89b2261f3a71e7a19d1"
+    },
+    "document-history/homework/2023/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "9d7d0027d1a3af5b686844112b8378a238374f13"
+    },
+    "document-history/homework/2023/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "d97a9df31b488b71b3703f906d62f2457dbb3c7c"
+    },
+    "document-history/homework/2023/HW2/README.md": {
+      "mode": "100644",
+      "sha": "89b0e698b4acb06083cfbe7205265f0ee3a1d24a"
+    },
+    "document-history/homework/2023/HW2/logic.csv": {
+      "mode": "100644",
+      "sha": "4605f60d17f793d1701c6e79f31326c97b1828b8"
+    },
+    "document-history/homework/2023/HW2/q2_retention.sp": {
+      "mode": "100644",
+      "sha": "88ec0c6c71806923b66150d9d1677f0a48fa4ba9"
+    },
+    "document-history/homework/2023/HW2/q2_retention_measurements.csv": {
+      "mode": "100644",
+      "sha": "448682aeb20130bf41694ba043cfe18c20bd6a51"
+    },
+    "document-history/homework/2023/HW2/q3_cic018.sp": {
+      "mode": "100644",
+      "sha": "f9fa91badafd8840617e8dd2c5ef3f0ec51ffd58"
+    },
+    "document-history/homework/2023/HW2/q3_cic018_measurements.csv": {
+      "mode": "100644",
+      "sha": "b1e944c0af12b6d9dcda71ee78a491ec76cb11cc"
+    },
+    "document-history/homework/2023/HW2/q3_resistance.sp": {
+      "mode": "100644",
+      "sha": "baa2ffa9083873e9d8e4654b9bdd97d082f508a1"
+    },
+    "document-history/homework/2023/HW2/q3_resistance_measurements.csv": {
+      "mode": "100644",
+      "sha": "c0b43502063f06500b0b66c32c40af42622206f5"
+    },
+    "document-history/homework/2023/HW2/reproduce.py": {
+      "mode": "100644",
+      "sha": "76dfd13e0ac20c63e1e925b57141e930722282bb"
+    },
+    "document-history/homework/2023/HW2/sizing.csv": {
+      "mode": "100644",
+      "sha": "64c2b24737d0366e57c897e6b38b762e925e8c6a"
+    },
+    "document-history/homework/2023/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "fb24fcc6a5b81ed2ca27960a9ec15d568c410cf7"
+    },
+    "document-history/homework/2023/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "314355c5f536e5f6886502d4df308226295e630d"
+    },
+    "document-history/homework/2023/HW2/validation.json": {
+      "mode": "100644",
+      "sha": "f17f1639f820dd7e1182899154ee07e7694be0f9"
+    },
+    "document-history/homework/2023/HW3/README.md": {
+      "mode": "100644",
+      "sha": "87f9253da62d279e57d0513c1cd67cfe6d184394"
+    },
+    "document-history/homework/2023/HW3/characterize.sp": {
+      "mode": "100644",
+      "sha": "40569279e72cc028e18dd47295ee7db16b3f1c47"
+    },
+    "document-history/homework/2023/HW3/rca.sp": {
+      "mode": "100644",
+      "sha": "e9250fac4cf5c42f67fa8b1a637d149bcf74bfd7"
+    },
+    "document-history/homework/2023/HW3/refine_worst.py": {
+      "mode": "100644",
+      "sha": "050738338a6b6d609b4dc51840a663a016c2bc31"
+    },
+    "document-history/homework/2023/HW3/reproduce.py": {
+      "mode": "100644",
+      "sha": "42f194a8ee9092613758c0d2ffcfab5b1f56f3a5"
+    },
+    "document-history/homework/2023/HW3/results/delays.csv": {
+      "mode": "100644",
+      "sha": "595f7215eaad2896b54748975dbaac0ff4998563"
+    },
+    "document-history/homework/2023/HW3/results/exhaustive_128.csv": {
+      "mode": "100644",
+      "sha": "b129c740e76b8fa2104cb6c0ee8cdc8fc0b6bd58"
+    },
+    "document-history/homework/2023/HW3/results/logic_verification.json": {
+      "mode": "100644",
+      "sha": "90ff1a0cba8adf8f74557a0672a9c7069f070722"
+    },
+    "document-history/homework/2023/HW3/results/refinement.json": {
+      "mode": "100644",
+      "sha": "0dfc87fa197f53ecf18e268424af80e88dba12d2"
+    },
+    "document-history/homework/2023/HW3/results/summary.json": {
+      "mode": "100644",
+      "sha": "badfdaf90c2f4813cda64686049282c7bd3ffad0"
+    },
+    "document-history/homework/2023/HW3/results/transitions.csv": {
+      "mode": "100644",
+      "sha": "8b9a1a74f4525a028e427c32418621bdf1039f17"
+    },
+    "document-history/homework/2023/HW3/results/worst_transition.png": {
+      "mode": "100644",
+      "sha": "1893d386bb58079afeda991d85bea564bf79805a"
+    },
+    "document-history/homework/2023/HW3/results/worst_transition_waveform.csv": {
+      "mode": "100644",
+      "sha": "20db3d970c1ade27a8aebc5ff4380c9eefd1bba4"
+    },
+    "document-history/homework/2023/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "90cdae9ef2bc65f10db576e2c8b9eac603bea0a7"
+    },
+    "document-history/homework/2023/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "b557b61684b9c0c88ad6d74bef6f8a210e3fadf4"
+    },
+    "document-history/homework/2023/HW3/testbench.sp": {
+      "mode": "100644",
+      "sha": "d44baba7c1a7b1ab0df80f2880a9794390d94d2d"
+    },
+    "document-history/homework/2023/HW3/verify_logic.py": {
+      "mode": "100644",
+      "sha": "fbad82ffc7118c5747b052aa260405a872c90784"
+    },
+    "document-history/homework/2023/HW4/README.md": {
+      "mode": "100644",
+      "sha": "5fa276c61ecdac6f87f5280e2a06bf8475875296"
+    },
+    "document-history/homework/2023/HW4/rca.sp": {
+      "mode": "100644",
+      "sha": "e9250fac4cf5c42f67fa8b1a637d149bcf74bfd7"
+    },
+    "document-history/homework/2023/HW4/reproduce.py": {
+      "mode": "100644",
+      "sha": "75dece6c2044ee0929e4895eab159290572a8cea"
+    },
+    "document-history/homework/2023/HW4/solution.pdf": {
+      "mode": "100644",
+      "sha": "2c6f08996a2c2110c3aea90604257e2eb8210525"
+    },
+    "document-history/homework/2023/HW4/solution.tex": {
+      "mode": "100644",
+      "sha": "50208d2a68282798fc1d89d3ddb75d542203cb96"
+    },
+    "document-history/homework/2023/HW4/testbench.sp": {
+      "mode": "100644",
+      "sha": "d44baba7c1a7b1ab0df80f2880a9794390d94d2d"
+    },
+    "document-history/homework/2023/HW4/validation.json": {
+      "mode": "100644",
+      "sha": "1e45e01cd4934738dd57a33b586273a25030b650"
+    },
+    "document-history/homework/2023/HW4/vectors.csv": {
+      "mode": "100644",
+      "sha": "4096c0aa9d0aad0163f2eaebe986004fbc2f47cf"
+    },
+    "document-history/homework/2023/README.md": {
+      "mode": "100644",
+      "sha": "efa7aeb74e8cc777fae9456f6792f6bc06371abd"
+    },
+    "document-history/homework/2023/SOURCES.md": {
+      "mode": "100644",
+      "sha": "bea3654d74b446865cb03e4de2edb2493bfc1038"
+    },
+    "document-history/homework/2023/assignments/README.md": {
+      "mode": "100644",
+      "sha": "118395992dc8e66b8f9f0155716037d25733d98f"
+    },
+    "document-history/homework/2023/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "04a54c06ba1f1e42031f99aeeb1664f6c88fc186"
+    },
+    "document-history/homework/2023/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "193260de4aa48209a50b5018c199e8e3d86be189"
+    },
+    "document-history/homework/2023/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "a57b2e06dc65c01f0140a58189398b8bd49659a7"
+    },
+    "document-history/homework/2023/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "79a0ea0b962cafd738b252fec19e2d19a12fb6ae"
+    },
+    "document-history/homework/2023/reference_sources.json": {
+      "mode": "100644",
+      "sha": "8d7b4dba2ee803e167d0b498e410c4a2440854a6"
+    },
+    "document-history/homework/2024/HW1/README.md": {
+      "mode": "100644",
+      "sha": "69ecfcf6eebe162c66db46521d28fd132edafc4e"
+    },
+    "document-history/homework/2024/HW1/solutions.pdf": {
+      "mode": "100644",
+      "sha": "c04e662953159d48c65df70a35447ad63248716a"
+    },
+    "document-history/homework/2024/HW1/solutions.tex": {
+      "mode": "100644",
+      "sha": "7ebb80038538a5d88ae37ba8defc4be2046d181e"
+    },
+    "document-history/homework/2024/HW1/truth_tables.csv": {
+      "mode": "100644",
+      "sha": "28af0cf1fcf8de8b6212bc7c2b7254a6afde474b"
+    },
+    "document-history/homework/2024/HW1/verification.json": {
+      "mode": "100644",
+      "sha": "f060023f3bffab38d1fabe8470de3b8cf42ede6f"
+    },
+    "document-history/homework/2024/HW1/verify_logic.py": {
+      "mode": "100644",
+      "sha": "3ed8b6e39b869cf7aa9fa270d0f39419a60c45ea"
+    },
+    "document-history/homework/2024/HW2/README.md": {
+      "mode": "100644",
+      "sha": "891c3031c4d3c72a90a99ee8ce178fb06be6245a"
+    },
+    "document-history/homework/2024/HW2/analytic_expected.csv": {
+      "mode": "100644",
+      "sha": "f80dedc7cd9814a23e8e17a159dc040488ceb961"
+    },
+    "document-history/homework/2024/HW2/q1_constant_leakage.sp": {
+      "mode": "100644",
+      "sha": "e33fce540acaa68e7a64d5083deb0f75de89d5c6"
+    },
+    "document-history/homework/2024/HW2/q1_constant_leakage_measurements.csv": {
+      "mode": "100644",
+      "sha": "4fc77195d680299c090e85e92ca632bd5ed0b542"
+    },
+    "document-history/homework/2024/HW2/q2_cic018_tt.sp": {
+      "mode": "100644",
+      "sha": "24662a9e49c1394202c9dc968aac3022db81b1a8"
+    },
+    "document-history/homework/2024/HW2/q2_cic018_tt_measurements.csv": {
+      "mode": "100644",
+      "sha": "38f67ebb45068d9afc7e2fb30f2c703ac848e420"
+    },
+    "document-history/homework/2024/HW2/q2_constant_resistance.sp": {
+      "mode": "100644",
+      "sha": "71bb1ff916a1c226134b36122370f29c2b237e73"
+    },
+    "document-history/homework/2024/HW2/q2_constant_resistance_measurements.csv": {
+      "mode": "100644",
+      "sha": "50314a1558ed24c81580f0be5f9b05a2021b9eea"
+    },
+    "document-history/homework/2024/HW2/reproduce.py": {
+      "mode": "100644",
+      "sha": "2569ee1b5202f35462fe2f16dff9b7ad4fc6ea28"
+    },
+    "document-history/homework/2024/HW2/simulation_status.csv": {
+      "mode": "100644",
+      "sha": "b0b199c7936567505bc23bd6df401aa1a7222096"
+    },
+    "document-history/homework/2024/HW2/solution.pdf": {
+      "mode": "100644",
+      "sha": "56238dcfd0127430ef2b2c2500f4c10591c86347"
+    },
+    "document-history/homework/2024/HW2/solution.tex": {
+      "mode": "100644",
+      "sha": "13faf32dfaae8578f1ff432498b0de0475c2acc3"
+    },
+    "document-history/homework/2024/HW2/validate_results.py": {
+      "mode": "100644",
+      "sha": "3f5c039843ad4037921942c6d0f17eb6d71f89be"
+    },
+    "document-history/homework/2024/HW2/validation_checks.csv": {
+      "mode": "100644",
+      "sha": "d9a834f82df10e77149f4c92730bd7f8633a7bca"
+    },
+    "document-history/homework/2024/HW2/validation_summary.json": {
+      "mode": "100644",
+      "sha": "525f591bdbd08caed79393b83a6b9c36b514ab8c"
+    },
+    "document-history/homework/2024/HW3/README.md": {
+      "mode": "100644",
+      "sha": "3677c691ed5e72c4cf2df2019cca0c9f30f06e0f"
+    },
+    "document-history/homework/2024/HW3/four_bit_multbased_adder.sp": {
+      "mode": "100644",
+      "sha": "366b72a2346ef0ea1648c9655d5f2b40a405f301"
+    },
+    "document-history/homework/2024/HW3/results/candidates.csv": {
+      "mode": "100644",
+      "sha": "2566cfc02bd64f29197c01033954751a1d58ead0"
+    },
+    "document-history/homework/2024/HW3/results/delays.csv": {
+      "mode": "100644",
+      "sha": "5ede77847238126365779e6325cf534aed332536"
+    },
+    "document-history/homework/2024/HW3/results/exhaustive_512.csv": {
+      "mode": "100644",
+      "sha": "90243cee2e4e30734d6ac9d232bcd96e00046705"
+    },
+    "document-history/homework/2024/HW3/results/instructor_exact.json": {
+      "mode": "100644",
+      "sha": "889ff566d76f92d7bbc1eb07340aa06208f46c70"
+    },
+    "document-history/homework/2024/HW3/results/settling.csv": {
+      "mode": "100644",
+      "sha": "55710301f34dbca5565270e0b4873d52a14aaa7f"
+    },
+    "document-history/homework/2024/HW3/results/summary.json": {
+      "mode": "100644",
+      "sha": "4a46ef7103d1216f6ce6ed9829fbe905cc78cb3a"
+    },
+    "document-history/homework/2024/HW3/results/vectors.csv": {
+      "mode": "100644",
+      "sha": "f765ff2b9c50e6f2ec13eb13c6f0126cbb200b8b"
+    },
+    "document-history/homework/2024/HW3/results/waveform.csv": {
+      "mode": "100644",
+      "sha": "a109ad435bccdd443272ed1d80c98d2c2492417c"
+    },
+    "document-history/homework/2024/HW3/simulate.py": {
+      "mode": "100644",
+      "sha": "a00f2cd7483c2d09468dc5ed9f76542bb46b5c34"
+    },
+    "document-history/homework/2024/HW3/solution.pdf": {
+      "mode": "100644",
+      "sha": "cc169bfcedeaa8d88b59ae24d6a27d917ed1613c"
+    },
+    "document-history/homework/2024/HW3/solution.tex": {
+      "mode": "100644",
+      "sha": "0253ece0bd2cfbd10fa9ca9af6682fb7e0f4427e"
+    },
+    "document-history/homework/2024/HW3/testbench.sp": {
+      "mode": "100644",
+      "sha": "b98adbdea251369e360384ee5f2151544476d580"
+    },
+    "document-history/homework/2024/HW4/README.md": {
+      "mode": "100644",
+      "sha": "70d7125c69dcc5e93a7b7a37118d6f59dea0b00e"
+    },
+    "document-history/homework/2024/HW4/four_bit_multbased_adder.sp": {
+      "mode": "100644",
+      "sha": "366b72a2346ef0ea1648c9655d5f2b40a405f301"
+    },
+    "document-history/homework/2024/HW4/reproduce.py": {
+      "mode": "100644",
+      "sha": "a4c7cb48315437808d47cf10f3bcc558ce11496c"
+    },
+    "document-history/homework/2024/HW4/solution.pdf": {
+      "mode": "100644",
+      "sha": "e6e52a915fc3e14fb1b46c85f13ab8a0a2ab8aaf"
+    },
+    "document-history/homework/2024/HW4/solution.tex": {
+      "mode": "100644",
+      "sha": "fbc0710f8dff905e96d6bea3d91d0b2ad9285336"
+    },
+    "document-history/homework/2024/HW4/statistics.json": {
+      "mode": "100644",
+      "sha": "e9d5a98a4fb4f706cbc777af77bcadda2ed59cd0"
+    },
+    "document-history/homework/2024/HW4/testbench.sp": {
+      "mode": "100644",
+      "sha": "39cd750247a6e1e3986945f575ddcd18655dc64b"
+    },
+    "document-history/homework/2024/HW4/vectors.csv": {
+      "mode": "100644",
+      "sha": "d6edd65cb9aa2939f3c9c1ebff6a15f1cf8a4d49"
+    },
+    "document-history/homework/2024/README.md": {
+      "mode": "100644",
+      "sha": "811a585ceeb6f03615bb871d7aac1efc297e066a"
+    },
+    "document-history/homework/2024/assignments/README.md": {
+      "mode": "100644",
+      "sha": "5da9d73ac6d98b2e576cc41870cf8b9b9ab4b2df"
+    },
+    "document-history/homework/2024/assignments/homework1.pdf": {
+      "mode": "100644",
+      "sha": "488100b5e25237156fe9243c9bc47140844bb5ba"
+    },
+    "document-history/homework/2024/assignments/homework2.pdf": {
+      "mode": "100644",
+      "sha": "9d21fea837f66bfe87a5a9dde3006b981cc3add4"
+    },
+    "document-history/homework/2024/assignments/homework3.pdf": {
+      "mode": "100644",
+      "sha": "caf15cb72f7ffef9fd5a4694dda407546e7e1c0d"
+    },
+    "document-history/homework/2024/assignments/homework4.pdf": {
+      "mode": "100644",
+      "sha": "aa68d28194baf4d105d43652f4cc393444f23452"
+    },
+    "document-history/homework/2024/assignments/hw3_clarifications.en.md": {
+      "mode": "100644",
+      "sha": "91b440d3c56bce06502c1ed6a361805bd374ce53"
+    },
+    "document-history/homework/2024/assignments/hw4_clarifications.en.md": {
+      "mode": "100644",
+      "sha": "3d49b516fdeb469dbffe2db494685012c4d9ed80"
+    },
+    "document-history/homework/COVERAGE.json": {
+      "mode": "100644",
+      "sha": "ef3586b1d0ecf77eae21cd8d4491dd00310fc1f9"
+    },
+    "document-history/homework/PROMPTS.json": {
+      "mode": "100644",
+      "sha": "953183a8260b91a9f4ecbf75300409f007df2721"
+    },
+    "document-history/homework/README.md": {
+      "mode": "100644",
+      "sha": "904cfdff2dbd5cc90851fc6721f1a23458a081f2"
+    },
+    "document-history/homework/SOURCES.md": {
+      "mode": "100644",
+      "sha": "de06b2635aa43fba2fb0123f5c5bc6b3c297913b"
+    },
+    "document-history/verify_exams.py": {
+      "mode": "100644",
+      "sha": "b04edfae952692f751a773bb2b72d3cea81331ff"
+    },
+    "document-history/verify_multi_year.py": {
+      "mode": "100644",
+      "sha": "cdc67408cd49637bc9c57efb9766fe5a2248c974"
+    },
+    "document-history/verify_older_years.py": {
+      "mode": "100644",
+      "sha": "4ca114e58dfc11e7d20684d060aef005e6916b1d"
+    },
+    "document-history/verify_package.py": {
+      "mode": "100644",
+      "sha": "ae450e61c4512562c87728b25e36cbc6285ad40a"
+    }
+  },
+  "original_assets": [
+    {
+      "path": "originals/homework/2013/assignments/homework1.pdf",
+      "bytes": 15688,
+      "sha256": "f10c5c107f247cd233de54855e0bc76f024301480bba97a1a4588094be80baac",
+      "git_blob": "afbba58f53c2793e7fb82bec46b8f16784dd5316"
+    },
+    {
+      "path": "originals/homework/2013/assignments/homework2.pdf",
+      "bytes": 19678,
+      "sha256": "9cf70011bf1523685cfa989b216da691d817a3c6dd9621c53e98d01644fe30fc",
+      "git_blob": "acfa613931225c137158342d88aaac849d0f5b18"
+    },
+    {
+      "path": "originals/homework/2013/assignments/homework3.pdf",
+      "bytes": 9098,
+      "sha256": "2c1b3d1be71fda40ecd3ffb830fa35707c2bb3f0028b71b8019ca15149163a82",
+      "git_blob": "33b6e9d09c4f4095a008bf9b7812297da260639c"
+    },
+    {
+      "path": "originals/homework/2015/assignments/homework1.pdf",
+      "bytes": 15688,
+      "sha256": "5f12fd2ce7f66b02adf4eb6aa2897c3bb1b9843c1359583ffe166ce6c5431f63",
+      "git_blob": "1af460578d412249812972779741ada88c565108"
+    },
+    {
+      "path": "originals/homework/2015/assignments/homework2.pdf",
+      "bytes": 19677,
+      "sha256": "50486dbce58ff01494e7e325ce140cf57545458d5416eb15aef1587b7cefb2cd",
+      "git_blob": "ec1168c30f71ea82c477bba7f773478a55d61663"
+    },
+    {
+      "path": "originals/homework/2015/assignments/homework3.pdf",
+      "bytes": 8769,
+      "sha256": "2e839750e3f5c44dab208db4689b14cee99f8d9203064d53372c5c3459203ece",
+      "git_blob": "7a80dd0b2430853b2ee8216a0e8e87e2735b99ca"
+    },
+    {
+      "path": "originals/homework/2015/assignments/homework4.pdf",
+      "bytes": 16200,
+      "sha256": "cb83588d255dc52cf7d226f16bdc2436ac570e907fcb9b8f211376b5daed4f72",
+      "git_blob": "64be4d7ac4bfa39bbab01bffd36830a13b1cc9a4"
+    },
+    {
+      "path": "originals/homework/2016/assignments/homework3.pdf",
+      "bytes": 8768,
+      "sha256": "6be83e172ba28cfe3bce6b97bcd101afd9c2480ba90714c27d70080bcdb2004a",
+      "git_blob": "4248dc3b804d0caf9993348a99b54fba52a529b8"
+    },
+    {
+      "path": "originals/homework/2017/assignments/homework1.pdf",
+      "bytes": 19891,
+      "sha256": "9d6dec85a4fd1a9de6c045c8447e61ce88d09a270cc89c39612a9b042b8b29be",
+      "git_blob": "1673f3cacada3183ec45c1a0e511617a6b78d4f8"
+    },
+    {
+      "path": "originals/homework/2017/assignments/homework2.pdf",
+      "bytes": 16286,
+      "sha256": "9cd5d02fda2b755a2f501d47867c29bd7f63a8a2527ebfdd7527b105d4cffe6e",
+      "git_blob": "55fb267cda68beedb6270c9d08e4fc310d2fb45c"
+    },
+    {
+      "path": "originals/homework/2017/assignments/homework3.pdf",
+      "bytes": 8497,
+      "sha256": "04d3cd0cdee1fc2a0ca0488e16a0ff9b8154c67587d9fc734b5967adeaed1602",
+      "git_blob": "c52e20f5f84b3e456f71c53e9b4ababd35db3c88"
+    },
+    {
+      "path": "originals/homework/2017/assignments/homework4.pdf",
+      "bytes": 14253,
+      "sha256": "a8fe77fbc1c73087b71667d66801ab89703356e6b140d13a5dfd707ad432b84c",
+      "git_blob": "e0f3f1c717688372ee14ad2589b8f8a943738145"
+    },
+    {
+      "path": "originals/homework/2018/assignments/homework1.pdf",
+      "bytes": 19462,
+      "sha256": "a3b82c6a88e072396c8270edc137c507a3f53141cd92bb2aebc97fa8f29b6654",
+      "git_blob": "cdbc5ca77ffff804891f4af20920d5937e3548ed"
+    },
+    {
+      "path": "originals/homework/2018/assignments/homework2.pdf",
+      "bytes": 16773,
+      "sha256": "f070cd4e3876fc5cf558f4afb8cc92237169745ca30081cff12c6a593d412c87",
+      "git_blob": "b8317937ce182b160f093dcd665d10f9c6380168"
+    },
+    {
+      "path": "originals/homework/2019/assignments/homework2.pdf",
+      "bytes": 16659,
+      "sha256": "fba75f1a9985fd6bf7a9ec7a28015be7805625701f14fb49b1bc6bb1ea5dcfa6",
+      "git_blob": "9f354fe07a1cd832ab8dfbb50e8347422fc759fb"
+    },
+    {
+      "path": "originals/homework/2020/assignments/homework1.pdf",
+      "bytes": 15415,
+      "sha256": "20da1b86b10c0d6254af5deaecedaa53c2bcb526da554b9dc2f52ab5ce415d34",
+      "git_blob": "35290518111e1baf5bf3025e196f77c006156691"
+    },
+    {
+      "path": "originals/homework/2020/assignments/homework2.pdf",
+      "bytes": 14507,
+      "sha256": "dace54f8bb0e1f4af6f6470954720d8c5d3411e7806ba5ddbc54f3370cc63d19",
+      "git_blob": "b5eea87094dbf8cd05ed2d91594dd73d833592fb"
+    },
+    {
+      "path": "originals/homework/2020/assignments/homework3.pdf",
+      "bytes": 4739,
+      "sha256": "04dd7a61b676f76e5dd8523d6b959800582fdd0e7d8173cfe32493eeffffe860",
+      "git_blob": "e4c1a1857471ed2d6b65dc123c005cc5a2c2eb52"
+    },
+    {
+      "path": "originals/homework/2020/assignments/homework4.pdf",
+      "bytes": 11775,
+      "sha256": "ebada170c815ff3ff478370ffae6329c5abef1e8eb5d69777532162687f1f3d5",
+      "git_blob": "ff6227d08014a0024498a65a153a8c2740294921"
+    },
+    {
+      "path": "originals/homework/2020/assignments/homework4_version2.pdf",
+      "bytes": 11775,
+      "sha256": "ebada170c815ff3ff478370ffae6329c5abef1e8eb5d69777532162687f1f3d5",
+      "git_blob": "ff6227d08014a0024498a65a153a8c2740294921"
+    },
+    {
+      "path": "originals/homework/2021/assignments/homework1.pdf",
+      "bytes": 29459,
+      "sha256": "3de7e17b66b89624c86d8285d124e8185f0045d9f4b06bd51863d119c620f11d",
+      "git_blob": "044f0bf53635c33e3c4b6612e67cddc617aac772"
+    },
+    {
+      "path": "originals/homework/2021/assignments/homework2.pdf",
+      "bytes": 28106,
+      "sha256": "fc0bf6510726bd472dd5979de6781c646bcee3b26120a4fcc64bb19b18110034",
+      "git_blob": "41143803d7678ebe3bce8c18e12c30015c7f0fea"
+    },
+    {
+      "path": "originals/homework/2021/assignments/homework3.pdf",
+      "bytes": 11046,
+      "sha256": "c8b17f2d1ad3de1ed0e322393e5b3a7d6fd0bf9871b35d7b22734f82e66d4efd",
+      "git_blob": "7f23d7b0339a3c9fde699b9d229d73cf3a8f992e"
+    },
+    {
+      "path": "originals/homework/2021/assignments/homework4.pdf",
+      "bytes": 11797,
+      "sha256": "cb8b2f35e268cae534c830cd62567327c2b20e43ca3dbfabf10e3a70cc53f797",
+      "git_blob": "469f54378e3ccdf1b2fde17cbafa3da50a634bba"
+    },
+    {
+      "path": "originals/homework/2023/assignments/homework1.pdf",
+      "bytes": 21126,
+      "sha256": "88c4579e080f5ddfd5ddf8dfac48650e312c4a9da4d96e2de5ae56cc8a7a0068",
+      "git_blob": "e10efef248108eed62dca1d82f317bc3f350d388"
+    },
+    {
+      "path": "originals/homework/2023/assignments/homework2.pdf",
+      "bytes": 28906,
+      "sha256": "eb05a15cf127f2dc8cdac21b13631b785ecc6a7b7868b85e26f417184da797f0",
+      "git_blob": "44372823ad8c966fe986993ec75b4ed82239e240"
+    },
+    {
+      "path": "originals/homework/2023/assignments/homework3.pdf",
+      "bytes": 11663,
+      "sha256": "c600c7c7174bc1629ec44a9a48bbcfcea005b38c324e1a042dd5a9bb45081ac0",
+      "git_blob": "f2a81b4a02b4fcda35283240f53502e3e4c48a46"
+    },
+    {
+      "path": "originals/homework/2023/assignments/homework4.pdf",
+      "bytes": 9869,
+      "sha256": "72d8409bf4fef4ecc4d5a467e873425c2d276971c78f9db62e15581af5a90fc5",
+      "git_blob": "8a11e9028d0681ed819d97eba591a94b6fdfd297"
+    },
+    {
+      "path": "originals/homework/2024/assignments/homework1.pdf",
+      "bytes": 21093,
+      "sha256": "46ca699fd7660b0a9da924ee9f12d771425198bc6e0c9eabe992900ccc6577b3",
+      "git_blob": "ba50bdadc83081914054f9587e25c6ebec0d6bca"
+    },
+    {
+      "path": "originals/homework/2024/assignments/homework2.pdf",
+      "bytes": 21351,
+      "sha256": "537d0e739dd3f94bb076a65f78b2bc80a26716d4efeff517ee12774bc9c2d16d",
+      "git_blob": "edef42a559287e881a2a88dad3fc0212a34e6374"
+    },
+    {
+      "path": "originals/homework/2024/assignments/homework3.pdf",
+      "bytes": 24718,
+      "sha256": "7990d0b7a895468af2392c27b8215b9476e7c63951ab8fbf6a5c87568f94ee84",
+      "git_blob": "c635880aef7eb99dc65a1d9bccf3414c2b9c8541"
+    },
+    {
+      "path": "originals/homework/2024/assignments/homework4.pdf",
+      "bytes": 10218,
+      "sha256": "84b51b2b635ef4ea8be605189913eaf65a59a71e2146cb1de8bf58947995e59c",
+      "git_blob": "07b7933709ae4b7df1d0f4eea685f27882a0f148"
+    },
+    {
+      "path": "originals/homework/2024/assignments/hw3_clarifications.txt",
+      "bytes": 1248,
+      "sha256": "46f4111c311ffb1c2e68c9a3fe25bccb66340c32763d1d0738a182d6a60ec317",
+      "git_blob": "f80ffb5262f5e67c13eb842ad14ed1309589b4a8"
+    },
+    {
+      "path": "originals/homework/2024/assignments/hw3_instructor_testbench.sp",
+      "bytes": 950,
+      "sha256": "17b510dd5d3042695e0f65eceb5ebbad0fb4052c04620e061969f4d9505da01a",
+      "git_blob": "6dfcfd60376fa54b4ad5562836d4b334bc79c35f"
+    },
+    {
+      "path": "originals/homework/2024/assignments/hw4_clarifications.txt",
+      "bytes": 1406,
+      "sha256": "2cc10ecb40acb5efbc702bca06aa353140d9c9a22407921b28558d4395a21b5b",
+      "git_blob": "fb0271a9a48abf5bd7dbb82f97fcd2696fda3eb3"
+    },
+    {
+      "path": "originals/exams/2007/final/original-exam.pdf",
+      "bytes": 66876,
+      "sha256": "53466dcc846963b6bbedf6906aec26502a0ed6b2c9b482d2533af01c3b21bcc8",
+      "git_blob": "7f47db882da94a6b57bfe400f7d9db1a9db2ebc3"
+    },
+    {
+      "path": "originals/exams/2007/midterm/original-exam.pdf",
+      "bytes": 34944,
+      "sha256": "a862db63343c6754fa87b0224ac68a9375c407681dab5af42535d7968016a263",
+      "git_blob": "d8ad2515420a627ce20a82d8ad6ec2d17a51ceb3"
+    },
+    {
+      "path": "originals/exams/2008/final/original-exam.pdf",
+      "bytes": 91973,
+      "sha256": "2160c74b82a8203483b2913649bc5e9abdeb147d5bda60880480f670572aae39",
+      "git_blob": "4bcd61ba35166b0a0bab2c7cbe2820c5a6eb34dc"
+    },
+    {
+      "path": "originals/exams/2008/midterm/original-exam.pdf",
+      "bytes": 68623,
+      "sha256": "10bca0b02b8e18257187eb633e95f48571f7e585878ae7fb609ba07b45de9a9a",
+      "git_blob": "15d6aa6234f595da07a4e553c744cd321fb60fac"
+    },
+    {
+      "path": "originals/exams/2009/final/original-exam.pdf",
+      "bytes": 23667,
+      "sha256": "8ad3ece107ccd8b61bfb11826fc669c6cbd3c9ba05c63400a130aff171d0ec14",
+      "git_blob": "a24850eeceb06880c15cb85a152d2fbb43952134"
+    },
+    {
+      "path": "originals/exams/2009/midterm/original-exam.pdf",
+      "bytes": 2096452,
+      "sha256": "394432f845fcd153d1a6b2357814543a0b6b4a35fff374fc67d51eea0130217f",
+      "git_blob": "018802ab7fd0dbcaa39d1848e3a4a6bb899d8eec"
+    },
+    {
+      "path": "originals/exams/2010/final/original-exam.pdf",
+      "bytes": 103257,
+      "sha256": "56b3561b04c10aab07d8e82392f238e336178bd20805fb53b836066216f42fe9",
+      "git_blob": "58c686bcacc963ab05182ebc3cd5ecb90f5db4b8"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-exam.pdf",
+      "bytes": 5403074,
+      "sha256": "4f25fc1325df3e39f26ba7b45f85e70eb3a5183ae9116d354d12e2071c095ce3",
+      "git_blob": "58fc77cf60ba4d02ccfef5761832c34b7db26977"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-pages/panel-1.jpg",
+      "bytes": 541042,
+      "sha256": "2098f8d5d8381f451715632933279cc9a7e2a5efc210265c22eb93e05813f50c",
+      "git_blob": "fc809e279ff10f480a54951a4f1df529476149b8"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-pages/panel-2.jpg",
+      "bytes": 968415,
+      "sha256": "d2ce204196b3f35cd52eadacf90e3ab65325192068ba6a46c02f16441cb400e6",
+      "git_blob": "bd4f61e746c29a6c23f0bfafa48680e2168a38ea"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-pages/panel-3.jpg",
+      "bytes": 897621,
+      "sha256": "7c1d4bef3c3faf049dbc5112b356a57366d4c97ffb0e3186e3304978f8834860",
+      "git_blob": "54be8facd5b63ad01e2d9bafc3afe635f2470038"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-pages/panel-4.jpg",
+      "bytes": 611629,
+      "sha256": "6b9777ff1318137a0415a7f8a0a077ec39ec7924dbfc456d49cdb9a73678209a",
+      "git_blob": "20c48baa277128774ee1f6fac1804134f728dd16"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-pages/panel-5.jpg",
+      "bytes": 855648,
+      "sha256": "553fc8511bbab36867f760b30cb8e27c277808c28b5cfefe1ff451fb452f515d",
+      "git_blob": "5cc43742954cb08449455364d0cc9f748b64e1a9"
+    },
+    {
+      "path": "originals/exams/2011/midterm/original-pages/panel-6.jpg",
+      "bytes": 444071,
+      "sha256": "ab9cc477b08049d41000d7f3479def550979a95f3fd483d5562061c213656c97",
+      "git_blob": "62e00387827ec9190176425829ab463f46539519"
+    },
+    {
+      "path": "originals/exams/2012/final/original-exam.pdf",
+      "bytes": 8291587,
+      "sha256": "878571215d0c1d077ddd8cf45e2e57f7f62170b81e2e3fb102c89dc9449276f1",
+      "git_blob": "fee7d5636c22ca31ccaab728fce45f48e63ccbe0"
+    },
+    {
+      "path": "originals/exams/2012/midterm/original-exam.pdf",
+      "bytes": 3184958,
+      "sha256": "ab0b76432345215a9d6ec9ea9c572f312cfba63ec610c61841a587b6fd9d5b76",
+      "git_blob": "2396ff9260e35105a8eb1a10830558df9d13647d"
+    },
+    {
+      "path": "originals/exams/2013/final/original-exam.pdf",
+      "bytes": 247965,
+      "sha256": "fc4c1e3a273938976e9cae395cb398925fbae64b102b6f7a445e75e6f46b6d2f",
+      "git_blob": "f111be724831c036959758a15ffae5bea168cf82"
+    },
+    {
+      "path": "originals/exams/2013/final/original-pages/page-1.jpg",
+      "bytes": 80665,
+      "sha256": "a3921af6a09b390b67a79691fdd542040c44a23e11bf444e5527f7418f60f16b",
+      "git_blob": "bd9695c6b1122886c137d02a73a0cd0b3939f11d"
+    },
+    {
+      "path": "originals/exams/2013/final/original-pages/page-2.jpg",
+      "bytes": 57958,
+      "sha256": "0987c1e4a2b9c93dee474f3519f05c129103df27da8a00fe67630df2da79dbff",
+      "git_blob": "82c23f269c5fc6760484a53a01dfd7b26390d57b"
+    },
+    {
+      "path": "originals/exams/2013/final/original-pages/page-3.jpg",
+      "bytes": 57841,
+      "sha256": "3efd43345200585975e89d1c6f69d957d313e0e09f2ea02651a94117912dcb01",
+      "git_blob": "f65cf4a54548551173f1fc1c9a884489f98f2d7d"
+    },
+    {
+      "path": "originals/exams/2016/final/original-exam.pdf",
+      "bytes": 178882,
+      "sha256": "c15769816ca3288bde8e47dfb49698eeb839db2755941d8fd3ec287b9026031f",
+      "git_blob": "4ee1d90de5c630eaa3a25289bd32f3170317c7d2"
+    },
+    {
+      "path": "originals/exams/2018/final/original-exam.pdf",
+      "bytes": 5536426,
+      "sha256": "6c8c6194e7e2d00cd74b98696e91832e7c4b535f08315b769225a5997600b81a",
+      "git_blob": "365966bb74c43eeab07a91e35a5344e591fdf506"
+    },
+    {
+      "path": "originals/exams/2021/final/original-exam.pdf",
+      "bytes": 1161566,
+      "sha256": "64ee54848424de59260ae7fb30a90b76fe119ac725bf398f29c86af053395ba0",
+      "git_blob": "8d65fa8808d3725d9a9810790f325c9aa432dcee"
+    },
+    {
+      "path": "originals/exams/2021/midterm/original-exam.pdf",
+      "bytes": 301923,
+      "sha256": "eeaf156caba79acb77ddd685f59472b75972fe761d88ab2a1492b6bf09a219ce",
+      "git_blob": "db6101c7adaee437715ddc0d7d8ab795036ebab6"
+    },
+    {
+      "path": "originals/exams/2022/midterm/original-exam.pdf",
+      "bytes": 797252,
+      "sha256": "d85b07949ed720b3837d5345ac7da59d038c89324d3ed0407d1bd0e91781bb50",
+      "git_blob": "7ab04a9b45d7d631bbc3f56d92ea7c58979b680e"
+    },
+    {
+      "path": "originals/exams/2023/final/original-exam.pdf",
+      "bytes": 574368,
+      "sha256": "0e367de4671f18321e4332d028b0c9c9e9a7a2aa6ef7741668e6bdaf34304971",
+      "git_blob": "ed0a9a3db2801defa217a0ad90d1bf3afa8bea53"
+    },
+    {
+      "path": "originals/exams/2023/midterm/original-exam.pdf",
+      "bytes": 82244,
+      "sha256": "f4f87411990863413a10caf6b744d3da887812bc8d7fd59847e8e30da6e1636e",
+      "git_blob": "2cb5cb569033746efa2ada14760f682a70565711"
+    },
+    {
+      "path": "originals/exams/2024/final/original-exam.pdf",
+      "bytes": 2338952,
+      "sha256": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170",
+      "git_blob": "69b27b31e7d85e420f4f1f5a7f8cfe2ea46aa6ce"
+    },
+    {
+      "path": "originals/exams/2024/midterm/original-exam.pdf",
+      "bytes": 1796939,
+      "sha256": "d891dedaa48694e323901d393bd4a8e50ae79595479bab72c2bea1bd81d5a9d5",
+      "git_blob": "972d3e70677fc70f0c9e8f16fb960d6520939580"
+    }
+  ],
+  "public_repository": {
+    "id": 1420192786,
+    "name": "handsomegary/ncu-intro-vlsi-homework-and-exam-solutions",
+    "private": false,
+    "head": "7fe8d299b9e21c03b04fea038f33098186af2efb"
+  }
+}

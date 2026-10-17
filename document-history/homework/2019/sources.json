@@ -1,0 +1,18 @@
+[
+  {
+    "source_file": "homework2.pdf",
+    "sha256": "fba75f1a9985fd6bf7a9ec7a28015be7805625701f14fb49b1bc6bb1ea5dcfa6"
+  },
+  {
+    "source_year": 2018,
+    "source_file": "HW2題目.pdf",
+    "sha256": "f070cd4e3876fc5cf558f4afb8cc92237169745ca30081cff12c6a593d412c87",
+    "role": "same-question cross-year reference"
+  },
+  {
+    "source_year": 2018,
+    "source_file": "HW2_SOL.pdf",
+    "sha256": "687c163bca7d18f8c333097a986028f8086b5801062b5e669e00ef56ddadec89",
+    "role": "same-question cross-year reference"
+  }
+]

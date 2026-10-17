@@ -1,0 +1,49 @@
+{
+  "year": 2007,
+  "exam": "final",
+  "printed_percentages": [
+    26,
+    10,
+    14,
+    20,
+    15,
+    10,
+    10
+  ],
+  "printed_total": 105,
+  "sources": [
+    {
+      "role": "authoritative_two_page_original",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "53466dcc846963b6bbedf6906aec26502a0ed6b2c9b482d2533af01c3b21bcc8"
+    },
+    {
+      "role": "ungraded_student_three_pages",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "16ca8da408a39a681e4d11b285ef78559d19df7a0a4a89cfec693c31def23b37"
+    },
+    {
+      "role": "ungraded_student_separate_sheet",
+      "path": "Private local source locator withheld; original provenance retained privately",
+      "sha256": "1eae3584cf83178fdace051f8c6568e294168298458acc6e0380706bca21a8e7"
+    }
+  ],
+  "notes": [
+    "Q4 duty cycle not supplied; evaluation-window bound and symbolic frequency are principal",
+    "Q5 full-expression complement requires explicit negative-output handling",
+    "Q7 separate minimum timing data absent",
+    "Source annotations are ungraded and do not override printed connections"
+  ],
+  "primary_references": [
+    {
+      "title": "NCU Introduction to VLSI Chapter 7: Sequential Circuits",
+      "url": "https://www.ee.ncu.edu.tw/jfli/public_html/VLSI/lecture/ch07.pdf",
+      "slide": 9,
+      "role": "qualitative fixed-feedback latch write-strength condition; original layout remains authoritative"
+    }
+  ],
+  "original_storage": "owner-only private repository",
+  "private_archive": "handsomegary/ncu-intro-vlsi-originals",
+  "private_original_path": "exams/2007/final/original-exam.pdf",
+  "source_locator_redacted": true
+}

@@ -1,0 +1,64 @@
+{
+  "year": 2024,
+  "exam": "final",
+  "source_filename": "Private source; original filename retained in the private SOURCE_INDEX.json",
+  "source_sha256": "58bc674c37ec690d99e39d5cccf66873ab8dc16ecd53e87eb893a429060fea6c",
+  "source_pages": 7,
+  "published_original_exam_pages": [
+    1,
+    2
+  ],
+  "local_reviewed_handwritten_answer_pages": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "source_partition": {
+    "partial_student_answer": [
+      3
+    ],
+    "complete_student_answer": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "original_exam_sha256": "2948a4a9f46be9634884a3805a6e633471627ff9f7dbb7690a9c7fc271126170",
+  "question_points": [
+    45,
+    5,
+    15,
+    11,
+    10,
+    24
+  ],
+  "question_1_part_points": [
+    6,
+    6,
+    6,
+    4,
+    6,
+    4,
+    4,
+    4,
+    5
+  ],
+  "printed_total_points": 110,
+  "transcription": "Original numbered questions, symbols, full complement bar and connections retained; photos redrawn as editable vectors and page spacing normalized. Incidental annotations excluded.",
+  "confirmed_user_decisions": {
+    "Q4": "Both classroom fixed-output-C convention and literal feedback-gate-capacitance limitation",
+    "Q6": "Both literal positive R4 capture-clock delay and adverse-skew classroom convention; preserve original diagram"
+  },
+  "process_model_required": false,
+  "prompt_page_content_sha256": [
+    "0037977a8cd362fa68ff2a779fecfe0b9adc316ec250f14acc9d5f00318cdbd0",
+    "0037977a8cd362fa68ff2a779fecfe0b9adc316ec250f14acc9d5f00318cdbd0"
+  ],
+  "original_storage": "owner-only private repository",
+  "private_archive": "handsomegary/ncu-intro-vlsi-originals",
+  "private_original_path": "exams/2024/final/original-exam.pdf",
+  "source_locator_redacted": true
+}
