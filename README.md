@@ -12,3 +12,7 @@
 [ARCHIVE_INDEX.json](ARCHIVE_INDEX.json) 記錄來源版本、檔案雜湊及原題驗證結果。原始資料索引位於 [originals/SOURCE_INDEX.json](originals/SOURCE_INDEX.json)；索引內的相對路徑以 `originals/` 為起點。
 
 公開的作業與考試題本、解答另由既有公開資料庫提供。本庫與完整版本歷史應維持 private，存取者僅為擁有者。
+
+## 整理方法
+
+[整理流程與重現方法](PROCESSING.md) 說明題目分類、PDF／電路重製、獨立推導、HSPICE、數值驗證，以及 TXT、PNG、JSON 等工作檔的用途與保留原則。
