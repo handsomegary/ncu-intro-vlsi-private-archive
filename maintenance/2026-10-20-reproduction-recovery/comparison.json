@@ -1,0 +1,477 @@
+{
+  "source_repo": "C:\\Users\\User\\Documents\\Codex\\2026-10-13\\c-users-user-downloads-i-introduction\\work\\github-audit-20261013\\ncu-intro-vlsi-homework-solutions",
+  "source_head": "7e5481daa3aaeec7be90ed0071d0ad219c598382",
+  "public_head": "2c9e530135369f50abebb2dd5562bda226452b7f",
+  "files": [
+    {
+      "source": ".gitignore",
+      "status": " M",
+      "target": ".gitignore",
+      "bytes": 395,
+      "source_sha256": "0f40ff0237a7cc28ecb14a4af5f16bd52ea8a60b7399d7fb0458df579b60248c",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "2013/HW3/reproduce.py",
+      "status": " M",
+      "target": "homework/2013/HW3/reproduce.py",
+      "bytes": 10711,
+      "source_sha256": "cfa2899ebe4a5e9ca58ff0620fb05866310c0718dba2a81fdbaf452b26ad3e21",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2013/README.md",
+      "status": " M",
+      "target": "homework/2013/README.md",
+      "bytes": 1330,
+      "source_sha256": "9f6d6431e876d27bc8bc51aa69148e0aa4c8f5685c44cd49ecfcafe922e2c2a2",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "2015/HW3/README.md",
+      "status": " M",
+      "target": "homework/2015/HW3/README.md",
+      "bytes": 706,
+      "source_sha256": "fb80f41a71e3f007b11ce525a5dfa6190ea550e4f8a4bbc413ad532a3a552f8e",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2015/HW3/reproduce.py",
+      "status": " M",
+      "target": "homework/2015/HW3/reproduce.py",
+      "bytes": 7720,
+      "source_sha256": "fca0ccd1390f1149c2b8ef9adc9db748c08e0ef72c8d44e46c801cde44aa4b27",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2015/HW4/README.md",
+      "status": " M",
+      "target": "homework/2015/HW4/README.md",
+      "bytes": 719,
+      "source_sha256": "b9e83570226975add350ce9ab41b56d6403bdd767d3c521b6d31a553e7762a34",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2015/HW4/reproduce.py",
+      "status": " M",
+      "target": "homework/2015/HW4/reproduce.py",
+      "bytes": 13704,
+      "source_sha256": "9f1f0204da91aa137d705fbc97f2b0609e778fc2930326df95b5e23b35b111c4",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2016/HW3/simulate_and.py",
+      "status": " M",
+      "target": "homework/2016/HW3/simulate_and.py",
+      "bytes": 6003,
+      "source_sha256": "cf3426fb48f2ec8f369ba5dc93dae10f27add16cfaaf106e7b67cfe9a32ee50e",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2016/HW3/simulate_power.py",
+      "status": " M",
+      "target": "homework/2016/HW3/simulate_power.py",
+      "bytes": 3680,
+      "source_sha256": "e964b814162a368a3ee824337c04dc2eafac131100d96db97ea1073e942648ba",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2017/HW3/simulate_and.py",
+      "status": " M",
+      "target": "homework/2017/HW3/simulate_and.py",
+      "bytes": 6003,
+      "source_sha256": "ed52ca0710845357a9f4c2ef0d6e30809c5476b0a3604fe94c2a7fa0d4218a78",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2017/HW3/simulate_power.py",
+      "status": " M",
+      "target": "homework/2017/HW3/simulate_power.py",
+      "bytes": 3680,
+      "source_sha256": "e964b814162a368a3ee824337c04dc2eafac131100d96db97ea1073e942648ba",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2017/HW4/reproduce.py",
+      "status": " M",
+      "target": "homework/2017/HW4/reproduce.py",
+      "bytes": 8721,
+      "source_sha256": "98aa3e46051213b1443fe9e6ad7ee8fed2f7cd0643e445c058fd9d2b0304a1fa",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2018/HW2/reproduce.py",
+      "status": " M",
+      "target": "homework/2018/HW2/reproduce.py",
+      "bytes": 6228,
+      "source_sha256": "9be5ca941eb1065508e5f8584322fbfcb76b6884128aa7451e6402f4c2849bc7",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2019/HW2/reproduce.py",
+      "status": " M",
+      "target": "homework/2019/HW2/reproduce.py",
+      "bytes": 6228,
+      "source_sha256": "9be5ca941eb1065508e5f8584322fbfcb76b6884128aa7451e6402f4c2849bc7",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2020/HW2/README.md",
+      "status": " M",
+      "target": "homework/2020/HW2/README.md",
+      "bytes": 758,
+      "source_sha256": "c579183b6f9558c3d42d9af8b27ea025205312d4be5fedc97a3d43886692b004",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2020/HW2/reproduce.py",
+      "status": " M",
+      "target": "homework/2020/HW2/reproduce.py",
+      "bytes": 8497,
+      "source_sha256": "4ff0c0418ed2e54f48978848c11a6f940ca32a6e994b01c0e727f3c274ce5e46",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2020/HW3/README.md",
+      "status": " M",
+      "target": "homework/2020/HW3/README.md",
+      "bytes": 776,
+      "source_sha256": "f7e3ec22ae4771a72942962697b8b9776acf44e0003fdff39e5bdb09bec58b93",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2020/HW3/simulate.py",
+      "status": " M",
+      "target": "homework/2020/HW3/simulate.py",
+      "bytes": 7730,
+      "source_sha256": "41ac355b41d6e83c4aba98939d11ecbc8c54c4f0fe6efe3ea54bf9796b28a347",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2020/HW4/README.md",
+      "status": " M",
+      "target": "homework/2020/HW4/README.md",
+      "bytes": 953,
+      "source_sha256": "131b074a93357cbc0e4ce54b40729aac7e457821ad693d1c561bfff53d572de9",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2020/HW4/simulate.py",
+      "status": " M",
+      "target": "homework/2020/HW4/simulate.py",
+      "bytes": 7730,
+      "source_sha256": "41ac355b41d6e83c4aba98939d11ecbc8c54c4f0fe6efe3ea54bf9796b28a347",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2021/HW2/reproduce.py",
+      "status": " M",
+      "target": "homework/2021/HW2/reproduce.py",
+      "bytes": 6155,
+      "source_sha256": "b1b635a4e20bca61a5250f71de3c614e94e754cf6e81ed3edf15029d7e6d4bc3",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2021/HW3/reproduce.py",
+      "status": " M",
+      "target": "homework/2021/HW3/reproduce.py",
+      "bytes": 5980,
+      "source_sha256": "22fd63c3aedcc7442a98a58723c6942bbb2ed7226f0c2988a5ea9d09e1b68755",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2021/HW4/reproduce.py",
+      "status": " M",
+      "target": "homework/2021/HW4/reproduce.py",
+      "bytes": 5980,
+      "source_sha256": "22fd63c3aedcc7442a98a58723c6942bbb2ed7226f0c2988a5ea9d09e1b68755",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2021/README.md",
+      "status": " M",
+      "target": "homework/2021/README.md",
+      "bytes": 1824,
+      "source_sha256": "7b980cb3deb13a2ea65c3b259a62362ca9043148c8829060d7cc80a960e1d495",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "2023/HW2/reproduce.py",
+      "status": " M",
+      "target": "homework/2023/HW2/reproduce.py",
+      "bytes": 3589,
+      "source_sha256": "88a3fcff831597f7daa4d7d12d1a13741f8d9f7a48623d535e3dabc85cd22e70",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2023/HW3/refine_worst.py",
+      "status": " M",
+      "target": "homework/2023/HW3/refine_worst.py",
+      "bytes": 9588,
+      "source_sha256": "41640dadac137bebbcda605cec581f14ad6a1b0ef16afdeeba5aa0ee87ffb1cd",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2023/HW3/reproduce.py",
+      "status": " M",
+      "target": "homework/2023/HW3/reproduce.py",
+      "bytes": 7197,
+      "source_sha256": "3805bdadb4e6654d6a8dbb0bf4e642a6028fa53e3d5b15833f4cdb8a86dd9ff2",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2023/HW4/reproduce.py",
+      "status": " M",
+      "target": "homework/2023/HW4/reproduce.py",
+      "bytes": 1906,
+      "source_sha256": "c689c70350d5d69fb2d1f71e2cc3c6c57c11219bcdc7189ecb284b2dd4fc44f2",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2023/README.md",
+      "status": " M",
+      "target": "homework/2023/README.md",
+      "bytes": 1460,
+      "source_sha256": "3f1be68e7e2c638666ce880c55792dc80bb9636bbc18c72bd7086372a0693712",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "2024/HW2/README.md",
+      "status": " M",
+      "target": "homework/2024/HW2/README.md",
+      "bytes": 7523,
+      "source_sha256": "2b70f3f925aeab7a54774ee5cf613a7517426cef2ab0de1b2a16d679ce9771e0",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2024/HW2/reproduce.py",
+      "status": " M",
+      "target": "homework/2024/HW2/reproduce.py",
+      "bytes": 5629,
+      "source_sha256": "ff2bc5f0626f4a1ab7671383f0b090e7a69729d35bdeb6b6b457ff258226f78e",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2024/HW3/simulate.py",
+      "status": " M",
+      "target": "homework/2024/HW3/simulate.py",
+      "bytes": 14783,
+      "source_sha256": "afa1453ce6f7898888fe13d22c4b66c48f63bff0513890f3bc650e56ed7126f8",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2024/HW4/reproduce.py",
+      "status": " M",
+      "target": "homework/2024/HW4/reproduce.py",
+      "bytes": 4007,
+      "source_sha256": "1a3b405404fa3ecb5e9d93ae538c7ec37e5cc9ecdc5443a855e997f5af71315d",
+      "current_exists": true,
+      "current_equals_base": true,
+      "current_equals_local": false
+    },
+    {
+      "source": "2024/README.md",
+      "status": " M",
+      "target": "homework/2024/README.md",
+      "bytes": 4678,
+      "source_sha256": "26ca69f28e57d198a8d9e9bc8a199290c3a69ff901cacd8d370cb74bac6da3e3",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "2024/assignments/README.md",
+      "status": " M",
+      "target": "homework/2024/assignments/README.md",
+      "bytes": 2462,
+      "source_sha256": "18486ee1a41d5e2d24816333a8c9a375c0b4486f0c2811eae97f7999e5cd2b4b",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "MANIFEST.json",
+      "status": " M",
+      "target": "MANIFEST.json",
+      "bytes": 52772,
+      "source_sha256": "1b0bbeb67e30538a0abfcb73fd31150b6616edb884758da77dba847aade95635",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "README.md",
+      "status": " M",
+      "target": "README.md",
+      "bytes": 5472,
+      "source_sha256": "e53f559996d9fa52731f590eb8d1ad3956bbeb1f4a068b081d0dad14b4247548",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": "verify_package.py",
+      "status": " M",
+      "target": "verify_package.py",
+      "bytes": 5310,
+      "source_sha256": "390bdabbf5d483c33ab45c4732c61e93158ebe0fda63ebb9b48c4210841be805",
+      "current_exists": true,
+      "current_equals_base": false,
+      "current_equals_local": false
+    },
+    {
+      "source": ".github/workflows/package.yml",
+      "status": "??",
+      "target": ".github/workflows/package.yml",
+      "bytes": 622,
+      "source_sha256": "dba05d48298ebf977283a2532e9aa241b3a3856c2fec52e81adee2b60b648345",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "REPRODUCING.md",
+      "status": "??",
+      "target": "REPRODUCING.md",
+      "bytes": 5066,
+      "source_sha256": "67241e36eedc992e0405f618c811927c6e8657277d9415477b988cbb1179e5fe",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "check_environment.py",
+      "status": "??",
+      "target": "check_environment.py",
+      "bytes": 631,
+      "source_sha256": "0a6e95d554d76594ccc5191fcb93d9d678708540fdcd299da6b21b485b73e42e",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "prepare_instructor_testbench.py",
+      "status": "??",
+      "target": "prepare_instructor_testbench.py",
+      "bytes": 1820,
+      "source_sha256": "f82b033a318962df3500022740b551abbc192930c186580b96b188db0096ee5e",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "reproduce_saved.py",
+      "status": "??",
+      "target": "reproduce_saved.py",
+      "bytes": 4939,
+      "source_sha256": "0a2c45595a2112c493dacd574212f9b6602163543e5b1ae60521932fd9cad305",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "requirements-plots.txt",
+      "status": "??",
+      "target": "requirements-plots.txt",
+      "bytes": 100,
+      "source_sha256": "f6cb4c6688514af04f38a8e2da99006b31003ad2b46900cbdb1b9bb10a6f7c80",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "simulation_entries.json",
+      "status": "??",
+      "target": "simulation_entries.json",
+      "bytes": 3771,
+      "source_sha256": "6497d45b43cc3102fabc8c995b52669093e9057c73a853a5bbb6eac3aec5854d",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "simulation_environment.py",
+      "status": "??",
+      "target": "simulation_environment.py",
+      "bytes": 2554,
+      "source_sha256": "bb94e4b4c9c553fc0ee7a654c3bc60ebcaec29a9d3fcd7cd9e9b67d4423ddd35",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    },
+    {
+      "source": "tests/test_reproduction.py",
+      "status": "??",
+      "target": "tests/test_reproduction.py",
+      "bytes": 7241,
+      "source_sha256": "9d493680e7c749ea50ed7d6f0ccb1ed930df2149b9f342a55cb823de2281ddba",
+      "current_exists": false,
+      "current_equals_base": null,
+      "current_equals_local": false
+    }
+  ]
+}

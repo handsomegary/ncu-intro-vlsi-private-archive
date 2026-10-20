@@ -1,0 +1,1143 @@
+diff --git a/.gitignore b/.gitignore
+index b217066..d8805e6 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -29,3 +29,4 @@ run_artifacts/
+ .simulation/
+ .run_testbench.sp
+ .DS_Store
++reproduced/
+diff --git a/2013/HW3/reproduce.py b/2013/HW3/reproduce.py
+index 30835ef..7428b7b 100644
+--- a/2013/HW3/reproduce.py
++++ b/2013/HW3/reproduce.py
+@@ -4,6 +4,9 @@ The process file stays external. TG widths are fixed at N=10um, P=20um,
+ L=.18um in both designs. Raw simulation and license logs go to --work.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ from itertools import product
+ import argparse,csv,hashlib,json,os,shutil,subprocess,tempfile,re
+ from collections import defaultdict
+@@ -147,10 +150,10 @@ def run(a,stem,deck):
+  return rows
+ def main():
+  p=argparse.ArgumentParser(description=__doc__)
+- p.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
+- p.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
++ p.add_argument('--model',type=Path,default=default_model())
++ p.add_argument('--hspice',default=default_hspice())
+  p.add_argument('--work',type=Path,default=Path(tempfile.gettempdir())/'intro-vlsi-2013-hw3')
+- p.add_argument('--prepare-only',action='store_true');a=p.parse_args();a.model=a.model.resolve();a.work=a.work.resolve()
++ p.add_argument('--prepare-only',action='store_true');add_environment_check(p);a=p.parse_args();resolve_simulation_args(p,a,skip=a.prepare_only);a.model=a.model.resolve();a.work=a.work.resolve()
+  netlist=mux_netlist();(H/'mux.sp').write_text(netlist,encoding='ascii')
+  (H/'results').mkdir(exist_ok=True);check_topologies(netlist)
+  # Independent exhaustive function proof, then actual electrical delay checks.
+diff --git a/2013/README.md b/2013/README.md
+index c6cc6ab..07a3d4d 100644
+--- a/2013/README.md
++++ b/2013/README.md
+@@ -14,7 +14,7 @@ Every available homework includes standalone `solution.tex`, a compiled PDF,
+ reproducible code, and saved verification data. Source identities and comparison
+ decisions are recorded in [SOURCES.md](SOURCES.md) and [yearcoverage.json](yearcoverage.json).
+ 
+-The process library remains a local prerequisite (`D:/cic018.l` by default).
++The process library remains an external prerequisite selected with `--model` or `CIC018_MODEL`.
+ No process-model text, license information, layout files or student-only inferred
+ homework tasks are published. Analytical checks and physical HSPICE measurements
+ are identified separately.
+diff --git a/2015/HW3/README.md b/2015/HW3/README.md
+index 688cd3d..7d1ebac 100644
+--- a/2015/HW3/README.md
++++ b/2015/HW3/README.md
+@@ -10,4 +10,4 @@ Equal-size 6T AND delays and a settled full-cycle short-circuit overlap-power lo
+ python reproduce.py --model D:/cic018.l --raw-dir <scratch>
+ ```
+ 
+-Requires licensed HSPICE (default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`) and the local CIC018 library, which is not distributed. Raw output stays in the chosen scratch directory. Pass `--hspice <path>` as needed.
++Requires licensed HSPICE and an authorized CIC018 library, which is not distributed. Select your paths with `--hspice` and `--model`, or `HSPICE`/`CIC018_MODEL`. Add `--check-environment` to verify paths without simulation. Raw output stays in the chosen scratch directory. See the [download guide](../../REPRODUCING.md).
+diff --git a/2015/HW3/reproduce.py b/2015/HW3/reproduce.py
+index 23264fe..7e3325b 100644
+--- a/2015/HW3/reproduce.py
++++ b/2015/HW3/reproduce.py
+@@ -1,5 +1,8 @@
+ """2015 HW3 HSPICE: equal-size AND delays and intrinsic-channel overlap power."""
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import sys,argparse,json
+ sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
+ from sim_utils import header,run,measurements,trace,write_csv,integral
+@@ -48,10 +51,10 @@ EIN{k} icn{k} 0 VOL='LX4(MN{k})'
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default='C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com');ap.add_argument('--model',default='D:/cic018.l')
++    ap.add_argument('--hspice',default=default_hspice());ap.add_argument('--model',default=default_model())
+     ap.add_argument('--raw-dir',default=str(HERE.parents[2]/'2015-simulation'/'HW3'))
+     ap.add_argument('--power-only',action='store_true',help='Recompute only the five-load intrinsic-channel power sweep')
+-    args=ap.parse_args();raw=Path(args.raw_dir).resolve();delays=[];checks=[]
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args);raw=Path(args.raw_dir).resolve();delays=[];checks=[]
+     previous=json.loads((HERE/'verification.json').read_text()) if args.power_only else None
+     for step in ([] if args.power_only else [1,.2]):
+         deck=and_deck(args.model,step);lis=run(args.hspice,raw/f'and_step{step}',deck,[HERE/'and2.sp']);m=measurements(lis)
+diff --git a/2015/HW4/README.md b/2015/HW4/README.md
+index 7ae1531..f90a81f 100644
+--- a/2015/HW4/README.md
++++ b/2015/HW4/README.md
+@@ -10,4 +10,4 @@
+ python reproduce.py --model D:/cic018.l --raw-dir <scratch>
+ ```
+ 
+-Requires licensed HSPICE (default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`) and the local CIC018 library, which is not distributed. Raw output stays in the chosen scratch directory. Pass `--hspice <path>` as needed.
++Requires licensed HSPICE and an authorized CIC018 library, which is not distributed. Select your paths with `--hspice` and `--model`, or `HSPICE`/`CIC018_MODEL`. Add `--check-environment` to verify paths without simulation. Raw output stays in the chosen scratch directory. See the [download guide](../../REPRODUCING.md).
+diff --git a/2015/HW4/reproduce.py b/2015/HW4/reproduce.py
+index f3993f3..35e3464 100644
+--- a/2015/HW4/reproduce.py
++++ b/2015/HW4/reproduce.py
+@@ -5,6 +5,9 @@ condition. Report all 56 static input transitions and all 8 domino evaluate
+ words. The separate monotone carry-complement domino rail enables sum logic.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import sys,argparse,json,hashlib,re
+ sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
+ from sim_utils import header,run,measurements,trace,write_csv
+@@ -137,8 +140,8 @@ def export_waveforms(kind,model,raw,hspice,worst):
+     (HERE/(kind+'_testbench.sp')).write_text(deck,encoding='ascii',newline='\n')
+ 
+ def main():
+-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default='C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com');ap.add_argument('--model',default='D:/cic018.l');ap.add_argument('--raw-dir',default=str(HERE.parents[2]/'2015-simulation'/'HW4'));ap.add_argument('--waveforms-only',action='store_true')
+-    args=ap.parse_args();raw=Path(args.raw_dir).resolve();history=[];summary={}
++    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=default_hspice());ap.add_argument('--model',default=default_model());ap.add_argument('--raw-dir',default=str(HERE.parents[2]/'2015-simulation'/'HW4'));ap.add_argument('--waveforms-only',action='store_true')
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args);raw=Path(args.raw_dir).resolve();history=[];summary={}
+     if args.waveforms_only:
+         summary=json.loads((HERE/'verification.json').read_text())
+         for kind in ['mirror','domino']:export_waveforms(kind,args.model,raw,args.hspice,summary[kind]['worst_delays'])
+diff --git a/2016/HW3/simulate_and.py b/2016/HW3/simulate_and.py
+index 3a0c1c5..3723525 100644
+--- a/2016/HW3/simulate_and.py
++++ b/2016/HW3/simulate_and.py
+@@ -3,6 +3,9 @@ Uses the user's local D:/cic018.l; the model is not redistributed.
+ python reproduce.py --hspice PATH --model PATH --work PATH
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,re,subprocess,os
+ HERE=Path(__file__).resolve().parent
+ CASES=[('00',0,0,'a'),('01',0,1,'a'),('10',1,0,'b')]
+@@ -38,10 +41,10 @@ def deck(case,model):
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'))
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--work',default=str(HERE.parents[2]/'scratch'/('2016_'+HERE.name)))
+-    a=ap.parse_args(); raw=Path(a.work).resolve();model=Path(a.model).resolve()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a); raw=Path(a.work).resolve();model=Path(a.model).resolve()
+     if not model.is_file():raise FileNotFoundError('Local CIC018 model required: '+str(model))
+     results=HERE/'results'/'and_gate';results.mkdir(parents=True,exist_ok=True)
+     delays=[];levels=[];waves=[];statuses=[]
+diff --git a/2016/HW3/simulate_power.py b/2016/HW3/simulate_power.py
+index 2e30dc4..5307924 100644
+--- a/2016/HW3/simulate_power.py
++++ b/2016/HW3/simulate_power.py
+@@ -4,12 +4,15 @@ Psc = VDD * average(max(0,min(IDS_p,IDS_n))) over a steady period.
+ Displacement current and CL switching energy are not called short circuit.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,os,subprocess
+ H=Path(__file__).resolve().parent
+ LOADS=[.1,.3,.5,.7,1.0]
+ def main():
+- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'));ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'));ap.add_argument('--work',default=str(H.parents[2]/'scratch'/('power_'+H.parent.name)))
+- a=ap.parse_args();model=Path(a.model).resolve();raw=Path(a.work).resolve()/'power';raw.mkdir(parents=True,exist_ok=True);res=H/'results'/'power';res.mkdir(parents=True,exist_ok=True)
++ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=default_hspice());ap.add_argument('--model',default=default_model());ap.add_argument('--work',default=str(H.parents[2]/'scratch'/('power_'+H.parent.name)))
++ add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a);model=Path(a.model).resolve();raw=Path(a.work).resolve()/'power';raw.mkdir(parents=True,exist_ok=True);res=H/'results'/'power';res.mkdir(parents=True,exist_ok=True)
+  s=f"* Inverter direct-path power versus CLOAD\n.protect\n.lib '{model.as_posix()}' tt\n.unprotect\n"
+  s+='vvdd vdd 0 1.8\nvin in 0 pulse(0 1.8 5n 3n 3n 40n 86n)\nMP out in vdd vdd P_18 W=1.44u L=.18u\nMN out in 0 0 N_18 W=.36u L=.18u\nCL out 0 CLOAD\n.temp 25\n.option measform=3 measdgt=9 delmax=10p\n.param CLOAD=.1p\n.data capvals CLOAD\n.1p\n.3p\n.5p\n.7p\n1p\n.enddata\n.tran 10p 180n sweep DATA=capvals\n'
+  s+=".measure tran isc AVG PAR('max(0,min(lx4(mp),lx4(mn)))') from=91n to=177n\n.measure tran peaksc MAX PAR('max(0,min(lx4(mp),lx4(mn)))') from=91n to=177n\n.measure tran ptotal AVG PAR('-1.8*i(vvdd)') from=91n to=177n\n.measure tran psc PARAM='1.8*isc'\n.measure tran elsc PARAM='psc*86n'\n.measure tran out_high FIND v(out) at=175n\n.measure tran out_low FIND v(out) at=125n\n.end\n"
+diff --git a/2017/HW3/simulate_and.py b/2017/HW3/simulate_and.py
+index 0f29ec0..08b00c8 100644
+--- a/2017/HW3/simulate_and.py
++++ b/2017/HW3/simulate_and.py
+@@ -3,6 +3,9 @@ Uses the user's local D:/cic018.l; the model is not redistributed.
+ python reproduce.py --hspice PATH --model PATH --work PATH
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,re,subprocess,os
+ HERE=Path(__file__).resolve().parent
+ CASES=[('00',0,0,'a'),('01',0,1,'a'),('10',1,0,'b')]
+@@ -38,10 +41,10 @@ def deck(case,model):
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'))
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--work',default=str(HERE.parents[2]/'scratch'/('2017_'+HERE.name)))
+-    a=ap.parse_args(); raw=Path(a.work).resolve();model=Path(a.model).resolve()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a); raw=Path(a.work).resolve();model=Path(a.model).resolve()
+     if not model.is_file():raise FileNotFoundError('Local CIC018 model required: '+str(model))
+     results=HERE/'results'/'and_gate';results.mkdir(parents=True,exist_ok=True)
+     delays=[];levels=[];waves=[];statuses=[]
+diff --git a/2017/HW3/simulate_power.py b/2017/HW3/simulate_power.py
+index 2e30dc4..5307924 100644
+--- a/2017/HW3/simulate_power.py
++++ b/2017/HW3/simulate_power.py
+@@ -4,12 +4,15 @@ Psc = VDD * average(max(0,min(IDS_p,IDS_n))) over a steady period.
+ Displacement current and CL switching energy are not called short circuit.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,os,subprocess
+ H=Path(__file__).resolve().parent
+ LOADS=[.1,.3,.5,.7,1.0]
+ def main():
+- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'));ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'));ap.add_argument('--work',default=str(H.parents[2]/'scratch'/('power_'+H.parent.name)))
+- a=ap.parse_args();model=Path(a.model).resolve();raw=Path(a.work).resolve()/'power';raw.mkdir(parents=True,exist_ok=True);res=H/'results'/'power';res.mkdir(parents=True,exist_ok=True)
++ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=default_hspice());ap.add_argument('--model',default=default_model());ap.add_argument('--work',default=str(H.parents[2]/'scratch'/('power_'+H.parent.name)))
++ add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a);model=Path(a.model).resolve();raw=Path(a.work).resolve()/'power';raw.mkdir(parents=True,exist_ok=True);res=H/'results'/'power';res.mkdir(parents=True,exist_ok=True)
+  s=f"* Inverter direct-path power versus CLOAD\n.protect\n.lib '{model.as_posix()}' tt\n.unprotect\n"
+  s+='vvdd vdd 0 1.8\nvin in 0 pulse(0 1.8 5n 3n 3n 40n 86n)\nMP out in vdd vdd P_18 W=1.44u L=.18u\nMN out in 0 0 N_18 W=.36u L=.18u\nCL out 0 CLOAD\n.temp 25\n.option measform=3 measdgt=9 delmax=10p\n.param CLOAD=.1p\n.data capvals CLOAD\n.1p\n.3p\n.5p\n.7p\n1p\n.enddata\n.tran 10p 180n sweep DATA=capvals\n'
+  s+=".measure tran isc AVG PAR('max(0,min(lx4(mp),lx4(mn)))') from=91n to=177n\n.measure tran peaksc MAX PAR('max(0,min(lx4(mp),lx4(mn)))') from=91n to=177n\n.measure tran ptotal AVG PAR('-1.8*i(vvdd)') from=91n to=177n\n.measure tran psc PARAM='1.8*isc'\n.measure tran elsc PARAM='psc*86n'\n.measure tran out_high FIND v(out) at=175n\n.measure tran out_low FIND v(out) at=125n\n.end\n"
+diff --git a/2017/HW4/reproduce.py b/2017/HW4/reproduce.py
+index 4e82df2..301ec6f 100644
+--- a/2017/HW4/reproduce.py
++++ b/2017/HW4/reproduce.py
+@@ -4,6 +4,9 @@ Domino: 8 independent evaluate/precharge cycles, both outputs checked.
+ Balanced tr=tf means max 10-90% rise/fall per output at stated conditions.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,os,subprocess,bisect
+ H=Path(__file__).resolve().parent
+ 
+@@ -96,8 +99,8 @@ def run(kind,pars,a,label):
+  return stats,metrics,checks,s
+ 
+ def main():
+- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'));ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'));ap.add_argument('--work',default=str(H.parents[2]/'scratch'/'2017HW4'));ap.add_argument('--no-calibrate',action='store_true')
+- a=ap.parse_args();results=H/'results';results.mkdir(exist_ok=True);summary={};allcal=[]
++ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=default_hspice());ap.add_argument('--model',default=default_model());ap.add_argument('--work',default=str(H.parents[2]/'scratch'/'2017HW4'));ap.add_argument('--no-calibrate',action='store_true')
++ add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a);results=H/'results';results.mkdir(exist_ok=True);summary={};allcal=[]
+  for kind in ['mirror','domino']:
+   defaults={'WOSS':1.8,'WOSC':1.8} if kind=='mirror' else {'WPSS':1.8,'WPSC':1.8}
+   cfg=H/f'{kind}_sizes.json';pars=json.loads(cfg.read_text()) if cfg.exists() else defaults
+diff --git a/2018/HW2/reproduce.py b/2018/HW2/reproduce.py
+index 3bc41a8..7006ce1 100644
+--- a/2018/HW2/reproduce.py
++++ b/2018/HW2/reproduce.py
+@@ -2,6 +2,9 @@
+ The same original four questions appear in Fall 2018 and Fall 2019 HW2.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,os,subprocess
+ HERE=Path(__file__).resolve().parent
+ def write_csv(p,rows):
+@@ -80,10 +83,10 @@ def run(hspice,work,stem,deck):
+     write_csv(HERE/(stem+'_measurements.csv'),rs);return rs
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
+-    ap.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
++    ap.add_argument('--model',type=Path,default=default_model())
++    ap.add_argument('--hspice',default=default_hspice())
+     ap.add_argument('--work',type=Path,default=HERE/'.simulation');ap.add_argument('--analytical-only',action='store_true')
+-    a=ap.parse_args();expected=ideal()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a,skip=a.analytical_only);expected=ideal()
+     if a.analytical_only:print('RC formulas, balanced mobility and gate-capacitance checks passed');return
+     ds=slew(a.model.resolve());(HERE/'q1_slew.sp').write_text(ds,encoding='utf-8',newline='\n')
+     s=run(a.hspice,a.work.resolve(),'q1_slew',ds);assert len(s)==2
+diff --git a/2019/HW2/reproduce.py b/2019/HW2/reproduce.py
+index 3bc41a8..7006ce1 100644
+--- a/2019/HW2/reproduce.py
++++ b/2019/HW2/reproduce.py
+@@ -2,6 +2,9 @@
+ The same original four questions appear in Fall 2018 and Fall 2019 HW2.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,os,subprocess
+ HERE=Path(__file__).resolve().parent
+ def write_csv(p,rows):
+@@ -80,10 +83,10 @@ def run(hspice,work,stem,deck):
+     write_csv(HERE/(stem+'_measurements.csv'),rs);return rs
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
+-    ap.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
++    ap.add_argument('--model',type=Path,default=default_model())
++    ap.add_argument('--hspice',default=default_hspice())
+     ap.add_argument('--work',type=Path,default=HERE/'.simulation');ap.add_argument('--analytical-only',action='store_true')
+-    a=ap.parse_args();expected=ideal()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a,skip=a.analytical_only);expected=ideal()
+     if a.analytical_only:print('RC formulas, balanced mobility and gate-capacitance checks passed');return
+     ds=slew(a.model.resolve());(HERE/'q1_slew.sp').write_text(ds,encoding='utf-8',newline='\n')
+     s=run(a.hspice,a.work.resolve(),'q1_slew',ds);assert len(s)==2
+diff --git a/2020/HW2/README.md b/2020/HW2/README.md
+index 57821d8..5a4c0a7 100644
+--- a/2020/HW2/README.md
++++ b/2020/HW2/README.md
+@@ -10,4 +10,4 @@ Dual-Vt allocation, 40T one-hot rotator, and ratioed NOR sizing.
+ python reproduce.py --model D:/cic018.l --raw-dir <scratch>
+ ```
+ 
+-Requires Python 3 and licensed HSPICE (default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`); the CIC018 model is local and is not distributed. Keep raw simulator output in a scratch directory. Pass `--hspice <path>` to override the executable.
++Requires Python 3 and licensed HSPICE; the authorized CIC018 model is external and is not distributed. Select your paths with `--hspice` and `--model`, or `HSPICE`/`CIC018_MODEL`. Add `--check-environment` to verify paths without simulation. Keep raw simulator output in a scratch directory. See the [download guide](../../REPRODUCING.md).
+diff --git a/2020/HW2/reproduce.py b/2020/HW2/reproduce.py
+index 7baffbf..709c8f6 100644
+--- a/2020/HW2/reproduce.py
++++ b/2020/HW2/reproduce.py
+@@ -5,6 +5,9 @@ Q2 tests all 64 valid words electrically. Q3's fixed-resistance model is the
+ assignment model; a separate BSIM3 experiment is explicitly supplementary.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ from itertools import product
+ import argparse,csv,json,re,subprocess,shutil
+ HERE=Path(__file__).resolve().parent
+@@ -15,11 +18,11 @@ def write_csv(path,rows):
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default='C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com')
+-    ap.add_argument('--model',default='D:/cic018.l')
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--raw-dir',default=str(HERE.parents[2]/'2020-simulation'/'HW2'))
+     ap.add_argument('--skip-hspice',action='store_true')
+-    args=ap.parse_args();model=Path(args.model).resolve();raw=Path(args.raw_dir).resolve()
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args,skip=args.skip_hspice);model=Path(args.model).resolve();raw=Path(args.raw_dir).resolve()
+     q1=[]
+     for a,b,c in product([0,1],repeat=3):
+         d=int(not(a^b));e=int(not(b and c))
+diff --git a/2020/HW3/README.md b/2020/HW3/README.md
+index 0ce4ddd..0b983d7 100644
+--- a/2020/HW3/README.md
++++ b/2020/HW3/README.md
+@@ -10,4 +10,4 @@ Six-transistor AND gate, six transitions, measured delays and timestep convergen
+ python simulate.py --model D:/cic018.l --raw-dir <scratch>
+ ```
+ 
+-Requires Python 3 and licensed HSPICE (default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`); the CIC018 model is local and is not distributed. Keep raw simulator output in a scratch directory. Pass `--hspice <path>` to override the executable.
++Requires Python 3 and licensed HSPICE; the authorized CIC018 model is external and is not distributed. Select your paths with `--hspice` and `--model`, or `HSPICE`/`CIC018_MODEL`. Add `--check-environment` to verify paths without simulation. Keep raw simulator output in a scratch directory. See the [download guide](../../REPRODUCING.md).
+diff --git a/2020/HW3/simulate.py b/2020/HW3/simulate.py
+index d487285..58e6b52 100644
+--- a/2020/HW3/simulate.py
++++ b/2020/HW3/simulate.py
+@@ -4,6 +4,9 @@ Local CIC018 model is a prerequisite, never distributed. Raw simulator files
+ go to --raw-dir; only measurements, sampled waveforms and checks are exported.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse, csv, json, re, subprocess, shutil, hashlib
+ 
+ HERE = Path(__file__).resolve().parent
+@@ -72,10 +75,10 @@ CL z vss 1f
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default='C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com')
+-    ap.add_argument('--model',default='D:/cic018.l')
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--raw-dir',default=str(HERE.parents[2]/'2020-simulation'/'HW3'))
+-    args=ap.parse_args();model=Path(args.model).resolve();raw=Path(args.raw_dir).resolve()
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args);model=Path(args.model).resolve();raw=Path(args.raw_dir).resolve()
+     if not model.is_file():raise FileNotFoundError('Local model file missing; not distributed in this repository')
+     rows=[];checks=[];trace_rows=[]
+     # Primary fixed-slew result, timestep convergence, and a slower input check.
+diff --git a/2020/HW4/README.md b/2020/HW4/README.md
+index bd9e695..8cac2db 100644
+--- a/2020/HW4/README.md
++++ b/2020/HW4/README.md
+@@ -10,5 +10,5 @@ HW3 circuit packaged as the requested pre-layout .sp-only deliverable.
+ python simulate.py --model D:/cic018.l --raw-dir <scratch>
+ ```
+ 
+-Requires Python 3 and licensed HSPICE (default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`); the CIC018 model is local and is not distributed. Keep raw simulator output in a scratch directory. Pass `--hspice <path>` to override the executable.
++Requires Python 3 and licensed HSPICE; the authorized CIC018 model is external and is not distributed. Select your paths with `--hspice` and `--model`, or `HSPICE`/`CIC018_MODEL`. Add `--check-environment` to verify paths without simulation. Keep raw simulator output in a scratch directory. See the [download guide](../../REPRODUCING.md).
+ HW4 intentionally stops at schematic SPICE; no layout/extraction is claimed. Its checked-in result data are the identical-circuit HW3 measurements, explicitly recorded in `provenance.json`.
+diff --git a/2020/HW4/simulate.py b/2020/HW4/simulate.py
+index d487285..58e6b52 100644
+--- a/2020/HW4/simulate.py
++++ b/2020/HW4/simulate.py
+@@ -4,6 +4,9 @@ Local CIC018 model is a prerequisite, never distributed. Raw simulator files
+ go to --raw-dir; only measurements, sampled waveforms and checks are exported.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse, csv, json, re, subprocess, shutil, hashlib
+ 
+ HERE = Path(__file__).resolve().parent
+@@ -72,10 +75,10 @@ CL z vss 1f
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default='C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com')
+-    ap.add_argument('--model',default='D:/cic018.l')
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--raw-dir',default=str(HERE.parents[2]/'2020-simulation'/'HW3'))
+-    args=ap.parse_args();model=Path(args.model).resolve();raw=Path(args.raw_dir).resolve()
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args);model=Path(args.model).resolve();raw=Path(args.raw_dir).resolve()
+     if not model.is_file():raise FileNotFoundError('Local model file missing; not distributed in this repository')
+     rows=[];checks=[];trace_rows=[]
+     # Primary fixed-slew result, timestep convergence, and a slower input check.
+diff --git a/2021/HW2/reproduce.py b/2021/HW2/reproduce.py
+index b67d4bc..16e91ba 100644
+--- a/2021/HW2/reproduce.py
++++ b/2021/HW2/reproduce.py
+@@ -2,6 +2,9 @@
+ No dual-Vt PDK is provided; Q1 is verified logically, not as leakage data.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,os,subprocess
+ H=Path(__file__).resolve().parent
+ 
+@@ -25,8 +28,8 @@ def pwl(node,vals,step=10):
+  for j in range(0,len(points),5):s+='+ '+' '.join(points[j:j+5])+'\n'
+  return s+'+)\n'
+ def main():
+- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'));ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'));ap.add_argument('--work',default=str(H.parents[2]/'scratch'/'2021_HW2'))
+- a=ap.parse_args();model=Path(a.model).resolve();raw=Path(a.work).resolve();results=H/'results';results.mkdir(exist_ok=True)
++ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--hspice',default=default_hspice());ap.add_argument('--model',default=default_model());ap.add_argument('--work',default=str(H.parents[2]/'scratch'/'2021_HW2'))
++ add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a);model=Path(a.model).resolve();raw=Path(a.work).resolve();results=H/'results';results.mkdir(exist_ok=True)
+  if not model.is_file():raise FileNotFoundError('Local model required: '+str(model))
+  cases=[(data,r) for r in range(4) for data in range(16)]
+  s=header(model)+".include 'rotator.sp'\n"
+diff --git a/2021/HW3/reproduce.py b/2021/HW3/reproduce.py
+index 56e50a5..990c511 100644
+--- a/2021/HW3/reproduce.py
++++ b/2021/HW3/reproduce.py
+@@ -3,6 +3,9 @@ Uses the user's local D:/cic018.l; the model is not redistributed.
+ python reproduce.py --hspice PATH --model PATH --work PATH
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,re,subprocess,os
+ HERE=Path(__file__).resolve().parent
+ CASES=[('00',0,0,'a'),('01',0,1,'a'),('10',1,0,'b')]
+@@ -38,10 +41,10 @@ def deck(case,model):
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'))
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--work',default=str(HERE.parents[2]/'scratch'/('2021_'+HERE.name)))
+-    a=ap.parse_args(); raw=Path(a.work).resolve();model=Path(a.model).resolve()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a); raw=Path(a.work).resolve();model=Path(a.model).resolve()
+     if not model.is_file():raise FileNotFoundError('Local CIC018 model required: '+str(model))
+     results=HERE/'results';results.mkdir(exist_ok=True)
+     delays=[];levels=[];waves=[];statuses=[]
+diff --git a/2021/HW4/reproduce.py b/2021/HW4/reproduce.py
+index 56e50a5..990c511 100644
+--- a/2021/HW4/reproduce.py
++++ b/2021/HW4/reproduce.py
+@@ -3,6 +3,9 @@ Uses the user's local D:/cic018.l; the model is not redistributed.
+ python reproduce.py --hspice PATH --model PATH --work PATH
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,json,re,subprocess,os
+ HERE=Path(__file__).resolve().parent
+ CASES=[('00',0,0,'a'),('01',0,1,'a'),('10',1,0,'b')]
+@@ -38,10 +41,10 @@ def deck(case,model):
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.environ.get('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'))
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',default=default_model())
+     ap.add_argument('--work',default=str(HERE.parents[2]/'scratch'/('2021_'+HERE.name)))
+-    a=ap.parse_args(); raw=Path(a.work).resolve();model=Path(a.model).resolve()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a); raw=Path(a.work).resolve();model=Path(a.model).resolve()
+     if not model.is_file():raise FileNotFoundError('Local CIC018 model required: '+str(model))
+     results=HERE/'results';results.mkdir(exist_ok=True)
+     delays=[];levels=[];waves=[];statuses=[]
+diff --git a/2021/README.md b/2021/README.md
+index 721c3a3..0629cd2 100644
+--- a/2021/README.md
++++ b/2021/README.md
+@@ -9,7 +9,7 @@ Each homework has an English standalone `solution.tex`, its rendered PDF, runnab
+ | HW3 | Complete AND-gate pre-layout simulation and both-node delay measurements | 3 switching families, 3 cycles, 36 actual HSPICE delays, rail checks |
+ | HW4 | Requested pre-layout `.sp` and measurements; layout excluded | Independent repeat of all HW3 switching measurements |
+ 
+-For HW1: `cd HW1` and run `python verify_logic.py`. For HW2: run both `python verify_logic.py` and `python reproduce.py`. For HW3/HW4: run `python reproduce.py`. All simulation drivers accept `--hspice`, `--model`, and `--work`. The defaults use the user's local installed HSPICE and `D:/cic018.l`. Supply a writable raw-output directory with `--work` to retain listings. No process model is redistributed.
++For HW1: `cd HW1` and run `python verify_logic.py`. For HW2: run both `python verify_logic.py` and `python reproduce.py`. For HW3/HW4: run `python reproduce.py`. All simulation drivers accept `--hspice`, `--model`, `--check-environment`, and `--work`. Set your installed executable/model paths through flags or `HSPICE`/`CIC018_MODEL`; there are no machine-specific fallback paths. Supply a writable raw-output directory with `--work` to retain listings. No process model is redistributed. See the [download guide](../REPRODUCING.md).
+ 
+ CIC018 TT does not provide characterized low/high-threshold variants. Therefore Q1's dual-Vt placement is answered using the prompt's delay/slack assumptions; an explicitly educational Level-1 deck checks its topology only. Physical dual-Vt leakage and timing are not fabricated.
+ 
+diff --git a/2023/HW2/reproduce.py b/2023/HW2/reproduce.py
+index 76dfd13..70a1fee 100644
+--- a/2023/HW2/reproduce.py
++++ b/2023/HW2/reproduce.py
+@@ -1,5 +1,8 @@
+ """Analytical checks plus three actual HSPICE measurements, kept distinct."""
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,itertools,json,os,subprocess
+ HERE=Path(__file__).resolve().parent
+ def csvwrite(p,rows):
+@@ -24,10 +27,10 @@ def logical_checks():
+     return len(rows)
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',type=Path,default=default_model())
+     ap.add_argument('--work',type=Path,default=HERE/'.simulation');ap.add_argument('--logic-only',action='store_true')
+-    a=ap.parse_args();n=logical_checks()
++    add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a,skip=a.logic_only);n=logical_checks()
+     if a.logic_only:print(f'{n} logic checks; sizing checks passed');return
+     a.work=a.work.resolve();a.work.mkdir(parents=True,exist_ok=True);status=[]
+     for stem in ('q2_retention','q3_resistance','q3_cic018'):
+diff --git a/2023/HW3/refine_worst.py b/2023/HW3/refine_worst.py
+index 0507383..6b851ed 100644
+--- a/2023/HW3/refine_worst.py
++++ b/2023/HW3/refine_worst.py
+@@ -6,6 +6,9 @@ regenerates worst_transition.png; --no-plot skips that optional figure.
+ The process library remains external and raw simulator files go to --work.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,csv,hashlib,json,os,shutil,subprocess,tempfile
+ 
+ HERE=Path(__file__).resolve().parent
+@@ -88,13 +91,13 @@ def plot(rows,result,folder):
+ 
+ def main():
+     p=argparse.ArgumentParser(description=__doc__)
+-    p.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    p.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
++    p.add_argument('--hspice',default=default_hspice())
++    p.add_argument('--model',type=Path,default=default_model())
+     p.add_argument('--work',type=Path,default=Path(tempfile.gettempdir())/'intro-vlsi-2023-hw3-refinement')
+     p.add_argument('--results',type=Path,default=HERE/'results')
+     p.add_argument('--max-step-ps',type=float,default=1)
+     p.add_argument('--no-plot',action='store_true')
+-    a=p.parse_args();a.model=a.model.resolve();a.work=a.work.resolve();a.results=a.results.resolve()
++    add_environment_check(p);a=p.parse_args();resolve_simulation_args(p,a);a.model=a.model.resolve();a.work=a.work.resolve();a.results=a.results.resolve()
+     summary=json.loads((a.results/'summary.json').read_text());w=summary['worst_measured']
+     assert net_hash(HERE/'rca.sp')==summary['netlist_sha256'], 'Netlist differs from the sweep baseline; regenerate the sweep first'
+     if not a.model.is_file():raise FileNotFoundError('Local model file required: '+str(a.model))
+diff --git a/2023/HW3/reproduce.py b/2023/HW3/reproduce.py
+index 42f194a..457b467 100644
+--- a/2023/HW3/reproduce.py
++++ b/2023/HW3/reproduce.py
+@@ -5,6 +5,9 @@ crossing minus the 50% input crossing. Unchanged outputs have no required delay.
+ The power workload is a separate 128-vector binary-count sequence.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse, csv, hashlib, itertools, json, os, shutil, subprocess
+ HERE=Path(__file__).resolve().parent
+ INS=['x0','x1','x2','y0','y1','y2','cin']; OUTS=['s0','s1','s2','cout']
+@@ -57,10 +60,10 @@ def power(model):
+ def voltage_ok(v,bit):return 1.6<=v<=1.82 if bit else -.02<=v<=.2
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',type=Path,default=default_model())
+     ap.add_argument('--work',type=Path,default=HERE/'.simulation');ap.add_argument('--results',type=Path,default=HERE/'results')
+-    args=ap.parse_args();args.work=args.work.resolve();args.results.mkdir(parents=True,exist_ok=True)
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args);args.work=args.work.resolve();args.results.mkdir(parents=True,exist_ok=True)
+     deck,cases=sweep(args.model.resolve());(HERE/'characterize.sp').write_text(deck)
+     rows=run(args.hspice,args.work/'characterize',deck,HERE/'rca.sp')
+     if len(rows)!=896:raise AssertionError(f'Expected 896 sweeps, got {len(rows)}')
+diff --git a/2023/HW4/reproduce.py b/2023/HW4/reproduce.py
+index 75dece6..4c4419e 100644
+--- a/2023/HW4/reproduce.py
++++ b/2023/HW4/reproduce.py
+@@ -1,12 +1,15 @@
+ """Independently rerun the identical HW3 pre-layout netlist. No layout/PEX."""
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse,hashlib,importlib.util,json,os
+ HERE=Path(__file__).resolve().parent
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--hspice',default=os.getenv('HSPICE','C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'))
+-    ap.add_argument('--model',type=Path,default=os.getenv('CIC018_MODEL','D:/cic018.l'))
+-    ap.add_argument('--work',type=Path,default=HERE/'.simulation');a=ap.parse_args()
++    ap.add_argument('--hspice',default=default_hspice())
++    ap.add_argument('--model',type=Path,default=default_model())
++    ap.add_argument('--work',type=Path,default=HERE/'.simulation');add_environment_check(ap);a=ap.parse_args();resolve_simulation_args(ap,a)
+     spec=importlib.util.spec_from_file_location('h3',HERE.parent/'HW3'/'reproduce.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+     assert m.sha(HERE/'rca.sp')==m.sha(HERE.parent/'HW3'/'rca.sp')
+     deck=m.power(a.model.resolve());(HERE/'testbench.sp').write_text(deck)
+diff --git a/2023/README.md b/2023/README.md
+index 8a38326..984cb9e 100644
+--- a/2023/README.md
++++ b/2023/README.md
+@@ -17,4 +17,4 @@ maximum-low ratio 4.5 are derived separately. HW3's three-stage diagram resolves
+ its wording “four full adders.” HW4 follows the user's pre-layout-only scope.
+ 
+ See [SOURCES.md](SOURCES.md) for the existing-answer review and integration decisions.
+-Use the local CIC018 model, default `D:/cic018.l`; it is not included in the repository.
++Select your authorized CIC018 model with `--model` or `CIC018_MODEL`; it is not included in the repository. Use `--check-environment` before simulation. See the [download guide](../REPRODUCING.md).
+diff --git a/2024/HW2/README.md b/2024/HW2/README.md
+index 891c303..4862288 100644
+--- a/2024/HW2/README.md
++++ b/2024/HW2/README.md
+@@ -32,13 +32,14 @@ The original [homework2.pdf](../assignments/homework2.pdf) contains two analytic
+ Run in Windows PowerShell:
+ 
+ ```powershell
+-python .\reproduce.py --hspice 'C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com'
++python .\reproduce.py --hspice 'C:/your-tools/hspice.com' --model 'C:/your-models/cic018.l' --check-environment
++python .\reproduce.py --hspice 'C:/your-tools/hspice.com' --model 'C:/your-models/cic018.l'
+ python .\validate_results.py
+ pdflatex -interaction=nonstopmode -halt-on-error solution.tex
+ pdflatex -interaction=nonstopmode -halt-on-error solution.tex
+ ```
+ 
+-Use `--raw-dir 'another-local-directory'` to select a raw-log directory. A valid HSPICE license service is required. An execution environment with network isolation must allow the simulator to connect to the existing license service.
++Use your actual installation/model paths, or set `HSPICE` and `CIC018_MODEL`. `--model` rewrites the process path only in scratch copies. Use `--raw-dir 'another-local-directory'` to select a raw-log directory. A valid HSPICE license service is required. See the [fresh-download guide](../../REPRODUCING.md) for saved-data reproduction without CAD.
+ 
+ ## Model and actual verification results
+ 
+diff --git a/2024/HW2/reproduce.py b/2024/HW2/reproduce.py
+index 2569ee1..b91b069 100644
+--- a/2024/HW2/reproduce.py
++++ b/2024/HW2/reproduce.py
+@@ -8,7 +8,11 @@ from __future__ import annotations
+ import argparse
+ import csv
+ import json
++import re
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import subprocess
+ import tempfile
+ import sys
+@@ -16,9 +20,9 @@ import sys
+ 
+ def main() -> int:
+     parser = argparse.ArgumentParser(description=__doc__)
+-    parser.add_argument("--hspice", default="C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com")
++    parser.add_argument("--hspice", default=default_hspice())
+     parser.add_argument("--raw-dir", default=str(Path(tempfile.gettempdir()) / "intro-vlsi-2024" / "HW2"))
+-    args = parser.parse_args()
++    parser.add_argument("--model", default=default_model());add_environment_check(parser);args=parser.parse_args();resolve_simulation_args(parser,args)
+     here = Path(__file__).resolve().parent
+     rawdir = Path(args.raw_dir).resolve()
+     rawdir.mkdir(parents=True, exist_ok=True)
+@@ -34,7 +38,12 @@ def main() -> int:
+             writer.writerow(["constant_resistance", ab, "vout", vout, "V", "closed_form"])
+     statuses = []
+     for stem in decks:
+-        command = [args.hspice, "-i", str(here / f"{stem}.sp"), "-o", str(rawdir / stem)]
++        source = (here / f"{stem}.sp").read_text(encoding="ascii")
++        source = re.sub(r"(?im)^(\s*\.lib\s+)'[^']+'",
++                        lambda m: m[1]+"'"+args.model.as_posix()+"'", source)
++        runtime = rawdir / f"{stem}.sp"
++        runtime.write_text(source, encoding="ascii", newline="\n")
++        command = [args.hspice, "-i", str(runtime), "-o", str(rawdir / stem)]
+         try:
+             result = subprocess.run(command, cwd=here, capture_output=True, timeout=180)
+             # Keep the actual stdout/stderr; .lis is independently created by HSPICE.
+diff --git a/2024/HW3/simulate.py b/2024/HW3/simulate.py
+index a00f2cd..c2b17a7 100644
+--- a/2024/HW3/simulate.py
++++ b/2024/HW3/simulate.py
+@@ -4,6 +4,9 @@ No process model is distributed. Set CIC018_MODEL and HSPICE or use CLI flags.
+ Raw simulator files stay in --work; only derived data enter --results.
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse, csv, json, os, re, subprocess, hashlib
+ 
+ HERE = Path(__file__).absolute().parent
+@@ -195,12 +198,12 @@ def exhaustive_deck(model):
+ 
+ def main():
+     ap=argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--model',default=os.getenv('CIC018_MODEL','D:/cic018.l'))
+-    ap.add_argument('--hspice',default=os.getenv('HSPICE',r'C:\synopsys\Hspice_S-2021.09\WIN64\hspice.com'))
++    ap.add_argument('--model',default=default_model())
++    ap.add_argument('--hspice',default=default_hspice())
+     ap.add_argument('--work',type=Path,default=HERE/'.simulation')
+     ap.add_argument('--results',type=Path,default=HERE/'results')
+     ap.add_argument('--selected',default='compact64_min')
+-    args=ap.parse_args(); model=Path(args.model).absolute(); args.work=args.work.absolute()
++    add_environment_check(ap);args=ap.parse_args();resolve_simulation_args(ap,args); model=Path(args.model).absolute(); args.work=args.work.absolute()
+     if not model.is_file():raise FileNotFoundError('Set CIC018_MODEL to the licensed CIC018 library.')
+     args.results.mkdir(parents=True,exist_ok=True)
+     instructor=(HERE/'testbench.sp').read_text()
+diff --git a/2024/HW4/reproduce.py b/2024/HW4/reproduce.py
+index a4c7cb4..393c8da 100644
+--- a/2024/HW4/reproduce.py
++++ b/2024/HW4/reproduce.py
+@@ -4,6 +4,9 @@ Requires only Python standard library, a licensed HSPICE, and an external CIC018
+ model. Raw simulator artifacts stay in run_artifacts/ (excluded from Git).
+ """
+ from pathlib import Path
++import sys as _simulation_sys
++_simulation_sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
++from simulation_environment import default_hspice, default_model, add_environment_check, resolve_simulation_args
+ import argparse
+ import csv
+ import hashlib
+@@ -13,13 +16,12 @@ import re
+ import subprocess
+ 
+ HERE=Path(__file__).resolve().parent
+-DEFAULT_HSPICE=r'C:\synopsys\Hspice_S-2021.09\WIN64\hspice.com'
+ 
+ def run():
+     p=argparse.ArgumentParser(description=__doc__)
+-    p.add_argument('--hspice',default=os.environ.get('HSPICE', DEFAULT_HSPICE))
+-    p.add_argument('--model',default=os.environ.get('CIC018_MODEL','D:/cic018.l'))
+-    args=p.parse_args()
++    p.add_argument('--hspice',default=default_hspice())
++    p.add_argument('--model',default=default_model())
++    add_environment_check(p);args=p.parse_args();resolve_simulation_args(p,args)
+     model=Path(args.model).resolve()
+     if not model.is_file(): raise SystemExit(f'Missing external process model: {model}')
+     raw=HERE/'run_artifacts';raw.mkdir(exist_ok=True)
+diff --git a/2024/README.md b/2024/README.md
+index 3e4bfed..451c950 100644
+--- a/2024/README.md
++++ b/2024/README.md
+@@ -16,7 +16,7 @@ Each homework README explains the requirements, design choices, file purposes, r
+ ## Local requirements
+ 
+ - PrimeSim HSPICE S-2021.09. The executable used here was `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`.
+-- The user's external CIC018 model, default `D:/cic018.l`: TT, 1.8 V, 25 C. The model is read locally and is not redistributed.
++- Your external authorized CIC018 model, selected with `--model` or `CIC018_MODEL`: TT, 1.8 V, 25 C. The model is read locally and is not redistributed. Use `--check-environment` to check your installation paths first; see the [download guide](../REPRODUCING.md).
+ - Python 3; see each homework folder for reproduction instructions.
+ - Each English `.tex` report is standalone and compiles with PDFLaTeX; a PDF preview is included. Diagrams and statistics come from source or simulation data, without hspui screenshots.
+ 
+diff --git a/2024/assignments/README.md b/2024/assignments/README.md
+index e58ccef..a1f3bb7 100644
+--- a/2024/assignments/README.md
++++ b/2024/assignments/README.md
+@@ -17,6 +17,12 @@ The original PDFs define the assignments. This table describes the requirements
+ - `energy = average power x 9 ns`; HW3 area is `sum(W_i L_i)` for all transistors.
+ - Read the [English clarification translation](hw3_clarifications.en.md); a [plain-text English version](hw3_clarifications.txt) is also provided. At the user's request, numerical statistics and reproducible checks replace GUI waveform screenshots in this delivery.
+ 
++The archived instructor testbench retains its original relative include and model
++path. Use [prepare_instructor_testbench.py](../../prepare_instructor_testbench.py)
++as described in the [fresh-download guide](../../REPRODUCING.md) to create a
++runnable copy with the included HW3 circuit and your own authorized model.
++The archived original remains byte for byte unchanged.
++
+ ## HW4 area and scope
+ 
+ The [English clarification translation](hw4_clarifications.en.md) specifies a layout rectangle covering all materials, **not** HW3's `sum(W_i L_i)`. A [plain-text English version](hw4_clarifications.txt) is also provided. No physical layout area or post-layout results are claimed, and previous students' layout values are not reused.
+diff --git a/MANIFEST.json b/MANIFEST.json
+index 85880c9..45a0b82 100644
+--- a/MANIFEST.json
++++ b/MANIFEST.json
+@@ -206,7 +206,8 @@
+   },
+   "artifact_sha256": {
+     ".gitattributes": "8df22cc43d34bc5cf0e2ae4d1cd11a28ad8073b0e53f3ad51d1d693516d12b32",
+-    ".gitignore": "429559f8b323fa05f1d244be0f60a1c9c1d102278fdff142cf1e3a17199adab3",
++    ".github/workflows/package.yml": "dba05d48298ebf977283a2532e9aa241b3a3856c2fec52e81adee2b60b648345",
++    ".gitignore": "0f40ff0237a7cc28ecb14a4af5f16bd52ea8a60b7399d7fb0458df579b60248c",
+     "2013/HW1/README.md": "b70f1060cedc2ece3b321fa09c3fe67eef1fbf1be73dcbee543ffe00648dc44c",
+     "2013/HW1/solution.pdf": "6fc138c57868712e0f53d5bfccafd7c47e0a188bcbb749b65fad1d97f20656cb",
+     "2013/HW1/solution.tex": "d44a8e114974e8c1d3086edf492cc0e06675aaa7b04927d13fa4ea15d2d4c212",
+@@ -224,7 +225,7 @@
+     "2013/HW3/inverter_testbench.sp": "dbac0c78b1e31168e1570d5a3b661073c27d9fc83c25a25c6e8f4350552abcdd",
+     "2013/HW3/mux.sp": "15399143b9c83c9223a9939dd47dd857b9fc850d0eb16028032ffa285f401d92",
+     "2013/HW3/mux_testbench.sp": "623751a435c9f305c1f1fc10ddc804be7a07f6f2e6f7bf2c47bf68d548acfb7a",
+-    "2013/HW3/reproduce.py": "e8dc4c003df5a81bacf011053f5c8c9d3b687b341004e2f03b6793ed968c8db9",
++    "2013/HW3/reproduce.py": "cfa2899ebe4a5e9ca58ff0620fb05866310c0718dba2a81fdbaf452b26ad3e21",
+     "2013/HW3/results/inverter_power.csv": "02354c1f1e8c81d885a83c7e998c585fc7f16bc87d0235dab042baddce9ef3f2",
+     "2013/HW3/results/logic_2048.csv": "bba1586c5b972d9963c75bdb6821d982162a76042ccf553965b56a66519ac04c",
+     "2013/HW3/results/mux_delays.csv": "80a39c57d6437664b46cd04c9ee128e87cb4630dda7f197bfa862008dad0be33",
+@@ -232,7 +233,7 @@
+     "2013/HW3/results/topology_checks.json": "d88f97df7814e59823295dbd209b82f73d98fcbad0ba1e833cbb800ee289b48a",
+     "2013/HW3/solution.pdf": "3c1a9f046c8f79b40957dbc845d38ce6133ce598cee1b5f0c0d4c40438a369c3",
+     "2013/HW3/solution.tex": "4c97693386344a7f0f6690b845780925cae4283bfd4c8caa28ec96d55c5e055c",
+-    "2013/README.md": "311f4d6048f5975f4e0d568adfc0355677974d5c8756d18f8967392d22b27414",
++    "2013/README.md": "9f6d6431e876d27bc8bc51aa69148e0aa4c8f5685c44cd49ecfcafe922e2c2a2",
+     "2013/SOURCES.md": "9785c942a53dfe8f64df2aa52e30f6285740930c55d2c1dc69ab7a480c70c189",
+     "2013/assignments/homework1.pdf": "f10c5c107f247cd233de54855e0bc76f024301480bba97a1a4588094be80baac",
+     "2013/assignments/homework2.pdf": "9cf70011bf1523685cfa989b216da691d817a3c6dd9621c53e98d01644fe30fc",
+@@ -254,7 +255,7 @@
+     "2015/HW2/switching_points.csv": "878665f77bdf7f15eadb752ed4e96d1260e2c29dafceb5dcfd42663da7379fdf",
+     "2015/HW2/verification.json": "699c92829820c246b9e5401bebe9d7a9d96d8e2e63c2e89c2efb5225f82502b4",
+     "2015/HW2/verify.py": "55f7704e5e3508f9a0a077e75861bb8aebe7f6ed8c275e74f8328089666d3a17",
+-    "2015/HW3/README.md": "0fac38eff42a2a59a902d8261a49ef2b0b78515d87b8aace82732c6ba2eeea48",
++    "2015/HW3/README.md": "fb80f41a71e3f007b11ce525a5dfa6190ea550e4f8a4bbc413ad532a3a552f8e",
+     "2015/HW3/and2.sp": "eb70dea39484cb1129d432152b89a693b66b9eae746603a0d5bf1b8e94d7da8e",
+     "2015/HW3/and_delays.csv": "4c3c004f678a5e2e5e9068aaf733523bbcfa74f630eae8a34de3180d085bca8f",
+     "2015/HW3/and_level_checks.csv": "471f57cbbca2a6c6b7ed836e79c0038369001fc5cf26c5786cacfe975d3de69d",
+@@ -263,11 +264,11 @@
+     "2015/HW3/power_testbench.sp": "7857648a604856ea87a6b1ab1948bbbd65c5044b4d678fb4ebbd304d808eaedc",
+     "2015/HW3/power_vs_load.csv": "26861605bf057f6e99c7aa084ebaf9e15847992b687c6a13db378eac91457848",
+     "2015/HW3/power_waveforms.csv": "a4c8b1c910e3a9e662c8691189fcdb661000dd40ad30108e9f969bd7815b0e11",
+-    "2015/HW3/reproduce.py": "ea25204a3afa49b1c2e6a54230077e51ff24b0ca0ba7e89e0bf60a280d772e39",
++    "2015/HW3/reproduce.py": "fca0ccd1390f1149c2b8ef9adc9db748c08e0ef72c8d44e46c801cde44aa4b27",
+     "2015/HW3/solution.pdf": "51f86d24cb51dcda1b6b870199967871206936d45ed97649640b22f6f511f7fd",
+     "2015/HW3/solution.tex": "7e19e1ffc5f2b0983b36c38255956a6eaa6e89975cc79e5270f9ffba9de33307",
+     "2015/HW3/verification.json": "07fbade9087cb72823a3e842cbbaa68f5508688d3b82ddb43b3333b54f52214d",
+-    "2015/HW4/README.md": "365ac157c31940698ff363652294e070d173288365965afb3e8d3dcc2962f173",
++    "2015/HW4/README.md": "b9e83570226975add350ce9ab41b56d6403bdd767d3c521b6d31a553e7762a34",
+     "2015/HW4/domino.sp": "a88844d0c8cefe942c825c43796c039df8c07496ab93c5b6be9e84c7404eb935",
+     "2015/HW4/domino_convergence.csv": "0c0c499f3e811883b7d148b9b8ad1fc7969a3d356ab7d8c9f9be47796910eb30",
+     "2015/HW4/domino_delays.csv": "5bc56579eed5dcde70e9648f9b4f9bf1779f0c7747f4571322c77abf7245ab66",
+@@ -284,7 +285,7 @@
+     "2015/HW4/mirror_testbench.sp": "59a8ef9b77d71ea7edf1346d4c556a28615d25a1226261bb211ff2cc2068383d",
+     "2015/HW4/mirror_waveforms.csv": "f3442185fef7ed100890fbdf7501c5f543b9fdcb211e15b18181424baa90803e",
+     "2015/HW4/mirror_worst_delays.csv": "8bd2318d2b34563d71bdd4ffa6e1c97bff5b7529982bab94e4221ea0d3ec11a6",
+-    "2015/HW4/reproduce.py": "02fda266252f4c831b6877fd5a14efb4c81822682e5bdfa7746b2e87395994e0",
++    "2015/HW4/reproduce.py": "9f1f0204da91aa137d705fbc97f2b0609e778fc2930326df95b5e23b35b111c4",
+     "2015/HW4/sizing_search.csv": "f6945581b0e946250a20ed522bee525b6be0210c7b3d863b8002b563ec682a2b",
+     "2015/HW4/solution.pdf": "b875ddd98476df0c38a77a59eea355bdc269a26fc038a7159c0d405e980eccc3",
+     "2015/HW4/solution.tex": "cdec436ecc4669879efe9d56d0fc452a90fc66563a961d9fe964f7b5672e1578",
+@@ -310,8 +311,8 @@
+     "2016/HW3/results/and_gate/waveforms.csv": "eb108e971b23aca18b753e97ef671a202f40fc5887072c1cb282d49bbeed1a87",
+     "2016/HW3/results/power/power_curve.csv": "04eeb5992f907d8c02e1aedfc9f7a6a444706bae12132bc4a063d5ea6affd791",
+     "2016/HW3/results/power/summary.json": "e95f7a7a8c38ad19e9284b0876113955923fb74a2ddc19c2e4a1f80819a3e670",
+-    "2016/HW3/simulate_and.py": "a6f10d7050f1b57cdd2e81aea5f400476e09cff16a7592f9017d2b95144065f9",
+-    "2016/HW3/simulate_power.py": "6f79c0d96d18560366c45b0645ff8f8e9c5c4efb0a7df126aa10feadb016d142",
++    "2016/HW3/simulate_and.py": "cf3426fb48f2ec8f369ba5dc93dae10f27add16cfaaf106e7b67cfe9a32ee50e",
++    "2016/HW3/simulate_power.py": "e964b814162a368a3ee824337c04dc2eafac131100d96db97ea1073e942648ba",
+     "2016/HW3/solution.pdf": "e2988f7b289c0bb2d4016bd58001fb807656a513ede437470b73e40c8a10fca5",
+     "2016/HW3/solution.tex": "24ad2798bae85e4cec5aabb9c1bec21046dd844c4564e270c6efd6f1b01a116f",
+     "2016/HW3/testbench.sp": "3f48e5287cbc00ef91522add3ed7b194b6f3c0b177dc2a70748a4791a7f0a16c",
+@@ -341,8 +342,8 @@
+     "2017/HW3/results/and_gate/waveforms.csv": "eb108e971b23aca18b753e97ef671a202f40fc5887072c1cb282d49bbeed1a87",
+     "2017/HW3/results/power/power_curve.csv": "04eeb5992f907d8c02e1aedfc9f7a6a444706bae12132bc4a063d5ea6affd791",
+     "2017/HW3/results/power/summary.json": "e95f7a7a8c38ad19e9284b0876113955923fb74a2ddc19c2e4a1f80819a3e670",
+-    "2017/HW3/simulate_and.py": "05a7b514ff69a8ff0f4aafcf022a3caf211d259de4dab17d023b1861836a9412",
+-    "2017/HW3/simulate_power.py": "6f79c0d96d18560366c45b0645ff8f8e9c5c4efb0a7df126aa10feadb016d142",
++    "2017/HW3/simulate_and.py": "ed52ca0710845357a9f4c2ef0d6e30809c5476b0a3604fe94c2a7fa0d4218a78",
++    "2017/HW3/simulate_power.py": "e964b814162a368a3ee824337c04dc2eafac131100d96db97ea1073e942648ba",
+     "2017/HW3/solution.pdf": "04de037bcfd0e70d8251959389f5b72341b2a809f2ec19207305733dc276af7f",
+     "2017/HW3/solution.tex": "afd7b2957002e7e225d68e67ea4ab8f3f52e58c897145f8cf1c3df4f316a9a19",
+     "2017/HW3/testbench.sp": "c803877c5c990fb54f4dafb1042d449d371ec57ebbaf4908318ee53bb109adbd",
+@@ -353,7 +354,7 @@
+     "2017/HW4/mirror_full_adder.sp": "7b58f88e6f03e2c47213ff532bed5dac6d990a7a3e51f23c1328aa29301fbf6c",
+     "2017/HW4/mirror_sizes.json": "7721505e53107816ed6c22b12cb433e5db6966b4b99ddd3e6b98ff049d918f98",
+     "2017/HW4/mirror_testbench.sp": "2b06cb36646845125c1da82eac919061c20804dfa8e5b91d051e8fce94e26baa",
+-    "2017/HW4/reproduce.py": "f4d57880cbdc03cc7ad97d392c9a5423cf62528d780d9785842d8c29997fa86b",
++    "2017/HW4/reproduce.py": "98aa3e46051213b1443fe9e6ad7ee8fed2f7cd0643e445c058fd9d2b0304a1fa",
+     "2017/HW4/results/calibration.json": "c14904c98a3423467e3da24490c0ee210760eb75d43fa3c74e1b7198092457c8",
+     "2017/HW4/results/domino_logic.csv": "45526c8d71ad94bd263f1a14610a91c768f1cf6f47ffd46d1cbcf411ba13cafb",
+     "2017/HW4/results/domino_metrics.csv": "c0701576a7b35ab1e2625edaf1b2704428dd1b31738f628df8a098b3faff2eb8",
+@@ -385,7 +386,7 @@
+     "2018/HW2/q2_pi_rc_measurements.csv": "74a36622c99070cd714a5592dc66778f88fcda3dbbd1b4054da4c489d6da232a",
+     "2018/HW2/rc_checks.csv": "c49f7aeea5c8324b6bbb4834dd7ca8cc52c7dcf42edaf9994d2dbfefc79064d5",
+     "2018/HW2/rc_expected.csv": "03a5d58fbb50d8b210b5ee1f93d53144c67437b87d72c24245b26b3876339570",
+-    "2018/HW2/reproduce.py": "9c49008395268e7bc991c8c7845a52b58ffd047a3d0a12bd0cd5f26fc9aaab57",
++    "2018/HW2/reproduce.py": "9be5ca941eb1065508e5f8584322fbfcb76b6884128aa7451e6402f4c2849bc7",
+     "2018/HW2/solution.pdf": "9ec073adf1b6ae882434e8a2b2f4c6ead7ecf49a65fad4236d308e8c681ad055",
+     "2018/HW2/solution.tex": "c20a277ffa9b2a80a79b0918ecf674af8a2f12798c38d16a6c8562a272697dff",
+     "2018/HW2/validation.json": "88ae788574d211a802f98bd3f54ed4eb5f41b3d575bf793f190329f5fd4ceb39",
+@@ -405,7 +406,7 @@
+     "2019/HW2/q2_pi_rc_measurements.csv": "74a36622c99070cd714a5592dc66778f88fcda3dbbd1b4054da4c489d6da232a",
+     "2019/HW2/rc_checks.csv": "c49f7aeea5c8324b6bbb4834dd7ca8cc52c7dcf42edaf9994d2dbfefc79064d5",
+     "2019/HW2/rc_expected.csv": "03a5d58fbb50d8b210b5ee1f93d53144c67437b87d72c24245b26b3876339570",
+-    "2019/HW2/reproduce.py": "9c49008395268e7bc991c8c7845a52b58ffd047a3d0a12bd0cd5f26fc9aaab57",
++    "2019/HW2/reproduce.py": "9be5ca941eb1065508e5f8584322fbfcb76b6884128aa7451e6402f4c2849bc7",
+     "2019/HW2/solution.pdf": "38c289c4ea47b79060be630521ec67451a8b00bf99feebb2c3c5c699e5b5b2a3",
+     "2019/HW2/solution.tex": "bd778a82cb65c3c0cf5d638fed52af9508a67cddccc6e8ff6d900733191deb40",
+     "2019/HW2/validation.json": "88ae788574d211a802f98bd3f54ed4eb5f41b3d575bf793f190329f5fd4ceb39",
+@@ -421,7 +422,7 @@
+     "2020/HW1/truth_tables.csv": "0d227901aa3925087c743707218c9d5b75febd6cad22fc22c7fa7499f8128e69",
+     "2020/HW1/verification.json": "f6917133260933a60683b2bbe212936ecb0209d51b4b85e7c603f6767f418b35",
+     "2020/HW1/verify_logic.py": "4c53706249bf7f98aa23222af778603ecb8185f5732f333293ad0f3601b63000",
+-    "2020/HW2/README.md": "892d2b3e81c11ae51ac70f65f3829fc8900cbe82f61ae35ecb424e0118f181e3",
++    "2020/HW2/README.md": "c579183b6f9558c3d42d9af8b27ea025205312d4be5fedc97a3d43886692b004",
+     "2020/HW2/dualvt.sp": "406dea5b15fa6718e065cfe39a86b855ab589e5a7b7459c0138d18ff19083ad5",
+     "2020/HW2/q1_timing.csv": "62e2221b102276ca53b647089791c0d6d330462b6c9fd25e614ba9d0b496941e",
+     "2020/HW2/q1_truth.csv": "257726b6bfe0b70e54ab8fbb8b154e8001148a0c58facb7a18ffeb001854097a",
+@@ -433,17 +434,17 @@
+     "2020/HW2/q3_fixed_resistance.sp": "608525e70c5bc1703977362d5ef2539b16f50009e4d46cef011c6e8b0fca7c91",
+     "2020/HW2/q3_fixed_resistance_measurements.csv": "07027b3bbbb0facf6fa899fe4aac2151a2bb68a657fe866d40588b4a75137d32",
+     "2020/HW2/q3_ideal_expected.csv": "d8f2b9982c6d270a3ccfb5e0f1896648c6ad1bf075fe94f8acb9bc3ed87c93c9",
+-    "2020/HW2/reproduce.py": "16ab76a1663f6af497b7aa3f359cda06270b6f6674d873b7729a7014b0bf04ba",
++    "2020/HW2/reproduce.py": "4ff0c0418ed2e54f48978848c11a6f940ca32a6e994b01c0e727f3c274ce5e46",
+     "2020/HW2/rotator.sp": "2ace200b0ffc8f322a8a5bfb51df298462eafacc8480498c1441744da5ea399c",
+     "2020/HW2/solution.pdf": "f91e63f3c2d9b79df1c23b9ca6933581946ddf483ff034962f47c68a91f02e87",
+     "2020/HW2/solution.tex": "e4a08f1b8226deda502e925c471eedb4f35174d917771cca37de9cd8f8de94d3",
+     "2020/HW2/validation.json": "c48b8b30c9ea6ace0b65572fe4728bc4c9d6d08f3457b03ed13780fac71af47e",
+-    "2020/HW3/README.md": "976b7a84b00427384c7e219536cda435f897bc6394e6f430dc0ea837a0544918",
++    "2020/HW3/README.md": "f7e3ec22ae4771a72942962697b8b9776acf44e0003fdff39e5bdb09bec58b93",
+     "2020/HW3/and2.sp": "165ab9624034030cf03d8ae082cea8484cb57d812a9f6caad2d2035315384405",
+     "2020/HW3/convergence.csv": "029debe94ac933e752846a9156b6b6f9154cf92799120c4326b75a4320a36b2b",
+     "2020/HW3/delays.csv": "ba436ed8186f123bcf7f71d18bb1a79d0aa96393856c3c28786720e7ec705ad9",
+     "2020/HW3/level_checks.csv": "362230d93a3c20e399c5b18086b16abd3a8ada87edc9dd5d27d7524e0016a898",
+-    "2020/HW3/simulate.py": "b2d6a61c0da41fc8c7d236942ecec8dea57d40f86ba097c2b015090b1662408d",
++    "2020/HW3/simulate.py": "41ac355b41d6e83c4aba98939d11ecbc8c54c4f0fe6efe3ea54bf9796b28a347",
+     "2020/HW3/solution.pdf": "5991838c2c9314db8012e089e7302174442e5055a6786fe223303175fa99f676",
+     "2020/HW3/solution.tex": "9e186c598adee428d9ab8cc0534278ca7554f92b9e71306249b3d12a63d83b6a",
+     "2020/HW3/testbench.sp": "5877b9cac23b928eef4cebd91cbea7306c35b53ad0a97a00621f27ef175703a4",
+@@ -451,13 +452,13 @@
+     "2020/HW3/waveform_delay_checks.csv": "4553c9598e2fb2e7a1ede2045bfe541360617647b1c0860b7c01a16325d4c807",
+     "2020/HW3/waveforms.csv": "c37615c335cdcc119736554bab5b6881fa902e649ac98d2361e0a83c62f57dca",
+     "2020/HW3/worst_delays.csv": "53c76a5c154ca8427814cac72df7ad9ebed11e4c2627f2d9e5838c3dc6b21697",
+-    "2020/HW4/README.md": "a3bcd2dd48856743088e802b6fda7e82eefeaf5ea3cd6a510890e831ce821f8a",
++    "2020/HW4/README.md": "131b074a93357cbc0e4ce54b40729aac7e457821ad693d1c561bfff53d572de9",
+     "2020/HW4/and2.sp": "165ab9624034030cf03d8ae082cea8484cb57d812a9f6caad2d2035315384405",
+     "2020/HW4/convergence.csv": "029debe94ac933e752846a9156b6b6f9154cf92799120c4326b75a4320a36b2b",
+     "2020/HW4/delays.csv": "ba436ed8186f123bcf7f71d18bb1a79d0aa96393856c3c28786720e7ec705ad9",
+     "2020/HW4/level_checks.csv": "362230d93a3c20e399c5b18086b16abd3a8ada87edc9dd5d27d7524e0016a898",
+     "2020/HW4/provenance.json": "7ff0f2349e7ebc1737bb6795d516af9a48d4ea828f769fa241f0bfa9549f583b",
+-    "2020/HW4/simulate.py": "b2d6a61c0da41fc8c7d236942ecec8dea57d40f86ba097c2b015090b1662408d",
++    "2020/HW4/simulate.py": "41ac355b41d6e83c4aba98939d11ecbc8c54c4f0fe6efe3ea54bf9796b28a347",
+     "2020/HW4/solution.pdf": "9c5f5590ea522b1c3a8494364a96f1e293062474eb22219a9184380101637003",
+     "2020/HW4/solution.tex": "ee097e764752d0cbc4c5ee871f4fedb45a8c611815c41687a9fa451b72d8cd00",
+     "2020/HW4/testbench.sp": "5877b9cac23b928eef4cebd91cbea7306c35b53ad0a97a00621f27ef175703a4",
+@@ -487,7 +488,7 @@
+     "2021/HW2/logic_verification.json": "d8edf3ac755443b06e4add92b7ccb3bcff206c8f62eee658cba4edb22ed38712",
+     "2021/HW2/pseudo_nor.sp": "f546df139905093f075a7ee473fa8bf6bc72130091cf6029bb9a38006d7210bf",
+     "2021/HW2/pseudo_nor_testbench.sp": "cf4f94469053450722c02fb4fc61572155ca1be1a700016d752569e1fd8aee6d",
+-    "2021/HW2/reproduce.py": "57637687fd3636514d45f56428756572fc8363920f27b3e05de17150a1720d5e",
++    "2021/HW2/reproduce.py": "b1b635a4e20bca61a5250f71de3c614e94e754cf6e81ed3edf15029d7e6d4bc3",
+     "2021/HW2/results/dual_vt_illustrative.csv": "2ee295078d71c74055b877a94e4d2807e1fa40876592f5f26508d1da67b71482",
+     "2021/HW2/results/pseudo_nor_electrical.csv": "bf465fb2d237ccf5c91bd0c51ecc54bf6048794b1d73a9344b83d8975b2c21c0",
+     "2021/HW2/results/rotator_electrical.csv": "8de3151382cf7a1f2ff6434cd76ff0d6f9e4edf2e3e7018d6b81f3cad9b85050",
+@@ -500,7 +501,7 @@
+     "2021/HW2/verify_logic.py": "95d7243e64ed8ee4713bf9d0ad0398db2422541958a69fb0defb60278bfcde47",
+     "2021/HW3/README.md": "bca2507c7a935c6d7c0396891463271af61b610fcd62ec3855f474e05ae6fb4b",
+     "2021/HW3/and2.sp": "e9c4218cab55c1eee0ebb24f1a8c491e781340508e1108c9e69e96af7c408092",
+-    "2021/HW3/reproduce.py": "ba1f83af34cfe3c1c0f0b0dbd5e552533fedf3d5890173474a1dad4ec4cc58ea",
++    "2021/HW3/reproduce.py": "22fd63c3aedcc7442a98a58723c6942bbb2ed7226f0c2988a5ea9d09e1b68755",
+     "2021/HW3/results/delays.csv": "040e8352d465920cae55850b061f6ef99bb453902c060e91fa38b3d50827f154",
+     "2021/HW3/results/logic_levels.csv": "5f189a65dc58ffadfe5c78cd73337448440adcb71d224c89c1c3cafcd52936ed",
+     "2021/HW3/results/summary.json": "b7e23c1453be0c2a456daccaa4c10157e3a7582906ccd234cc6fc302d28ad687",
+@@ -510,7 +511,7 @@
+     "2021/HW3/testbench.sp": "d76bdd08f1251644fc1c90036c40de817f9e5effcb1cd77edc3c44ee9d641f95",
+     "2021/HW4/README.md": "83721be5b28187c513321df5d6d195f42f0cc0624b501151dda8d2ac957a6cf3",
+     "2021/HW4/and2.sp": "e9c4218cab55c1eee0ebb24f1a8c491e781340508e1108c9e69e96af7c408092",
+-    "2021/HW4/reproduce.py": "ba1f83af34cfe3c1c0f0b0dbd5e552533fedf3d5890173474a1dad4ec4cc58ea",
++    "2021/HW4/reproduce.py": "22fd63c3aedcc7442a98a58723c6942bbb2ed7226f0c2988a5ea9d09e1b68755",
+     "2021/HW4/results/delays.csv": "040e8352d465920cae55850b061f6ef99bb453902c060e91fa38b3d50827f154",
+     "2021/HW4/results/logic_levels.csv": "5f189a65dc58ffadfe5c78cd73337448440adcb71d224c89c1c3cafcd52936ed",
+     "2021/HW4/results/summary.json": "b7e23c1453be0c2a456daccaa4c10157e3a7582906ccd234cc6fc302d28ad687",
+@@ -518,7 +519,7 @@
+     "2021/HW4/solution.pdf": "8cf918bb9330c546f2ede8960f689f3a536d4b2c8838d73f180afd92004aec79",
+     "2021/HW4/solution.tex": "c56968fa60f542d5cf01ee6687513ec111eb615de9bae2fb852fc3bef1111d93",
+     "2021/HW4/testbench.sp": "d76bdd08f1251644fc1c90036c40de817f9e5effcb1cd77edc3c44ee9d641f95",
+-    "2021/README.md": "5dbbc741cfa3cc45f3add65c5e49884e83801f231752bd12debc4755a0ec7bd0",
++    "2021/README.md": "7b980cb3deb13a2ea65c3b259a62362ca9043148c8829060d7cc80a960e1d495",
+     "2021/SOURCES.md": "c6563d29cd6b420ca81f6ea13faae7b5e05f374ebe7af11ada928eced76d53a1",
+     "2021/assignments/README.md": "660bb955638741bbfe4b4a7f9404fba0e071c873dd2a0a6efb22f2c8d4e132c8",
+     "2021/assignments/homework1.pdf": "3de7e17b66b89624c86d8285d124e8185f0045d9f4b06bd51863d119c620f11d",
+@@ -544,7 +545,7 @@
+     "2023/HW2/q3_cic018_measurements.csv": "a5e617346e4379a4bbcfba30a2c7b9a82bfa6b4ccda26ef52557119441d80f0b",
+     "2023/HW2/q3_resistance.sp": "e9a564b0ca08c05a519f5889bf279d35d68dd462908dfce9065c18e0c1127c1c",
+     "2023/HW2/q3_resistance_measurements.csv": "8507600ad07e81e42def95f9ca003fb73897e661fe3ca69b009b081411f5e19f",
+-    "2023/HW2/reproduce.py": "c7c0088b41eb8572347eed240dc8ad6edd4f361569d74ab35249d4c766f176db",
++    "2023/HW2/reproduce.py": "88a3fcff831597f7daa4d7d12d1a13741f8d9f7a48623d535e3dabc85cd22e70",
+     "2023/HW2/sizing.csv": "fd6c0ff0075eae5f93ff2722f4b3ed6550a65143f78257b2bac97dc252eadae7",
+     "2023/HW2/solution.pdf": "7fcb753a3d5fe2a4fe04c24caf8fdbb15b5f22b1735eb03d2645ce85ee6937ba",
+     "2023/HW2/solution.tex": "1cb39179365e10c7bd5c5f362dcb3a265f05b3fe268f87288eb185aa78ad5ed8",
+@@ -552,8 +553,8 @@
+     "2023/HW3/README.md": "025d70d1459b6e5d6308fe19847dd1d4757d7dbcebabbc705ae04f33766d47fa",
+     "2023/HW3/characterize.sp": "9ebf03000a804a5a51bd25361d72e88a7c8ef7488546c471ed6ba12f4806089c",
+     "2023/HW3/rca.sp": "060385c1e07e0a3e8839bc4560618286ab5a541bcaf48be5ece82bfa4141c610",
+-    "2023/HW3/refine_worst.py": "0f414432cc57a4e4ff580db8429e18bac6078fa28d8b9dde434956f5bae22e9b",
+-    "2023/HW3/reproduce.py": "c6d4f0e958762616bd9839a1926b45ff697da1ebad63424d7b29e59ab268d0b7",
++    "2023/HW3/refine_worst.py": "41640dadac137bebbcda605cec581f14ad6a1b0ef16afdeeba5aa0ee87ffb1cd",
++    "2023/HW3/reproduce.py": "3805bdadb4e6654d6a8dbb0bf4e642a6028fa53e3d5b15833f4cdb8a86dd9ff2",
+     "2023/HW3/results/delays.csv": "a76c7e6df02431c198695e99582887362cb5f4dc43fd01ee71044887d90f185d",
+     "2023/HW3/results/exhaustive_128.csv": "4e90bd1357349390743e5b9af3b432bb5735557ff37acf52be7cec1c209aa44d",
+     "2023/HW3/results/logic_verification.json": "53a8b1c21ca256a951b6448e94f92fe11057d185705f0520c98cc0967db1b23f",
+@@ -568,13 +569,13 @@
+     "2023/HW3/verify_logic.py": "4bb0c93ca52ada639319eba4be0ecb34423552639228f8c2c8a9597399fb3a08",
+     "2023/HW4/README.md": "9b73a4fe0f3e94f947e109d0d215ce4772657d127fb1ae48a0dd3f5b92da7145",
+     "2023/HW4/rca.sp": "060385c1e07e0a3e8839bc4560618286ab5a541bcaf48be5ece82bfa4141c610",
+-    "2023/HW4/reproduce.py": "ce78ba3f6bd8fdb247acce322117d0d96c9922986e68851352fd5f952504bbb0",
++    "2023/HW4/reproduce.py": "c689c70350d5d69fb2d1f71e2cc3c6c57c11219bcdc7189ecb284b2dd4fc44f2",
+     "2023/HW4/solution.pdf": "39491e888f1b99dd92efd2ec347989e4cfd5cfe4abf0bcbe0910e2cb7debc67b",
+     "2023/HW4/solution.tex": "4105728f82e37b12c1ad1fa0b393ddcec29c53f47f43d626c66a3051a76d08f1",
+     "2023/HW4/testbench.sp": "7623f3c2eec2950c928749c5d2bb6733d2ea46c00b16cbaf5293f0bb19e5a4e5",
+     "2023/HW4/validation.json": "7ff9aeeb6d485a64fd37dffea242c12e8d6a18ea2627d4d2f78753e204b1f0d5",
+     "2023/HW4/vectors.csv": "a622732301e0eedc8c115f84b44e827d244d8a1e99fc6579a77146c70e179247",
+-    "2023/README.md": "674d9cf541a4186582765afc199985763a51b3a3f4cf987e64ef9d94994ac48b",
++    "2023/README.md": "3f1be68e7e2c638666ce880c55792dc80bb9636bbc18c72bd7086372a0693712",
+     "2023/SOURCES.md": "4940c8017057d2b0f9e6bcf725e17655c91db662c48fd862b0ce615780851d6b",
+     "2023/assignments/README.md": "ca7bc56fd8d3068d6f422d07c7cbc3eb3e65312d9c5c4f2d69c1a48a3d37a130",
+     "2023/assignments/homework1.pdf": "88c4579e080f5ddfd5ddf8dfac48650e312c4a9da4d96e2de5ae56cc8a7a0068",
+@@ -588,7 +589,7 @@
+     "2024/HW1/truth_tables.csv": "72d88ccdc6719ed465311c6a00dcdc32038a224debfe25c0211eaa74753b622f",
+     "2024/HW1/verification.json": "35660a938d69da62f0acb14761fb6e498df1357bd247548c26585ad1cf9ca62b",
+     "2024/HW1/verify_logic.py": "667f4641678e3237bcae3177a01b4971d195092108cd70177b1cd5fea76e9d1a",
+-    "2024/HW2/README.md": "48e8eff09d4d204ebf74f6bc5c70c7abdf50f08c2abb8ad0a6365716e77aa493",
++    "2024/HW2/README.md": "2b70f3f925aeab7a54774ee5cf613a7517426cef2ab0de1b2a16d679ce9771e0",
+     "2024/HW2/analytic_expected.csv": "4e0a7a90cc293814756050a8b93d741ebf3fa1de72c3d4b8f2b0dcad2f7dca42",
+     "2024/HW2/q1_constant_leakage.sp": "cb12777f81976d987174d00794d39e240e3a711fcd26b0fea6f04fc467288b48",
+     "2024/HW2/q1_constant_leakage_measurements.csv": "86e8e3edb541aca749ced0723b09c9c28d695f2fca03607336e257efc5ad08a9",
+@@ -596,7 +597,7 @@
+     "2024/HW2/q2_cic018_tt_measurements.csv": "9cbb5c21ec5922233d380d951c560958b8ee329f60044241db607c078538888c",
+     "2024/HW2/q2_constant_resistance.sp": "e08450b0fd19a5037b150bd774902039c017c640c836d3f8c802759d022f0f0a",
+     "2024/HW2/q2_constant_resistance_measurements.csv": "b2013af856b72a6ca7a7090a45cc31606f8c6c41ea18fbaf51b07c557ee44bad",
+-    "2024/HW2/reproduce.py": "1c60b3a807b9f3e60ec0490a5117d5680d102561ab7c6421217d940fec72fbf0",
++    "2024/HW2/reproduce.py": "ff2bc5f0626f4a1ab7671383f0b090e7a69729d35bdeb6b6b457ff258226f78e",
+     "2024/HW2/simulation_status.csv": "1e02321e18ad90b5fef630e3a46dbde22a113e0e6675bceeb84a9c3e72c9c765",
+     "2024/HW2/solution.pdf": "b30621e326d3ff0ae414e704e0b8deac1233fd29f4e45c581b20eb5d042cfb13",
+     "2024/HW2/solution.tex": "60771c4a73705ebd63397f769e3e2e80d68607496b684b5798b29b5f24df93ab",
+@@ -613,20 +614,20 @@
+     "2024/HW3/results/summary.json": "31bd971e45910b4ccfd7088a3ac68bc3905d62e4623b3739117cf4d87503b40f",
+     "2024/HW3/results/vectors.csv": "dce23dd154396e1b502f4725cfb3f183cbba4ed2eed089490270db555b4536f3",
+     "2024/HW3/results/waveform.csv": "1b04c0448b07fd7c18e490b264fb87c8befb555e8eaae322d16462a4a2e0427b",
+-    "2024/HW3/simulate.py": "846c7780a1f7231045b8db70b2d9b037645010994de57c255bfe3a40cb8d35e7",
++    "2024/HW3/simulate.py": "afa1453ce6f7898888fe13d22c4b66c48f63bff0513890f3bc650e56ed7126f8",
+     "2024/HW3/solution.pdf": "f2c7edd7116c2116c3a9d6b1d3d4d7dd2bacc81339d88a3055befd56154b7b6e",
+     "2024/HW3/solution.tex": "182394b027df5ff46341f4b808ab4c6222c9fc34b8f14aa6c884468a9c7875e4",
+     "2024/HW3/testbench.sp": "46928b2f092550e0805282f694121cd41072c21802420cac9f3335e1e6357934",
+     "2024/HW4/README.md": "3e4d7e01a1cf23e98e9beb6fc9859a4c937eaf99a2ea8e0cd58dbbb858d647c4",
+     "2024/HW4/four_bit_multbased_adder.sp": "b128bd47dd6c608fa72bbf84987e1b04c831091f6aa180476f1162f84b037513",
+-    "2024/HW4/reproduce.py": "5ea35ad6d770580612c15c9234802eea85c5becc265518b162dfbc435237a18d",
++    "2024/HW4/reproduce.py": "1a3b405404fa3ecb5e9d93ae538c7ec37e5cc9ecdc5443a855e997f5af71315d",
+     "2024/HW4/solution.pdf": "fb9f941b78251a8ed1d637d99992658d9d5048c2792a5c6006b5c0bf9255c70d",
+     "2024/HW4/solution.tex": "96383e76dabd6d610691f3a4e489ab759d0be07cb78c2f969a3e1a46a87d8a2d",
+     "2024/HW4/statistics.json": "c3b97e8f0ba5e03172b9460a658fc3170f65d75a2e2475ef0a767e531c3eea7f",
+     "2024/HW4/testbench.sp": "888413e2e00d0c27b192a21f9278b8ff1e445420b3f694c833167f5d5956ab1b",
+     "2024/HW4/vectors.csv": "c83cebb7aa7fa4e5f8bd9ba6e39485be92e8a56361a52049495c0f7e30620682",
+-    "2024/README.md": "680e67d3e15939ec1f7b886a6d3e03acf0987765c01afcad6e8d117969890853",
+-    "2024/assignments/README.md": "643339247a62f12abf4aa52aee79c1e893a5f126b128d8fdd71484965b490dbb",
++    "2024/README.md": "26ca69f28e57d198a8d9e9bc8a199290c3a69ff901cacd8d370cb74bac6da3e3",
++    "2024/assignments/README.md": "18486ee1a41d5e2d24816333a8c9a375c0b4486f0c2811eae97f7999e5cd2b4b",
+     "2024/assignments/homework1.pdf": "46ca699fd7660b0a9da924ee9f12d771425198bc6e0c9eabe992900ccc6577b3",
+     "2024/assignments/homework2.pdf": "537d0e739dd3f94bb076a65f78b2bc80a26716d4efeff517ee12774bc9c2d16d",
+     "2024/assignments/homework3.pdf": "7990d0b7a895468af2392c27b8215b9476e7c63951ab8fbf6a5c87568f94ee84",
+@@ -637,11 +638,19 @@
+     "2024/assignments/hw4_clarifications.en.md": "e094ed40e6680e6e077c5e1c8e2c2f45a4e3edff4358e5e9f5f1c034a539e620",
+     "2024/assignments/hw4_clarifications.txt": "2cc10ecb40acb5efbc702bca06aa353140d9c9a22407921b28558d4395a21b5b",
+     "COVERAGE.json": "e3fdb89c72d6839dbb7e98f8cc808381e3b5ea8df45849517b2c9175b282863c",
+-    "README.md": "17b5295e5ea99d428dcb037a4168059230e27903cbac314103863b58a86ec93e",
++    "README.md": "e53f559996d9fa52731f590eb8d1ad3956bbeb1f4a068b081d0dad14b4247548",
++    "REPRODUCING.md": "67241e36eedc992e0405f618c811927c6e8657277d9415477b988cbb1179e5fe",
+     "SOURCES.md": "cbb3947cccfb9f852eb84d4f0c34de870de02bf6ec0dfc46bf702de74fc0f833",
++    "check_environment.py": "0a6e95d554d76594ccc5191fcb93d9d678708540fdcd299da6b21b485b73e42e",
++    "prepare_instructor_testbench.py": "f82b033a318962df3500022740b551abbc192930c186580b96b188db0096ee5e",
++    "reproduce_saved.py": "0a2c45595a2112c493dacd574212f9b6602163543e5b1ae60521932fd9cad305",
++    "requirements-plots.txt": "f6cb4c6688514af04f38a8e2da99006b31003ad2b46900cbdb1b9bb10a6f7c80",
++    "simulation_entries.json": "af3158ed4bcf0ba5e6e7d794a0d9b290c46c20518d5898d5f15a45a0d64aedc5",
++    "simulation_environment.py": "bb94e4b4c9c553fc0ee7a654c3bc60ebcaec29a9d3fcd7cd9e9b67d4423ddd35",
++    "tests/test_reproduction.py": "9d493680e7c749ea50ed7d6f0ccb1ed930df2149b9f342a55cb823de2281ddba",
+     "verify_multi_year.py": "3272da269cb901035c4731dbd9c43b3f80e2be51e526b9c8416b36b88ac2979d",
+     "verify_older_years.py": "fbdba5a11854d119a2df6c10a7a27bcbc42d2194b4bc417724e322d55c87eccf",
+-    "verify_package.py": "22486111965993e183e6a3d66c8105023b84f57b713538ecce9d65fb9db76e6c"
++    "verify_package.py": "390bdabbf5d483c33ab45c4732c61e93158ebe0fda63ebb9b48c4210841be805"
+   },
+   "assignment_years": [
+     2013,
+@@ -669,5 +678,12 @@
+     2022
+   ],
+   "coverage_catalog": "COVERAGE.json",
+-  "completed_assignments": 31
++  "completed_assignments": 31,
++  "reproduction": {
++    "saved_entrypoint": "reproduce_saved.py",
++    "environment_checker": "check_environment.py",
++    "direct_simulation_drivers": 23,
++    "optional_plot_requirements": "requirements-plots.txt",
++    "licensed_model_distributed": false
++  }
+ }
+diff --git a/README.md b/README.md
+index 4915f1f..2e1042b 100644
+--- a/README.md
++++ b/README.md
+@@ -59,13 +59,18 @@ tested delays from a global PVT guarantee. Numerical conditions differ by year.
+ 
+ ## Reproduction and package verification
+ 
+-- Python 3; the package checker uses the standard library.
+-- PrimeSim HSPICE S-2021.09; default `C:/synopsys/Hspice_S-2021.09/WIN64/hspice.com`.
+-- The local CIC018 model, default `D:/cic018.l`; it is not redistributed.
++- Python 3.10+; package checks and saved-result reproduction use the standard library.
++- Licensed PrimeSim HSPICE and an authorized CIC018 model are external requirements for new process simulations; they are not redistributed.
++- All simulation drivers accept `--hspice`, `--model` and `--check-environment`; no installation-specific fallback paths are used.
+ - PDFLaTeX for standalone reports. Optional Matplotlib regenerates selected plots.
+ 
++The [fresh-download guide](REPRODUCING.md) provides one entry point that generates
++results without CAD, optional plotting requirements, prerequisite checks and
++a runnable copy of the unchanged instructor testbench.
++
+ ```sh
+ python verify_package.py
++python reproduce_saved.py --outdir reproduced/saved
+ ```
+ 
+ This checks original/report coverage, artifact hashes, saved numerical results,
+diff --git a/verify_package.py b/verify_package.py
+index 6f806f4..f5c8173 100644
+--- a/verify_package.py
++++ b/verify_package.py
+@@ -38,6 +38,17 @@ def main():
+         require(sha(ROOT/name)==digest,f'Changed artifact: {name}')
+     for pdf in manifest['original_assignments']:
+         require(sha(ROOT/pdf['path'])==pdf['sha256'],f'Changed original PDF: {pdf["path"]}')
++    reproduction=read_json('simulation_entries.json')
++    for entry in reproduction['entries']:
++        source=ROOT/entry['path']
++        require(source.is_file(),f'Missing simulation driver: {entry["path"]}')
++        text=source.read_text(encoding='utf-8-sig')
++        require('resolve_simulation_args(' in text and 'add_environment_check(' in text,
++                f'Missing environment preflight: {entry["path"]}')
++    for name in ['simulation_environment.py','check_environment.py','reproduce_saved.py',
++                 'prepare_instructor_testbench.py','requirements-plots.txt','REPRODUCING.md']:
++        require(name in manifest['artifact_sha256'] and (ROOT/name).is_file(),
++                f'Missing fresh-download support: {name}')
+     hw1=read_json('2024/HW1/verification.json')
+     require(hw1['status']=='PASS','HW1 logic check status')
+     require(len(rows('2024/HW1/truth_tables.csv'))==96,'HW1 truth-table row count')

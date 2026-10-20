@@ -1,0 +1,15 @@
+test_2024_hw2_model_override_only_changes_scratch_deck (test_reproduction.ReproductionEnvironment.test_2024_hw2_model_override_only_changes_scratch_deck) ... ok
+test_analytical_modes_need_no_model_or_simulator (test_reproduction.ReproductionEnvironment.test_analytical_modes_need_no_model_or_simulator) ... ok
+test_environment_variables_are_supported (test_reproduction.ReproductionEnvironment.test_environment_variables_are_supported) ... ok
+test_every_driver_rejects_missing_model_before_simulation (test_reproduction.ReproductionEnvironment.test_every_driver_rejects_missing_model_before_simulation) ... ok
+test_explicit_paths_with_spaces_reach_all_driver_preflights (test_reproduction.ReproductionEnvironment.test_explicit_paths_with_spaces_reach_all_driver_preflights) ... ok
+test_invalid_executable_and_model_are_actionable (test_reproduction.ReproductionEnvironment.test_invalid_executable_and_model_are_actionable) ... ok
+test_output_guard_rejects_new_directories_inside_every_source_tree (test_reproduction.ReproductionEnvironment.test_output_guard_rejects_new_directories_inside_every_source_tree) ... ok
+test_prepared_deck_keeps_unicode_output_path_and_rejects_apostrophe (test_reproduction.ReproductionEnvironment.test_prepared_deck_keeps_unicode_output_path_and_rejects_apostrophe) ... ok
+test_prepared_public_deck_preserves_source_and_has_resolved_includes (test_reproduction.ReproductionEnvironment.test_prepared_public_deck_preserves_source_and_has_resolved_includes) ... ok
+test_saved_demo_works_without_cad_and_protects_sources (test_reproduction.ReproductionEnvironment.test_saved_demo_works_without_cad_and_protects_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 12.122s
+
+OK

@@ -1,0 +1,361 @@
+PASS: 16 MUX cases; Q7 CMOS 8+8+16 cases; exclusive rails and correct polarity.
+Q3 intended H=20: 3 total stages, T=8.143252850 R Cg
+Q4 ideal RC switch onset: Vin=0.8 V; open-interval regions verified
+Q5 four functional scenarios verified; numerical margins are assumed-model illustrations only
+Q6 student worst delay=10 R Cg; corrected worst delay=7 R Cg <8 R Cg
+Q3 graph: all 8 inputs match majority; sharing-only ABC=001 or100, both safe
+Q3 original middle opposite-clock phase checked on all8 inputs; static repair verified
+Q4 classroom widths: thresholds1.0/.5V and resistance-only delay3RC
+Q4 literal gate load24/7 C: delay72/7 RC; any sizing has joint lower bound24/7 RC>3RC
+Q4 equal added feedback illustration: hysteresis increases .5V to227/230V
+PASS: DPL8; carry128/256phases; layout8/14MOS; originalQ6truth8; NP16phases; timing40paths across5interpretations.
+Verified Q5 four contexts; Q6 7RCg both directions; Q7 all32 input rows and rail exclusivity.
+PASS: Q2 16 truth +128 MOS phase/node; Q3 8 truth +48 phase/node +both clock readings; Q4 8 DPL/dynamic +16 dynamic phase +8 NP phase; Q6 8; Q7 16 truth +24 path/skew +simulated hazard.
+Checks pass: mux8, Shannon16, Q3 N8 f2.718172617, modifiedT31.258985092RCg, Q4 regions, XOR4, CMOS16, equivalent transition sequence.
+{"q2_mux_cases": 2048, "q2_nand_cases": 8, "q3_printed_truth_and_cmos_cases": 16, "q5_xor_cases": 4, "q6a_cmos_cases": 16, "q6b_cmos_cases": 8, "q6b_transition_states": 3, "q4_pre_discharge_device_samples": 15, "q4_conducting_discharge_device_samples": 9}
+PASS
+{
+  "status": "PASS",
+  "checks": {
+    "q1_input_cases": 8,
+    "q3_dynamic_and_complement_PDN_cases": 16,
+    "q1_retention_bounds": 2,
+    "q2_device_widths": 6,
+    "q2_control_sweep_cases": 5,
+    "q5_candidate_stage_counts": 13,
+    "q5_ideal_transition_timing_cases": 108,
+    "q5_skew_example_output_edges": 3
+  },
+  "q1_Tmin_ns": 11,
+  "q2_thresholds_V": {
+    "plus": 1.4,
+    "minus": 0.6
+  },
+  "q5_ratio": 2.718172616714748,
+  "q5_min_delay_over_tau": 21.745380933717986,
+  "q5_sum_output_cap_over_Cg": 4712.818809018168,
+  "q5_power_coefficient_per_step_f_V2_Cg": 1178.204702254542,
+  "q6_answer": "missing original timing premises; numerical/reg insertion answers skipped",
+  "limits": [
+    "No HSPICE result.",
+    "DSL test verifies complementary pull-down conditions, not analog reference/load ratios.",
+    "Q1 current bound intentionally overcounts leakage magnitudes.",
+    "Q5 ideal no-glitch claim assumes simultaneous steps and complete settling; skew example demonstrates equal NAND delays alone are insufficient."
+  ]
+}
+{
+  "MOS_connectivity_states": 16,
+  "consistent_settled_states": 8,
+  "write_contention_states": 8,
+  "conditional_event_rows": 24,
+  "all_assertions_passed": true
+}
+PASS: domino8;complex16;NP128;20MOSlayout16;register16;pipeline64 consecutive sample pairs and all timing/RC bounds.
+{"paths": 8, "boolean_rows": 8, "divider_cases": 243, "all_checks_passed": true}
+{
+  "q4b_12_device_switch_graph_rows": 8,
+  "q4b_all_checks_passed": true,
+  "q4b_function": "Z=a & ~b & ~c",
+  "q4b_off_isolation_MOS": [
+    "P2",
+    "N2",
+    "P6",
+    "N6"
+  ],
+  "q4a_literal_column6_countercheck": [
+    {
+      "assumed_X": 0,
+      "P6_on": true,
+      "N6_on": false,
+      "opposing_rail": "VDD"
+    },
+    {
+      "assumed_X": 1,
+      "P6_on": false,
+      "N6_on": true,
+      "opposing_rail": "VSS"
+    }
+  ],
+  "q4a_scope": "Literal extraction only. Analog levels/strengths are not characterized; normal rail-restoring latch behavior is not claimed."
+}
+All logic, clock-capacitance, balancing-family, layout and differential-network checks pass.
+{
+  "q4b_12_device_switch_graph_rows": 8,
+  "q4b_all_checks_passed": true,
+  "q4b_function": "Z=a & ~b & ~c",
+  "q4b_off_isolation_MOS": [
+    "P2",
+    "N2",
+    "P6",
+    "N6"
+  ],
+  "q4a_literal_column6_countercheck": [
+    {
+      "assumed_X": 0,
+      "P6_on": true,
+      "N6_on": false,
+      "opposing_rail": "VDD"
+    },
+    {
+      "assumed_X": 1,
+      "P6_on": false,
+      "N6_on": true,
+      "opposing_rail": "VSS"
+    }
+  ],
+  "q4a_scope": "Literal extraction only. Analog levels/strengths are not characterized; normal rail-restoring latch behavior is not claimed."
+}
+{"paths": 8, "boolean_rows": 8, "divider_cases": 243, "all_checks_passed": true}
+{
+  "all_checks_passed": true,
+  "all_independent_checks_passed": true,
+  "check_scope": "Independent mathematical and circuit checks.",
+  "q2_binary_cases": 16,
+  "q3_independent_and_student_paths": 9,
+  "q4_states": 8,
+  "q4_correlated_unloaded_delay_RC": {
+    "contamination": "8/3",
+    "propagation": "10"
+  },
+  "q5_signed_skew_path_checks": 15,
+  "q5_three_register_optimal_period_ns": "13/10",
+  "q5_aligned_frontiers": 6,
+  "q5_pipeline_events": 16,
+  "q6b_literal_switch_cases": 8,
+  "q6_physical_devices_each": 12,
+  "q6a_self_connected_pair_preserved": true,
+  "q7_distinct_upper_threshold_examples": 2,
+  "q7_unique_numeric_pair": false,
+  "q8_write_margin_examples": 4
+}
+PASS: majority8/fullRC6;dualVt64;passregion225;alpha2;CMOS16+4;adder8/28MOS.
+{"all_checks_passed": true, "Q3_stages": 4, "Q4_single_path_checks": 30, "Q4_switch_states": 384, "Q6_paths": 9}
+{
+  "stable_functions": {
+    "z": "NOT majority(A,B,C)",
+    "X": "majority(A,B,C)",
+    "w": "NOT XOR3(A,B,C)",
+    "Y": "XOR3(A,B,C)"
+  },
+  "loads": {
+    "z_in_C": 4,
+    "w_in_C": 1,
+    "X_output_in_C": 0,
+    "Y_output_in_C": 0
+  },
+  "source_average_convention": {
+    "X_tcd_over_RC": "40/7",
+    "X_tpd_over_RC": "8",
+    "Y_tcd_over_RC": "8/3",
+    "Y_tpd_over_RC": "10",
+    "whole_tcd_over_RC": "8/3",
+    "whole_tpd_over_RC": "10"
+  },
+  "independent_stage_envelope": {
+    "w_tcd_over_RC": "37/24",
+    "w_tpd_over_RC": "8/3",
+    "sum_min_not_jointly_reachable": "1219/168",
+    "sum_max_not_jointly_reachable": "32/3"
+  },
+  "charge_sharing_counterexample": {
+    "ABC": "001",
+    "initial_y_V": 0,
+    "initial_z_V": 1.8,
+    "connected_caps_pF": [
+      1.6,
+      0.8
+    ],
+    "shared_z_V": 1.2,
+    "p_turnon_threshold_V": 1.3
+  },
+  "scope": "Exact linear ON-resistance / source average-delay convention. No external X/Y load is drawn and drain caps are neglected. Initial internal node voltages must be stated for sharing."
+}
+{"all_checks_passed": true, "Q2_truth": 8, "Q2_dynamic_phases": 16, "Q2_differential_candidates": 32, "Q7a_switch_assignments": 64, "Q7b_truth": 8, "Q8_beta_ratio": "1"}
+{"all_checks_passed": true, "scope": "source-defined analytical models, no SPICE claim", "reports": ["numerical-verification.json", "q5-verification.json", "logic-layout-verification.json"]}
+{"all_checks_passed": true, "Q2_truth": 8, "Q2_dynamic_phases": 16, "Q2_differential_candidates": 32, "Q7a_switch_assignments": 64, "Q7b_truth": 8, "Q8_beta_ratio": "1"}
+{"all_checks_passed": true, "Q3_stages": 4, "Q4_single_path_checks": 30, "Q4_switch_states": 384, "Q6_paths": 9}
+{
+  "stable_functions": {
+    "z": "NOT majority(A,B,C)",
+    "X": "majority(A,B,C)",
+    "w": "NOT XOR3(A,B,C)",
+    "Y": "XOR3(A,B,C)"
+  },
+  "loads": {
+    "z_in_C": 4,
+    "w_in_C": 1,
+    "X_output_in_C": 0,
+    "Y_output_in_C": 0
+  },
+  "source_average_convention": {
+    "X_tcd_over_RC": "40/7",
+    "X_tpd_over_RC": "8",
+    "Y_tcd_over_RC": "8/3",
+    "Y_tpd_over_RC": "10",
+    "whole_tcd_over_RC": "8/3",
+    "whole_tpd_over_RC": "10"
+  },
+  "independent_stage_envelope": {
+    "w_tcd_over_RC": "37/24",
+    "w_tpd_over_RC": "8/3",
+    "sum_min_not_jointly_reachable": "1219/168",
+    "sum_max_not_jointly_reachable": "32/3"
+  },
+  "charge_sharing_counterexample": {
+    "ABC": "001",
+    "initial_y_V": 0,
+    "initial_z_V": 1.8,
+    "connected_caps_pF": [
+      1.6,
+      0.8
+    ],
+    "shared_z_V": 1.2,
+    "p_turnon_threshold_V": 1.3
+  },
+  "scope": "Exact linear ON-resistance / source average-delay convention. No external X/Y load is drawn and drain caps are neglected. Initial internal node voltages must be stated for sharing."
+}
+{
+  "all_checks_passed": true,
+  "all_independent_checks_passed": true,
+  "check_scope": "Independent mathematical and circuit checks.",
+  "q1_cmos_cases": 32,
+  "q2_switch_load_Cg": 42,
+  "q2_short_circuit_coefficient": "173/2",
+  "q2_exact_integer_stages": 4,
+  "q2_taper_counts_tested": 16,
+  "q3_cmos_cases": 16,
+  "q3_physical_MOS": 26,
+  "q3_sequence_transitions": 4,
+  "q3_glitch": "O1,1100->1011,falls1d/rises2d",
+  "q3_conditional_timing_cases": 5,
+  "q4_gate_junction": "user-approved VDD assumption",
+  "q4_constant_Vt_highs": {
+    "G": "1.4V",
+    "Y": "1.0V",
+    "Z": "1.4V"
+  },
+  "q5_buffer_subsets": 16,
+  "q5_discrete_unbuffered_ns": 45,
+  "q5_min_buffers_below_30": 1,
+  "q5_one_buffer_best_ns": 29,
+  "q5_global_min_ns": 19,
+  "q6_SCR_feedback_checked": true,
+  "printed_points": 110
+}
+{
+  "status": "PASS",
+  "Q3_truth_cases": 32,
+  "Q3_dynamic_phase_cases": 64,
+  "Q4_full_switch_resistance_cases": 64,
+  "Q4_minimal_balanced_paths": 5,
+  "Q4_strict_clock_target_feasible": false,
+  "Q5_correlated_cases": 8,
+  "Q5_delay_RC": [
+    "8/3",
+    "10"
+  ],
+  "Q5_sharing_min_V": "9/7",
+  "Q5_pMOS_enable_boundary_V": "6/5",
+  "Q6_worst_magnitude_skew_logic_max_ns": "15/2",
+  "Q6_buffer_count_with_single_delay_model": 3,
+  "Q7_physical_MOS": 16,
+  "Q7_switch_states": 16,
+  "Q7_consistent_conditional_states": 8,
+  "Q7_sampling": "falling edge, noninverting, conditional writeability",
+  "Q8_beta_ratio": 1,
+  "model": "ideal switches/RC/current onset, no process simulation",
+  "points_printed_total": 130
+}
+{
+  "status": "PASS",
+  "printed_points": 105,
+  "Q1_truth_cases": 16,
+  "Q4_truth_cases": 32,
+  "Q4_physical_MOS": 28,
+  "Q4_max_settled_interval_Ci": 2,
+  "Q4_cycle_with_internal_Ci": 5,
+  "Q4_conservative_max_delay_units": "21/2",
+  "Q3_overlap_b_minus_a": 0.2350647362942766,
+  "Q6_truth_cases": 8,
+  "Q6_nodal_moment_checks": 192,
+  "Q6_model": "Elmore first moment of each final ON network, connected caps fully unsettled; no measured transient bound",
+  "limits": [
+    "Actual instantaneous/glitch power requires current/transition data",
+    "High-VT minimum leakage requires delay and leakage characterization",
+    "RC initial voltages not given"
+  ]
+}
+{"all_checks_passed": true, "Q2_phase_histories": 8, "Q4_truth": 8, "Q6_truth": 16}
+{"all_checks_passed": true, "Q3a_switch_cases": 16, "Q3b_cases": 4, "Q7_truth_cases": 32, "Q7_domino_phases": 64, "Q7_differential_candidates": 128, "alpha_safe": "alpha>1", "tcd_min_ns": 0.8, "tpd_max_ns": 3.0}
+{"all_checks_passed": true, "reports": ["register-layout-verification.json", "numerical-verification.json"], "scope": "source-derived analytical checks only"}
+{"all_checks_passed": true, "Q3a_switch_cases": 16, "Q3b_cases": 4, "Q7_truth_cases": 32, "Q7_domino_phases": 64, "Q7_differential_candidates": 128, "alpha_safe": "alpha>1", "tcd_min_ns": 0.8, "tpd_max_ns": 3.0}
+{"all_checks_passed": true, "Q2_phase_histories": 8, "Q4_truth": 8, "Q6_truth": 16}
+PASS: Q1 CMOS 32; Q2 rail 32 / actual fanout / general r / slack; integer buffers 7; alpha roots 2; full adder 8 / 28 MOS.
+{"all_checks_passed": true, "Q2_truth": 32, "Q3_histories": 8, "Q7a_candidates": 32, "Q7b_truth": 8}
+{"all_checks_passed": true, "Q4_MOS": 20, "Q4_truth": 8, "Q6_parameter_checks": 14, "Q8_driver_states": 8, "Q8_keeper_cases": 200, "Q8_sequences": 32}
+{"all_checks_passed": true, "reports": ["logic-layout-verification.json", "numerical-verification.json"], "scope": "source-derived analytical models only"}
+{"all_checks_passed": true, "Q2_truth": 32, "Q3_histories": 8, "Q7a_candidates": 32, "Q7b_truth": 8}
+{"all_checks_passed": true, "Q4_MOS": 20, "Q4_truth": 8, "Q6_parameter_checks": 14, "Q8_driver_states": 8, "Q8_keeper_cases": 200, "Q8_sequences": 32}
+{
+  "status": "PASS",
+  "q1_inputs": 8,
+  "q2_mux_data_select_cases": 2048,
+  "q2_xor_inputs": 4,
+  "q3_occupancy_independent_inputs": true,
+  "q3_activity_requires_extra_temporal_assumption": true,
+  "q4_noise_V": 0.6,
+  "q5_model": "Literal widths, inverse-width RC slews, square-law overlap current approximation; finite-load physical power not asserted",
+  "q5_downstream_S_a": 21.618182281980022,
+  "q5_downstream_S_b": 21.8532470182743,
+  "q5_b_minus_a": 0.2350647362942766,
+  "q6_wire_ps": 0.52,
+  "q6_buffered_min_ps": 0.46,
+  "q7_full_graph_cases": 16,
+  "q7_fixed_channel_length_lambda": 2,
+  "q7_worst_p_and_n_relative_resistance": 1,
+  "printed_total_percent": 110
+}
+{
+  "all_checks_passed": true,
+  "all_independent_checks_passed": true,
+  "all_nonlayout_checks_passed": true,
+  "check_scope": "Independent mathematical and circuit checks.",
+  "q2_cases": 4,
+  "q3": {
+    "status": "contact graph and conditional switch states passed",
+    "physical_MOS": 10,
+    "inverters": 4,
+    "transmission_gates": 1,
+    "stable_loop_cases_tested": 8,
+    "opposite_data_write_contention_cases": 2,
+    "write_strength_unspecified": true,
+    "conditional_transparency": "CLK=1: O=D if input path overrides feedback",
+    "opaque_phase": "CLK=0: stored O retained"
+  },
+  "q4_truth_states": 8,
+  "q4_governing_evaluation_us": "117/50",
+  "q4_minimum_frequency_depends_on_duty": true,
+  "q5_binary_cases": 32,
+  "q6_physical_MOS": 12,
+  "q6_phase_events": 24,
+  "q6_active_capture_edge": "falling",
+  "q7_setup_period_ns": 20,
+  "q7_minimum_hold_data_absent": true,
+  "printed_percentage_total": 105
+}
+PASS: 10 MOS; 16 ideal equilibrium cases; 8 hold/write cases; fixed-feedback contention explicit.
+{
+  "actual_TikZ_metal_routes_checked": 18,
+  "cross_net_same_Metal1_intersections": [],
+  "contact_netlist_is_checked_separately": true,
+  "important_source_feature": "upper/lower final u drain stubs connect through continuous u poly with two contacts; no metal bridge across O feed",
+  "status": "passed"
+}
+PASS: 13 published question PDF hashes.
+PASS: 2020, 2021, 2023; twelve complete reports, published numerical evidence, identical HW4 pre-layout netlists and scope.
+PASS: 15 published question PDF hashes.
+PASS: 15 older assignments; reports, geometry, published numeric evidence, power units, sizing and source omissions.
+PASS: 2024 midterm; 7 questions/100 points, 16 MUX +32 CMOS cases, conditional buffer sizing, corrected 7RCg bound, standalone vector PDFs.
+PASS: 20 public exam packets; declared scope, editable sources and all analytical evidence.
+PASS: public archive; 2024 HW1 100 logic checks; HW2 43 checks; HW3 512 measured cases; HW4 8 measured vectors; hashes, privacy and README links.
+Saved-data verification only. Reproduction commands in the homework READMEs rerun HSPICE.
