@@ -1,6 +1,6 @@
-# NCU Introduction to VLSI — private archive
+# NCU Introduction to VLSI — public archive
 
-本庫為僅供擁有者存取的課程資料庫，整合原始題目與舊版文件紀錄。
+本庫為公開的課程資料庫，整合原始題目與舊版文件紀錄。
 
 | 目錄 | 內容 |
 |---|---|
@@ -11,7 +11,7 @@
 
 [ARCHIVE_INDEX.json](ARCHIVE_INDEX.json) 記錄來源版本、檔案雜湊及原題驗證結果。原始資料索引位於 [originals/SOURCE_INDEX.json](originals/SOURCE_INDEX.json)；索引內的相對路徑以 `originals/` 為起點。
 
-公開的作業與考試題本、解答另由既有公開資料庫提供。本庫與完整版本歷史應維持 private，存取者僅為擁有者。
+公開的作業與考試題本、解答另由既有公開資料庫提供。本庫及其完整版本歷史公開供存取。
 
 ## 整理方法
 
